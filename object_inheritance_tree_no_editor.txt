@@ -1,6 +1,3 @@
-Object 继承树（基于 classes/class_object.rst 及各 class_*.rst 的 "Inherited By" 字段生成）
-不含 Editor-only 类的版本（共 956 个类）
-
 Object
 ├── AccessibilityServer
 ├── AudioServer
