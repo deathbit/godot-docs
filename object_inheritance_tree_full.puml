@@ -1,0 +1,2093 @@
+@startuml object_inheritance_tree_full
+' Godot Object 类继承（包含）关系树
+' 由 object_inheritance_tree_full.txt 生成，自上而下绘制
+
+top to bottom direction
+hide empty members
+hide circle
+skinparam linetype ortho
+skinparam nodesep 8
+skinparam ranksep 25
+skinparam classFontSize 11
+skinparam classBackgroundColor #F5F7FA
+skinparam classBorderColor #44627A
+skinparam ArrowColor #44627A
+
+class Object
+class AccessibilityServer
+class AudioServer
+class CameraServer
+class ClassDB
+class DisplayServer
+class EditorFileSystemDirectory
+class EditorInterface
+class EditorPaths
+class EditorSelection
+class EditorUndoRedoManager
+class EditorVCSInterface
+class Engine
+class EngineDebugger
+class FramebufferCacheRD
+class GDExtensionManager
+class Geometry2D
+class Geometry3D
+class GodotInstance
+class IP
+class Input
+class InputMap
+class JNISingleton
+class JSONRPC
+class GDScriptLanguageProtocol
+class JavaClassWrapper
+class JavaScriptBridge
+class MainLoop
+class SceneTree
+class Marshalls
+class MovieWriter
+class NativeMenu
+class NavigationMeshGenerator
+class NavigationServer2D
+class NavigationServer2DManager
+class NavigationServer3D
+class NavigationServer3DManager
+class Node
+class AnimationMixer
+class AnimationPlayer
+class AnimationTree
+class AudioStreamPlayer
+class CanvasItem
+class Control
+class BaseButton
+class Button
+class CheckBox
+class CheckButton
+class ColorPickerButton
+class MenuButton
+class OptionButton
+class LinkButton
+class TextureButton
+class ColorRect
+class Container
+class AspectRatioContainer
+class BoxContainer
+class HBoxContainer
+class EditorResourcePicker
+class EditorScriptPicker
+class EditorToaster
+class OpenXRInteractionProfileEditorBase
+class OpenXRInteractionProfileEditor
+class VBoxContainer
+class ColorPicker
+class ScriptEditorBase
+class CenterContainer
+class EditorProperty
+class FlowContainer
+class HFlowContainer
+class VFlowContainer
+class FoldableContainer
+class GraphElement
+class GraphFrame
+class GraphNode
+class GridContainer
+class MarginContainer
+class EditorDock
+class FileSystemDock
+class PanelContainer
+class OpenXRBindingModifierEditor
+class ScriptEditor
+class ScrollContainer
+class EditorInspector
+class SplitContainer
+class HSplitContainer
+class VSplitContainer
+class SubViewportContainer
+class TabContainer
+class GraphEdit
+class ItemList
+class Label
+class LineEdit
+class MenuBar
+class NinePatchRect
+class Panel
+class Range
+class EditorSpinSlider
+class ProgressBar
+class ScrollBar
+class HScrollBar
+class VScrollBar
+class Slider
+class HSlider
+class VSlider
+class SpinBox
+class TextureProgressBar
+class ReferenceRect
+class RichTextLabel
+class Separator
+class HSeparator
+class VSeparator
+class TabBar
+class TextEdit
+class CodeEdit
+class TextureRect
+class Tree
+class VideoStreamPlayer
+class VirtualJoystick
+class Node2D
+class AnimatedSprite2D
+class AudioListener2D
+class AudioStreamPlayer2D
+class BackBufferCopy
+class Bone2D
+class CPUParticles2D
+class Camera2D
+class CanvasGroup
+class CanvasModulate
+class CollisionObject2D
+class Area2D
+class PhysicsBody2D
+class CharacterBody2D
+class RigidBody2D
+class PhysicalBone2D
+class StaticBody2D
+class AnimatableBody2D
+class CollisionPolygon2D
+class CollisionShape2D
+class GPUParticles2D
+class Joint2D
+class DampedSpringJoint2D
+class GrooveJoint2D
+class PinJoint2D
+class Light2D
+class DirectionalLight2D
+class PointLight2D
+class LightOccluder2D
+class Line2D
+class Marker2D
+class MeshInstance2D
+class MultiMeshInstance2D
+class NavigationLink2D
+class NavigationObstacle2D
+class NavigationRegion2D
+class Parallax2D
+class ParallaxLayer
+class Path2D
+class PathFollow2D
+class Polygon2D
+class RayCast2D
+class RemoteTransform2D
+class ShapeCast2D
+class Skeleton2D
+class Sprite2D
+class TileMap
+class TileMapLayer
+class TouchScreenButton
+class VisibleOnScreenNotifier2D
+class VisibleOnScreenEnabler2D
+class CanvasLayer
+class ParallaxBackground
+class EditorFileSystem
+class EditorPlugin
+class GridMapEditorPlugin
+class EditorResourcePreview
+class HTTPRequest
+class InstancePlaceholder
+class MissingNode
+class MultiplayerSpawner
+class MultiplayerSynchronizer
+class NavigationAgent2D
+class NavigationAgent3D
+class Node3D
+class AudioListener3D
+class AudioStreamPlayer3D
+class BoneAttachment3D
+class Camera3D
+class XRCamera3D
+class CollisionObject3D
+class Area3D
+class PhysicsBody3D
+class CharacterBody3D
+class PhysicalBone3D
+class RigidBody3D
+class VehicleBody3D
+class StaticBody3D
+class AnimatableBody3D
+class CollisionPolygon3D
+class CollisionShape3D
+class GridMap
+class ImporterMeshInstance3D
+class Joint3D
+class ConeTwistJoint3D
+class Generic6DOFJoint3D
+class HingeJoint3D
+class PinJoint3D
+class SliderJoint3D
+class LightmapProbe
+class Marker3D
+class NavigationLink3D
+class NavigationObstacle3D
+class NavigationRegion3D
+class OpenXRCompositionLayer
+class OpenXRCompositionLayerCylinder
+class OpenXRCompositionLayerEquirect
+class OpenXRCompositionLayerQuad
+class OpenXRHand
+class OpenXRRenderModel
+class OpenXRRenderModelManager
+class Path3D
+class PathFollow3D
+class RayCast3D
+class RemoteTransform3D
+class ShapeCast3D
+class Skeleton3D
+class SkeletonModifier3D
+class BoneConstraint3D
+class AimModifier3D
+class ConvertTransformModifier3D
+class CopyTransformModifier3D
+class BoneTwistDisperser3D
+class IKModifier3D
+class ChainIK3D
+class IterateIK3D
+class CCDIK3D
+class FABRIK3D
+class JacobianIK3D
+class SplineIK3D
+class TwoBoneIK3D
+class LimitAngularVelocityModifier3D
+class LookAtModifier3D
+class ModifierBoneTarget3D
+class PhysicalBoneSimulator3D
+class RetargetModifier3D
+class SkeletonIK3D
+class SpringBoneSimulator3D
+class XRBodyModifier3D
+class XRHandModifier3D
+class SpringArm3D
+class SpringBoneCollision3D
+class SpringBoneCollisionCapsule3D
+class SpringBoneCollisionPlane3D
+class SpringBoneCollisionSphere3D
+class VehicleWheel3D
+class VisualInstance3D
+class Decal
+class FogVolume
+class GPUParticlesAttractor3D
+class GPUParticlesAttractorBox3D
+class GPUParticlesAttractorSphere3D
+class GPUParticlesAttractorVectorField3D
+class GPUParticlesCollision3D
+class GPUParticlesCollisionBox3D
+class GPUParticlesCollisionHeightField3D
+class GPUParticlesCollisionSDF3D
+class GPUParticlesCollisionSphere3D
+class GeometryInstance3D
+class CPUParticles3D
+class CSGShape3D
+class CSGCombiner3D
+class CSGPrimitive3D
+class CSGBox3D
+class CSGCylinder3D
+class CSGMesh3D
+class CSGPolygon3D
+class CSGSphere3D
+class CSGTorus3D
+class GPUParticles3D
+class Label3D
+class MeshInstance3D
+class SoftBody3D
+class MultiMeshInstance3D
+class SpriteBase3D
+class AnimatedSprite3D
+class Sprite3D
+class Light3D
+class AreaLight3D
+class DirectionalLight3D
+class OmniLight3D
+class SpotLight3D
+class LightmapGI
+class OccluderInstance3D
+class OpenXRVisibilityMask
+class ReflectionProbe
+class RootMotionView
+class VisibleOnScreenNotifier3D
+class VisibleOnScreenEnabler3D
+class VoxelGI
+class XRFaceModifier3D
+class XRNode3D
+class XRAnchor3D
+class XRController3D
+class XROrigin3D
+class ResourcePreloader
+class ShaderGlobalsOverride
+class StatusIndicator
+class Timer
+class Viewport
+class SubViewport
+class Window
+class AcceptDialog
+class ConfirmationDialog
+class EditorCommandPalette
+class FileDialog
+class EditorFileDialog
+class ScriptCreateDialog
+class Popup
+class PopupMenu
+class PopupPanel
+class WorldEnvironment
+class OS
+class OpenXRExtensionWrapper
+class OpenXRAndroidThreadSettingsExtension
+class OpenXRExtensionWrapperExtension
+class OpenXRFrameSynthesisExtension
+class OpenXRFutureExtension
+class OpenXRRenderModelExtension
+class OpenXRSpatialAnchorCapability
+class OpenXRSpatialEntityExtension
+class OpenXRSpatialMarkerTrackingCapability
+class OpenXRSpatialPlaneTrackingCapability
+class OpenXRInteractionProfileMetadata
+class Performance
+class PhysicsDirectBodyState2D
+class PhysicsDirectBodyState2DExtension
+class PhysicsDirectBodyState3D
+class PhysicsDirectBodyState3DExtension
+class PhysicsDirectSpaceState2D
+class PhysicsDirectSpaceState2DExtension
+class PhysicsDirectSpaceState3D
+class PhysicsDirectSpaceState3DExtension
+class PhysicsServer2D
+class PhysicsServer2DExtension
+class PhysicsServer2DManager
+class PhysicsServer3D
+class PhysicsServer3DExtension
+class PhysicsServer3DManager
+class PhysicsServer3DRenderingServerHandler
+class ProjectSettings
+class RefCounted
+class AESContext
+class AStar2D
+class AStar3D
+class AStarGrid2D
+class AudioEffectInstance
+class AudioEffectSpectrumAnalyzerInstance
+class AudioSample
+class AudioSamplePlayback
+class AudioStreamPlayback
+class AudioStreamPlaybackInteractive
+class AudioStreamPlaybackPlaylist
+class AudioStreamPlaybackPolyphonic
+class AudioStreamPlaybackResampled
+class AudioStreamGeneratorPlayback
+class AudioStreamPlaybackOggVorbis
+class AudioStreamPlaybackSynchronized
+class CameraFeed
+class CharFXTransform
+class ConfigFile
+class Crypto
+class DTLSServer
+class DirAccess
+class ENetConnection
+class EditorContextMenuPlugin
+class EditorDebuggerPlugin
+class EditorDebuggerSession
+class EditorExportPlatform
+class EditorExportPlatformAndroid
+class EditorExportPlatformAppleEmbedded
+class EditorExportPlatformIOS
+class EditorExportPlatformVisionOS
+class EditorExportPlatformExtension
+class EditorExportPlatformMacOS
+class EditorExportPlatformPC
+class EditorExportPlatformLinuxBSD
+class EditorExportPlatformWindows
+class EditorExportPlatformWeb
+class EditorExportPlugin
+class EditorExportPreset
+class EditorFeatureProfile
+class EditorFileSystemImportFormatSupportQuery
+class EditorInspectorPlugin
+class EditorResourceConversionPlugin
+class EditorResourcePreviewGenerator
+class EditorResourceTooltipPlugin
+class EditorSceneFormatImporter
+class EditorSceneFormatImporterBlend
+class EditorSceneFormatImporterFBX2GLTF
+class EditorSceneFormatImporterGLTF
+class EditorSceneFormatImporterUFBX
+class EditorScenePostImport
+class EditorScenePostImportPlugin
+class EditorScript
+class EditorTranslationParserPlugin
+class EncodedObjectAsID
+class EngineProfiler
+class Expression
+class FileAccess
+class GDScriptTextDocument
+class GDScriptWorkspace
+class GLTFObjectModelProperty
+class HMACContext
+class HTTPClient
+class HashingContext
+class ImageFormatLoader
+class ImageFormatLoaderExtension
+class JavaClass
+class JavaObject
+class JavaScriptObject
+class KinematicCollision2D
+class KinematicCollision3D
+class Lightmapper
+class LightmapperRD
+class Logger
+class MeshConvexDecompositionSettings
+class MeshDataTool
+class MultiplayerAPI
+class MultiplayerAPIExtension
+class SceneMultiplayer
+class Mutex
+class NavigationPathQueryParameters2D
+class NavigationPathQueryParameters3D
+class NavigationPathQueryResult2D
+class NavigationPathQueryResult3D
+class Node3DGizmo
+class EditorNode3DGizmo
+class OggPacketSequencePlayback
+class OpenXRAPIExtension
+class OpenXRFutureResult
+class OpenXRSpatialCapabilityConfigurationBaseHeader
+class OpenXRSpatialCapabilityConfigurationAnchor
+class OpenXRSpatialCapabilityConfigurationAprilTag
+class OpenXRSpatialCapabilityConfigurationAruco
+class OpenXRSpatialCapabilityConfigurationMicroQrCode
+class OpenXRSpatialCapabilityConfigurationPlaneTracking
+class OpenXRSpatialCapabilityConfigurationQrCode
+class OpenXRSpatialComponentData
+class OpenXRSpatialComponentAnchorList
+class OpenXRSpatialComponentBounded2DList
+class OpenXRSpatialComponentBounded3DList
+class OpenXRSpatialComponentMarkerList
+class OpenXRSpatialComponentMesh2DList
+class OpenXRSpatialComponentMesh3DList
+class OpenXRSpatialComponentParentList
+class OpenXRSpatialComponentPersistenceList
+class OpenXRSpatialComponentPlaneAlignmentList
+class OpenXRSpatialComponentPlaneSemanticLabelList
+class OpenXRSpatialComponentPolygon2DList
+class OpenXRSpatialQueryResultData
+class OpenXRStructureBase
+class OpenXRSpatialContextPersistenceConfig
+class PCKPacker
+class PackedDataContainerRef
+class PacketPeer
+class ENetPacketPeer
+class MultiplayerPeer
+class ENetMultiplayerPeer
+class MultiplayerPeerExtension
+class OfflineMultiplayerPeer
+class WebRTCMultiplayerPeer
+class WebSocketMultiplayerPeer
+class PacketPeerDTLS
+class PacketPeerExtension
+class PacketPeerStream
+class PacketPeerUDP
+class WebRTCDataChannel
+class WebRTCDataChannelExtension
+class WebSocketPeer
+class PhysicsPointQueryParameters2D
+class PhysicsPointQueryParameters3D
+class PhysicsRayQueryParameters2D
+class PhysicsRayQueryParameters3D
+class PhysicsShapeQueryParameters2D
+class PhysicsShapeQueryParameters3D
+class PhysicsTestMotionParameters2D
+class PhysicsTestMotionParameters3D
+class PhysicsTestMotionResult2D
+class PhysicsTestMotionResult3D
+class RDAccelerationStructureGeometry
+class RDAccelerationStructureInstance
+class RDAttachmentFormat
+class RDFramebufferPass
+class RDHitGroup
+class RDPipelineColorBlendState
+class RDPipelineColorBlendStateAttachment
+class RDPipelineDepthStencilState
+class RDPipelineMultisampleState
+class RDPipelineRasterizationState
+class RDPipelineShader
+class RDPipelineSpecializationConstant
+class RDSamplerState
+class RDShaderSource
+class RDTextureFormat
+class RDTextureView
+class RDUniform
+class RDVertexAttribute
+class RandomNumberGenerator
+class RegEx
+class RegExMatch
+class RenderSceneBuffers
+class RenderSceneBuffersExtension
+class RenderSceneBuffersRD
+class RenderSceneBuffersConfiguration
+class Resource
+class Animation
+class AnimationLibrary
+class AnimationNode
+class AnimationNodeExtension
+class AnimationNodeOutput
+class AnimationNodeSync
+class AnimationNodeAdd2
+class AnimationNodeAdd3
+class AnimationNodeBlend2
+class AnimationNodeBlend3
+class AnimationNodeOneShot
+class AnimationNodeSub2
+class AnimationNodeTransition
+class AnimationNodeTimeScale
+class AnimationNodeTimeSeek
+class AnimationRootNode
+class AnimationNodeAnimation
+class AnimationNodeBlendSpace1D
+class AnimationNodeBlendSpace2D
+class AnimationNodeBlendTree
+class AnimationNodeStateMachine
+class AnimationNodeStateMachinePlayback
+class AnimationNodeStateMachineTransition
+class AudioBusLayout
+class AudioEffect
+class AudioEffectAmplify
+class AudioEffectCapture
+class AudioEffectChorus
+class AudioEffectCompressor
+class AudioEffectDelay
+class AudioEffectDistortion
+class AudioEffectEQ
+class AudioEffectEQ10
+class AudioEffectEQ21
+class AudioEffectEQ6
+class AudioEffectFilter
+class AudioEffectBandLimitFilter
+class AudioEffectBandPassFilter
+class AudioEffectHighPassFilter
+class AudioEffectHighShelfFilter
+class AudioEffectLowPassFilter
+class AudioEffectLowShelfFilter
+class AudioEffectNotchFilter
+class AudioEffectHardLimiter
+class AudioEffectLimiter
+class AudioEffectPanner
+class AudioEffectPhaser
+class AudioEffectPitchShift
+class AudioEffectRecord
+class AudioEffectReverb
+class AudioEffectSpectrumAnalyzer
+class AudioEffectStereoEnhance
+class AudioStream
+class AudioStreamGenerator
+class AudioStreamInteractive
+class AudioStreamMP3
+class AudioStreamMicrophone
+class AudioStreamOggVorbis
+class AudioStreamPlaylist
+class AudioStreamPolyphonic
+class AudioStreamRandomizer
+class AudioStreamSynchronized
+class AudioStreamWAV
+class BitMap
+class BoneMap
+class ButtonGroup
+class CameraAttributes
+class CameraAttributesPhysical
+class CameraAttributesPractical
+class ColorPalette
+class Compositor
+class CompositorEffect
+class CryptoKey
+class Curve
+class Curve2D
+class Curve3D
+class EditorNode3DGizmoPlugin
+class EditorSettings
+class Environment
+class FoldableGroup
+class Font
+class FontFile
+class FontVariation
+class SystemFont
+class GDExtension
+class GLTFAccessor
+class GLTFAnimation
+class GLTFBufferView
+class GLTFCamera
+class GLTFDocument
+class FBXDocument
+class GLTFDocumentExtension
+class GLTFDocumentExtensionConvertImporterMesh
+class GLTFLight
+class GLTFMesh
+class GLTFNode
+class GLTFPhysicsBody
+class GLTFPhysicsShape
+class GLTFSkeleton
+class GLTFSkin
+class GLTFSpecGloss
+class GLTFState
+class FBXState
+class GLTFTexture
+class GLTFTextureSampler
+class Gradient
+class Image
+class ImporterMesh
+class InputEvent
+class InputEventAction
+class InputEventFromWindow
+class InputEventScreenDrag
+class InputEventScreenTouch
+class InputEventWithModifiers
+class InputEventGesture
+class InputEventMagnifyGesture
+class InputEventPanGesture
+class InputEventKey
+class InputEventMouse
+class InputEventMouseButton
+class InputEventMouseMotion
+class InputEventJoypadButton
+class InputEventJoypadMotion
+class InputEventMIDI
+class InputEventShortcut
+class JSON
+class JointLimitation3D
+class JointLimitationCone3D
+class LabelSettings
+class LightmapGIData
+class Material
+class BaseMaterial3D
+class ORMMaterial3D
+class StandardMaterial3D
+class BlitMaterial
+class CanvasItemMaterial
+class FogMaterial
+class PanoramaSkyMaterial
+class ParticleProcessMaterial
+class PhysicalSkyMaterial
+class PlaceholderMaterial
+class ProceduralSkyMaterial
+class ShaderMaterial
+class Mesh
+class ArrayMesh
+class ImmediateMesh
+class PlaceholderMesh
+class PrimitiveMesh
+class BoxMesh
+class CapsuleMesh
+class CylinderMesh
+class PlaneMesh
+class QuadMesh
+class PointMesh
+class PrismMesh
+class RibbonTrailMesh
+class SphereMesh
+class TextMesh
+class TorusMesh
+class TubeTrailMesh
+class MeshLibrary
+class MissingResource
+class MultiMesh
+class NavigationMesh
+class NavigationMeshSourceGeometryData2D
+class NavigationMeshSourceGeometryData3D
+class NavigationPolygon
+class Noise
+class FastNoiseLite
+class Occluder3D
+class ArrayOccluder3D
+class BoxOccluder3D
+class PolygonOccluder3D
+class QuadOccluder3D
+class SphereOccluder3D
+class OccluderPolygon2D
+class OggPacketSequence
+class OpenXRAction
+class OpenXRActionMap
+class OpenXRActionSet
+class OpenXRBindingModifier
+class OpenXRActionBindingModifier
+class OpenXRAnalogThresholdModifier
+class OpenXRIPBindingModifier
+class OpenXRDpadBindingModifier
+class OpenXRHapticBase
+class OpenXRHapticVibration
+class OpenXRIPBinding
+class OpenXRInteractionProfile
+class PackedDataContainer
+class PackedScene
+class PhysicsMaterial
+class PolygonPathFinder
+class RDShaderFile
+class RDShaderSPIRV
+class RichTextEffect
+class SceneReplicationConfig
+class Script
+class CSharpScript
+class GDScript
+class ScriptExtension
+class Shader
+class VisualShader
+class ShaderInclude
+class Shape2D
+class CapsuleShape2D
+class CircleShape2D
+class ConcavePolygonShape2D
+class ConvexPolygonShape2D
+class RectangleShape2D
+class SegmentShape2D
+class SeparationRayShape2D
+class WorldBoundaryShape2D
+class Shape3D
+class BoxShape3D
+class CapsuleShape3D
+class ConcavePolygonShape3D
+class ConvexPolygonShape3D
+class CylinderShape3D
+class HeightMapShape3D
+class SeparationRayShape3D
+class SphereShape3D
+class WorldBoundaryShape3D
+class Shortcut
+class SkeletonModification2D
+class SkeletonModification2DCCDIK
+class SkeletonModification2DFABRIK
+class SkeletonModification2DJiggle
+class SkeletonModification2DLookAt
+class SkeletonModification2DPhysicalBones
+class SkeletonModification2DStackHolder
+class SkeletonModification2DTwoBoneIK
+class SkeletonModificationStack2D
+class SkeletonProfile
+class SkeletonProfileHumanoid
+class Skin
+class Sky
+class SpriteFrames
+class StyleBox
+class StyleBoxEmpty
+class StyleBoxFlat
+class StyleBoxLine
+class StyleBoxTexture
+class SyntaxHighlighter
+class CodeHighlighter
+class EditorSyntaxHighlighter
+class GDScriptSyntaxHighlighter
+class Texture
+class Texture2D
+class AnimatedTexture
+class AtlasTexture
+class CameraTexture
+class CanvasTexture
+class CompressedTexture2D
+class CurveTexture
+class CurveXYZTexture
+class DPITexture
+class DrawableTexture2D
+class ExternalTexture
+class GradientTexture1D
+class GradientTexture2D
+class ImageTexture
+class MeshTexture
+class NoiseTexture2D
+class PlaceholderTexture2D
+class PortableCompressedTexture2D
+class Texture2DRD
+class ViewportTexture
+class Texture3D
+class CompressedTexture3D
+class ImageTexture3D
+class NoiseTexture3D
+class PlaceholderTexture3D
+class Texture3DRD
+class TextureLayered
+class CompressedTextureLayered
+class CompressedCubemap
+class CompressedCubemapArray
+class CompressedTexture2DArray
+class ImageTextureLayered
+class Cubemap
+class CubemapArray
+class Texture2DArray
+class PlaceholderTextureLayered
+class PlaceholderCubemap
+class PlaceholderCubemapArray
+class PlaceholderTexture2DArray
+class TextureLayeredRD
+class Texture2DArrayRD
+class TextureCubemapArrayRD
+class TextureCubemapRD
+class Theme
+class TileMapPattern
+class TileSet
+class TileSetSource
+class TileSetAtlasSource
+class TileSetScenesCollectionSource
+class Translation
+class OptimizedTranslation
+class VideoStream
+class VideoStreamTheora
+class VideoStreamPlayback
+class VisualShaderNode
+class VisualShaderNodeBillboard
+class VisualShaderNodeClamp
+class VisualShaderNodeColorFunc
+class VisualShaderNodeColorOp
+class VisualShaderNodeCompare
+class VisualShaderNodeConstant
+class VisualShaderNodeBooleanConstant
+class VisualShaderNodeColorConstant
+class VisualShaderNodeFloatConstant
+class VisualShaderNodeIntConstant
+class VisualShaderNodeTransformConstant
+class VisualShaderNodeUIntConstant
+class VisualShaderNodeVec2Constant
+class VisualShaderNodeVec3Constant
+class VisualShaderNodeVec4Constant
+class VisualShaderNodeCubemap
+class VisualShaderNodeCustom
+class VisualShaderNodeDerivativeFunc
+class VisualShaderNodeDeterminant
+class VisualShaderNodeDistanceFade
+class VisualShaderNodeDotProduct
+class VisualShaderNodeFloatFunc
+class VisualShaderNodeFloatOp
+class VisualShaderNodeFresnel
+class VisualShaderNodeIf
+class VisualShaderNodeInput
+class VisualShaderNodeIntFunc
+class VisualShaderNodeIntOp
+class VisualShaderNodeIs
+class VisualShaderNodeLinearSceneDepth
+class VisualShaderNodeMix
+class VisualShaderNodeMultiplyAdd
+class VisualShaderNodeOuterProduct
+class VisualShaderNodeOutput
+class VisualShaderNodeParticleOutput
+class VisualShaderNodeParameter
+class VisualShaderNodeBooleanParameter
+class VisualShaderNodeColorParameter
+class VisualShaderNodeFloatParameter
+class VisualShaderNodeIntParameter
+class VisualShaderNodeTextureParameter
+class VisualShaderNodeCubemapParameter
+class VisualShaderNodeTexture2DArrayParameter
+class VisualShaderNodeTexture2DParameter
+class VisualShaderNodeTexture3DParameter
+class VisualShaderNodeTextureParameterTriplanar
+class VisualShaderNodeTransformParameter
+class VisualShaderNodeUIntParameter
+class VisualShaderNodeVec2Parameter
+class VisualShaderNodeVec3Parameter
+class VisualShaderNodeVec4Parameter
+class VisualShaderNodeParameterRef
+class VisualShaderNodeParticleAccelerator
+class VisualShaderNodeParticleConeVelocity
+class VisualShaderNodeParticleEmit
+class VisualShaderNodeParticleEmitter
+class VisualShaderNodeParticleBoxEmitter
+class VisualShaderNodeParticleMeshEmitter
+class VisualShaderNodeParticleRingEmitter
+class VisualShaderNodeParticleSphereEmitter
+class VisualShaderNodeParticleMultiplyByAxisAngle
+class VisualShaderNodeParticleRandomness
+class VisualShaderNodeProximityFade
+class VisualShaderNodeRandomRange
+class VisualShaderNodeRemap
+class VisualShaderNodeReroute
+class VisualShaderNodeResizableBase
+class VisualShaderNodeCurveTexture
+class VisualShaderNodeCurveXYZTexture
+class VisualShaderNodeFrame
+class VisualShaderNodeComment
+class VisualShaderNodeGroupBase
+class VisualShaderNodeExpression
+class VisualShaderNodeGlobalExpression
+class VisualShaderNodeRotationByAxis
+class VisualShaderNodeSDFRaymarch
+class VisualShaderNodeSDFToScreenUV
+class VisualShaderNodeSample3D
+class VisualShaderNodeTexture2DArray
+class VisualShaderNodeTexture3D
+class VisualShaderNodeScreenNormalWorldSpace
+class VisualShaderNodeScreenUVToSDF
+class VisualShaderNodeSmoothStep
+class VisualShaderNodeStep
+class VisualShaderNodeSwitch
+class VisualShaderNodeTexture
+class VisualShaderNodeTextureSDF
+class VisualShaderNodeTextureSDFNormal
+class VisualShaderNodeTransformCompose
+class VisualShaderNodeTransformDecompose
+class VisualShaderNodeTransformFunc
+class VisualShaderNodeTransformOp
+class VisualShaderNodeTransformVecMult
+class VisualShaderNodeUIntFunc
+class VisualShaderNodeUIntOp
+class VisualShaderNodeUVFunc
+class VisualShaderNodeUVPolarCoord
+class VisualShaderNodeVarying
+class VisualShaderNodeVaryingGetter
+class VisualShaderNodeVaryingSetter
+class VisualShaderNodeVectorBase
+class VisualShaderNodeFaceForward
+class VisualShaderNodeVectorCompose
+class VisualShaderNodeVectorDecompose
+class VisualShaderNodeVectorDistance
+class VisualShaderNodeVectorFunc
+class VisualShaderNodeVectorLen
+class VisualShaderNodeVectorOp
+class VisualShaderNodeVectorRefract
+class VisualShaderNodeWorldPositionFromDepth
+class VoxelGIData
+class World2D
+class World3D
+class X509Certificate
+class ResourceFormatLoader
+class ResourceFormatSaver
+class ResourceImporter
+class EditorImportPlugin
+class ResourceImporterBMFont
+class ResourceImporterBitMap
+class ResourceImporterCSVTranslation
+class ResourceImporterDynamicFont
+class ResourceImporterImage
+class ResourceImporterImageFont
+class ResourceImporterLayeredTexture
+class ResourceImporterMP3
+class ResourceImporterOBJ
+class ResourceImporterOggVorbis
+class ResourceImporterSVG
+class ResourceImporterScene
+class ResourceImporterShaderFile
+class ResourceImporterTexture
+class ResourceImporterTextureAtlas
+class ResourceImporterWAV
+class SceneState
+class SceneTreeTimer
+class ScriptBacktrace
+class Semaphore
+class SkinReference
+class SocketServer
+class TCPServer
+class UDSServer
+class StreamPeer
+class StreamPeerBuffer
+class StreamPeerExtension
+class StreamPeerGZIP
+class StreamPeerSocket
+class StreamPeerTCP
+class StreamPeerUDS
+class StreamPeerTLS
+class SurfaceTool
+class TLSOptions
+class TextLine
+class TextParagraph
+class TextServer
+class TextServerExtension
+class TextServerAdvanced
+class TextServerDummy
+class TextServerFallback
+class Thread
+class TranslationDomain
+class TriangleMesh
+class Tween
+class Tweener
+class AwaitTweener
+class CallbackTweener
+class IntervalTweener
+class MethodTweener
+class PropertyTweener
+class SubtweenTweener
+class UDPServer
+class UPNP
+class UPNPDevice
+class WeakRef
+class WebRTCPeerConnection
+class WebRTCPeerConnectionExtension
+class XMLParser
+class XRInterface
+class MobileVRInterface
+class OpenXRInterface
+class WebXRInterface
+class XRInterfaceExtension
+class XRPose
+class XRTracker
+class XRFaceTracker
+class XRPositionalTracker
+class OpenXRSpatialEntityTracker
+class OpenXRAnchorTracker
+class OpenXRMarkerTracker
+class OpenXRPlaneTracker
+class XRBodyTracker
+class XRControllerTracker
+class XRHandTracker
+class ZIPPacker
+class ZIPReader
+class RenderData
+class RenderDataExtension
+class RenderDataRD
+class RenderSceneData
+class RenderSceneDataExtension
+class RenderSceneDataRD
+class RenderingDevice
+class RenderingServer
+class ResourceLoader
+class ResourceSaver
+class ResourceUID
+class ScriptLanguage
+class ScriptLanguageExtension
+class ShaderIncludeDB
+class TextServerManager
+class ThemeDB
+class TileData
+class Time
+class TranslationServer
+class TreeItem
+class UndoRedo
+class UniformSetCacheRD
+class WorkerThreadPool
+class XRServer
+class XRVRS
+
+Object *-- AccessibilityServer
+Object *-- AudioServer
+Object *-- CameraServer
+Object *-- ClassDB
+Object *-- DisplayServer
+Object *-- EditorFileSystemDirectory
+Object *-- EditorInterface
+Object *-- EditorPaths
+Object *-- EditorSelection
+Object *-- EditorUndoRedoManager
+Object *-- EditorVCSInterface
+Object *-- Engine
+Object *-- EngineDebugger
+Object *-- FramebufferCacheRD
+Object *-- GDExtensionManager
+Object *-- Geometry2D
+Object *-- Geometry3D
+Object *-- GodotInstance
+Object *-- IP
+Object *-- Input
+Object *-- InputMap
+Object *-- JNISingleton
+Object *-- JSONRPC
+JSONRPC *-- GDScriptLanguageProtocol
+Object *-- JavaClassWrapper
+Object *-- JavaScriptBridge
+Object *-- MainLoop
+MainLoop *-- SceneTree
+Object *-- Marshalls
+Object *-- MovieWriter
+Object *-- NativeMenu
+Object *-- NavigationMeshGenerator
+Object *-- NavigationServer2D
+Object *-- NavigationServer2DManager
+Object *-- NavigationServer3D
+Object *-- NavigationServer3DManager
+Object *-- Node
+Node *-- AnimationMixer
+AnimationMixer *-- AnimationPlayer
+AnimationMixer *-- AnimationTree
+Node *-- AudioStreamPlayer
+Node *-- CanvasItem
+CanvasItem *-- Control
+Control *-- BaseButton
+BaseButton *-- Button
+Button *-- CheckBox
+Button *-- CheckButton
+Button *-- ColorPickerButton
+Button *-- MenuButton
+Button *-- OptionButton
+BaseButton *-- LinkButton
+BaseButton *-- TextureButton
+Control *-- ColorRect
+Control *-- Container
+Container *-- AspectRatioContainer
+Container *-- BoxContainer
+BoxContainer *-- HBoxContainer
+HBoxContainer *-- EditorResourcePicker
+EditorResourcePicker *-- EditorScriptPicker
+HBoxContainer *-- EditorToaster
+HBoxContainer *-- OpenXRInteractionProfileEditorBase
+OpenXRInteractionProfileEditorBase *-- OpenXRInteractionProfileEditor
+BoxContainer *-- VBoxContainer
+VBoxContainer *-- ColorPicker
+VBoxContainer *-- ScriptEditorBase
+Container *-- CenterContainer
+Container *-- EditorProperty
+Container *-- FlowContainer
+FlowContainer *-- HFlowContainer
+FlowContainer *-- VFlowContainer
+Container *-- FoldableContainer
+Container *-- GraphElement
+GraphElement *-- GraphFrame
+GraphElement *-- GraphNode
+Container *-- GridContainer
+Container *-- MarginContainer
+MarginContainer *-- EditorDock
+EditorDock *-- FileSystemDock
+Container *-- PanelContainer
+PanelContainer *-- OpenXRBindingModifierEditor
+PanelContainer *-- ScriptEditor
+Container *-- ScrollContainer
+ScrollContainer *-- EditorInspector
+Container *-- SplitContainer
+SplitContainer *-- HSplitContainer
+SplitContainer *-- VSplitContainer
+Container *-- SubViewportContainer
+Container *-- TabContainer
+Control *-- GraphEdit
+Control *-- ItemList
+Control *-- Label
+Control *-- LineEdit
+Control *-- MenuBar
+Control *-- NinePatchRect
+Control *-- Panel
+Control *-- Range
+Range *-- EditorSpinSlider
+Range *-- ProgressBar
+Range *-- ScrollBar
+ScrollBar *-- HScrollBar
+ScrollBar *-- VScrollBar
+Range *-- Slider
+Slider *-- HSlider
+Slider *-- VSlider
+Range *-- SpinBox
+Range *-- TextureProgressBar
+Control *-- ReferenceRect
+Control *-- RichTextLabel
+Control *-- Separator
+Separator *-- HSeparator
+Separator *-- VSeparator
+Control *-- TabBar
+Control *-- TextEdit
+TextEdit *-- CodeEdit
+Control *-- TextureRect
+Control *-- Tree
+Control *-- VideoStreamPlayer
+Control *-- VirtualJoystick
+CanvasItem *-- Node2D
+Node2D *-- AnimatedSprite2D
+Node2D *-- AudioListener2D
+Node2D *-- AudioStreamPlayer2D
+Node2D *-- BackBufferCopy
+Node2D *-- Bone2D
+Node2D *-- CPUParticles2D
+Node2D *-- Camera2D
+Node2D *-- CanvasGroup
+Node2D *-- CanvasModulate
+Node2D *-- CollisionObject2D
+CollisionObject2D *-- Area2D
+CollisionObject2D *-- PhysicsBody2D
+PhysicsBody2D *-- CharacterBody2D
+PhysicsBody2D *-- RigidBody2D
+RigidBody2D *-- PhysicalBone2D
+PhysicsBody2D *-- StaticBody2D
+StaticBody2D *-- AnimatableBody2D
+Node2D *-- CollisionPolygon2D
+Node2D *-- CollisionShape2D
+Node2D *-- GPUParticles2D
+Node2D *-- Joint2D
+Joint2D *-- DampedSpringJoint2D
+Joint2D *-- GrooveJoint2D
+Joint2D *-- PinJoint2D
+Node2D *-- Light2D
+Light2D *-- DirectionalLight2D
+Light2D *-- PointLight2D
+Node2D *-- LightOccluder2D
+Node2D *-- Line2D
+Node2D *-- Marker2D
+Node2D *-- MeshInstance2D
+Node2D *-- MultiMeshInstance2D
+Node2D *-- NavigationLink2D
+Node2D *-- NavigationObstacle2D
+Node2D *-- NavigationRegion2D
+Node2D *-- Parallax2D
+Node2D *-- ParallaxLayer
+Node2D *-- Path2D
+Node2D *-- PathFollow2D
+Node2D *-- Polygon2D
+Node2D *-- RayCast2D
+Node2D *-- RemoteTransform2D
+Node2D *-- ShapeCast2D
+Node2D *-- Skeleton2D
+Node2D *-- Sprite2D
+Node2D *-- TileMap
+Node2D *-- TileMapLayer
+Node2D *-- TouchScreenButton
+Node2D *-- VisibleOnScreenNotifier2D
+VisibleOnScreenNotifier2D *-- VisibleOnScreenEnabler2D
+Node *-- CanvasLayer
+CanvasLayer *-- ParallaxBackground
+Node *-- EditorFileSystem
+Node *-- EditorPlugin
+EditorPlugin *-- GridMapEditorPlugin
+Node *-- EditorResourcePreview
+Node *-- HTTPRequest
+Node *-- InstancePlaceholder
+Node *-- MissingNode
+Node *-- MultiplayerSpawner
+Node *-- MultiplayerSynchronizer
+Node *-- NavigationAgent2D
+Node *-- NavigationAgent3D
+Node *-- Node3D
+Node3D *-- AudioListener3D
+Node3D *-- AudioStreamPlayer3D
+Node3D *-- BoneAttachment3D
+Node3D *-- Camera3D
+Camera3D *-- XRCamera3D
+Node3D *-- CollisionObject3D
+CollisionObject3D *-- Area3D
+CollisionObject3D *-- PhysicsBody3D
+PhysicsBody3D *-- CharacterBody3D
+PhysicsBody3D *-- PhysicalBone3D
+PhysicsBody3D *-- RigidBody3D
+RigidBody3D *-- VehicleBody3D
+PhysicsBody3D *-- StaticBody3D
+StaticBody3D *-- AnimatableBody3D
+Node3D *-- CollisionPolygon3D
+Node3D *-- CollisionShape3D
+Node3D *-- GridMap
+Node3D *-- ImporterMeshInstance3D
+Node3D *-- Joint3D
+Joint3D *-- ConeTwistJoint3D
+Joint3D *-- Generic6DOFJoint3D
+Joint3D *-- HingeJoint3D
+Joint3D *-- PinJoint3D
+Joint3D *-- SliderJoint3D
+Node3D *-- LightmapProbe
+Node3D *-- Marker3D
+Node3D *-- NavigationLink3D
+Node3D *-- NavigationObstacle3D
+Node3D *-- NavigationRegion3D
+Node3D *-- OpenXRCompositionLayer
+OpenXRCompositionLayer *-- OpenXRCompositionLayerCylinder
+OpenXRCompositionLayer *-- OpenXRCompositionLayerEquirect
+OpenXRCompositionLayer *-- OpenXRCompositionLayerQuad
+Node3D *-- OpenXRHand
+Node3D *-- OpenXRRenderModel
+Node3D *-- OpenXRRenderModelManager
+Node3D *-- Path3D
+Node3D *-- PathFollow3D
+Node3D *-- RayCast3D
+Node3D *-- RemoteTransform3D
+Node3D *-- ShapeCast3D
+Node3D *-- Skeleton3D
+Node3D *-- SkeletonModifier3D
+SkeletonModifier3D *-- BoneConstraint3D
+BoneConstraint3D *-- AimModifier3D
+BoneConstraint3D *-- ConvertTransformModifier3D
+BoneConstraint3D *-- CopyTransformModifier3D
+SkeletonModifier3D *-- BoneTwistDisperser3D
+SkeletonModifier3D *-- IKModifier3D
+IKModifier3D *-- ChainIK3D
+ChainIK3D *-- IterateIK3D
+IterateIK3D *-- CCDIK3D
+IterateIK3D *-- FABRIK3D
+IterateIK3D *-- JacobianIK3D
+ChainIK3D *-- SplineIK3D
+IKModifier3D *-- TwoBoneIK3D
+SkeletonModifier3D *-- LimitAngularVelocityModifier3D
+SkeletonModifier3D *-- LookAtModifier3D
+SkeletonModifier3D *-- ModifierBoneTarget3D
+SkeletonModifier3D *-- PhysicalBoneSimulator3D
+SkeletonModifier3D *-- RetargetModifier3D
+SkeletonModifier3D *-- SkeletonIK3D
+SkeletonModifier3D *-- SpringBoneSimulator3D
+SkeletonModifier3D *-- XRBodyModifier3D
+SkeletonModifier3D *-- XRHandModifier3D
+Node3D *-- SpringArm3D
+Node3D *-- SpringBoneCollision3D
+SpringBoneCollision3D *-- SpringBoneCollisionCapsule3D
+SpringBoneCollision3D *-- SpringBoneCollisionPlane3D
+SpringBoneCollision3D *-- SpringBoneCollisionSphere3D
+Node3D *-- VehicleWheel3D
+Node3D *-- VisualInstance3D
+VisualInstance3D *-- Decal
+VisualInstance3D *-- FogVolume
+VisualInstance3D *-- GPUParticlesAttractor3D
+GPUParticlesAttractor3D *-- GPUParticlesAttractorBox3D
+GPUParticlesAttractor3D *-- GPUParticlesAttractorSphere3D
+GPUParticlesAttractor3D *-- GPUParticlesAttractorVectorField3D
+VisualInstance3D *-- GPUParticlesCollision3D
+GPUParticlesCollision3D *-- GPUParticlesCollisionBox3D
+GPUParticlesCollision3D *-- GPUParticlesCollisionHeightField3D
+GPUParticlesCollision3D *-- GPUParticlesCollisionSDF3D
+GPUParticlesCollision3D *-- GPUParticlesCollisionSphere3D
+VisualInstance3D *-- GeometryInstance3D
+GeometryInstance3D *-- CPUParticles3D
+GeometryInstance3D *-- CSGShape3D
+CSGShape3D *-- CSGCombiner3D
+CSGShape3D *-- CSGPrimitive3D
+CSGPrimitive3D *-- CSGBox3D
+CSGPrimitive3D *-- CSGCylinder3D
+CSGPrimitive3D *-- CSGMesh3D
+CSGPrimitive3D *-- CSGPolygon3D
+CSGPrimitive3D *-- CSGSphere3D
+CSGPrimitive3D *-- CSGTorus3D
+GeometryInstance3D *-- GPUParticles3D
+GeometryInstance3D *-- Label3D
+GeometryInstance3D *-- MeshInstance3D
+MeshInstance3D *-- SoftBody3D
+GeometryInstance3D *-- MultiMeshInstance3D
+GeometryInstance3D *-- SpriteBase3D
+SpriteBase3D *-- AnimatedSprite3D
+SpriteBase3D *-- Sprite3D
+VisualInstance3D *-- Light3D
+Light3D *-- AreaLight3D
+Light3D *-- DirectionalLight3D
+Light3D *-- OmniLight3D
+Light3D *-- SpotLight3D
+VisualInstance3D *-- LightmapGI
+VisualInstance3D *-- OccluderInstance3D
+VisualInstance3D *-- OpenXRVisibilityMask
+VisualInstance3D *-- ReflectionProbe
+VisualInstance3D *-- RootMotionView
+VisualInstance3D *-- VisibleOnScreenNotifier3D
+VisibleOnScreenNotifier3D *-- VisibleOnScreenEnabler3D
+VisualInstance3D *-- VoxelGI
+Node3D *-- XRFaceModifier3D
+Node3D *-- XRNode3D
+XRNode3D *-- XRAnchor3D
+XRNode3D *-- XRController3D
+Node3D *-- XROrigin3D
+Node *-- ResourcePreloader
+Node *-- ShaderGlobalsOverride
+Node *-- StatusIndicator
+Node *-- Timer
+Node *-- Viewport
+Viewport *-- SubViewport
+Viewport *-- Window
+Window *-- AcceptDialog
+AcceptDialog *-- ConfirmationDialog
+ConfirmationDialog *-- EditorCommandPalette
+ConfirmationDialog *-- FileDialog
+FileDialog *-- EditorFileDialog
+ConfirmationDialog *-- ScriptCreateDialog
+Window *-- Popup
+Popup *-- PopupMenu
+Popup *-- PopupPanel
+Node *-- WorldEnvironment
+Object *-- OS
+Object *-- OpenXRExtensionWrapper
+OpenXRExtensionWrapper *-- OpenXRAndroidThreadSettingsExtension
+OpenXRExtensionWrapper *-- OpenXRExtensionWrapperExtension
+OpenXRExtensionWrapper *-- OpenXRFrameSynthesisExtension
+OpenXRExtensionWrapper *-- OpenXRFutureExtension
+OpenXRExtensionWrapper *-- OpenXRRenderModelExtension
+OpenXRExtensionWrapper *-- OpenXRSpatialAnchorCapability
+OpenXRExtensionWrapper *-- OpenXRSpatialEntityExtension
+OpenXRExtensionWrapper *-- OpenXRSpatialMarkerTrackingCapability
+OpenXRExtensionWrapper *-- OpenXRSpatialPlaneTrackingCapability
+Object *-- OpenXRInteractionProfileMetadata
+Object *-- Performance
+Object *-- PhysicsDirectBodyState2D
+PhysicsDirectBodyState2D *-- PhysicsDirectBodyState2DExtension
+Object *-- PhysicsDirectBodyState3D
+PhysicsDirectBodyState3D *-- PhysicsDirectBodyState3DExtension
+Object *-- PhysicsDirectSpaceState2D
+PhysicsDirectSpaceState2D *-- PhysicsDirectSpaceState2DExtension
+Object *-- PhysicsDirectSpaceState3D
+PhysicsDirectSpaceState3D *-- PhysicsDirectSpaceState3DExtension
+Object *-- PhysicsServer2D
+PhysicsServer2D *-- PhysicsServer2DExtension
+Object *-- PhysicsServer2DManager
+Object *-- PhysicsServer3D
+PhysicsServer3D *-- PhysicsServer3DExtension
+Object *-- PhysicsServer3DManager
+Object *-- PhysicsServer3DRenderingServerHandler
+Object *-- ProjectSettings
+Object *-- RefCounted
+RefCounted *-- AESContext
+RefCounted *-- AStar2D
+RefCounted *-- AStar3D
+RefCounted *-- AStarGrid2D
+RefCounted *-- AudioEffectInstance
+AudioEffectInstance *-- AudioEffectSpectrumAnalyzerInstance
+RefCounted *-- AudioSample
+RefCounted *-- AudioSamplePlayback
+RefCounted *-- AudioStreamPlayback
+AudioStreamPlayback *-- AudioStreamPlaybackInteractive
+AudioStreamPlayback *-- AudioStreamPlaybackPlaylist
+AudioStreamPlayback *-- AudioStreamPlaybackPolyphonic
+AudioStreamPlayback *-- AudioStreamPlaybackResampled
+AudioStreamPlaybackResampled *-- AudioStreamGeneratorPlayback
+AudioStreamPlaybackResampled *-- AudioStreamPlaybackOggVorbis
+AudioStreamPlayback *-- AudioStreamPlaybackSynchronized
+RefCounted *-- CameraFeed
+RefCounted *-- CharFXTransform
+RefCounted *-- ConfigFile
+RefCounted *-- Crypto
+RefCounted *-- DTLSServer
+RefCounted *-- DirAccess
+RefCounted *-- ENetConnection
+RefCounted *-- EditorContextMenuPlugin
+RefCounted *-- EditorDebuggerPlugin
+RefCounted *-- EditorDebuggerSession
+RefCounted *-- EditorExportPlatform
+EditorExportPlatform *-- EditorExportPlatformAndroid
+EditorExportPlatform *-- EditorExportPlatformAppleEmbedded
+EditorExportPlatformAppleEmbedded *-- EditorExportPlatformIOS
+EditorExportPlatformAppleEmbedded *-- EditorExportPlatformVisionOS
+EditorExportPlatform *-- EditorExportPlatformExtension
+EditorExportPlatform *-- EditorExportPlatformMacOS
+EditorExportPlatform *-- EditorExportPlatformPC
+EditorExportPlatformPC *-- EditorExportPlatformLinuxBSD
+EditorExportPlatformPC *-- EditorExportPlatformWindows
+EditorExportPlatform *-- EditorExportPlatformWeb
+RefCounted *-- EditorExportPlugin
+RefCounted *-- EditorExportPreset
+RefCounted *-- EditorFeatureProfile
+RefCounted *-- EditorFileSystemImportFormatSupportQuery
+RefCounted *-- EditorInspectorPlugin
+RefCounted *-- EditorResourceConversionPlugin
+RefCounted *-- EditorResourcePreviewGenerator
+RefCounted *-- EditorResourceTooltipPlugin
+RefCounted *-- EditorSceneFormatImporter
+EditorSceneFormatImporter *-- EditorSceneFormatImporterBlend
+EditorSceneFormatImporter *-- EditorSceneFormatImporterFBX2GLTF
+EditorSceneFormatImporter *-- EditorSceneFormatImporterGLTF
+EditorSceneFormatImporter *-- EditorSceneFormatImporterUFBX
+RefCounted *-- EditorScenePostImport
+RefCounted *-- EditorScenePostImportPlugin
+RefCounted *-- EditorScript
+RefCounted *-- EditorTranslationParserPlugin
+RefCounted *-- EncodedObjectAsID
+RefCounted *-- EngineProfiler
+RefCounted *-- Expression
+RefCounted *-- FileAccess
+RefCounted *-- GDScriptTextDocument
+RefCounted *-- GDScriptWorkspace
+RefCounted *-- GLTFObjectModelProperty
+RefCounted *-- HMACContext
+RefCounted *-- HTTPClient
+RefCounted *-- HashingContext
+RefCounted *-- ImageFormatLoader
+ImageFormatLoader *-- ImageFormatLoaderExtension
+RefCounted *-- JavaClass
+RefCounted *-- JavaObject
+RefCounted *-- JavaScriptObject
+RefCounted *-- KinematicCollision2D
+RefCounted *-- KinematicCollision3D
+RefCounted *-- Lightmapper
+Lightmapper *-- LightmapperRD
+RefCounted *-- Logger
+RefCounted *-- MeshConvexDecompositionSettings
+RefCounted *-- MeshDataTool
+RefCounted *-- MultiplayerAPI
+MultiplayerAPI *-- MultiplayerAPIExtension
+MultiplayerAPI *-- SceneMultiplayer
+RefCounted *-- Mutex
+RefCounted *-- NavigationPathQueryParameters2D
+RefCounted *-- NavigationPathQueryParameters3D
+RefCounted *-- NavigationPathQueryResult2D
+RefCounted *-- NavigationPathQueryResult3D
+RefCounted *-- Node3DGizmo
+Node3DGizmo *-- EditorNode3DGizmo
+RefCounted *-- OggPacketSequencePlayback
+RefCounted *-- OpenXRAPIExtension
+RefCounted *-- OpenXRFutureResult
+RefCounted *-- OpenXRSpatialCapabilityConfigurationBaseHeader
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationAnchor
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationAprilTag
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationAruco
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationMicroQrCode
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationPlaneTracking
+OpenXRSpatialCapabilityConfigurationBaseHeader *-- OpenXRSpatialCapabilityConfigurationQrCode
+RefCounted *-- OpenXRSpatialComponentData
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentAnchorList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentBounded2DList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentBounded3DList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentMarkerList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentMesh2DList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentMesh3DList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentParentList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentPersistenceList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentPlaneAlignmentList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentPlaneSemanticLabelList
+OpenXRSpatialComponentData *-- OpenXRSpatialComponentPolygon2DList
+OpenXRSpatialComponentData *-- OpenXRSpatialQueryResultData
+RefCounted *-- OpenXRStructureBase
+OpenXRStructureBase *-- OpenXRSpatialContextPersistenceConfig
+RefCounted *-- PCKPacker
+RefCounted *-- PackedDataContainerRef
+RefCounted *-- PacketPeer
+PacketPeer *-- ENetPacketPeer
+PacketPeer *-- MultiplayerPeer
+MultiplayerPeer *-- ENetMultiplayerPeer
+MultiplayerPeer *-- MultiplayerPeerExtension
+MultiplayerPeer *-- OfflineMultiplayerPeer
+MultiplayerPeer *-- WebRTCMultiplayerPeer
+MultiplayerPeer *-- WebSocketMultiplayerPeer
+PacketPeer *-- PacketPeerDTLS
+PacketPeer *-- PacketPeerExtension
+PacketPeer *-- PacketPeerStream
+PacketPeer *-- PacketPeerUDP
+PacketPeer *-- WebRTCDataChannel
+WebRTCDataChannel *-- WebRTCDataChannelExtension
+PacketPeer *-- WebSocketPeer
+RefCounted *-- PhysicsPointQueryParameters2D
+RefCounted *-- PhysicsPointQueryParameters3D
+RefCounted *-- PhysicsRayQueryParameters2D
+RefCounted *-- PhysicsRayQueryParameters3D
+RefCounted *-- PhysicsShapeQueryParameters2D
+RefCounted *-- PhysicsShapeQueryParameters3D
+RefCounted *-- PhysicsTestMotionParameters2D
+RefCounted *-- PhysicsTestMotionParameters3D
+RefCounted *-- PhysicsTestMotionResult2D
+RefCounted *-- PhysicsTestMotionResult3D
+RefCounted *-- RDAccelerationStructureGeometry
+RefCounted *-- RDAccelerationStructureInstance
+RefCounted *-- RDAttachmentFormat
+RefCounted *-- RDFramebufferPass
+RefCounted *-- RDHitGroup
+RefCounted *-- RDPipelineColorBlendState
+RefCounted *-- RDPipelineColorBlendStateAttachment
+RefCounted *-- RDPipelineDepthStencilState
+RefCounted *-- RDPipelineMultisampleState
+RefCounted *-- RDPipelineRasterizationState
+RefCounted *-- RDPipelineShader
+RefCounted *-- RDPipelineSpecializationConstant
+RefCounted *-- RDSamplerState
+RefCounted *-- RDShaderSource
+RefCounted *-- RDTextureFormat
+RefCounted *-- RDTextureView
+RefCounted *-- RDUniform
+RefCounted *-- RDVertexAttribute
+RefCounted *-- RandomNumberGenerator
+RefCounted *-- RegEx
+RefCounted *-- RegExMatch
+RefCounted *-- RenderSceneBuffers
+RenderSceneBuffers *-- RenderSceneBuffersExtension
+RenderSceneBuffers *-- RenderSceneBuffersRD
+RefCounted *-- RenderSceneBuffersConfiguration
+RefCounted *-- Resource
+Resource *-- Animation
+Resource *-- AnimationLibrary
+Resource *-- AnimationNode
+AnimationNode *-- AnimationNodeExtension
+AnimationNode *-- AnimationNodeOutput
+AnimationNode *-- AnimationNodeSync
+AnimationNodeSync *-- AnimationNodeAdd2
+AnimationNodeSync *-- AnimationNodeAdd3
+AnimationNodeSync *-- AnimationNodeBlend2
+AnimationNodeSync *-- AnimationNodeBlend3
+AnimationNodeSync *-- AnimationNodeOneShot
+AnimationNodeSync *-- AnimationNodeSub2
+AnimationNodeSync *-- AnimationNodeTransition
+AnimationNode *-- AnimationNodeTimeScale
+AnimationNode *-- AnimationNodeTimeSeek
+AnimationNode *-- AnimationRootNode
+AnimationRootNode *-- AnimationNodeAnimation
+AnimationRootNode *-- AnimationNodeBlendSpace1D
+AnimationRootNode *-- AnimationNodeBlendSpace2D
+AnimationRootNode *-- AnimationNodeBlendTree
+AnimationRootNode *-- AnimationNodeStateMachine
+Resource *-- AnimationNodeStateMachinePlayback
+Resource *-- AnimationNodeStateMachineTransition
+Resource *-- AudioBusLayout
+Resource *-- AudioEffect
+AudioEffect *-- AudioEffectAmplify
+AudioEffect *-- AudioEffectCapture
+AudioEffect *-- AudioEffectChorus
+AudioEffect *-- AudioEffectCompressor
+AudioEffect *-- AudioEffectDelay
+AudioEffect *-- AudioEffectDistortion
+AudioEffect *-- AudioEffectEQ
+AudioEffectEQ *-- AudioEffectEQ10
+AudioEffectEQ *-- AudioEffectEQ21
+AudioEffectEQ *-- AudioEffectEQ6
+AudioEffect *-- AudioEffectFilter
+AudioEffectFilter *-- AudioEffectBandLimitFilter
+AudioEffectFilter *-- AudioEffectBandPassFilter
+AudioEffectFilter *-- AudioEffectHighPassFilter
+AudioEffectFilter *-- AudioEffectHighShelfFilter
+AudioEffectFilter *-- AudioEffectLowPassFilter
+AudioEffectFilter *-- AudioEffectLowShelfFilter
+AudioEffectFilter *-- AudioEffectNotchFilter
+AudioEffect *-- AudioEffectHardLimiter
+AudioEffect *-- AudioEffectLimiter
+AudioEffect *-- AudioEffectPanner
+AudioEffect *-- AudioEffectPhaser
+AudioEffect *-- AudioEffectPitchShift
+AudioEffect *-- AudioEffectRecord
+AudioEffect *-- AudioEffectReverb
+AudioEffect *-- AudioEffectSpectrumAnalyzer
+AudioEffect *-- AudioEffectStereoEnhance
+Resource *-- AudioStream
+AudioStream *-- AudioStreamGenerator
+AudioStream *-- AudioStreamInteractive
+AudioStream *-- AudioStreamMP3
+AudioStream *-- AudioStreamMicrophone
+AudioStream *-- AudioStreamOggVorbis
+AudioStream *-- AudioStreamPlaylist
+AudioStream *-- AudioStreamPolyphonic
+AudioStream *-- AudioStreamRandomizer
+AudioStream *-- AudioStreamSynchronized
+AudioStream *-- AudioStreamWAV
+Resource *-- BitMap
+Resource *-- BoneMap
+Resource *-- ButtonGroup
+Resource *-- CameraAttributes
+CameraAttributes *-- CameraAttributesPhysical
+CameraAttributes *-- CameraAttributesPractical
+Resource *-- ColorPalette
+Resource *-- Compositor
+Resource *-- CompositorEffect
+Resource *-- CryptoKey
+Resource *-- Curve
+Resource *-- Curve2D
+Resource *-- Curve3D
+Resource *-- EditorNode3DGizmoPlugin
+Resource *-- EditorSettings
+Resource *-- Environment
+Resource *-- FoldableGroup
+Resource *-- Font
+Font *-- FontFile
+Font *-- FontVariation
+Font *-- SystemFont
+Resource *-- GDExtension
+Resource *-- GLTFAccessor
+Resource *-- GLTFAnimation
+Resource *-- GLTFBufferView
+Resource *-- GLTFCamera
+Resource *-- GLTFDocument
+GLTFDocument *-- FBXDocument
+Resource *-- GLTFDocumentExtension
+GLTFDocumentExtension *-- GLTFDocumentExtensionConvertImporterMesh
+Resource *-- GLTFLight
+Resource *-- GLTFMesh
+Resource *-- GLTFNode
+Resource *-- GLTFPhysicsBody
+Resource *-- GLTFPhysicsShape
+Resource *-- GLTFSkeleton
+Resource *-- GLTFSkin
+Resource *-- GLTFSpecGloss
+Resource *-- GLTFState
+GLTFState *-- FBXState
+Resource *-- GLTFTexture
+Resource *-- GLTFTextureSampler
+Resource *-- Gradient
+Resource *-- Image
+Resource *-- ImporterMesh
+Resource *-- InputEvent
+InputEvent *-- InputEventAction
+InputEvent *-- InputEventFromWindow
+InputEventFromWindow *-- InputEventScreenDrag
+InputEventFromWindow *-- InputEventScreenTouch
+InputEventFromWindow *-- InputEventWithModifiers
+InputEventWithModifiers *-- InputEventGesture
+InputEventGesture *-- InputEventMagnifyGesture
+InputEventGesture *-- InputEventPanGesture
+InputEventWithModifiers *-- InputEventKey
+InputEventWithModifiers *-- InputEventMouse
+InputEventMouse *-- InputEventMouseButton
+InputEventMouse *-- InputEventMouseMotion
+InputEvent *-- InputEventJoypadButton
+InputEvent *-- InputEventJoypadMotion
+InputEvent *-- InputEventMIDI
+InputEvent *-- InputEventShortcut
+Resource *-- JSON
+Resource *-- JointLimitation3D
+JointLimitation3D *-- JointLimitationCone3D
+Resource *-- LabelSettings
+Resource *-- LightmapGIData
+Resource *-- Material
+Material *-- BaseMaterial3D
+BaseMaterial3D *-- ORMMaterial3D
+BaseMaterial3D *-- StandardMaterial3D
+Material *-- BlitMaterial
+Material *-- CanvasItemMaterial
+Material *-- FogMaterial
+Material *-- PanoramaSkyMaterial
+Material *-- ParticleProcessMaterial
+Material *-- PhysicalSkyMaterial
+Material *-- PlaceholderMaterial
+Material *-- ProceduralSkyMaterial
+Material *-- ShaderMaterial
+Resource *-- Mesh
+Mesh *-- ArrayMesh
+Mesh *-- ImmediateMesh
+Mesh *-- PlaceholderMesh
+Mesh *-- PrimitiveMesh
+PrimitiveMesh *-- BoxMesh
+PrimitiveMesh *-- CapsuleMesh
+PrimitiveMesh *-- CylinderMesh
+PrimitiveMesh *-- PlaneMesh
+PlaneMesh *-- QuadMesh
+PrimitiveMesh *-- PointMesh
+PrimitiveMesh *-- PrismMesh
+PrimitiveMesh *-- RibbonTrailMesh
+PrimitiveMesh *-- SphereMesh
+PrimitiveMesh *-- TextMesh
+PrimitiveMesh *-- TorusMesh
+PrimitiveMesh *-- TubeTrailMesh
+Resource *-- MeshLibrary
+Resource *-- MissingResource
+Resource *-- MultiMesh
+Resource *-- NavigationMesh
+Resource *-- NavigationMeshSourceGeometryData2D
+Resource *-- NavigationMeshSourceGeometryData3D
+Resource *-- NavigationPolygon
+Resource *-- Noise
+Noise *-- FastNoiseLite
+Resource *-- Occluder3D
+Occluder3D *-- ArrayOccluder3D
+Occluder3D *-- BoxOccluder3D
+Occluder3D *-- PolygonOccluder3D
+Occluder3D *-- QuadOccluder3D
+Occluder3D *-- SphereOccluder3D
+Resource *-- OccluderPolygon2D
+Resource *-- OggPacketSequence
+Resource *-- OpenXRAction
+Resource *-- OpenXRActionMap
+Resource *-- OpenXRActionSet
+Resource *-- OpenXRBindingModifier
+OpenXRBindingModifier *-- OpenXRActionBindingModifier
+OpenXRActionBindingModifier *-- OpenXRAnalogThresholdModifier
+OpenXRBindingModifier *-- OpenXRIPBindingModifier
+OpenXRIPBindingModifier *-- OpenXRDpadBindingModifier
+Resource *-- OpenXRHapticBase
+OpenXRHapticBase *-- OpenXRHapticVibration
+Resource *-- OpenXRIPBinding
+Resource *-- OpenXRInteractionProfile
+Resource *-- PackedDataContainer
+Resource *-- PackedScene
+Resource *-- PhysicsMaterial
+Resource *-- PolygonPathFinder
+Resource *-- RDShaderFile
+Resource *-- RDShaderSPIRV
+Resource *-- RichTextEffect
+Resource *-- SceneReplicationConfig
+Resource *-- Script
+Script *-- CSharpScript
+Script *-- GDScript
+Script *-- ScriptExtension
+Resource *-- Shader
+Shader *-- VisualShader
+Resource *-- ShaderInclude
+Resource *-- Shape2D
+Shape2D *-- CapsuleShape2D
+Shape2D *-- CircleShape2D
+Shape2D *-- ConcavePolygonShape2D
+Shape2D *-- ConvexPolygonShape2D
+Shape2D *-- RectangleShape2D
+Shape2D *-- SegmentShape2D
+Shape2D *-- SeparationRayShape2D
+Shape2D *-- WorldBoundaryShape2D
+Resource *-- Shape3D
+Shape3D *-- BoxShape3D
+Shape3D *-- CapsuleShape3D
+Shape3D *-- ConcavePolygonShape3D
+Shape3D *-- ConvexPolygonShape3D
+Shape3D *-- CylinderShape3D
+Shape3D *-- HeightMapShape3D
+Shape3D *-- SeparationRayShape3D
+Shape3D *-- SphereShape3D
+Shape3D *-- WorldBoundaryShape3D
+Resource *-- Shortcut
+Resource *-- SkeletonModification2D
+SkeletonModification2D *-- SkeletonModification2DCCDIK
+SkeletonModification2D *-- SkeletonModification2DFABRIK
+SkeletonModification2D *-- SkeletonModification2DJiggle
+SkeletonModification2D *-- SkeletonModification2DLookAt
+SkeletonModification2D *-- SkeletonModification2DPhysicalBones
+SkeletonModification2D *-- SkeletonModification2DStackHolder
+SkeletonModification2D *-- SkeletonModification2DTwoBoneIK
+Resource *-- SkeletonModificationStack2D
+Resource *-- SkeletonProfile
+SkeletonProfile *-- SkeletonProfileHumanoid
+Resource *-- Skin
+Resource *-- Sky
+Resource *-- SpriteFrames
+Resource *-- StyleBox
+StyleBox *-- StyleBoxEmpty
+StyleBox *-- StyleBoxFlat
+StyleBox *-- StyleBoxLine
+StyleBox *-- StyleBoxTexture
+Resource *-- SyntaxHighlighter
+SyntaxHighlighter *-- CodeHighlighter
+SyntaxHighlighter *-- EditorSyntaxHighlighter
+EditorSyntaxHighlighter *-- GDScriptSyntaxHighlighter
+Resource *-- Texture
+Texture *-- Texture2D
+Texture2D *-- AnimatedTexture
+Texture2D *-- AtlasTexture
+Texture2D *-- CameraTexture
+Texture2D *-- CanvasTexture
+Texture2D *-- CompressedTexture2D
+Texture2D *-- CurveTexture
+Texture2D *-- CurveXYZTexture
+Texture2D *-- DPITexture
+Texture2D *-- DrawableTexture2D
+Texture2D *-- ExternalTexture
+Texture2D *-- GradientTexture1D
+Texture2D *-- GradientTexture2D
+Texture2D *-- ImageTexture
+Texture2D *-- MeshTexture
+Texture2D *-- NoiseTexture2D
+Texture2D *-- PlaceholderTexture2D
+Texture2D *-- PortableCompressedTexture2D
+Texture2D *-- Texture2DRD
+Texture2D *-- ViewportTexture
+Texture *-- Texture3D
+Texture3D *-- CompressedTexture3D
+Texture3D *-- ImageTexture3D
+Texture3D *-- NoiseTexture3D
+Texture3D *-- PlaceholderTexture3D
+Texture3D *-- Texture3DRD
+Texture *-- TextureLayered
+TextureLayered *-- CompressedTextureLayered
+CompressedTextureLayered *-- CompressedCubemap
+CompressedTextureLayered *-- CompressedCubemapArray
+CompressedTextureLayered *-- CompressedTexture2DArray
+TextureLayered *-- ImageTextureLayered
+ImageTextureLayered *-- Cubemap
+ImageTextureLayered *-- CubemapArray
+ImageTextureLayered *-- Texture2DArray
+TextureLayered *-- PlaceholderTextureLayered
+PlaceholderTextureLayered *-- PlaceholderCubemap
+PlaceholderTextureLayered *-- PlaceholderCubemapArray
+PlaceholderTextureLayered *-- PlaceholderTexture2DArray
+TextureLayered *-- TextureLayeredRD
+TextureLayeredRD *-- Texture2DArrayRD
+TextureLayeredRD *-- TextureCubemapArrayRD
+TextureLayeredRD *-- TextureCubemapRD
+Resource *-- Theme
+Resource *-- TileMapPattern
+Resource *-- TileSet
+Resource *-- TileSetSource
+TileSetSource *-- TileSetAtlasSource
+TileSetSource *-- TileSetScenesCollectionSource
+Resource *-- Translation
+Translation *-- OptimizedTranslation
+Resource *-- VideoStream
+VideoStream *-- VideoStreamTheora
+Resource *-- VideoStreamPlayback
+Resource *-- VisualShaderNode
+VisualShaderNode *-- VisualShaderNodeBillboard
+VisualShaderNode *-- VisualShaderNodeClamp
+VisualShaderNode *-- VisualShaderNodeColorFunc
+VisualShaderNode *-- VisualShaderNodeColorOp
+VisualShaderNode *-- VisualShaderNodeCompare
+VisualShaderNode *-- VisualShaderNodeConstant
+VisualShaderNodeConstant *-- VisualShaderNodeBooleanConstant
+VisualShaderNodeConstant *-- VisualShaderNodeColorConstant
+VisualShaderNodeConstant *-- VisualShaderNodeFloatConstant
+VisualShaderNodeConstant *-- VisualShaderNodeIntConstant
+VisualShaderNodeConstant *-- VisualShaderNodeTransformConstant
+VisualShaderNodeConstant *-- VisualShaderNodeUIntConstant
+VisualShaderNodeConstant *-- VisualShaderNodeVec2Constant
+VisualShaderNodeConstant *-- VisualShaderNodeVec3Constant
+VisualShaderNodeConstant *-- VisualShaderNodeVec4Constant
+VisualShaderNode *-- VisualShaderNodeCubemap
+VisualShaderNode *-- VisualShaderNodeCustom
+VisualShaderNode *-- VisualShaderNodeDerivativeFunc
+VisualShaderNode *-- VisualShaderNodeDeterminant
+VisualShaderNode *-- VisualShaderNodeDistanceFade
+VisualShaderNode *-- VisualShaderNodeDotProduct
+VisualShaderNode *-- VisualShaderNodeFloatFunc
+VisualShaderNode *-- VisualShaderNodeFloatOp
+VisualShaderNode *-- VisualShaderNodeFresnel
+VisualShaderNode *-- VisualShaderNodeIf
+VisualShaderNode *-- VisualShaderNodeInput
+VisualShaderNode *-- VisualShaderNodeIntFunc
+VisualShaderNode *-- VisualShaderNodeIntOp
+VisualShaderNode *-- VisualShaderNodeIs
+VisualShaderNode *-- VisualShaderNodeLinearSceneDepth
+VisualShaderNode *-- VisualShaderNodeMix
+VisualShaderNode *-- VisualShaderNodeMultiplyAdd
+VisualShaderNode *-- VisualShaderNodeOuterProduct
+VisualShaderNode *-- VisualShaderNodeOutput
+VisualShaderNodeOutput *-- VisualShaderNodeParticleOutput
+VisualShaderNode *-- VisualShaderNodeParameter
+VisualShaderNodeParameter *-- VisualShaderNodeBooleanParameter
+VisualShaderNodeParameter *-- VisualShaderNodeColorParameter
+VisualShaderNodeParameter *-- VisualShaderNodeFloatParameter
+VisualShaderNodeParameter *-- VisualShaderNodeIntParameter
+VisualShaderNodeParameter *-- VisualShaderNodeTextureParameter
+VisualShaderNodeTextureParameter *-- VisualShaderNodeCubemapParameter
+VisualShaderNodeTextureParameter *-- VisualShaderNodeTexture2DArrayParameter
+VisualShaderNodeTextureParameter *-- VisualShaderNodeTexture2DParameter
+VisualShaderNodeTextureParameter *-- VisualShaderNodeTexture3DParameter
+VisualShaderNodeTextureParameter *-- VisualShaderNodeTextureParameterTriplanar
+VisualShaderNodeParameter *-- VisualShaderNodeTransformParameter
+VisualShaderNodeParameter *-- VisualShaderNodeUIntParameter
+VisualShaderNodeParameter *-- VisualShaderNodeVec2Parameter
+VisualShaderNodeParameter *-- VisualShaderNodeVec3Parameter
+VisualShaderNodeParameter *-- VisualShaderNodeVec4Parameter
+VisualShaderNode *-- VisualShaderNodeParameterRef
+VisualShaderNode *-- VisualShaderNodeParticleAccelerator
+VisualShaderNode *-- VisualShaderNodeParticleConeVelocity
+VisualShaderNode *-- VisualShaderNodeParticleEmit
+VisualShaderNode *-- VisualShaderNodeParticleEmitter
+VisualShaderNodeParticleEmitter *-- VisualShaderNodeParticleBoxEmitter
+VisualShaderNodeParticleEmitter *-- VisualShaderNodeParticleMeshEmitter
+VisualShaderNodeParticleEmitter *-- VisualShaderNodeParticleRingEmitter
+VisualShaderNodeParticleEmitter *-- VisualShaderNodeParticleSphereEmitter
+VisualShaderNode *-- VisualShaderNodeParticleMultiplyByAxisAngle
+VisualShaderNode *-- VisualShaderNodeParticleRandomness
+VisualShaderNode *-- VisualShaderNodeProximityFade
+VisualShaderNode *-- VisualShaderNodeRandomRange
+VisualShaderNode *-- VisualShaderNodeRemap
+VisualShaderNode *-- VisualShaderNodeReroute
+VisualShaderNode *-- VisualShaderNodeResizableBase
+VisualShaderNodeResizableBase *-- VisualShaderNodeCurveTexture
+VisualShaderNodeResizableBase *-- VisualShaderNodeCurveXYZTexture
+VisualShaderNodeResizableBase *-- VisualShaderNodeFrame
+VisualShaderNodeFrame *-- VisualShaderNodeComment
+VisualShaderNodeResizableBase *-- VisualShaderNodeGroupBase
+VisualShaderNodeGroupBase *-- VisualShaderNodeExpression
+VisualShaderNodeExpression *-- VisualShaderNodeGlobalExpression
+VisualShaderNode *-- VisualShaderNodeRotationByAxis
+VisualShaderNode *-- VisualShaderNodeSDFRaymarch
+VisualShaderNode *-- VisualShaderNodeSDFToScreenUV
+VisualShaderNode *-- VisualShaderNodeSample3D
+VisualShaderNodeSample3D *-- VisualShaderNodeTexture2DArray
+VisualShaderNodeSample3D *-- VisualShaderNodeTexture3D
+VisualShaderNode *-- VisualShaderNodeScreenNormalWorldSpace
+VisualShaderNode *-- VisualShaderNodeScreenUVToSDF
+VisualShaderNode *-- VisualShaderNodeSmoothStep
+VisualShaderNode *-- VisualShaderNodeStep
+VisualShaderNode *-- VisualShaderNodeSwitch
+VisualShaderNode *-- VisualShaderNodeTexture
+VisualShaderNode *-- VisualShaderNodeTextureSDF
+VisualShaderNode *-- VisualShaderNodeTextureSDFNormal
+VisualShaderNode *-- VisualShaderNodeTransformCompose
+VisualShaderNode *-- VisualShaderNodeTransformDecompose
+VisualShaderNode *-- VisualShaderNodeTransformFunc
+VisualShaderNode *-- VisualShaderNodeTransformOp
+VisualShaderNode *-- VisualShaderNodeTransformVecMult
+VisualShaderNode *-- VisualShaderNodeUIntFunc
+VisualShaderNode *-- VisualShaderNodeUIntOp
+VisualShaderNode *-- VisualShaderNodeUVFunc
+VisualShaderNode *-- VisualShaderNodeUVPolarCoord
+VisualShaderNode *-- VisualShaderNodeVarying
+VisualShaderNodeVarying *-- VisualShaderNodeVaryingGetter
+VisualShaderNodeVarying *-- VisualShaderNodeVaryingSetter
+VisualShaderNode *-- VisualShaderNodeVectorBase
+VisualShaderNodeVectorBase *-- VisualShaderNodeFaceForward
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorCompose
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorDecompose
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorDistance
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorFunc
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorLen
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorOp
+VisualShaderNodeVectorBase *-- VisualShaderNodeVectorRefract
+VisualShaderNode *-- VisualShaderNodeWorldPositionFromDepth
+Resource *-- VoxelGIData
+Resource *-- World2D
+Resource *-- World3D
+Resource *-- X509Certificate
+RefCounted *-- ResourceFormatLoader
+RefCounted *-- ResourceFormatSaver
+RefCounted *-- ResourceImporter
+ResourceImporter *-- EditorImportPlugin
+ResourceImporter *-- ResourceImporterBMFont
+ResourceImporter *-- ResourceImporterBitMap
+ResourceImporter *-- ResourceImporterCSVTranslation
+ResourceImporter *-- ResourceImporterDynamicFont
+ResourceImporter *-- ResourceImporterImage
+ResourceImporter *-- ResourceImporterImageFont
+ResourceImporter *-- ResourceImporterLayeredTexture
+ResourceImporter *-- ResourceImporterMP3
+ResourceImporter *-- ResourceImporterOBJ
+ResourceImporter *-- ResourceImporterOggVorbis
+ResourceImporter *-- ResourceImporterSVG
+ResourceImporter *-- ResourceImporterScene
+ResourceImporter *-- ResourceImporterShaderFile
+ResourceImporter *-- ResourceImporterTexture
+ResourceImporter *-- ResourceImporterTextureAtlas
+ResourceImporter *-- ResourceImporterWAV
+RefCounted *-- SceneState
+RefCounted *-- SceneTreeTimer
+RefCounted *-- ScriptBacktrace
+RefCounted *-- Semaphore
+RefCounted *-- SkinReference
+RefCounted *-- SocketServer
+SocketServer *-- TCPServer
+SocketServer *-- UDSServer
+RefCounted *-- StreamPeer
+StreamPeer *-- StreamPeerBuffer
+StreamPeer *-- StreamPeerExtension
+StreamPeer *-- StreamPeerGZIP
+StreamPeer *-- StreamPeerSocket
+StreamPeerSocket *-- StreamPeerTCP
+StreamPeerSocket *-- StreamPeerUDS
+StreamPeer *-- StreamPeerTLS
+RefCounted *-- SurfaceTool
+RefCounted *-- TLSOptions
+RefCounted *-- TextLine
+RefCounted *-- TextParagraph
+RefCounted *-- TextServer
+TextServer *-- TextServerExtension
+TextServerExtension *-- TextServerAdvanced
+TextServerExtension *-- TextServerDummy
+TextServerExtension *-- TextServerFallback
+RefCounted *-- Thread
+RefCounted *-- TranslationDomain
+RefCounted *-- TriangleMesh
+RefCounted *-- Tween
+RefCounted *-- Tweener
+Tweener *-- AwaitTweener
+Tweener *-- CallbackTweener
+Tweener *-- IntervalTweener
+Tweener *-- MethodTweener
+Tweener *-- PropertyTweener
+Tweener *-- SubtweenTweener
+RefCounted *-- UDPServer
+RefCounted *-- UPNP
+RefCounted *-- UPNPDevice
+RefCounted *-- WeakRef
+RefCounted *-- WebRTCPeerConnection
+WebRTCPeerConnection *-- WebRTCPeerConnectionExtension
+RefCounted *-- XMLParser
+RefCounted *-- XRInterface
+XRInterface *-- MobileVRInterface
+XRInterface *-- OpenXRInterface
+XRInterface *-- WebXRInterface
+XRInterface *-- XRInterfaceExtension
+RefCounted *-- XRPose
+RefCounted *-- XRTracker
+XRTracker *-- XRFaceTracker
+XRTracker *-- XRPositionalTracker
+XRPositionalTracker *-- OpenXRSpatialEntityTracker
+OpenXRSpatialEntityTracker *-- OpenXRAnchorTracker
+OpenXRSpatialEntityTracker *-- OpenXRMarkerTracker
+OpenXRSpatialEntityTracker *-- OpenXRPlaneTracker
+XRPositionalTracker *-- XRBodyTracker
+XRPositionalTracker *-- XRControllerTracker
+XRPositionalTracker *-- XRHandTracker
+RefCounted *-- ZIPPacker
+RefCounted *-- ZIPReader
+Object *-- RenderData
+RenderData *-- RenderDataExtension
+RenderData *-- RenderDataRD
+Object *-- RenderSceneData
+RenderSceneData *-- RenderSceneDataExtension
+RenderSceneData *-- RenderSceneDataRD
+Object *-- RenderingDevice
+Object *-- RenderingServer
+Object *-- ResourceLoader
+Object *-- ResourceSaver
+Object *-- ResourceUID
+Object *-- ScriptLanguage
+ScriptLanguage *-- ScriptLanguageExtension
+Object *-- ShaderIncludeDB
+Object *-- TextServerManager
+Object *-- ThemeDB
+Object *-- TileData
+Object *-- Time
+Object *-- TranslationServer
+Object *-- TreeItem
+Object *-- UndoRedo
+Object *-- UniformSetCacheRD
+Object *-- WorkerThreadPool
+Object *-- XRServer
+Object *-- XRVRS
+
+@enduml
