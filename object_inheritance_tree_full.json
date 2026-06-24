@@ -1,0 +1,4324 @@
+{
+  "name": "Object",
+  "children": [
+    {
+      "name": "AccessibilityServer",
+      "children": []
+    },
+    {
+      "name": "AudioServer",
+      "children": []
+    },
+    {
+      "name": "CameraServer",
+      "children": []
+    },
+    {
+      "name": "ClassDB",
+      "children": []
+    },
+    {
+      "name": "DisplayServer",
+      "children": []
+    },
+    {
+      "name": "EditorFileSystemDirectory",
+      "children": []
+    },
+    {
+      "name": "EditorInterface",
+      "children": []
+    },
+    {
+      "name": "EditorPaths",
+      "children": []
+    },
+    {
+      "name": "EditorSelection",
+      "children": []
+    },
+    {
+      "name": "EditorUndoRedoManager",
+      "children": []
+    },
+    {
+      "name": "EditorVCSInterface",
+      "children": []
+    },
+    {
+      "name": "Engine",
+      "children": []
+    },
+    {
+      "name": "EngineDebugger",
+      "children": []
+    },
+    {
+      "name": "FramebufferCacheRD",
+      "children": []
+    },
+    {
+      "name": "GDExtensionManager",
+      "children": []
+    },
+    {
+      "name": "Geometry2D",
+      "children": []
+    },
+    {
+      "name": "Geometry3D",
+      "children": []
+    },
+    {
+      "name": "GodotInstance",
+      "children": []
+    },
+    {
+      "name": "IP",
+      "children": []
+    },
+    {
+      "name": "Input",
+      "children": []
+    },
+    {
+      "name": "InputMap",
+      "children": []
+    },
+    {
+      "name": "JNISingleton",
+      "children": []
+    },
+    {
+      "name": "JSONRPC",
+      "children": [
+        {
+          "name": "GDScriptLanguageProtocol",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "JavaClassWrapper",
+      "children": []
+    },
+    {
+      "name": "JavaScriptBridge",
+      "children": []
+    },
+    {
+      "name": "MainLoop",
+      "children": [
+        {
+          "name": "SceneTree",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Marshalls",
+      "children": []
+    },
+    {
+      "name": "MovieWriter",
+      "children": []
+    },
+    {
+      "name": "NativeMenu",
+      "children": []
+    },
+    {
+      "name": "NavigationMeshGenerator",
+      "children": []
+    },
+    {
+      "name": "NavigationServer2D",
+      "children": []
+    },
+    {
+      "name": "NavigationServer2DManager",
+      "children": []
+    },
+    {
+      "name": "NavigationServer3D",
+      "children": []
+    },
+    {
+      "name": "NavigationServer3DManager",
+      "children": []
+    },
+    {
+      "name": "Node",
+      "children": [
+        {
+          "name": "AnimationMixer",
+          "children": [
+            {
+              "name": "AnimationPlayer",
+              "children": []
+            },
+            {
+              "name": "AnimationTree",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "AudioStreamPlayer",
+          "children": []
+        },
+        {
+          "name": "CanvasItem",
+          "children": [
+            {
+              "name": "Control",
+              "children": [
+                {
+                  "name": "BaseButton",
+                  "children": [
+                    {
+                      "name": "Button",
+                      "children": [
+                        {
+                          "name": "CheckBox",
+                          "children": []
+                        },
+                        {
+                          "name": "CheckButton",
+                          "children": []
+                        },
+                        {
+                          "name": "ColorPickerButton",
+                          "children": []
+                        },
+                        {
+                          "name": "MenuButton",
+                          "children": []
+                        },
+                        {
+                          "name": "OptionButton",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "LinkButton",
+                      "children": []
+                    },
+                    {
+                      "name": "TextureButton",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ColorRect",
+                  "children": []
+                },
+                {
+                  "name": "Container",
+                  "children": [
+                    {
+                      "name": "AspectRatioContainer",
+                      "children": []
+                    },
+                    {
+                      "name": "BoxContainer",
+                      "children": [
+                        {
+                          "name": "HBoxContainer",
+                          "children": [
+                            {
+                              "name": "EditorResourcePicker",
+                              "children": [
+                                {
+                                  "name": "EditorScriptPicker",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "EditorToaster",
+                              "children": []
+                            },
+                            {
+                              "name": "OpenXRInteractionProfileEditorBase",
+                              "children": [
+                                {
+                                  "name": "OpenXRInteractionProfileEditor",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "VBoxContainer",
+                          "children": [
+                            {
+                              "name": "ColorPicker",
+                              "children": []
+                            },
+                            {
+                              "name": "ScriptEditorBase",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "CenterContainer",
+                      "children": []
+                    },
+                    {
+                      "name": "EditorProperty",
+                      "children": []
+                    },
+                    {
+                      "name": "FlowContainer",
+                      "children": [
+                        {
+                          "name": "HFlowContainer",
+                          "children": []
+                        },
+                        {
+                          "name": "VFlowContainer",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "FoldableContainer",
+                      "children": []
+                    },
+                    {
+                      "name": "GraphElement",
+                      "children": [
+                        {
+                          "name": "GraphFrame",
+                          "children": []
+                        },
+                        {
+                          "name": "GraphNode",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "GridContainer",
+                      "children": []
+                    },
+                    {
+                      "name": "MarginContainer",
+                      "children": [
+                        {
+                          "name": "EditorDock",
+                          "children": [
+                            {
+                              "name": "FileSystemDock",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "PanelContainer",
+                      "children": [
+                        {
+                          "name": "OpenXRBindingModifierEditor",
+                          "children": []
+                        },
+                        {
+                          "name": "ScriptEditor",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ScrollContainer",
+                      "children": [
+                        {
+                          "name": "EditorInspector",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "SplitContainer",
+                      "children": [
+                        {
+                          "name": "HSplitContainer",
+                          "children": []
+                        },
+                        {
+                          "name": "VSplitContainer",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "SubViewportContainer",
+                      "children": []
+                    },
+                    {
+                      "name": "TabContainer",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "GraphEdit",
+                  "children": []
+                },
+                {
+                  "name": "ItemList",
+                  "children": []
+                },
+                {
+                  "name": "Label",
+                  "children": []
+                },
+                {
+                  "name": "LineEdit",
+                  "children": []
+                },
+                {
+                  "name": "MenuBar",
+                  "children": []
+                },
+                {
+                  "name": "NinePatchRect",
+                  "children": []
+                },
+                {
+                  "name": "Panel",
+                  "children": []
+                },
+                {
+                  "name": "Range",
+                  "children": [
+                    {
+                      "name": "EditorSpinSlider",
+                      "children": []
+                    },
+                    {
+                      "name": "ProgressBar",
+                      "children": []
+                    },
+                    {
+                      "name": "ScrollBar",
+                      "children": [
+                        {
+                          "name": "HScrollBar",
+                          "children": []
+                        },
+                        {
+                          "name": "VScrollBar",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Slider",
+                      "children": [
+                        {
+                          "name": "HSlider",
+                          "children": []
+                        },
+                        {
+                          "name": "VSlider",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "SpinBox",
+                      "children": []
+                    },
+                    {
+                      "name": "TextureProgressBar",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "ReferenceRect",
+                  "children": []
+                },
+                {
+                  "name": "RichTextLabel",
+                  "children": []
+                },
+                {
+                  "name": "Separator",
+                  "children": [
+                    {
+                      "name": "HSeparator",
+                      "children": []
+                    },
+                    {
+                      "name": "VSeparator",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "TabBar",
+                  "children": []
+                },
+                {
+                  "name": "TextEdit",
+                  "children": [
+                    {
+                      "name": "CodeEdit",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "TextureRect",
+                  "children": []
+                },
+                {
+                  "name": "Tree",
+                  "children": []
+                },
+                {
+                  "name": "VideoStreamPlayer",
+                  "children": []
+                },
+                {
+                  "name": "VirtualJoystick",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Node2D",
+              "children": [
+                {
+                  "name": "AnimatedSprite2D",
+                  "children": []
+                },
+                {
+                  "name": "AudioListener2D",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamPlayer2D",
+                  "children": []
+                },
+                {
+                  "name": "BackBufferCopy",
+                  "children": []
+                },
+                {
+                  "name": "Bone2D",
+                  "children": []
+                },
+                {
+                  "name": "CPUParticles2D",
+                  "children": []
+                },
+                {
+                  "name": "Camera2D",
+                  "children": []
+                },
+                {
+                  "name": "CanvasGroup",
+                  "children": []
+                },
+                {
+                  "name": "CanvasModulate",
+                  "children": []
+                },
+                {
+                  "name": "CollisionObject2D",
+                  "children": [
+                    {
+                      "name": "Area2D",
+                      "children": []
+                    },
+                    {
+                      "name": "PhysicsBody2D",
+                      "children": [
+                        {
+                          "name": "CharacterBody2D",
+                          "children": []
+                        },
+                        {
+                          "name": "RigidBody2D",
+                          "children": [
+                            {
+                              "name": "PhysicalBone2D",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "StaticBody2D",
+                          "children": [
+                            {
+                              "name": "AnimatableBody2D",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CollisionPolygon2D",
+                  "children": []
+                },
+                {
+                  "name": "CollisionShape2D",
+                  "children": []
+                },
+                {
+                  "name": "GPUParticles2D",
+                  "children": []
+                },
+                {
+                  "name": "Joint2D",
+                  "children": [
+                    {
+                      "name": "DampedSpringJoint2D",
+                      "children": []
+                    },
+                    {
+                      "name": "GrooveJoint2D",
+                      "children": []
+                    },
+                    {
+                      "name": "PinJoint2D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Light2D",
+                  "children": [
+                    {
+                      "name": "DirectionalLight2D",
+                      "children": []
+                    },
+                    {
+                      "name": "PointLight2D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "LightOccluder2D",
+                  "children": []
+                },
+                {
+                  "name": "Line2D",
+                  "children": []
+                },
+                {
+                  "name": "Marker2D",
+                  "children": []
+                },
+                {
+                  "name": "MeshInstance2D",
+                  "children": []
+                },
+                {
+                  "name": "MultiMeshInstance2D",
+                  "children": []
+                },
+                {
+                  "name": "NavigationLink2D",
+                  "children": []
+                },
+                {
+                  "name": "NavigationObstacle2D",
+                  "children": []
+                },
+                {
+                  "name": "NavigationRegion2D",
+                  "children": []
+                },
+                {
+                  "name": "Parallax2D",
+                  "children": []
+                },
+                {
+                  "name": "ParallaxLayer",
+                  "children": []
+                },
+                {
+                  "name": "Path2D",
+                  "children": []
+                },
+                {
+                  "name": "PathFollow2D",
+                  "children": []
+                },
+                {
+                  "name": "Polygon2D",
+                  "children": []
+                },
+                {
+                  "name": "RayCast2D",
+                  "children": []
+                },
+                {
+                  "name": "RemoteTransform2D",
+                  "children": []
+                },
+                {
+                  "name": "ShapeCast2D",
+                  "children": []
+                },
+                {
+                  "name": "Skeleton2D",
+                  "children": []
+                },
+                {
+                  "name": "Sprite2D",
+                  "children": []
+                },
+                {
+                  "name": "TileMap",
+                  "children": []
+                },
+                {
+                  "name": "TileMapLayer",
+                  "children": []
+                },
+                {
+                  "name": "TouchScreenButton",
+                  "children": []
+                },
+                {
+                  "name": "VisibleOnScreenNotifier2D",
+                  "children": [
+                    {
+                      "name": "VisibleOnScreenEnabler2D",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CanvasLayer",
+          "children": [
+            {
+              "name": "ParallaxBackground",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "EditorFileSystem",
+          "children": []
+        },
+        {
+          "name": "EditorPlugin",
+          "children": [
+            {
+              "name": "GridMapEditorPlugin",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "EditorResourcePreview",
+          "children": []
+        },
+        {
+          "name": "HTTPRequest",
+          "children": []
+        },
+        {
+          "name": "InstancePlaceholder",
+          "children": []
+        },
+        {
+          "name": "MissingNode",
+          "children": []
+        },
+        {
+          "name": "MultiplayerSpawner",
+          "children": []
+        },
+        {
+          "name": "MultiplayerSynchronizer",
+          "children": []
+        },
+        {
+          "name": "NavigationAgent2D",
+          "children": []
+        },
+        {
+          "name": "NavigationAgent3D",
+          "children": []
+        },
+        {
+          "name": "Node3D",
+          "children": [
+            {
+              "name": "AudioListener3D",
+              "children": []
+            },
+            {
+              "name": "AudioStreamPlayer3D",
+              "children": []
+            },
+            {
+              "name": "BoneAttachment3D",
+              "children": []
+            },
+            {
+              "name": "Camera3D",
+              "children": [
+                {
+                  "name": "XRCamera3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "CollisionObject3D",
+              "children": [
+                {
+                  "name": "Area3D",
+                  "children": []
+                },
+                {
+                  "name": "PhysicsBody3D",
+                  "children": [
+                    {
+                      "name": "CharacterBody3D",
+                      "children": []
+                    },
+                    {
+                      "name": "PhysicalBone3D",
+                      "children": []
+                    },
+                    {
+                      "name": "RigidBody3D",
+                      "children": [
+                        {
+                          "name": "VehicleBody3D",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "StaticBody3D",
+                      "children": [
+                        {
+                          "name": "AnimatableBody3D",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CollisionPolygon3D",
+              "children": []
+            },
+            {
+              "name": "CollisionShape3D",
+              "children": []
+            },
+            {
+              "name": "GridMap",
+              "children": []
+            },
+            {
+              "name": "ImporterMeshInstance3D",
+              "children": []
+            },
+            {
+              "name": "Joint3D",
+              "children": [
+                {
+                  "name": "ConeTwistJoint3D",
+                  "children": []
+                },
+                {
+                  "name": "Generic6DOFJoint3D",
+                  "children": []
+                },
+                {
+                  "name": "HingeJoint3D",
+                  "children": []
+                },
+                {
+                  "name": "PinJoint3D",
+                  "children": []
+                },
+                {
+                  "name": "SliderJoint3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "LightmapProbe",
+              "children": []
+            },
+            {
+              "name": "Marker3D",
+              "children": []
+            },
+            {
+              "name": "NavigationLink3D",
+              "children": []
+            },
+            {
+              "name": "NavigationObstacle3D",
+              "children": []
+            },
+            {
+              "name": "NavigationRegion3D",
+              "children": []
+            },
+            {
+              "name": "OpenXRCompositionLayer",
+              "children": [
+                {
+                  "name": "OpenXRCompositionLayerCylinder",
+                  "children": []
+                },
+                {
+                  "name": "OpenXRCompositionLayerEquirect",
+                  "children": []
+                },
+                {
+                  "name": "OpenXRCompositionLayerQuad",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "OpenXRHand",
+              "children": []
+            },
+            {
+              "name": "OpenXRRenderModel",
+              "children": []
+            },
+            {
+              "name": "OpenXRRenderModelManager",
+              "children": []
+            },
+            {
+              "name": "Path3D",
+              "children": []
+            },
+            {
+              "name": "PathFollow3D",
+              "children": []
+            },
+            {
+              "name": "RayCast3D",
+              "children": []
+            },
+            {
+              "name": "RemoteTransform3D",
+              "children": []
+            },
+            {
+              "name": "ShapeCast3D",
+              "children": []
+            },
+            {
+              "name": "Skeleton3D",
+              "children": []
+            },
+            {
+              "name": "SkeletonModifier3D",
+              "children": [
+                {
+                  "name": "BoneConstraint3D",
+                  "children": [
+                    {
+                      "name": "AimModifier3D",
+                      "children": []
+                    },
+                    {
+                      "name": "ConvertTransformModifier3D",
+                      "children": []
+                    },
+                    {
+                      "name": "CopyTransformModifier3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "BoneTwistDisperser3D",
+                  "children": []
+                },
+                {
+                  "name": "IKModifier3D",
+                  "children": [
+                    {
+                      "name": "ChainIK3D",
+                      "children": [
+                        {
+                          "name": "IterateIK3D",
+                          "children": [
+                            {
+                              "name": "CCDIK3D",
+                              "children": []
+                            },
+                            {
+                              "name": "FABRIK3D",
+                              "children": []
+                            },
+                            {
+                              "name": "JacobianIK3D",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SplineIK3D",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "TwoBoneIK3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "LimitAngularVelocityModifier3D",
+                  "children": []
+                },
+                {
+                  "name": "LookAtModifier3D",
+                  "children": []
+                },
+                {
+                  "name": "ModifierBoneTarget3D",
+                  "children": []
+                },
+                {
+                  "name": "PhysicalBoneSimulator3D",
+                  "children": []
+                },
+                {
+                  "name": "RetargetModifier3D",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonIK3D",
+                  "children": []
+                },
+                {
+                  "name": "SpringBoneSimulator3D",
+                  "children": []
+                },
+                {
+                  "name": "XRBodyModifier3D",
+                  "children": []
+                },
+                {
+                  "name": "XRHandModifier3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "SpringArm3D",
+              "children": []
+            },
+            {
+              "name": "SpringBoneCollision3D",
+              "children": [
+                {
+                  "name": "SpringBoneCollisionCapsule3D",
+                  "children": []
+                },
+                {
+                  "name": "SpringBoneCollisionPlane3D",
+                  "children": []
+                },
+                {
+                  "name": "SpringBoneCollisionSphere3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "VehicleWheel3D",
+              "children": []
+            },
+            {
+              "name": "VisualInstance3D",
+              "children": [
+                {
+                  "name": "Decal",
+                  "children": []
+                },
+                {
+                  "name": "FogVolume",
+                  "children": []
+                },
+                {
+                  "name": "GPUParticlesAttractor3D",
+                  "children": [
+                    {
+                      "name": "GPUParticlesAttractorBox3D",
+                      "children": []
+                    },
+                    {
+                      "name": "GPUParticlesAttractorSphere3D",
+                      "children": []
+                    },
+                    {
+                      "name": "GPUParticlesAttractorVectorField3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "GPUParticlesCollision3D",
+                  "children": [
+                    {
+                      "name": "GPUParticlesCollisionBox3D",
+                      "children": []
+                    },
+                    {
+                      "name": "GPUParticlesCollisionHeightField3D",
+                      "children": []
+                    },
+                    {
+                      "name": "GPUParticlesCollisionSDF3D",
+                      "children": []
+                    },
+                    {
+                      "name": "GPUParticlesCollisionSphere3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "GeometryInstance3D",
+                  "children": [
+                    {
+                      "name": "CPUParticles3D",
+                      "children": []
+                    },
+                    {
+                      "name": "CSGShape3D",
+                      "children": [
+                        {
+                          "name": "CSGCombiner3D",
+                          "children": []
+                        },
+                        {
+                          "name": "CSGPrimitive3D",
+                          "children": [
+                            {
+                              "name": "CSGBox3D",
+                              "children": []
+                            },
+                            {
+                              "name": "CSGCylinder3D",
+                              "children": []
+                            },
+                            {
+                              "name": "CSGMesh3D",
+                              "children": []
+                            },
+                            {
+                              "name": "CSGPolygon3D",
+                              "children": []
+                            },
+                            {
+                              "name": "CSGSphere3D",
+                              "children": []
+                            },
+                            {
+                              "name": "CSGTorus3D",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "GPUParticles3D",
+                      "children": []
+                    },
+                    {
+                      "name": "Label3D",
+                      "children": []
+                    },
+                    {
+                      "name": "MeshInstance3D",
+                      "children": [
+                        {
+                          "name": "SoftBody3D",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "MultiMeshInstance3D",
+                      "children": []
+                    },
+                    {
+                      "name": "SpriteBase3D",
+                      "children": [
+                        {
+                          "name": "AnimatedSprite3D",
+                          "children": []
+                        },
+                        {
+                          "name": "Sprite3D",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Light3D",
+                  "children": [
+                    {
+                      "name": "AreaLight3D",
+                      "children": []
+                    },
+                    {
+                      "name": "DirectionalLight3D",
+                      "children": []
+                    },
+                    {
+                      "name": "OmniLight3D",
+                      "children": []
+                    },
+                    {
+                      "name": "SpotLight3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "LightmapGI",
+                  "children": []
+                },
+                {
+                  "name": "OccluderInstance3D",
+                  "children": []
+                },
+                {
+                  "name": "OpenXRVisibilityMask",
+                  "children": []
+                },
+                {
+                  "name": "ReflectionProbe",
+                  "children": []
+                },
+                {
+                  "name": "RootMotionView",
+                  "children": []
+                },
+                {
+                  "name": "VisibleOnScreenNotifier3D",
+                  "children": [
+                    {
+                      "name": "VisibleOnScreenEnabler3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VoxelGI",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "XRFaceModifier3D",
+              "children": []
+            },
+            {
+              "name": "XRNode3D",
+              "children": [
+                {
+                  "name": "XRAnchor3D",
+                  "children": []
+                },
+                {
+                  "name": "XRController3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "XROrigin3D",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "ResourcePreloader",
+          "children": []
+        },
+        {
+          "name": "ShaderGlobalsOverride",
+          "children": []
+        },
+        {
+          "name": "StatusIndicator",
+          "children": []
+        },
+        {
+          "name": "Timer",
+          "children": []
+        },
+        {
+          "name": "Viewport",
+          "children": [
+            {
+              "name": "SubViewport",
+              "children": []
+            },
+            {
+              "name": "Window",
+              "children": [
+                {
+                  "name": "AcceptDialog",
+                  "children": [
+                    {
+                      "name": "ConfirmationDialog",
+                      "children": [
+                        {
+                          "name": "EditorCommandPalette",
+                          "children": []
+                        },
+                        {
+                          "name": "FileDialog",
+                          "children": [
+                            {
+                              "name": "EditorFileDialog",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ScriptCreateDialog",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Popup",
+                  "children": [
+                    {
+                      "name": "PopupMenu",
+                      "children": []
+                    },
+                    {
+                      "name": "PopupPanel",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "WorldEnvironment",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "OS",
+      "children": []
+    },
+    {
+      "name": "OpenXRExtensionWrapper",
+      "children": [
+        {
+          "name": "OpenXRAndroidThreadSettingsExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRExtensionWrapperExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRFrameSynthesisExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRFutureExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRRenderModelExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRSpatialAnchorCapability",
+          "children": []
+        },
+        {
+          "name": "OpenXRSpatialEntityExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRSpatialMarkerTrackingCapability",
+          "children": []
+        },
+        {
+          "name": "OpenXRSpatialPlaneTrackingCapability",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "OpenXRInteractionProfileMetadata",
+      "children": []
+    },
+    {
+      "name": "Performance",
+      "children": []
+    },
+    {
+      "name": "PhysicsDirectBodyState2D",
+      "children": [
+        {
+          "name": "PhysicsDirectBodyState2DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsDirectBodyState3D",
+      "children": [
+        {
+          "name": "PhysicsDirectBodyState3DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsDirectSpaceState2D",
+      "children": [
+        {
+          "name": "PhysicsDirectSpaceState2DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsDirectSpaceState3D",
+      "children": [
+        {
+          "name": "PhysicsDirectSpaceState3DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsServer2D",
+      "children": [
+        {
+          "name": "PhysicsServer2DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsServer2DManager",
+      "children": []
+    },
+    {
+      "name": "PhysicsServer3D",
+      "children": [
+        {
+          "name": "PhysicsServer3DExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "PhysicsServer3DManager",
+      "children": []
+    },
+    {
+      "name": "PhysicsServer3DRenderingServerHandler",
+      "children": []
+    },
+    {
+      "name": "ProjectSettings",
+      "children": []
+    },
+    {
+      "name": "RefCounted",
+      "children": [
+        {
+          "name": "AESContext",
+          "children": []
+        },
+        {
+          "name": "AStar2D",
+          "children": []
+        },
+        {
+          "name": "AStar3D",
+          "children": []
+        },
+        {
+          "name": "AStarGrid2D",
+          "children": []
+        },
+        {
+          "name": "AudioEffectInstance",
+          "children": [
+            {
+              "name": "AudioEffectSpectrumAnalyzerInstance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "AudioSample",
+          "children": []
+        },
+        {
+          "name": "AudioSamplePlayback",
+          "children": []
+        },
+        {
+          "name": "AudioStreamPlayback",
+          "children": [
+            {
+              "name": "AudioStreamPlaybackInteractive",
+              "children": []
+            },
+            {
+              "name": "AudioStreamPlaybackPlaylist",
+              "children": []
+            },
+            {
+              "name": "AudioStreamPlaybackPolyphonic",
+              "children": []
+            },
+            {
+              "name": "AudioStreamPlaybackResampled",
+              "children": [
+                {
+                  "name": "AudioStreamGeneratorPlayback",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamPlaybackOggVorbis",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "AudioStreamPlaybackSynchronized",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "CameraFeed",
+          "children": []
+        },
+        {
+          "name": "CharFXTransform",
+          "children": []
+        },
+        {
+          "name": "ConfigFile",
+          "children": []
+        },
+        {
+          "name": "Crypto",
+          "children": []
+        },
+        {
+          "name": "DTLSServer",
+          "children": []
+        },
+        {
+          "name": "DirAccess",
+          "children": []
+        },
+        {
+          "name": "ENetConnection",
+          "children": []
+        },
+        {
+          "name": "EditorContextMenuPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorDebuggerPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorDebuggerSession",
+          "children": []
+        },
+        {
+          "name": "EditorExportPlatform",
+          "children": [
+            {
+              "name": "EditorExportPlatformAndroid",
+              "children": []
+            },
+            {
+              "name": "EditorExportPlatformAppleEmbedded",
+              "children": [
+                {
+                  "name": "EditorExportPlatformIOS",
+                  "children": []
+                },
+                {
+                  "name": "EditorExportPlatformVisionOS",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "EditorExportPlatformExtension",
+              "children": []
+            },
+            {
+              "name": "EditorExportPlatformMacOS",
+              "children": []
+            },
+            {
+              "name": "EditorExportPlatformPC",
+              "children": [
+                {
+                  "name": "EditorExportPlatformLinuxBSD",
+                  "children": []
+                },
+                {
+                  "name": "EditorExportPlatformWindows",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "EditorExportPlatformWeb",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "EditorExportPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorExportPreset",
+          "children": []
+        },
+        {
+          "name": "EditorFeatureProfile",
+          "children": []
+        },
+        {
+          "name": "EditorFileSystemImportFormatSupportQuery",
+          "children": []
+        },
+        {
+          "name": "EditorInspectorPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorResourceConversionPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorResourcePreviewGenerator",
+          "children": []
+        },
+        {
+          "name": "EditorResourceTooltipPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorSceneFormatImporter",
+          "children": [
+            {
+              "name": "EditorSceneFormatImporterBlend",
+              "children": []
+            },
+            {
+              "name": "EditorSceneFormatImporterFBX2GLTF",
+              "children": []
+            },
+            {
+              "name": "EditorSceneFormatImporterGLTF",
+              "children": []
+            },
+            {
+              "name": "EditorSceneFormatImporterUFBX",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "EditorScenePostImport",
+          "children": []
+        },
+        {
+          "name": "EditorScenePostImportPlugin",
+          "children": []
+        },
+        {
+          "name": "EditorScript",
+          "children": []
+        },
+        {
+          "name": "EditorTranslationParserPlugin",
+          "children": []
+        },
+        {
+          "name": "EncodedObjectAsID",
+          "children": []
+        },
+        {
+          "name": "EngineProfiler",
+          "children": []
+        },
+        {
+          "name": "Expression",
+          "children": []
+        },
+        {
+          "name": "FileAccess",
+          "children": []
+        },
+        {
+          "name": "GDScriptTextDocument",
+          "children": []
+        },
+        {
+          "name": "GDScriptWorkspace",
+          "children": []
+        },
+        {
+          "name": "GLTFObjectModelProperty",
+          "children": []
+        },
+        {
+          "name": "HMACContext",
+          "children": []
+        },
+        {
+          "name": "HTTPClient",
+          "children": []
+        },
+        {
+          "name": "HashingContext",
+          "children": []
+        },
+        {
+          "name": "ImageFormatLoader",
+          "children": [
+            {
+              "name": "ImageFormatLoaderExtension",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "JavaClass",
+          "children": []
+        },
+        {
+          "name": "JavaObject",
+          "children": []
+        },
+        {
+          "name": "JavaScriptObject",
+          "children": []
+        },
+        {
+          "name": "KinematicCollision2D",
+          "children": []
+        },
+        {
+          "name": "KinematicCollision3D",
+          "children": []
+        },
+        {
+          "name": "Lightmapper",
+          "children": [
+            {
+              "name": "LightmapperRD",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Logger",
+          "children": []
+        },
+        {
+          "name": "MeshConvexDecompositionSettings",
+          "children": []
+        },
+        {
+          "name": "MeshDataTool",
+          "children": []
+        },
+        {
+          "name": "MultiplayerAPI",
+          "children": [
+            {
+              "name": "MultiplayerAPIExtension",
+              "children": []
+            },
+            {
+              "name": "SceneMultiplayer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Mutex",
+          "children": []
+        },
+        {
+          "name": "NavigationPathQueryParameters2D",
+          "children": []
+        },
+        {
+          "name": "NavigationPathQueryParameters3D",
+          "children": []
+        },
+        {
+          "name": "NavigationPathQueryResult2D",
+          "children": []
+        },
+        {
+          "name": "NavigationPathQueryResult3D",
+          "children": []
+        },
+        {
+          "name": "Node3DGizmo",
+          "children": [
+            {
+              "name": "EditorNode3DGizmo",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "OggPacketSequencePlayback",
+          "children": []
+        },
+        {
+          "name": "OpenXRAPIExtension",
+          "children": []
+        },
+        {
+          "name": "OpenXRFutureResult",
+          "children": []
+        },
+        {
+          "name": "OpenXRSpatialCapabilityConfigurationBaseHeader",
+          "children": [
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationAnchor",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationAprilTag",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationAruco",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationMicroQrCode",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationPlaneTracking",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialCapabilityConfigurationQrCode",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "OpenXRSpatialComponentData",
+          "children": [
+            {
+              "name": "OpenXRSpatialComponentAnchorList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentBounded2DList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentBounded3DList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentMarkerList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentMesh2DList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentMesh3DList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentParentList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentPersistenceList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentPlaneAlignmentList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentPlaneSemanticLabelList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialComponentPolygon2DList",
+              "children": []
+            },
+            {
+              "name": "OpenXRSpatialQueryResultData",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "OpenXRStructureBase",
+          "children": [
+            {
+              "name": "OpenXRSpatialContextPersistenceConfig",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PCKPacker",
+          "children": []
+        },
+        {
+          "name": "PackedDataContainerRef",
+          "children": []
+        },
+        {
+          "name": "PacketPeer",
+          "children": [
+            {
+              "name": "ENetPacketPeer",
+              "children": []
+            },
+            {
+              "name": "MultiplayerPeer",
+              "children": [
+                {
+                  "name": "ENetMultiplayerPeer",
+                  "children": []
+                },
+                {
+                  "name": "MultiplayerPeerExtension",
+                  "children": []
+                },
+                {
+                  "name": "OfflineMultiplayerPeer",
+                  "children": []
+                },
+                {
+                  "name": "WebRTCMultiplayerPeer",
+                  "children": []
+                },
+                {
+                  "name": "WebSocketMultiplayerPeer",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "PacketPeerDTLS",
+              "children": []
+            },
+            {
+              "name": "PacketPeerExtension",
+              "children": []
+            },
+            {
+              "name": "PacketPeerStream",
+              "children": []
+            },
+            {
+              "name": "PacketPeerUDP",
+              "children": []
+            },
+            {
+              "name": "WebRTCDataChannel",
+              "children": [
+                {
+                  "name": "WebRTCDataChannelExtension",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "WebSocketPeer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "PhysicsPointQueryParameters2D",
+          "children": []
+        },
+        {
+          "name": "PhysicsPointQueryParameters3D",
+          "children": []
+        },
+        {
+          "name": "PhysicsRayQueryParameters2D",
+          "children": []
+        },
+        {
+          "name": "PhysicsRayQueryParameters3D",
+          "children": []
+        },
+        {
+          "name": "PhysicsShapeQueryParameters2D",
+          "children": []
+        },
+        {
+          "name": "PhysicsShapeQueryParameters3D",
+          "children": []
+        },
+        {
+          "name": "PhysicsTestMotionParameters2D",
+          "children": []
+        },
+        {
+          "name": "PhysicsTestMotionParameters3D",
+          "children": []
+        },
+        {
+          "name": "PhysicsTestMotionResult2D",
+          "children": []
+        },
+        {
+          "name": "PhysicsTestMotionResult3D",
+          "children": []
+        },
+        {
+          "name": "RDAccelerationStructureGeometry",
+          "children": []
+        },
+        {
+          "name": "RDAccelerationStructureInstance",
+          "children": []
+        },
+        {
+          "name": "RDAttachmentFormat",
+          "children": []
+        },
+        {
+          "name": "RDFramebufferPass",
+          "children": []
+        },
+        {
+          "name": "RDHitGroup",
+          "children": []
+        },
+        {
+          "name": "RDPipelineColorBlendState",
+          "children": []
+        },
+        {
+          "name": "RDPipelineColorBlendStateAttachment",
+          "children": []
+        },
+        {
+          "name": "RDPipelineDepthStencilState",
+          "children": []
+        },
+        {
+          "name": "RDPipelineMultisampleState",
+          "children": []
+        },
+        {
+          "name": "RDPipelineRasterizationState",
+          "children": []
+        },
+        {
+          "name": "RDPipelineShader",
+          "children": []
+        },
+        {
+          "name": "RDPipelineSpecializationConstant",
+          "children": []
+        },
+        {
+          "name": "RDSamplerState",
+          "children": []
+        },
+        {
+          "name": "RDShaderSource",
+          "children": []
+        },
+        {
+          "name": "RDTextureFormat",
+          "children": []
+        },
+        {
+          "name": "RDTextureView",
+          "children": []
+        },
+        {
+          "name": "RDUniform",
+          "children": []
+        },
+        {
+          "name": "RDVertexAttribute",
+          "children": []
+        },
+        {
+          "name": "RandomNumberGenerator",
+          "children": []
+        },
+        {
+          "name": "RegEx",
+          "children": []
+        },
+        {
+          "name": "RegExMatch",
+          "children": []
+        },
+        {
+          "name": "RenderSceneBuffers",
+          "children": [
+            {
+              "name": "RenderSceneBuffersExtension",
+              "children": []
+            },
+            {
+              "name": "RenderSceneBuffersRD",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "RenderSceneBuffersConfiguration",
+          "children": []
+        },
+        {
+          "name": "Resource",
+          "children": [
+            {
+              "name": "Animation",
+              "children": []
+            },
+            {
+              "name": "AnimationLibrary",
+              "children": []
+            },
+            {
+              "name": "AnimationNode",
+              "children": [
+                {
+                  "name": "AnimationNodeExtension",
+                  "children": []
+                },
+                {
+                  "name": "AnimationNodeOutput",
+                  "children": []
+                },
+                {
+                  "name": "AnimationNodeSync",
+                  "children": [
+                    {
+                      "name": "AnimationNodeAdd2",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeAdd3",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeBlend2",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeBlend3",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeOneShot",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeSub2",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeTransition",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "AnimationNodeTimeScale",
+                  "children": []
+                },
+                {
+                  "name": "AnimationNodeTimeSeek",
+                  "children": []
+                },
+                {
+                  "name": "AnimationRootNode",
+                  "children": [
+                    {
+                      "name": "AnimationNodeAnimation",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeBlendSpace1D",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeBlendSpace2D",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeBlendTree",
+                      "children": []
+                    },
+                    {
+                      "name": "AnimationNodeStateMachine",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AnimationNodeStateMachinePlayback",
+              "children": []
+            },
+            {
+              "name": "AnimationNodeStateMachineTransition",
+              "children": []
+            },
+            {
+              "name": "AudioBusLayout",
+              "children": []
+            },
+            {
+              "name": "AudioEffect",
+              "children": [
+                {
+                  "name": "AudioEffectAmplify",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectCapture",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectChorus",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectCompressor",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectDelay",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectDistortion",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectEQ",
+                  "children": [
+                    {
+                      "name": "AudioEffectEQ10",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectEQ21",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectEQ6",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "AudioEffectFilter",
+                  "children": [
+                    {
+                      "name": "AudioEffectBandLimitFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectBandPassFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectHighPassFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectHighShelfFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectLowPassFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectLowShelfFilter",
+                      "children": []
+                    },
+                    {
+                      "name": "AudioEffectNotchFilter",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "AudioEffectHardLimiter",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectLimiter",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectPanner",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectPhaser",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectPitchShift",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectRecord",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectReverb",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectSpectrumAnalyzer",
+                  "children": []
+                },
+                {
+                  "name": "AudioEffectStereoEnhance",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "AudioStream",
+              "children": [
+                {
+                  "name": "AudioStreamGenerator",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamInteractive",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamMP3",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamMicrophone",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamOggVorbis",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamPlaylist",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamPolyphonic",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamRandomizer",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamSynchronized",
+                  "children": []
+                },
+                {
+                  "name": "AudioStreamWAV",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "BitMap",
+              "children": []
+            },
+            {
+              "name": "BoneMap",
+              "children": []
+            },
+            {
+              "name": "ButtonGroup",
+              "children": []
+            },
+            {
+              "name": "CameraAttributes",
+              "children": [
+                {
+                  "name": "CameraAttributesPhysical",
+                  "children": []
+                },
+                {
+                  "name": "CameraAttributesPractical",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "ColorPalette",
+              "children": []
+            },
+            {
+              "name": "Compositor",
+              "children": []
+            },
+            {
+              "name": "CompositorEffect",
+              "children": []
+            },
+            {
+              "name": "CryptoKey",
+              "children": []
+            },
+            {
+              "name": "Curve",
+              "children": []
+            },
+            {
+              "name": "Curve2D",
+              "children": []
+            },
+            {
+              "name": "Curve3D",
+              "children": []
+            },
+            {
+              "name": "EditorNode3DGizmoPlugin",
+              "children": []
+            },
+            {
+              "name": "EditorSettings",
+              "children": []
+            },
+            {
+              "name": "Environment",
+              "children": []
+            },
+            {
+              "name": "FoldableGroup",
+              "children": []
+            },
+            {
+              "name": "Font",
+              "children": [
+                {
+                  "name": "FontFile",
+                  "children": []
+                },
+                {
+                  "name": "FontVariation",
+                  "children": []
+                },
+                {
+                  "name": "SystemFont",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "GDExtension",
+              "children": []
+            },
+            {
+              "name": "GLTFAccessor",
+              "children": []
+            },
+            {
+              "name": "GLTFAnimation",
+              "children": []
+            },
+            {
+              "name": "GLTFBufferView",
+              "children": []
+            },
+            {
+              "name": "GLTFCamera",
+              "children": []
+            },
+            {
+              "name": "GLTFDocument",
+              "children": [
+                {
+                  "name": "FBXDocument",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "GLTFDocumentExtension",
+              "children": [
+                {
+                  "name": "GLTFDocumentExtensionConvertImporterMesh",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "GLTFLight",
+              "children": []
+            },
+            {
+              "name": "GLTFMesh",
+              "children": []
+            },
+            {
+              "name": "GLTFNode",
+              "children": []
+            },
+            {
+              "name": "GLTFPhysicsBody",
+              "children": []
+            },
+            {
+              "name": "GLTFPhysicsShape",
+              "children": []
+            },
+            {
+              "name": "GLTFSkeleton",
+              "children": []
+            },
+            {
+              "name": "GLTFSkin",
+              "children": []
+            },
+            {
+              "name": "GLTFSpecGloss",
+              "children": []
+            },
+            {
+              "name": "GLTFState",
+              "children": [
+                {
+                  "name": "FBXState",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "GLTFTexture",
+              "children": []
+            },
+            {
+              "name": "GLTFTextureSampler",
+              "children": []
+            },
+            {
+              "name": "Gradient",
+              "children": []
+            },
+            {
+              "name": "Image",
+              "children": []
+            },
+            {
+              "name": "ImporterMesh",
+              "children": []
+            },
+            {
+              "name": "InputEvent",
+              "children": [
+                {
+                  "name": "InputEventAction",
+                  "children": []
+                },
+                {
+                  "name": "InputEventFromWindow",
+                  "children": [
+                    {
+                      "name": "InputEventScreenDrag",
+                      "children": []
+                    },
+                    {
+                      "name": "InputEventScreenTouch",
+                      "children": []
+                    },
+                    {
+                      "name": "InputEventWithModifiers",
+                      "children": [
+                        {
+                          "name": "InputEventGesture",
+                          "children": [
+                            {
+                              "name": "InputEventMagnifyGesture",
+                              "children": []
+                            },
+                            {
+                              "name": "InputEventPanGesture",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "name": "InputEventKey",
+                          "children": []
+                        },
+                        {
+                          "name": "InputEventMouse",
+                          "children": [
+                            {
+                              "name": "InputEventMouseButton",
+                              "children": []
+                            },
+                            {
+                              "name": "InputEventMouseMotion",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "InputEventJoypadButton",
+                  "children": []
+                },
+                {
+                  "name": "InputEventJoypadMotion",
+                  "children": []
+                },
+                {
+                  "name": "InputEventMIDI",
+                  "children": []
+                },
+                {
+                  "name": "InputEventShortcut",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "JSON",
+              "children": []
+            },
+            {
+              "name": "JointLimitation3D",
+              "children": [
+                {
+                  "name": "JointLimitationCone3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "LabelSettings",
+              "children": []
+            },
+            {
+              "name": "LightmapGIData",
+              "children": []
+            },
+            {
+              "name": "Material",
+              "children": [
+                {
+                  "name": "BaseMaterial3D",
+                  "children": [
+                    {
+                      "name": "ORMMaterial3D",
+                      "children": []
+                    },
+                    {
+                      "name": "StandardMaterial3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "BlitMaterial",
+                  "children": []
+                },
+                {
+                  "name": "CanvasItemMaterial",
+                  "children": []
+                },
+                {
+                  "name": "FogMaterial",
+                  "children": []
+                },
+                {
+                  "name": "PanoramaSkyMaterial",
+                  "children": []
+                },
+                {
+                  "name": "ParticleProcessMaterial",
+                  "children": []
+                },
+                {
+                  "name": "PhysicalSkyMaterial",
+                  "children": []
+                },
+                {
+                  "name": "PlaceholderMaterial",
+                  "children": []
+                },
+                {
+                  "name": "ProceduralSkyMaterial",
+                  "children": []
+                },
+                {
+                  "name": "ShaderMaterial",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Mesh",
+              "children": [
+                {
+                  "name": "ArrayMesh",
+                  "children": []
+                },
+                {
+                  "name": "ImmediateMesh",
+                  "children": []
+                },
+                {
+                  "name": "PlaceholderMesh",
+                  "children": []
+                },
+                {
+                  "name": "PrimitiveMesh",
+                  "children": [
+                    {
+                      "name": "BoxMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "CapsuleMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "CylinderMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "PlaneMesh",
+                      "children": [
+                        {
+                          "name": "QuadMesh",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "PointMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "PrismMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "RibbonTrailMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "SphereMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "TextMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "TorusMesh",
+                      "children": []
+                    },
+                    {
+                      "name": "TubeTrailMesh",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "MeshLibrary",
+              "children": []
+            },
+            {
+              "name": "MissingResource",
+              "children": []
+            },
+            {
+              "name": "MultiMesh",
+              "children": []
+            },
+            {
+              "name": "NavigationMesh",
+              "children": []
+            },
+            {
+              "name": "NavigationMeshSourceGeometryData2D",
+              "children": []
+            },
+            {
+              "name": "NavigationMeshSourceGeometryData3D",
+              "children": []
+            },
+            {
+              "name": "NavigationPolygon",
+              "children": []
+            },
+            {
+              "name": "Noise",
+              "children": [
+                {
+                  "name": "FastNoiseLite",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Occluder3D",
+              "children": [
+                {
+                  "name": "ArrayOccluder3D",
+                  "children": []
+                },
+                {
+                  "name": "BoxOccluder3D",
+                  "children": []
+                },
+                {
+                  "name": "PolygonOccluder3D",
+                  "children": []
+                },
+                {
+                  "name": "QuadOccluder3D",
+                  "children": []
+                },
+                {
+                  "name": "SphereOccluder3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "OccluderPolygon2D",
+              "children": []
+            },
+            {
+              "name": "OggPacketSequence",
+              "children": []
+            },
+            {
+              "name": "OpenXRAction",
+              "children": []
+            },
+            {
+              "name": "OpenXRActionMap",
+              "children": []
+            },
+            {
+              "name": "OpenXRActionSet",
+              "children": []
+            },
+            {
+              "name": "OpenXRBindingModifier",
+              "children": [
+                {
+                  "name": "OpenXRActionBindingModifier",
+                  "children": [
+                    {
+                      "name": "OpenXRAnalogThresholdModifier",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "OpenXRIPBindingModifier",
+                  "children": [
+                    {
+                      "name": "OpenXRDpadBindingModifier",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "OpenXRHapticBase",
+              "children": [
+                {
+                  "name": "OpenXRHapticVibration",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "OpenXRIPBinding",
+              "children": []
+            },
+            {
+              "name": "OpenXRInteractionProfile",
+              "children": []
+            },
+            {
+              "name": "PackedDataContainer",
+              "children": []
+            },
+            {
+              "name": "PackedScene",
+              "children": []
+            },
+            {
+              "name": "PhysicsMaterial",
+              "children": []
+            },
+            {
+              "name": "PolygonPathFinder",
+              "children": []
+            },
+            {
+              "name": "RDShaderFile",
+              "children": []
+            },
+            {
+              "name": "RDShaderSPIRV",
+              "children": []
+            },
+            {
+              "name": "RichTextEffect",
+              "children": []
+            },
+            {
+              "name": "SceneReplicationConfig",
+              "children": []
+            },
+            {
+              "name": "Script",
+              "children": [
+                {
+                  "name": "CSharpScript",
+                  "children": []
+                },
+                {
+                  "name": "GDScript",
+                  "children": []
+                },
+                {
+                  "name": "ScriptExtension",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Shader",
+              "children": [
+                {
+                  "name": "VisualShader",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "ShaderInclude",
+              "children": []
+            },
+            {
+              "name": "Shape2D",
+              "children": [
+                {
+                  "name": "CapsuleShape2D",
+                  "children": []
+                },
+                {
+                  "name": "CircleShape2D",
+                  "children": []
+                },
+                {
+                  "name": "ConcavePolygonShape2D",
+                  "children": []
+                },
+                {
+                  "name": "ConvexPolygonShape2D",
+                  "children": []
+                },
+                {
+                  "name": "RectangleShape2D",
+                  "children": []
+                },
+                {
+                  "name": "SegmentShape2D",
+                  "children": []
+                },
+                {
+                  "name": "SeparationRayShape2D",
+                  "children": []
+                },
+                {
+                  "name": "WorldBoundaryShape2D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Shape3D",
+              "children": [
+                {
+                  "name": "BoxShape3D",
+                  "children": []
+                },
+                {
+                  "name": "CapsuleShape3D",
+                  "children": []
+                },
+                {
+                  "name": "ConcavePolygonShape3D",
+                  "children": []
+                },
+                {
+                  "name": "ConvexPolygonShape3D",
+                  "children": []
+                },
+                {
+                  "name": "CylinderShape3D",
+                  "children": []
+                },
+                {
+                  "name": "HeightMapShape3D",
+                  "children": []
+                },
+                {
+                  "name": "SeparationRayShape3D",
+                  "children": []
+                },
+                {
+                  "name": "SphereShape3D",
+                  "children": []
+                },
+                {
+                  "name": "WorldBoundaryShape3D",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Shortcut",
+              "children": []
+            },
+            {
+              "name": "SkeletonModification2D",
+              "children": [
+                {
+                  "name": "SkeletonModification2DCCDIK",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DFABRIK",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DJiggle",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DLookAt",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DPhysicalBones",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DStackHolder",
+                  "children": []
+                },
+                {
+                  "name": "SkeletonModification2DTwoBoneIK",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "SkeletonModificationStack2D",
+              "children": []
+            },
+            {
+              "name": "SkeletonProfile",
+              "children": [
+                {
+                  "name": "SkeletonProfileHumanoid",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Skin",
+              "children": []
+            },
+            {
+              "name": "Sky",
+              "children": []
+            },
+            {
+              "name": "SpriteFrames",
+              "children": []
+            },
+            {
+              "name": "StyleBox",
+              "children": [
+                {
+                  "name": "StyleBoxEmpty",
+                  "children": []
+                },
+                {
+                  "name": "StyleBoxFlat",
+                  "children": []
+                },
+                {
+                  "name": "StyleBoxLine",
+                  "children": []
+                },
+                {
+                  "name": "StyleBoxTexture",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "SyntaxHighlighter",
+              "children": [
+                {
+                  "name": "CodeHighlighter",
+                  "children": []
+                },
+                {
+                  "name": "EditorSyntaxHighlighter",
+                  "children": [
+                    {
+                      "name": "GDScriptSyntaxHighlighter",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Texture",
+              "children": [
+                {
+                  "name": "Texture2D",
+                  "children": [
+                    {
+                      "name": "AnimatedTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "AtlasTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "CameraTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "CanvasTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "CompressedTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "CurveTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "CurveXYZTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "DPITexture",
+                      "children": []
+                    },
+                    {
+                      "name": "DrawableTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "ExternalTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "GradientTexture1D",
+                      "children": []
+                    },
+                    {
+                      "name": "GradientTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "ImageTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "MeshTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "NoiseTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "PlaceholderTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "PortableCompressedTexture2D",
+                      "children": []
+                    },
+                    {
+                      "name": "Texture2DRD",
+                      "children": []
+                    },
+                    {
+                      "name": "ViewportTexture",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Texture3D",
+                  "children": [
+                    {
+                      "name": "CompressedTexture3D",
+                      "children": []
+                    },
+                    {
+                      "name": "ImageTexture3D",
+                      "children": []
+                    },
+                    {
+                      "name": "NoiseTexture3D",
+                      "children": []
+                    },
+                    {
+                      "name": "PlaceholderTexture3D",
+                      "children": []
+                    },
+                    {
+                      "name": "Texture3DRD",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "TextureLayered",
+                  "children": [
+                    {
+                      "name": "CompressedTextureLayered",
+                      "children": [
+                        {
+                          "name": "CompressedCubemap",
+                          "children": []
+                        },
+                        {
+                          "name": "CompressedCubemapArray",
+                          "children": []
+                        },
+                        {
+                          "name": "CompressedTexture2DArray",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ImageTextureLayered",
+                      "children": [
+                        {
+                          "name": "Cubemap",
+                          "children": []
+                        },
+                        {
+                          "name": "CubemapArray",
+                          "children": []
+                        },
+                        {
+                          "name": "Texture2DArray",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "PlaceholderTextureLayered",
+                      "children": [
+                        {
+                          "name": "PlaceholderCubemap",
+                          "children": []
+                        },
+                        {
+                          "name": "PlaceholderCubemapArray",
+                          "children": []
+                        },
+                        {
+                          "name": "PlaceholderTexture2DArray",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "TextureLayeredRD",
+                      "children": [
+                        {
+                          "name": "Texture2DArrayRD",
+                          "children": []
+                        },
+                        {
+                          "name": "TextureCubemapArrayRD",
+                          "children": []
+                        },
+                        {
+                          "name": "TextureCubemapRD",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Theme",
+              "children": []
+            },
+            {
+              "name": "TileMapPattern",
+              "children": []
+            },
+            {
+              "name": "TileSet",
+              "children": []
+            },
+            {
+              "name": "TileSetSource",
+              "children": [
+                {
+                  "name": "TileSetAtlasSource",
+                  "children": []
+                },
+                {
+                  "name": "TileSetScenesCollectionSource",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Translation",
+              "children": [
+                {
+                  "name": "OptimizedTranslation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "VideoStream",
+              "children": [
+                {
+                  "name": "VideoStreamTheora",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "VideoStreamPlayback",
+              "children": []
+            },
+            {
+              "name": "VisualShaderNode",
+              "children": [
+                {
+                  "name": "VisualShaderNodeBillboard",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeClamp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeColorFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeColorOp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeCompare",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeConstant",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeBooleanConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeColorConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeFloatConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeIntConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeTransformConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeUIntConstant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec2Constant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec3Constant",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec4Constant",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeCubemap",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeCustom",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeDerivativeFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeDeterminant",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeDistanceFade",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeDotProduct",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeFloatFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeFloatOp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeFresnel",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeIf",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeInput",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeIntFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeIntOp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeIs",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeLinearSceneDepth",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeMix",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeMultiplyAdd",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeOuterProduct",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeOutput",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeParticleOutput",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeParameter",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeBooleanParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeColorParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeFloatParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeIntParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeTextureParameter",
+                      "children": [
+                        {
+                          "name": "VisualShaderNodeCubemapParameter",
+                          "children": []
+                        },
+                        {
+                          "name": "VisualShaderNodeTexture2DArrayParameter",
+                          "children": []
+                        },
+                        {
+                          "name": "VisualShaderNodeTexture2DParameter",
+                          "children": []
+                        },
+                        {
+                          "name": "VisualShaderNodeTexture3DParameter",
+                          "children": []
+                        },
+                        {
+                          "name": "VisualShaderNodeTextureParameterTriplanar",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "VisualShaderNodeTransformParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeUIntParameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec2Parameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec3Parameter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVec4Parameter",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeParameterRef",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeParticleAccelerator",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeParticleConeVelocity",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeParticleEmit",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeParticleEmitter",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeParticleBoxEmitter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeParticleMeshEmitter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeParticleRingEmitter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeParticleSphereEmitter",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeParticleMultiplyByAxisAngle",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeParticleRandomness",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeProximityFade",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeRandomRange",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeRemap",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeReroute",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeResizableBase",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeCurveTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeCurveXYZTexture",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeFrame",
+                      "children": [
+                        {
+                          "name": "VisualShaderNodeComment",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "name": "VisualShaderNodeGroupBase",
+                      "children": [
+                        {
+                          "name": "VisualShaderNodeExpression",
+                          "children": [
+                            {
+                              "name": "VisualShaderNodeGlobalExpression",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeRotationByAxis",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeSDFRaymarch",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeSDFToScreenUV",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeSample3D",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeTexture2DArray",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeTexture3D",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeScreenNormalWorldSpace",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeScreenUVToSDF",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeSmoothStep",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeStep",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeSwitch",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTexture",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTextureSDF",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTextureSDFNormal",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTransformCompose",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTransformDecompose",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTransformFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTransformOp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeTransformVecMult",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeUIntFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeUIntOp",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeUVFunc",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeUVPolarCoord",
+                  "children": []
+                },
+                {
+                  "name": "VisualShaderNodeVarying",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeVaryingGetter",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVaryingSetter",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeVectorBase",
+                  "children": [
+                    {
+                      "name": "VisualShaderNodeFaceForward",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorCompose",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorDecompose",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorDistance",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorFunc",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorLen",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorOp",
+                      "children": []
+                    },
+                    {
+                      "name": "VisualShaderNodeVectorRefract",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "VisualShaderNodeWorldPositionFromDepth",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "VoxelGIData",
+              "children": []
+            },
+            {
+              "name": "World2D",
+              "children": []
+            },
+            {
+              "name": "World3D",
+              "children": []
+            },
+            {
+              "name": "X509Certificate",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "ResourceFormatLoader",
+          "children": []
+        },
+        {
+          "name": "ResourceFormatSaver",
+          "children": []
+        },
+        {
+          "name": "ResourceImporter",
+          "children": [
+            {
+              "name": "EditorImportPlugin",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterBMFont",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterBitMap",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterCSVTranslation",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterDynamicFont",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterImage",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterImageFont",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterLayeredTexture",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterMP3",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterOBJ",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterOggVorbis",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterSVG",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterScene",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterShaderFile",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterTexture",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterTextureAtlas",
+              "children": []
+            },
+            {
+              "name": "ResourceImporterWAV",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "SceneState",
+          "children": []
+        },
+        {
+          "name": "SceneTreeTimer",
+          "children": []
+        },
+        {
+          "name": "ScriptBacktrace",
+          "children": []
+        },
+        {
+          "name": "Semaphore",
+          "children": []
+        },
+        {
+          "name": "SkinReference",
+          "children": []
+        },
+        {
+          "name": "SocketServer",
+          "children": [
+            {
+              "name": "TCPServer",
+              "children": []
+            },
+            {
+              "name": "UDSServer",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "StreamPeer",
+          "children": [
+            {
+              "name": "StreamPeerBuffer",
+              "children": []
+            },
+            {
+              "name": "StreamPeerExtension",
+              "children": []
+            },
+            {
+              "name": "StreamPeerGZIP",
+              "children": []
+            },
+            {
+              "name": "StreamPeerSocket",
+              "children": [
+                {
+                  "name": "StreamPeerTCP",
+                  "children": []
+                },
+                {
+                  "name": "StreamPeerUDS",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "StreamPeerTLS",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "SurfaceTool",
+          "children": []
+        },
+        {
+          "name": "TLSOptions",
+          "children": []
+        },
+        {
+          "name": "TextLine",
+          "children": []
+        },
+        {
+          "name": "TextParagraph",
+          "children": []
+        },
+        {
+          "name": "TextServer",
+          "children": [
+            {
+              "name": "TextServerExtension",
+              "children": [
+                {
+                  "name": "TextServerAdvanced",
+                  "children": []
+                },
+                {
+                  "name": "TextServerDummy",
+                  "children": []
+                },
+                {
+                  "name": "TextServerFallback",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Thread",
+          "children": []
+        },
+        {
+          "name": "TranslationDomain",
+          "children": []
+        },
+        {
+          "name": "TriangleMesh",
+          "children": []
+        },
+        {
+          "name": "Tween",
+          "children": []
+        },
+        {
+          "name": "Tweener",
+          "children": [
+            {
+              "name": "AwaitTweener",
+              "children": []
+            },
+            {
+              "name": "CallbackTweener",
+              "children": []
+            },
+            {
+              "name": "IntervalTweener",
+              "children": []
+            },
+            {
+              "name": "MethodTweener",
+              "children": []
+            },
+            {
+              "name": "PropertyTweener",
+              "children": []
+            },
+            {
+              "name": "SubtweenTweener",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "UDPServer",
+          "children": []
+        },
+        {
+          "name": "UPNP",
+          "children": []
+        },
+        {
+          "name": "UPNPDevice",
+          "children": []
+        },
+        {
+          "name": "WeakRef",
+          "children": []
+        },
+        {
+          "name": "WebRTCPeerConnection",
+          "children": [
+            {
+              "name": "WebRTCPeerConnectionExtension",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "XMLParser",
+          "children": []
+        },
+        {
+          "name": "XRInterface",
+          "children": [
+            {
+              "name": "MobileVRInterface",
+              "children": []
+            },
+            {
+              "name": "OpenXRInterface",
+              "children": []
+            },
+            {
+              "name": "WebXRInterface",
+              "children": []
+            },
+            {
+              "name": "XRInterfaceExtension",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "XRPose",
+          "children": []
+        },
+        {
+          "name": "XRTracker",
+          "children": [
+            {
+              "name": "XRFaceTracker",
+              "children": []
+            },
+            {
+              "name": "XRPositionalTracker",
+              "children": [
+                {
+                  "name": "OpenXRSpatialEntityTracker",
+                  "children": [
+                    {
+                      "name": "OpenXRAnchorTracker",
+                      "children": []
+                    },
+                    {
+                      "name": "OpenXRMarkerTracker",
+                      "children": []
+                    },
+                    {
+                      "name": "OpenXRPlaneTracker",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "XRBodyTracker",
+                  "children": []
+                },
+                {
+                  "name": "XRControllerTracker",
+                  "children": []
+                },
+                {
+                  "name": "XRHandTracker",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ZIPPacker",
+          "children": []
+        },
+        {
+          "name": "ZIPReader",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "RenderData",
+      "children": [
+        {
+          "name": "RenderDataExtension",
+          "children": []
+        },
+        {
+          "name": "RenderDataRD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "RenderSceneData",
+      "children": [
+        {
+          "name": "RenderSceneDataExtension",
+          "children": []
+        },
+        {
+          "name": "RenderSceneDataRD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "RenderingDevice",
+      "children": []
+    },
+    {
+      "name": "RenderingServer",
+      "children": []
+    },
+    {
+      "name": "ResourceLoader",
+      "children": []
+    },
+    {
+      "name": "ResourceSaver",
+      "children": []
+    },
+    {
+      "name": "ResourceUID",
+      "children": []
+    },
+    {
+      "name": "ScriptLanguage",
+      "children": [
+        {
+          "name": "ScriptLanguageExtension",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "ShaderIncludeDB",
+      "children": []
+    },
+    {
+      "name": "TextServerManager",
+      "children": []
+    },
+    {
+      "name": "ThemeDB",
+      "children": []
+    },
+    {
+      "name": "TileData",
+      "children": []
+    },
+    {
+      "name": "Time",
+      "children": []
+    },
+    {
+      "name": "TranslationServer",
+      "children": []
+    },
+    {
+      "name": "TreeItem",
+      "children": []
+    },
+    {
+      "name": "UndoRedo",
+      "children": []
+    },
+    {
+      "name": "UniformSetCacheRD",
+      "children": []
+    },
+    {
+      "name": "WorkerThreadPool",
+      "children": []
+    },
+    {
+      "name": "XRServer",
+      "children": []
+    },
+    {
+      "name": "XRVRS",
+      "children": []
+    }
+  ]
+}
