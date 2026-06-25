@@ -19,7 +19,7 @@
 - CONNECT_APPEND_SOURCE_OBJECT
 
 # 方法
-## 虚函数（脚本可重写）
+## 虚函数
 - _get
 - _get_property_list
 - _init
