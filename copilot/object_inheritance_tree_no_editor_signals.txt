@@ -1,0 +1,956 @@
+Object (property_list_changed|script_changed)
+├── AccessibilityServer
+├── AudioServer (bus_layout_changed|bus_renamed)
+├── CameraServer (camera_feed_added|camera_feed_removed|camera_feeds_updated)
+├── ClassDB
+├── DisplayServer (orientation_changed)
+├── Engine
+├── EngineDebugger
+├── FramebufferCacheRD
+├── GDExtensionManager (extension_loaded|extension_unloading|extensions_reloaded)
+├── Geometry2D
+├── Geometry3D
+├── GodotInstance
+├── IP
+├── Input (joy_connection_changed)
+├── InputMap (project_settings_loaded)
+├── JNISingleton
+├── JSONRPC
+├── JavaClassWrapper
+├── JavaScriptBridge (pwa_update_available)
+├── MainLoop (on_request_permissions_result)
+│   └── SceneTree (node_added|node_configuration_warning_changed|node_removed|node_renamed|physics_frame|process_frame|scene_changed|tree_changed|tree_process_mode_changed)
+├── Marshalls
+├── MovieWriter
+├── NativeMenu
+├── NavigationMeshGenerator
+├── NavigationServer2D (avoidance_debug_changed|map_changed|navigation_debug_changed)
+├── NavigationServer2DManager
+├── NavigationServer3D (avoidance_debug_changed|map_changed|navigation_debug_changed)
+├── NavigationServer3DManager
+├── Node (child_entered_tree|child_exiting_tree|child_order_changed|editor_description_changed|editor_state_changed|ready|renamed|replacing_by|tree_entered|tree_exited|tree_exiting)
+│   ├── AnimationMixer (animation_finished|animation_libraries_updated|animation_list_changed|animation_started|caches_cleared|mixer_applied|mixer_updated)
+│   │   ├── AnimationPlayer (animation_changed|current_animation_changed)
+│   │   └── AnimationTree (animation_player_changed)
+│   ├── AudioStreamPlayer (finished)
+│   ├── CanvasItem (draw|hidden|item_rect_changed|visibility_changed)
+│   │   ├── Control (focus_entered|focus_exited|gui_input|maximum_size_changed|minimum_size_changed|mouse_entered|mouse_exited|resized|size_flags_changed|theme_changed)
+│   │   │   ├── BaseButton (button_down|button_up|pressed|toggled)
+│   │   │   │   ├── Button
+│   │   │   │   │   ├── CheckBox
+│   │   │   │   │   ├── CheckButton
+│   │   │   │   │   ├── ColorPickerButton (color_changed|picker_created|popup_closed)
+│   │   │   │   │   ├── MenuButton (about_to_popup)
+│   │   │   │   │   └── OptionButton (item_focused|item_selected)
+│   │   │   │   ├── LinkButton
+│   │   │   │   └── TextureButton
+│   │   │   ├── ColorRect
+│   │   │   ├── Container (pre_sort_children|sort_children)
+│   │   │   │   ├── AspectRatioContainer
+│   │   │   │   ├── BoxContainer
+│   │   │   │   │   ├── HBoxContainer
+│   │   │   │   │   └── VBoxContainer
+│   │   │   │   │       └── ColorPicker (color_changed|preset_added|preset_removed)
+│   │   │   │   ├── CenterContainer
+│   │   │   │   ├── FlowContainer
+│   │   │   │   │   ├── HFlowContainer
+│   │   │   │   │   └── VFlowContainer
+│   │   │   │   ├── FoldableContainer (folding_changed)
+│   │   │   │   ├── GraphElement (delete_request|dragged|node_deselected|node_selected|position_offset_changed|raise_request|resize_end|resize_request)
+│   │   │   │   │   ├── GraphFrame (autoshrink_changed)
+│   │   │   │   │   └── GraphNode (slot_sizes_changed|slot_updated)
+│   │   │   │   ├── GridContainer
+│   │   │   │   ├── MarginContainer
+│   │   │   │   ├── PanelContainer
+│   │   │   │   ├── ScrollContainer (scroll_ended|scroll_started)
+│   │   │   │   ├── SplitContainer (drag_ended|drag_started|dragged)
+│   │   │   │   │   ├── HSplitContainer
+│   │   │   │   │   └── VSplitContainer
+│   │   │   │   ├── SubViewportContainer
+│   │   │   │   └── TabContainer (active_tab_rearranged|pre_popup_pressed|tab_button_pressed|tab_changed|tab_clicked|tab_hovered|tab_selected)
+│   │   │   ├── GraphEdit (begin_node_move|connection_drag_ended|connection_drag_started|connection_from_empty|connection_request|connection_to_empty|copy_nodes_request|cut_nodes_request|delete_nodes_request|disconnection_request|duplicate_nodes_request|end_node_move|frame_rect_changed|graph_elements_linked_to_frame_request|node_deselected|node_selected|paste_nodes_request|popup_request|scroll_offset_changed)
+│   │   │   ├── ItemList (empty_clicked|item_activated|item_clicked|item_selected|multi_selected)
+│   │   │   ├── Label
+│   │   │   ├── LineEdit (editing_toggled|text_change_rejected|text_changed|text_submitted)
+│   │   │   ├── MenuBar
+│   │   │   ├── NinePatchRect (texture_changed)
+│   │   │   ├── Panel
+│   │   │   ├── Range (changed|value_changed)
+│   │   │   │   ├── ProgressBar
+│   │   │   │   ├── ScrollBar (scrolling)
+│   │   │   │   │   ├── HScrollBar
+│   │   │   │   │   └── VScrollBar
+│   │   │   │   ├── Slider (drag_ended|drag_started)
+│   │   │   │   │   ├── HSlider
+│   │   │   │   │   └── VSlider
+│   │   │   │   ├── SpinBox
+│   │   │   │   └── TextureProgressBar
+│   │   │   ├── ReferenceRect
+│   │   │   ├── RichTextLabel (finished|meta_clicked|meta_hover_ended|meta_hover_started)
+│   │   │   ├── Separator
+│   │   │   │   ├── HSeparator
+│   │   │   │   └── VSeparator
+│   │   │   ├── TabBar (active_tab_rearranged|tab_button_pressed|tab_changed|tab_clicked|tab_close_pressed|tab_hovered|tab_rmb_clicked|tab_selected)
+│   │   │   ├── TextEdit (caret_changed|gutter_added|gutter_clicked|gutter_removed|lines_edited_from|text_changed|text_set)
+│   │   │   │   └── CodeEdit (breakpoint_toggled|code_completion_requested|symbol_hovered|symbol_lookup|symbol_validate)
+│   │   │   ├── TextureRect
+│   │   │   ├── Tree (button_clicked|cell_selected|check_propagated_to_item|column_title_clicked|custom_item_clicked|custom_popup_edited|empty_clicked|item_activated|item_collapsed|item_edited|item_icon_double_clicked|item_mouse_selected|item_selected|multi_selected|nothing_selected)
+│   │   │   ├── VideoStreamPlayer (finished)
+│   │   │   └── VirtualJoystick (flick_canceled|flicked|pressed|released|tapped)
+│   │   └── Node2D
+│   │       ├── AnimatedSprite2D (animation_changed|animation_finished|animation_looped|frame_changed|sprite_frames_changed)
+│   │       ├── AudioListener2D
+│   │       ├── AudioStreamPlayer2D (finished)
+│   │       ├── BackBufferCopy
+│   │       ├── Bone2D
+│   │       ├── CPUParticles2D (finished)
+│   │       ├── Camera2D
+│   │       ├── CanvasGroup
+│   │       ├── CanvasModulate
+│   │       ├── CollisionObject2D (input_event|mouse_entered|mouse_exited|mouse_shape_entered|mouse_shape_exited)
+│   │       │   ├── Area2D (area_entered|area_exited|area_shape_entered|area_shape_exited|body_entered|body_exited|body_shape_entered|body_shape_exited)
+│   │       │   └── PhysicsBody2D
+│   │       │       ├── CharacterBody2D
+│   │       │       ├── RigidBody2D (body_entered|body_exited|body_shape_entered|body_shape_exited|sleeping_state_changed)
+│   │       │       │   └── PhysicalBone2D
+│   │       │       └── StaticBody2D
+│   │       │           └── AnimatableBody2D
+│   │       ├── CollisionPolygon2D
+│   │       ├── CollisionShape2D
+│   │       ├── GPUParticles2D (finished)
+│   │       ├── Joint2D
+│   │       │   ├── DampedSpringJoint2D
+│   │       │   ├── GrooveJoint2D
+│   │       │   └── PinJoint2D
+│   │       ├── Light2D
+│   │       │   ├── DirectionalLight2D
+│   │       │   └── PointLight2D
+│   │       ├── LightOccluder2D
+│   │       ├── Line2D
+│   │       ├── Marker2D
+│   │       ├── MeshInstance2D (texture_changed)
+│   │       ├── MultiMeshInstance2D (texture_changed)
+│   │       ├── NavigationLink2D
+│   │       ├── NavigationObstacle2D
+│   │       ├── NavigationRegion2D (bake_finished|navigation_polygon_changed)
+│   │       ├── Parallax2D
+│   │       ├── ParallaxLayer
+│   │       ├── Path2D
+│   │       ├── PathFollow2D
+│   │       ├── Polygon2D
+│   │       ├── RayCast2D
+│   │       ├── RemoteTransform2D
+│   │       ├── ShapeCast2D
+│   │       ├── Skeleton2D (bone_setup_changed)
+│   │       ├── Sprite2D (frame_changed|texture_changed)
+│   │       ├── TileMap (changed)
+│   │       ├── TileMapLayer (changed)
+│   │       ├── TouchScreenButton (pressed|released)
+│   │       └── VisibleOnScreenNotifier2D (screen_entered|screen_exited)
+│   │           └── VisibleOnScreenEnabler2D
+│   ├── CanvasLayer (visibility_changed)
+│   │   └── ParallaxBackground
+│   ├── HTTPRequest (request_completed)
+│   ├── InstancePlaceholder
+│   ├── MissingNode
+│   ├── MultiplayerSpawner (despawned|spawned)
+│   ├── MultiplayerSynchronizer (delta_synchronized|synchronized|visibility_changed)
+│   ├── NavigationAgent2D (link_reached|navigation_finished|path_changed|target_reached|velocity_computed|waypoint_reached)
+│   ├── NavigationAgent3D (link_reached|navigation_finished|path_changed|target_reached|velocity_computed|waypoint_reached)
+│   ├── Node3D (visibility_changed)
+│   │   ├── AudioListener3D
+│   │   ├── AudioStreamPlayer3D (finished)
+│   │   ├── BoneAttachment3D
+│   │   ├── Camera3D
+│   │   │   └── XRCamera3D
+│   │   ├── CollisionObject3D (input_event|mouse_entered|mouse_exited)
+│   │   │   ├── Area3D (area_entered|area_exited|area_shape_entered|area_shape_exited|body_entered|body_exited|body_shape_entered|body_shape_exited)
+│   │   │   └── PhysicsBody3D
+│   │   │       ├── CharacterBody3D
+│   │   │       ├── PhysicalBone3D
+│   │   │       ├── RigidBody3D (body_entered|body_exited|body_shape_entered|body_shape_exited|sleeping_state_changed)
+│   │   │       │   └── VehicleBody3D
+│   │   │       └── StaticBody3D
+│   │   │           └── AnimatableBody3D
+│   │   ├── CollisionPolygon3D
+│   │   ├── CollisionShape3D
+│   │   ├── GridMap (cell_size_changed|changed)
+│   │   ├── ImporterMeshInstance3D
+│   │   ├── Joint3D
+│   │   │   ├── ConeTwistJoint3D
+│   │   │   ├── Generic6DOFJoint3D
+│   │   │   ├── HingeJoint3D
+│   │   │   ├── PinJoint3D
+│   │   │   └── SliderJoint3D
+│   │   ├── LightmapProbe
+│   │   ├── Marker3D
+│   │   ├── NavigationLink3D
+│   │   ├── NavigationObstacle3D
+│   │   ├── NavigationRegion3D (bake_finished|navigation_mesh_changed)
+│   │   ├── OpenXRCompositionLayer
+│   │   │   ├── OpenXRCompositionLayerCylinder
+│   │   │   ├── OpenXRCompositionLayerEquirect
+│   │   │   └── OpenXRCompositionLayerQuad
+│   │   ├── OpenXRHand
+│   │   ├── OpenXRRenderModel (render_model_top_level_path_changed)
+│   │   ├── OpenXRRenderModelManager (render_model_added|render_model_removed)
+│   │   ├── Path3D (curve_changed|debug_color_changed)
+│   │   ├── PathFollow3D
+│   │   ├── RayCast3D
+│   │   ├── RemoteTransform3D
+│   │   ├── ShapeCast3D
+│   │   ├── Skeleton3D (bone_enabled_changed|bone_list_changed|pose_updated|rest_updated|show_rest_only_changed|skeleton_updated)
+│   │   ├── SkeletonModifier3D (modification_processed)
+│   │   │   ├── BoneConstraint3D
+│   │   │   │   ├── AimModifier3D
+│   │   │   │   ├── ConvertTransformModifier3D
+│   │   │   │   └── CopyTransformModifier3D
+│   │   │   ├── BoneTwistDisperser3D
+│   │   │   ├── IKModifier3D
+│   │   │   │   ├── ChainIK3D
+│   │   │   │   │   ├── IterateIK3D
+│   │   │   │   │   │   ├── CCDIK3D
+│   │   │   │   │   │   ├── FABRIK3D
+│   │   │   │   │   │   └── JacobianIK3D
+│   │   │   │   │   └── SplineIK3D
+│   │   │   │   └── TwoBoneIK3D
+│   │   │   ├── LimitAngularVelocityModifier3D
+│   │   │   ├── LookAtModifier3D
+│   │   │   ├── ModifierBoneTarget3D
+│   │   │   ├── PhysicalBoneSimulator3D
+│   │   │   ├── RetargetModifier3D
+│   │   │   ├── SkeletonIK3D
+│   │   │   ├── SpringBoneSimulator3D
+│   │   │   ├── XRBodyModifier3D
+│   │   │   └── XRHandModifier3D
+│   │   ├── SpringArm3D
+│   │   ├── SpringBoneCollision3D
+│   │   │   ├── SpringBoneCollisionCapsule3D
+│   │   │   ├── SpringBoneCollisionPlane3D
+│   │   │   └── SpringBoneCollisionSphere3D
+│   │   ├── VehicleWheel3D
+│   │   ├── VisualInstance3D
+│   │   │   ├── Decal
+│   │   │   ├── FogVolume
+│   │   │   ├── GPUParticlesAttractor3D
+│   │   │   │   ├── GPUParticlesAttractorBox3D
+│   │   │   │   ├── GPUParticlesAttractorSphere3D
+│   │   │   │   └── GPUParticlesAttractorVectorField3D
+│   │   │   ├── GPUParticlesCollision3D
+│   │   │   │   ├── GPUParticlesCollisionBox3D
+│   │   │   │   ├── GPUParticlesCollisionHeightField3D
+│   │   │   │   ├── GPUParticlesCollisionSDF3D
+│   │   │   │   └── GPUParticlesCollisionSphere3D
+│   │   │   ├── GeometryInstance3D
+│   │   │   │   ├── CPUParticles3D (finished)
+│   │   │   │   ├── CSGShape3D
+│   │   │   │   │   ├── CSGCombiner3D
+│   │   │   │   │   └── CSGPrimitive3D
+│   │   │   │   │       ├── CSGBox3D
+│   │   │   │   │       ├── CSGCylinder3D
+│   │   │   │   │       ├── CSGMesh3D
+│   │   │   │   │       ├── CSGPolygon3D
+│   │   │   │   │       ├── CSGSphere3D
+│   │   │   │   │       └── CSGTorus3D
+│   │   │   │   ├── GPUParticles3D (finished)
+│   │   │   │   ├── Label3D
+│   │   │   │   ├── MeshInstance3D
+│   │   │   │   │   └── SoftBody3D
+│   │   │   │   ├── MultiMeshInstance3D
+│   │   │   │   └── SpriteBase3D
+│   │   │   │       ├── AnimatedSprite3D (animation_changed|animation_finished|animation_looped|frame_changed|sprite_frames_changed)
+│   │   │   │       └── Sprite3D (frame_changed|texture_changed)
+│   │   │   ├── Light3D
+│   │   │   │   ├── AreaLight3D
+│   │   │   │   ├── DirectionalLight3D
+│   │   │   │   ├── OmniLight3D
+│   │   │   │   └── SpotLight3D
+│   │   │   ├── LightmapGI
+│   │   │   ├── OccluderInstance3D
+│   │   │   ├── OpenXRVisibilityMask
+│   │   │   ├── ReflectionProbe
+│   │   │   ├── RootMotionView
+│   │   │   ├── VisibleOnScreenNotifier3D (screen_entered|screen_exited)
+│   │   │   │   └── VisibleOnScreenEnabler3D
+│   │   │   └── VoxelGI
+│   │   ├── XRFaceModifier3D
+│   │   ├── XRNode3D (tracking_changed)
+│   │   │   ├── XRAnchor3D
+│   │   │   └── XRController3D (button_pressed|button_released|input_float_changed|input_vector2_changed|profile_changed)
+│   │   └── XROrigin3D
+│   ├── ResourcePreloader
+│   ├── ShaderGlobalsOverride
+│   ├── StatusIndicator (pressed)
+│   ├── Timer (timeout)
+│   ├── Viewport (gui_focus_changed|size_changed)
+│   │   ├── SubViewport
+│   │   └── Window (about_to_popup|close_requested|dpi_changed|files_dropped|focus_entered|focus_exited|go_back_requested|mouse_entered|mouse_exited|nonclient_window_input|output_max_linear_value_changed|theme_changed|title_changed|titlebar_changed|visibility_changed|window_input)
+│   │       ├── AcceptDialog (canceled|confirmed|custom_action)
+│   │       │   └── ConfirmationDialog
+│   │       │       └── FileDialog (dir_selected|file_selected|filename_filter_changed|files_selected)
+│   │       └── Popup (popup_hide)
+│   │           ├── PopupMenu (id_focused|id_pressed|index_pressed|menu_changed)
+│   │           └── PopupPanel
+│   └── WorldEnvironment
+├── OS
+├── OpenXRExtensionWrapper
+│   ├── OpenXRAndroidThreadSettingsExtension
+│   ├── OpenXRExtensionWrapperExtension
+│   ├── OpenXRFrameSynthesisExtension
+│   ├── OpenXRFutureExtension
+│   ├── OpenXRRenderModelExtension (render_model_added|render_model_removed|render_model_top_level_path_changed)
+│   ├── OpenXRSpatialAnchorCapability
+│   ├── OpenXRSpatialEntityExtension (spatial_discovery_recommended)
+│   ├── OpenXRSpatialMarkerTrackingCapability
+│   └── OpenXRSpatialPlaneTrackingCapability
+├── OpenXRInteractionProfileMetadata
+├── Performance
+├── PhysicsDirectBodyState2D
+│   └── PhysicsDirectBodyState2DExtension
+├── PhysicsDirectBodyState3D
+│   └── PhysicsDirectBodyState3DExtension
+├── PhysicsDirectSpaceState2D
+│   └── PhysicsDirectSpaceState2DExtension
+├── PhysicsDirectSpaceState3D
+│   └── PhysicsDirectSpaceState3DExtension
+├── PhysicsServer2D
+│   └── PhysicsServer2DExtension
+├── PhysicsServer2DManager
+├── PhysicsServer3D
+│   └── PhysicsServer3DExtension
+├── PhysicsServer3DManager
+├── PhysicsServer3DRenderingServerHandler
+├── ProjectSettings (settings_changed)
+├── RefCounted
+│   ├── AESContext
+│   ├── AStar2D
+│   ├── AStar3D
+│   ├── AStarGrid2D
+│   ├── AudioEffectInstance
+│   │   └── AudioEffectSpectrumAnalyzerInstance
+│   ├── AudioSample
+│   ├── AudioSamplePlayback
+│   ├── AudioStreamPlayback
+│   │   ├── AudioStreamPlaybackInteractive
+│   │   ├── AudioStreamPlaybackPlaylist
+│   │   ├── AudioStreamPlaybackPolyphonic
+│   │   ├── AudioStreamPlaybackResampled
+│   │   │   ├── AudioStreamGeneratorPlayback
+│   │   │   └── AudioStreamPlaybackOggVorbis
+│   │   └── AudioStreamPlaybackSynchronized
+│   ├── CameraFeed (format_changed|frame_changed)
+│   ├── CharFXTransform
+│   ├── ConfigFile
+│   ├── Crypto
+│   ├── DTLSServer
+│   ├── DirAccess
+│   ├── ENetConnection
+│   ├── EncodedObjectAsID
+│   ├── EngineProfiler
+│   ├── Expression
+│   ├── FileAccess
+│   ├── GLTFObjectModelProperty
+│   ├── HMACContext
+│   ├── HTTPClient
+│   ├── HashingContext
+│   ├── ImageFormatLoader
+│   │   └── ImageFormatLoaderExtension
+│   ├── JavaClass
+│   ├── JavaObject
+│   ├── JavaScriptObject
+│   ├── KinematicCollision2D
+│   ├── KinematicCollision3D
+│   ├── Lightmapper
+│   │   └── LightmapperRD
+│   ├── Logger
+│   ├── MeshConvexDecompositionSettings
+│   ├── MeshDataTool
+│   ├── MultiplayerAPI (connected_to_server|connection_failed|peer_connected|peer_disconnected|server_disconnected)
+│   │   ├── MultiplayerAPIExtension
+│   │   └── SceneMultiplayer (peer_authenticating|peer_authentication_failed|peer_packet)
+│   ├── Mutex
+│   ├── NavigationPathQueryParameters2D
+│   ├── NavigationPathQueryParameters3D
+│   ├── NavigationPathQueryResult2D
+│   ├── NavigationPathQueryResult3D
+│   ├── Node3DGizmo
+│   ├── OggPacketSequencePlayback
+│   ├── OpenXRAPIExtension
+│   ├── OpenXRFutureResult (completed)
+│   ├── OpenXRSpatialCapabilityConfigurationBaseHeader
+│   │   ├── OpenXRSpatialCapabilityConfigurationAnchor
+│   │   ├── OpenXRSpatialCapabilityConfigurationAprilTag
+│   │   ├── OpenXRSpatialCapabilityConfigurationAruco
+│   │   ├── OpenXRSpatialCapabilityConfigurationMicroQrCode
+│   │   ├── OpenXRSpatialCapabilityConfigurationPlaneTracking
+│   │   └── OpenXRSpatialCapabilityConfigurationQrCode
+│   ├── OpenXRSpatialComponentData
+│   │   ├── OpenXRSpatialComponentAnchorList
+│   │   ├── OpenXRSpatialComponentBounded2DList
+│   │   ├── OpenXRSpatialComponentBounded3DList
+│   │   ├── OpenXRSpatialComponentMarkerList
+│   │   ├── OpenXRSpatialComponentMesh2DList
+│   │   ├── OpenXRSpatialComponentMesh3DList
+│   │   ├── OpenXRSpatialComponentParentList
+│   │   ├── OpenXRSpatialComponentPersistenceList
+│   │   ├── OpenXRSpatialComponentPlaneAlignmentList
+│   │   ├── OpenXRSpatialComponentPlaneSemanticLabelList
+│   │   ├── OpenXRSpatialComponentPolygon2DList
+│   │   └── OpenXRSpatialQueryResultData
+│   ├── OpenXRStructureBase
+│   │   └── OpenXRSpatialContextPersistenceConfig
+│   ├── PCKPacker
+│   ├── PackedDataContainerRef
+│   ├── PacketPeer
+│   │   ├── ENetPacketPeer
+│   │   ├── MultiplayerPeer (peer_connected|peer_disconnected)
+│   │   │   ├── ENetMultiplayerPeer
+│   │   │   ├── MultiplayerPeerExtension
+│   │   │   ├── OfflineMultiplayerPeer
+│   │   │   ├── WebRTCMultiplayerPeer
+│   │   │   └── WebSocketMultiplayerPeer
+│   │   ├── PacketPeerDTLS
+│   │   ├── PacketPeerExtension
+│   │   ├── PacketPeerStream
+│   │   ├── PacketPeerUDP
+│   │   ├── WebRTCDataChannel
+│   │   │   └── WebRTCDataChannelExtension
+│   │   └── WebSocketPeer
+│   ├── PhysicsPointQueryParameters2D
+│   ├── PhysicsPointQueryParameters3D
+│   ├── PhysicsRayQueryParameters2D
+│   ├── PhysicsRayQueryParameters3D
+│   ├── PhysicsShapeQueryParameters2D
+│   ├── PhysicsShapeQueryParameters3D
+│   ├── PhysicsTestMotionParameters2D
+│   ├── PhysicsTestMotionParameters3D
+│   ├── PhysicsTestMotionResult2D
+│   ├── PhysicsTestMotionResult3D
+│   ├── RDAccelerationStructureGeometry
+│   ├── RDAccelerationStructureInstance
+│   ├── RDAttachmentFormat
+│   ├── RDFramebufferPass
+│   ├── RDHitGroup
+│   ├── RDPipelineColorBlendState
+│   ├── RDPipelineColorBlendStateAttachment
+│   ├── RDPipelineDepthStencilState
+│   ├── RDPipelineMultisampleState
+│   ├── RDPipelineRasterizationState
+│   ├── RDPipelineShader
+│   ├── RDPipelineSpecializationConstant
+│   ├── RDSamplerState
+│   ├── RDShaderSource
+│   ├── RDTextureFormat
+│   ├── RDTextureView
+│   ├── RDUniform
+│   ├── RDVertexAttribute
+│   ├── RandomNumberGenerator
+│   ├── RegEx
+│   ├── RegExMatch
+│   ├── RenderSceneBuffers
+│   │   ├── RenderSceneBuffersExtension
+│   │   └── RenderSceneBuffersRD
+│   ├── RenderSceneBuffersConfiguration
+│   ├── Resource (changed|setup_local_to_scene_requested)
+│   │   ├── Animation
+│   │   ├── AnimationLibrary (animation_added|animation_changed|animation_removed|animation_renamed)
+│   │   ├── AnimationNode (animation_node_removed|animation_node_renamed|node_updated|tree_changed)
+│   │   │   ├── AnimationNodeExtension
+│   │   │   ├── AnimationNodeOutput
+│   │   │   ├── AnimationNodeSync
+│   │   │   │   ├── AnimationNodeAdd2
+│   │   │   │   ├── AnimationNodeAdd3
+│   │   │   │   ├── AnimationNodeBlend2
+│   │   │   │   ├── AnimationNodeBlend3
+│   │   │   │   ├── AnimationNodeOneShot
+│   │   │   │   ├── AnimationNodeSub2
+│   │   │   │   └── AnimationNodeTransition
+│   │   │   ├── AnimationNodeTimeScale
+│   │   │   ├── AnimationNodeTimeSeek
+│   │   │   └── AnimationRootNode
+│   │   │       ├── AnimationNodeAnimation
+│   │   │       ├── AnimationNodeBlendSpace1D
+│   │   │       ├── AnimationNodeBlendSpace2D (triangles_updated)
+│   │   │       ├── AnimationNodeBlendTree (node_changed)
+│   │   │       └── AnimationNodeStateMachine
+│   │   ├── AnimationNodeStateMachinePlayback (state_finished|state_started)
+│   │   ├── AnimationNodeStateMachineTransition (advance_condition_changed)
+│   │   ├── AudioBusLayout
+│   │   ├── AudioEffect
+│   │   │   ├── AudioEffectAmplify
+│   │   │   ├── AudioEffectCapture
+│   │   │   ├── AudioEffectChorus
+│   │   │   ├── AudioEffectCompressor
+│   │   │   ├── AudioEffectDelay
+│   │   │   ├── AudioEffectDistortion
+│   │   │   ├── AudioEffectEQ
+│   │   │   │   ├── AudioEffectEQ10
+│   │   │   │   ├── AudioEffectEQ21
+│   │   │   │   └── AudioEffectEQ6
+│   │   │   ├── AudioEffectFilter
+│   │   │   │   ├── AudioEffectBandLimitFilter
+│   │   │   │   ├── AudioEffectBandPassFilter
+│   │   │   │   ├── AudioEffectHighPassFilter
+│   │   │   │   ├── AudioEffectHighShelfFilter
+│   │   │   │   ├── AudioEffectLowPassFilter
+│   │   │   │   ├── AudioEffectLowShelfFilter
+│   │   │   │   └── AudioEffectNotchFilter
+│   │   │   ├── AudioEffectHardLimiter
+│   │   │   ├── AudioEffectLimiter
+│   │   │   ├── AudioEffectPanner
+│   │   │   ├── AudioEffectPhaser
+│   │   │   ├── AudioEffectPitchShift
+│   │   │   ├── AudioEffectRecord
+│   │   │   ├── AudioEffectReverb
+│   │   │   ├── AudioEffectSpectrumAnalyzer
+│   │   │   └── AudioEffectStereoEnhance
+│   │   ├── AudioStream (parameter_list_changed)
+│   │   │   ├── AudioStreamGenerator
+│   │   │   ├── AudioStreamInteractive
+│   │   │   ├── AudioStreamMP3
+│   │   │   ├── AudioStreamMicrophone
+│   │   │   ├── AudioStreamOggVorbis
+│   │   │   ├── AudioStreamPlaylist
+│   │   │   ├── AudioStreamPolyphonic
+│   │   │   ├── AudioStreamRandomizer
+│   │   │   ├── AudioStreamSynchronized
+│   │   │   └── AudioStreamWAV
+│   │   ├── BitMap
+│   │   ├── BoneMap (bone_map_updated|profile_updated)
+│   │   ├── ButtonGroup (pressed)
+│   │   ├── CameraAttributes
+│   │   │   ├── CameraAttributesPhysical
+│   │   │   └── CameraAttributesPractical
+│   │   ├── ColorPalette
+│   │   ├── Compositor
+│   │   ├── CompositorEffect
+│   │   ├── CryptoKey
+│   │   ├── Curve (domain_changed|range_changed)
+│   │   ├── Curve2D
+│   │   ├── Curve3D
+│   │   ├── Environment
+│   │   ├── FoldableGroup (expanded)
+│   │   ├── Font
+│   │   │   ├── FontFile
+│   │   │   ├── FontVariation
+│   │   │   └── SystemFont
+│   │   ├── GDExtension
+│   │   ├── GLTFAccessor
+│   │   ├── GLTFAnimation
+│   │   ├── GLTFBufferView
+│   │   ├── GLTFCamera
+│   │   ├── GLTFDocument
+│   │   │   └── FBXDocument
+│   │   ├── GLTFDocumentExtension
+│   │   │   └── GLTFDocumentExtensionConvertImporterMesh
+│   │   ├── GLTFLight
+│   │   ├── GLTFMesh
+│   │   ├── GLTFNode
+│   │   ├── GLTFPhysicsBody
+│   │   ├── GLTFPhysicsShape
+│   │   ├── GLTFSkeleton
+│   │   ├── GLTFSkin
+│   │   ├── GLTFSpecGloss
+│   │   ├── GLTFState
+│   │   │   └── FBXState
+│   │   ├── GLTFTexture
+│   │   ├── GLTFTextureSampler
+│   │   ├── Gradient
+│   │   ├── Image
+│   │   ├── ImporterMesh
+│   │   ├── InputEvent
+│   │   │   ├── InputEventAction
+│   │   │   ├── InputEventFromWindow
+│   │   │   │   ├── InputEventScreenDrag
+│   │   │   │   ├── InputEventScreenTouch
+│   │   │   │   └── InputEventWithModifiers
+│   │   │   │       ├── InputEventGesture
+│   │   │   │       │   ├── InputEventMagnifyGesture
+│   │   │   │       │   └── InputEventPanGesture
+│   │   │   │       ├── InputEventKey
+│   │   │   │       └── InputEventMouse
+│   │   │   │           ├── InputEventMouseButton
+│   │   │   │           └── InputEventMouseMotion
+│   │   │   ├── InputEventJoypadButton
+│   │   │   ├── InputEventJoypadMotion
+│   │   │   ├── InputEventMIDI
+│   │   │   └── InputEventShortcut
+│   │   ├── JSON
+│   │   ├── JointLimitation3D
+│   │   │   └── JointLimitationCone3D
+│   │   ├── LabelSettings
+│   │   ├── LightmapGIData
+│   │   ├── Material
+│   │   │   ├── BaseMaterial3D
+│   │   │   │   ├── ORMMaterial3D
+│   │   │   │   └── StandardMaterial3D
+│   │   │   ├── BlitMaterial
+│   │   │   ├── CanvasItemMaterial
+│   │   │   ├── FogMaterial
+│   │   │   ├── PanoramaSkyMaterial
+│   │   │   ├── ParticleProcessMaterial (emission_shape_changed)
+│   │   │   ├── PhysicalSkyMaterial
+│   │   │   ├── PlaceholderMaterial
+│   │   │   ├── ProceduralSkyMaterial
+│   │   │   └── ShaderMaterial
+│   │   ├── Mesh
+│   │   │   ├── ArrayMesh
+│   │   │   ├── ImmediateMesh
+│   │   │   ├── PlaceholderMesh
+│   │   │   └── PrimitiveMesh
+│   │   │       ├── BoxMesh
+│   │   │       ├── CapsuleMesh
+│   │   │       ├── CylinderMesh
+│   │   │       ├── PlaneMesh
+│   │   │       │   └── QuadMesh
+│   │   │       ├── PointMesh
+│   │   │       ├── PrismMesh
+│   │   │       ├── RibbonTrailMesh
+│   │   │       ├── SphereMesh
+│   │   │       ├── TextMesh
+│   │   │       ├── TorusMesh
+│   │   │       └── TubeTrailMesh
+│   │   ├── MeshLibrary
+│   │   ├── MissingResource
+│   │   ├── MultiMesh
+│   │   ├── NavigationMesh
+│   │   ├── NavigationMeshSourceGeometryData2D
+│   │   ├── NavigationMeshSourceGeometryData3D
+│   │   ├── NavigationPolygon
+│   │   ├── Noise
+│   │   │   └── FastNoiseLite
+│   │   ├── Occluder3D
+│   │   │   ├── ArrayOccluder3D
+│   │   │   ├── BoxOccluder3D
+│   │   │   ├── PolygonOccluder3D
+│   │   │   ├── QuadOccluder3D
+│   │   │   └── SphereOccluder3D
+│   │   ├── OccluderPolygon2D
+│   │   ├── OggPacketSequence
+│   │   ├── OpenXRAction
+│   │   ├── OpenXRActionMap
+│   │   ├── OpenXRActionSet
+│   │   ├── OpenXRBindingModifier
+│   │   │   ├── OpenXRActionBindingModifier
+│   │   │   │   └── OpenXRAnalogThresholdModifier
+│   │   │   └── OpenXRIPBindingModifier
+│   │   │       └── OpenXRDpadBindingModifier
+│   │   ├── OpenXRHapticBase
+│   │   │   └── OpenXRHapticVibration
+│   │   ├── OpenXRIPBinding
+│   │   ├── OpenXRInteractionProfile
+│   │   ├── PackedDataContainer
+│   │   ├── PackedScene
+│   │   ├── PhysicsMaterial
+│   │   ├── PolygonPathFinder
+│   │   ├── RDShaderFile
+│   │   ├── RDShaderSPIRV
+│   │   ├── RichTextEffect
+│   │   ├── SceneReplicationConfig
+│   │   ├── Script
+│   │   │   ├── CSharpScript
+│   │   │   ├── GDScript
+│   │   │   └── ScriptExtension
+│   │   ├── Shader
+│   │   │   └── VisualShader
+│   │   ├── ShaderInclude
+│   │   ├── Shape2D
+│   │   │   ├── CapsuleShape2D
+│   │   │   ├── CircleShape2D
+│   │   │   ├── ConcavePolygonShape2D
+│   │   │   ├── ConvexPolygonShape2D
+│   │   │   ├── RectangleShape2D
+│   │   │   ├── SegmentShape2D
+│   │   │   ├── SeparationRayShape2D
+│   │   │   └── WorldBoundaryShape2D
+│   │   ├── Shape3D
+│   │   │   ├── BoxShape3D
+│   │   │   ├── CapsuleShape3D
+│   │   │   ├── ConcavePolygonShape3D
+│   │   │   ├── ConvexPolygonShape3D
+│   │   │   ├── CylinderShape3D
+│   │   │   ├── HeightMapShape3D
+│   │   │   ├── SeparationRayShape3D
+│   │   │   ├── SphereShape3D
+│   │   │   └── WorldBoundaryShape3D
+│   │   ├── Shortcut
+│   │   ├── SkeletonModification2D
+│   │   │   ├── SkeletonModification2DCCDIK
+│   │   │   ├── SkeletonModification2DFABRIK
+│   │   │   ├── SkeletonModification2DJiggle
+│   │   │   ├── SkeletonModification2DLookAt
+│   │   │   ├── SkeletonModification2DPhysicalBones
+│   │   │   ├── SkeletonModification2DStackHolder
+│   │   │   └── SkeletonModification2DTwoBoneIK
+│   │   ├── SkeletonModificationStack2D
+│   │   ├── SkeletonProfile (profile_updated)
+│   │   │   └── SkeletonProfileHumanoid
+│   │   ├── Skin
+│   │   ├── Sky
+│   │   ├── SpriteFrames
+│   │   ├── StyleBox
+│   │   │   ├── StyleBoxEmpty
+│   │   │   ├── StyleBoxFlat
+│   │   │   ├── StyleBoxLine
+│   │   │   └── StyleBoxTexture
+│   │   ├── SyntaxHighlighter
+│   │   │   └── CodeHighlighter
+│   │   ├── Texture
+│   │   │   ├── Texture2D
+│   │   │   │   ├── AnimatedTexture
+│   │   │   │   ├── AtlasTexture
+│   │   │   │   ├── CameraTexture
+│   │   │   │   ├── CanvasTexture
+│   │   │   │   ├── CompressedTexture2D
+│   │   │   │   ├── CurveTexture
+│   │   │   │   ├── CurveXYZTexture
+│   │   │   │   ├── DPITexture
+│   │   │   │   ├── DrawableTexture2D
+│   │   │   │   ├── ExternalTexture
+│   │   │   │   ├── GradientTexture1D
+│   │   │   │   ├── GradientTexture2D
+│   │   │   │   ├── ImageTexture
+│   │   │   │   ├── MeshTexture
+│   │   │   │   ├── NoiseTexture2D
+│   │   │   │   ├── PlaceholderTexture2D
+│   │   │   │   ├── PortableCompressedTexture2D
+│   │   │   │   ├── Texture2DRD
+│   │   │   │   └── ViewportTexture
+│   │   │   ├── Texture3D
+│   │   │   │   ├── CompressedTexture3D
+│   │   │   │   ├── ImageTexture3D
+│   │   │   │   ├── NoiseTexture3D
+│   │   │   │   ├── PlaceholderTexture3D
+│   │   │   │   └── Texture3DRD
+│   │   │   └── TextureLayered
+│   │   │       ├── CompressedTextureLayered
+│   │   │       │   ├── CompressedCubemap
+│   │   │       │   ├── CompressedCubemapArray
+│   │   │       │   └── CompressedTexture2DArray
+│   │   │       ├── ImageTextureLayered
+│   │   │       │   ├── Cubemap
+│   │   │       │   ├── CubemapArray
+│   │   │       │   └── Texture2DArray
+│   │   │       ├── PlaceholderTextureLayered
+│   │   │       │   ├── PlaceholderCubemap
+│   │   │       │   ├── PlaceholderCubemapArray
+│   │   │       │   └── PlaceholderTexture2DArray
+│   │   │       └── TextureLayeredRD
+│   │   │           ├── Texture2DArrayRD
+│   │   │           ├── TextureCubemapArrayRD
+│   │   │           └── TextureCubemapRD
+│   │   ├── Theme
+│   │   ├── TileMapPattern
+│   │   ├── TileSet
+│   │   ├── TileSetSource
+│   │   │   ├── TileSetAtlasSource
+│   │   │   └── TileSetScenesCollectionSource
+│   │   ├── Translation
+│   │   │   └── OptimizedTranslation
+│   │   ├── VideoStream
+│   │   │   └── VideoStreamTheora
+│   │   ├── VideoStreamPlayback
+│   │   ├── VisualShaderNode
+│   │   │   ├── VisualShaderNodeBillboard
+│   │   │   ├── VisualShaderNodeClamp
+│   │   │   ├── VisualShaderNodeColorFunc
+│   │   │   ├── VisualShaderNodeColorOp
+│   │   │   ├── VisualShaderNodeCompare
+│   │   │   ├── VisualShaderNodeConstant
+│   │   │   │   ├── VisualShaderNodeBooleanConstant
+│   │   │   │   ├── VisualShaderNodeColorConstant
+│   │   │   │   ├── VisualShaderNodeFloatConstant
+│   │   │   │   ├── VisualShaderNodeIntConstant
+│   │   │   │   ├── VisualShaderNodeTransformConstant
+│   │   │   │   ├── VisualShaderNodeUIntConstant
+│   │   │   │   ├── VisualShaderNodeVec2Constant
+│   │   │   │   ├── VisualShaderNodeVec3Constant
+│   │   │   │   └── VisualShaderNodeVec4Constant
+│   │   │   ├── VisualShaderNodeCubemap
+│   │   │   ├── VisualShaderNodeCustom
+│   │   │   ├── VisualShaderNodeDerivativeFunc
+│   │   │   ├── VisualShaderNodeDeterminant
+│   │   │   ├── VisualShaderNodeDistanceFade
+│   │   │   ├── VisualShaderNodeDotProduct
+│   │   │   ├── VisualShaderNodeFloatFunc
+│   │   │   ├── VisualShaderNodeFloatOp
+│   │   │   ├── VisualShaderNodeFresnel
+│   │   │   ├── VisualShaderNodeIf
+│   │   │   ├── VisualShaderNodeInput (input_type_changed)
+│   │   │   ├── VisualShaderNodeIntFunc
+│   │   │   ├── VisualShaderNodeIntOp
+│   │   │   ├── VisualShaderNodeIs
+│   │   │   ├── VisualShaderNodeLinearSceneDepth
+│   │   │   ├── VisualShaderNodeMix
+│   │   │   ├── VisualShaderNodeMultiplyAdd
+│   │   │   ├── VisualShaderNodeOuterProduct
+│   │   │   ├── VisualShaderNodeOutput
+│   │   │   │   └── VisualShaderNodeParticleOutput
+│   │   │   ├── VisualShaderNodeParameter
+│   │   │   │   ├── VisualShaderNodeBooleanParameter
+│   │   │   │   ├── VisualShaderNodeColorParameter
+│   │   │   │   ├── VisualShaderNodeFloatParameter
+│   │   │   │   ├── VisualShaderNodeIntParameter
+│   │   │   │   ├── VisualShaderNodeTextureParameter
+│   │   │   │   │   ├── VisualShaderNodeCubemapParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DArrayParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture3DParameter
+│   │   │   │   │   └── VisualShaderNodeTextureParameterTriplanar
+│   │   │   │   ├── VisualShaderNodeTransformParameter
+│   │   │   │   ├── VisualShaderNodeUIntParameter
+│   │   │   │   ├── VisualShaderNodeVec2Parameter
+│   │   │   │   ├── VisualShaderNodeVec3Parameter
+│   │   │   │   └── VisualShaderNodeVec4Parameter
+│   │   │   ├── VisualShaderNodeParameterRef
+│   │   │   ├── VisualShaderNodeParticleAccelerator
+│   │   │   ├── VisualShaderNodeParticleConeVelocity
+│   │   │   ├── VisualShaderNodeParticleEmit
+│   │   │   ├── VisualShaderNodeParticleEmitter
+│   │   │   │   ├── VisualShaderNodeParticleBoxEmitter
+│   │   │   │   ├── VisualShaderNodeParticleMeshEmitter
+│   │   │   │   ├── VisualShaderNodeParticleRingEmitter
+│   │   │   │   └── VisualShaderNodeParticleSphereEmitter
+│   │   │   ├── VisualShaderNodeParticleMultiplyByAxisAngle
+│   │   │   ├── VisualShaderNodeParticleRandomness
+│   │   │   ├── VisualShaderNodeProximityFade
+│   │   │   ├── VisualShaderNodeRandomRange
+│   │   │   ├── VisualShaderNodeRemap
+│   │   │   ├── VisualShaderNodeReroute
+│   │   │   ├── VisualShaderNodeResizableBase
+│   │   │   │   ├── VisualShaderNodeCurveTexture
+│   │   │   │   ├── VisualShaderNodeCurveXYZTexture
+│   │   │   │   ├── VisualShaderNodeFrame
+│   │   │   │   │   └── VisualShaderNodeComment
+│   │   │   │   └── VisualShaderNodeGroupBase
+│   │   │   │       └── VisualShaderNodeExpression
+│   │   │   │           └── VisualShaderNodeGlobalExpression
+│   │   │   ├── VisualShaderNodeRotationByAxis
+│   │   │   ├── VisualShaderNodeSDFRaymarch
+│   │   │   ├── VisualShaderNodeSDFToScreenUV
+│   │   │   ├── VisualShaderNodeSample3D
+│   │   │   │   ├── VisualShaderNodeTexture2DArray
+│   │   │   │   └── VisualShaderNodeTexture3D
+│   │   │   ├── VisualShaderNodeScreenNormalWorldSpace
+│   │   │   ├── VisualShaderNodeScreenUVToSDF
+│   │   │   ├── VisualShaderNodeSmoothStep
+│   │   │   ├── VisualShaderNodeStep
+│   │   │   ├── VisualShaderNodeSwitch
+│   │   │   ├── VisualShaderNodeTexture
+│   │   │   ├── VisualShaderNodeTextureSDF
+│   │   │   ├── VisualShaderNodeTextureSDFNormal
+│   │   │   ├── VisualShaderNodeTransformCompose
+│   │   │   ├── VisualShaderNodeTransformDecompose
+│   │   │   ├── VisualShaderNodeTransformFunc
+│   │   │   ├── VisualShaderNodeTransformOp
+│   │   │   ├── VisualShaderNodeTransformVecMult
+│   │   │   ├── VisualShaderNodeUIntFunc
+│   │   │   ├── VisualShaderNodeUIntOp
+│   │   │   ├── VisualShaderNodeUVFunc
+│   │   │   ├── VisualShaderNodeUVPolarCoord
+│   │   │   ├── VisualShaderNodeVarying
+│   │   │   │   ├── VisualShaderNodeVaryingGetter
+│   │   │   │   └── VisualShaderNodeVaryingSetter
+│   │   │   ├── VisualShaderNodeVectorBase
+│   │   │   │   ├── VisualShaderNodeFaceForward
+│   │   │   │   ├── VisualShaderNodeVectorCompose
+│   │   │   │   ├── VisualShaderNodeVectorDecompose
+│   │   │   │   ├── VisualShaderNodeVectorDistance
+│   │   │   │   ├── VisualShaderNodeVectorFunc
+│   │   │   │   ├── VisualShaderNodeVectorLen
+│   │   │   │   ├── VisualShaderNodeVectorOp
+│   │   │   │   └── VisualShaderNodeVectorRefract
+│   │   │   └── VisualShaderNodeWorldPositionFromDepth
+│   │   ├── VoxelGIData
+│   │   ├── World2D
+│   │   ├── World3D
+│   │   └── X509Certificate
+│   ├── ResourceFormatLoader
+│   ├── ResourceFormatSaver
+│   ├── ResourceImporter
+│   ├── SceneState
+│   ├── SceneTreeTimer (timeout)
+│   ├── ScriptBacktrace
+│   ├── Semaphore
+│   ├── SkinReference
+│   ├── SocketServer
+│   │   ├── TCPServer
+│   │   └── UDSServer
+│   ├── StreamPeer
+│   │   ├── StreamPeerBuffer
+│   │   ├── StreamPeerExtension
+│   │   ├── StreamPeerGZIP
+│   │   ├── StreamPeerSocket
+│   │   │   ├── StreamPeerTCP
+│   │   │   └── StreamPeerUDS
+│   │   └── StreamPeerTLS
+│   ├── SurfaceTool
+│   ├── TLSOptions
+│   ├── TextLine
+│   ├── TextParagraph
+│   ├── TextServer
+│   │   └── TextServerExtension
+│   │       ├── TextServerAdvanced
+│   │       ├── TextServerDummy
+│   │       └── TextServerFallback
+│   ├── Thread
+│   ├── TranslationDomain
+│   ├── TriangleMesh
+│   ├── Tween (finished|loop_finished|step_finished)
+│   ├── Tweener (finished)
+│   │   ├── AwaitTweener
+│   │   ├── CallbackTweener
+│   │   ├── IntervalTweener
+│   │   ├── MethodTweener
+│   │   ├── PropertyTweener
+│   │   └── SubtweenTweener
+│   ├── UDPServer
+│   ├── UPNP
+│   ├── UPNPDevice
+│   ├── WeakRef
+│   ├── WebRTCPeerConnection (data_channel_received|ice_candidate_created|session_description_created)
+│   │   └── WebRTCPeerConnectionExtension
+│   ├── XMLParser
+│   ├── XRInterface (play_area_changed)
+│   │   ├── MobileVRInterface
+│   │   ├── OpenXRInterface (cpu_level_changed|gpu_level_changed|instance_exiting|pose_recentered|refresh_rate_changed|session_begun|session_focussed|session_loss_pending|session_stopping|session_synchronized|session_visible|user_presence_changed)
+│   │   ├── WebXRInterface (display_refresh_rate_changed|reference_space_reset|select|selectend|selectstart|session_ended|session_failed|session_started|session_supported|squeeze|squeezeend|squeezestart|visibility_state_changed)
+│   │   └── XRInterfaceExtension
+│   ├── XRPose
+│   ├── XRTracker
+│   │   ├── XRFaceTracker
+│   │   └── XRPositionalTracker (button_pressed|button_released|input_float_changed|input_vector2_changed|pose_changed|pose_lost_tracking|profile_changed)
+│   │       ├── OpenXRSpatialEntityTracker (next_changed|spatial_tracking_state_changed)
+│   │       │   ├── OpenXRAnchorTracker (uuid_changed)
+│   │       │   ├── OpenXRMarkerTracker
+│   │       │   └── OpenXRPlaneTracker (mesh_changed)
+│   │       ├── XRBodyTracker
+│   │       ├── XRControllerTracker
+│   │       └── XRHandTracker
+│   ├── ZIPPacker
+│   └── ZIPReader
+├── RenderData
+│   ├── RenderDataExtension
+│   └── RenderDataRD
+├── RenderSceneData
+│   ├── RenderSceneDataExtension
+│   └── RenderSceneDataRD
+├── RenderingDevice
+├── RenderingServer (frame_post_draw|frame_pre_draw)
+├── ResourceLoader
+├── ResourceSaver
+├── ResourceUID
+├── ScriptLanguage
+│   └── ScriptLanguageExtension
+├── ShaderIncludeDB
+├── TextServerManager (interface_added|interface_removed)
+├── ThemeDB (fallback_changed)
+├── TileData (changed)
+├── Time
+├── TranslationServer
+├── TreeItem
+├── UndoRedo (version_changed)
+├── UniformSetCacheRD
+├── WorkerThreadPool
+├── XRServer (interface_added|interface_removed|reference_frame_changed|tracker_added|tracker_removed|tracker_updated|world_origin_changed)
+└── XRVRS
