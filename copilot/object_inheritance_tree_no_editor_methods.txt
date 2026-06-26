@@ -36,36 +36,36 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   ├── CanvasItem (_draw|draw_animation_slice|draw_arc|draw_char|draw_char_outline|draw_circle|draw_colored_polygon|draw_dashed_line|draw_ellipse|draw_ellipse_arc|draw_end_animation|draw_lcd_texture_rect_region|draw_line|draw_mesh|draw_msdf_texture_rect_region|draw_multiline|draw_multiline_colors|draw_multiline_string|draw_multiline_string_outline|draw_multimesh|draw_polygon|draw_polyline|draw_polyline_colors|draw_primitive|draw_rect|draw_set_transform|draw_set_transform_matrix|draw_string|draw_string_outline|draw_style_box|draw_texture|draw_texture_rect|draw_texture_rect_region|force_update_transform|get_canvas|get_canvas_item|get_canvas_layer_node|get_canvas_transform|get_global_mouse_position|get_global_transform|get_global_transform_with_canvas|get_instance_shader_parameter|get_local_mouse_position|get_screen_transform|get_transform|get_viewport_rect|get_viewport_transform|get_visibility_layer_bit|get_world_2d|hide|is_local_transform_notification_enabled|is_transform_notification_enabled|is_visible_in_tree|make_canvas_position_local|make_input_local|move_to_front|queue_redraw|set_instance_shader_parameter|set_notify_local_transform|set_notify_transform|set_visibility_layer_bit|show)
 │   │   ├── Control (_accessibility_get_contextual_info|_can_drop_data|_drop_data|_get_accessibility_container_name|_get_cursor_shape|_get_drag_data|_get_maximum_size|_get_minimum_size|_get_tooltip|_get_tooltip_auto_translate_mode_at|_gui_input|_has_point|_make_custom_tooltip|_structured_text_parser|accept_event|accessibility_drag|accessibility_drop|add_theme_color_override|add_theme_constant_override|add_theme_font_override|add_theme_font_size_override|add_theme_icon_override|add_theme_stylebox_override|begin_bulk_theme_override|end_bulk_theme_override|find_next_valid_focus|find_prev_valid_focus|find_valid_focus_neighbor|force_drag|get_anchor|get_begin|get_bound_minimum_size|get_combined_maximum_size|get_combined_minimum_size|get_combined_pivot_offset|get_cursor_shape|get_end|get_focus_mode_with_override|get_focus_neighbor|get_global_rect|get_maximum_size|get_minimum_size|get_mouse_filter_with_override|get_offset|get_parent_area_size|get_parent_control|get_rect|get_screen_position|get_theme_color|get_theme_constant|get_theme_default_base_scale|get_theme_default_font|get_theme_default_font_size|get_theme_font|get_theme_font_size|get_theme_icon|get_theme_stylebox|get_tooltip|grab_click_focus|grab_focus|has_focus|has_theme_color|has_theme_color_override|has_theme_constant|has_theme_constant_override|has_theme_font|has_theme_font_override|has_theme_font_size|has_theme_font_size_override|has_theme_icon|has_theme_icon_override|has_theme_stylebox|has_theme_stylebox_override|is_drag_successful|is_layout_rtl|release_focus|remove_theme_color_override|remove_theme_constant_override|remove_theme_font_override|remove_theme_font_size_override|remove_theme_icon_override|remove_theme_stylebox_override|reset_size|set_anchor|set_anchor_and_offset|set_anchors_and_offsets_preset|set_anchors_preset|set_begin|set_drag_forwarding|set_drag_preview|set_end|set_focus_neighbor|set_global_position|set_offset|set_offsets_preset|set_position|set_size|update_maximum_size|update_minimum_size|warp_mouse)
 │   │   │   ├── BaseButton (_pressed|_toggled|get_draw_mode|is_hovered|set_pressed_no_signal)
-│   │   │   │   ├── Button ()
-│   │   │   │   │   ├── CheckBox ()
-│   │   │   │   │   ├── CheckButton ()
+│   │   │   │   ├── Button
+│   │   │   │   │   ├── CheckBox
+│   │   │   │   │   ├── CheckButton
 │   │   │   │   │   ├── ColorPickerButton (get_picker|get_popup)
 │   │   │   │   │   ├── MenuButton (get_popup|set_disable_shortcuts|show_popup)
 │   │   │   │   │   └── OptionButton (add_icon_item|add_item|add_separator|clear|get_item_auto_translate_mode|get_item_icon|get_item_id|get_item_index|get_item_metadata|get_item_text|get_item_tooltip|get_popup|get_selectable_item|get_selected_id|get_selected_metadata|has_selectable_items|is_item_disabled|is_item_separator|remove_item|select|set_disable_shortcuts|set_item_auto_translate_mode|set_item_disabled|set_item_icon|set_item_id|set_item_metadata|set_item_text|set_item_tooltip|show_popup)
-│   │   │   │   ├── LinkButton ()
-│   │   │   │   └── TextureButton ()
-│   │   │   ├── ColorRect ()
+│   │   │   │   ├── LinkButton
+│   │   │   │   └── TextureButton
+│   │   │   ├── ColorRect
 │   │   │   ├── Container (_get_allowed_size_flags_horizontal|_get_allowed_size_flags_vertical|fit_child_in_rect|queue_sort)
-│   │   │   │   ├── AspectRatioContainer ()
+│   │   │   │   ├── AspectRatioContainer
 │   │   │   │   ├── BoxContainer (add_spacer)
-│   │   │   │   │   ├── HBoxContainer ()
-│   │   │   │   │   └── VBoxContainer ()
+│   │   │   │   │   ├── HBoxContainer
+│   │   │   │   │   └── VBoxContainer
 │   │   │   │   │       └── ColorPicker (add_preset|add_recent_preset|erase_preset|erase_recent_preset|get_presets|get_recent_presets)
-│   │   │   │   ├── CenterContainer ()
+│   │   │   │   ├── CenterContainer
 │   │   │   │   ├── FlowContainer (get_line_count)
-│   │   │   │   │   ├── HFlowContainer ()
-│   │   │   │   │   └── VFlowContainer ()
+│   │   │   │   │   ├── HFlowContainer
+│   │   │   │   │   └── VFlowContainer
 │   │   │   │   ├── FoldableContainer (add_title_bar_control|expand|fold|remove_title_bar_control)
-│   │   │   │   ├── GraphElement ()
+│   │   │   │   ├── GraphElement
 │   │   │   │   │   ├── GraphFrame (get_titlebar_hbox)
 │   │   │   │   │   └── GraphNode (_draw_port|clear_all_slots|clear_slot|get_input_port_color|get_input_port_count|get_input_port_position|get_input_port_slot|get_input_port_type|get_output_port_color|get_output_port_count|get_output_port_position|get_output_port_slot|get_output_port_type|get_slot_color_left|get_slot_color_right|get_slot_custom_icon_left|get_slot_custom_icon_right|get_slot_metadata_left|get_slot_metadata_right|get_slot_type_left|get_slot_type_right|get_titlebar_hbox|is_slot_draw_stylebox|is_slot_enabled_left|is_slot_enabled_right|set_slot|set_slot_color_left|set_slot_color_right|set_slot_custom_icon_left|set_slot_custom_icon_right|set_slot_draw_stylebox|set_slot_enabled_left|set_slot_enabled_right|set_slot_metadata_left|set_slot_metadata_right|set_slot_type_left|set_slot_type_right)
-│   │   │   │   ├── GridContainer ()
-│   │   │   │   ├── MarginContainer ()
-│   │   │   │   ├── PanelContainer ()
+│   │   │   │   ├── GridContainer
+│   │   │   │   ├── MarginContainer
+│   │   │   │   ├── PanelContainer
 │   │   │   │   ├── ScrollContainer (ensure_control_visible|get_h_scroll_bar|get_v_scroll_bar)
 │   │   │   │   ├── SplitContainer (clamp_split_offset|get_drag_area_control|get_drag_area_controls)
-│   │   │   │   │   ├── HSplitContainer ()
-│   │   │   │   │   └── VSplitContainer ()
+│   │   │   │   │   ├── HSplitContainer
+│   │   │   │   │   └── VSplitContainer
 │   │   │   │   ├── SubViewportContainer (_propagate_input_event)
 │   │   │   │   └── TabContainer (get_current_tab_control|get_popup|get_previous_tab|get_tab_bar|get_tab_button_icon|get_tab_control|get_tab_count|get_tab_icon|get_tab_icon_max_width|get_tab_idx_at_point|get_tab_idx_from_control|get_tab_metadata|get_tab_title|get_tab_tooltip|is_tab_disabled|is_tab_hidden|select_next_available|select_previous_available|set_popup|set_tab_button_icon|set_tab_disabled|set_tab_hidden|set_tab_icon|set_tab_icon_max_width|set_tab_metadata|set_tab_title|set_tab_tooltip)
 │   │   │   ├── GraphEdit (_get_connection_line|_is_in_input_hotzone|_is_in_output_hotzone|_is_node_hover_valid|add_valid_connection_type|add_valid_left_disconnect_type|add_valid_right_disconnect_type|arrange_nodes|attach_graph_element_to_frame|clear_connections|connect_node|detach_graph_element_from_frame|disconnect_node|force_connection_drag_end|get_attached_nodes_of_frame|get_closest_connection_at_point|get_connection_count|get_connection_line|get_connection_list_from_node|get_connections_intersecting_with_rect|get_element_frame|get_menu_hbox|is_node_connected|is_valid_connection_type|remove_valid_connection_type|remove_valid_left_disconnect_type|remove_valid_right_disconnect_type|set_connection_activity|set_selected)
@@ -74,69 +74,69 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   │   ├── LineEdit (apply_ime|cancel_ime|clear|delete_char_at_caret|delete_text|deselect|edit|get_menu|get_next_composite_character_column|get_previous_composite_character_column|get_scroll_offset|get_selected_text|get_selection_from_column|get_selection_to_column|has_ime_text|has_redo|has_selection|has_undo|insert_text_at_caret|is_editing|is_menu_visible|menu_option|select|select_all|unedit)
 │   │   │   ├── MenuBar (get_menu_count|get_menu_popup|get_menu_title|get_menu_tooltip|is_menu_disabled|is_menu_hidden|is_native_menu|set_disable_shortcuts|set_menu_disabled|set_menu_hidden|set_menu_title|set_menu_tooltip)
 │   │   │   ├── NinePatchRect (get_patch_margin|set_patch_margin)
-│   │   │   ├── Panel ()
+│   │   │   ├── Panel
 │   │   │   ├── Range (_value_changed|set_value_no_signal|share|unshare)
-│   │   │   │   ├── ProgressBar ()
-│   │   │   │   ├── ScrollBar ()
-│   │   │   │   │   ├── HScrollBar ()
-│   │   │   │   │   └── VScrollBar ()
-│   │   │   │   ├── Slider ()
-│   │   │   │   │   ├── HSlider ()
-│   │   │   │   │   └── VSlider ()
+│   │   │   │   ├── ProgressBar
+│   │   │   │   ├── ScrollBar
+│   │   │   │   │   ├── HScrollBar
+│   │   │   │   │   └── VScrollBar
+│   │   │   │   ├── Slider
+│   │   │   │   │   ├── HSlider
+│   │   │   │   │   └── VSlider
 │   │   │   │   ├── SpinBox (apply|get_line_edit)
 │   │   │   │   └── TextureProgressBar (get_stretch_margin|set_stretch_margin)
-│   │   │   ├── ReferenceRect ()
+│   │   │   ├── ReferenceRect
 │   │   │   ├── RichTextLabel (add_hr|add_image|add_text|append_text|clear|deselect|get_character_line|get_character_paragraph|get_content_height|get_content_width|get_line_count|get_line_height|get_line_offset|get_line_range|get_line_width|get_menu|get_paragraph_count|get_paragraph_offset|get_parsed_text|get_selected_text|get_selection_from|get_selection_line_offset|get_selection_to|get_total_character_count|get_v_scroll_bar|get_visible_content_rect|get_visible_line_count|get_visible_paragraph_count|install_effect|invalidate_paragraph|is_finished|is_menu_visible|is_ready|menu_option|newline|parse_bbcode|parse_expressions_for_values|pop|pop_all|pop_context|push_bgcolor|push_bold|push_bold_italics|push_cell|push_color|push_context|push_customfx|push_dropcap|push_fgcolor|push_font|push_font_size|push_hint|push_indent|push_italics|push_language|push_list|push_meta|push_mono|push_normal|push_outline_color|push_outline_size|push_paragraph|push_strikethrough|push_table|push_underline|reload_effects|remove_paragraph|scroll_to_line|scroll_to_paragraph|scroll_to_selection|select_all|set_cell_border_color|set_cell_padding|set_cell_row_background_color|set_cell_size_override|set_table_column_expand|set_table_column_name|update_image)
-│   │   │   ├── Separator ()
-│   │   │   │   ├── HSeparator ()
-│   │   │   │   └── VSeparator ()
+│   │   │   ├── Separator
+│   │   │   │   ├── HSeparator
+│   │   │   │   └── VSeparator
 │   │   │   ├── TabBar (add_tab|clear_tabs|ensure_tab_visible|get_offset_buttons_visible|get_previous_tab|get_tab_button_icon|get_tab_icon|get_tab_icon_max_width|get_tab_idx_at_point|get_tab_language|get_tab_metadata|get_tab_offset|get_tab_rect|get_tab_text_direction|get_tab_title|get_tab_tooltip|is_tab_disabled|is_tab_hidden|move_tab|remove_tab|select_next_available|select_previous_available|set_tab_button_icon|set_tab_disabled|set_tab_hidden|set_tab_icon|set_tab_icon_max_width|set_tab_language|set_tab_metadata|set_tab_text_direction|set_tab_title|set_tab_tooltip)
 │   │   │   ├── TextEdit (_backspace|_copy|_cut|_handle_unicode_input|_paste|_paste_primary_clipboard|add_caret|add_caret_at_carets|add_gutter|add_selection_for_next_occurrence|adjust_carets_after_edit|adjust_viewport_to_caret|apply_ime|backspace|begin_complex_operation|begin_multicaret_edit|cancel_ime|center_viewport_to_caret|clear|clear_undo_history|collapse_carets|copy|cut|delete_selection|deselect|end_action|end_complex_operation|end_multicaret_edit|get_caret_column|get_caret_count|get_caret_draw_pos|get_caret_index_edit_order|get_caret_line|get_caret_wrap_index|get_first_non_whitespace_column|get_first_visible_line|get_gutter_count|get_gutter_name|get_gutter_type|get_gutter_width|get_h_scroll_bar|get_indent_level|get_last_full_visible_line|get_last_full_visible_line_wrap_index|get_last_unhidden_line|get_line|get_line_background_color|get_line_column_at_pos|get_line_count|get_line_gutter_icon|get_line_gutter_item_color|get_line_gutter_metadata|get_line_gutter_text|get_line_height|get_line_ranges_from_carets|get_line_width|get_line_with_ime|get_line_wrap_count|get_line_wrap_index_at_column|get_line_wrapped_text|get_local_mouse_pos|get_menu|get_minimap_line_at_pos|get_minimap_visible_lines|get_next_composite_character_column|get_next_visible_line_index_offset_from|get_next_visible_line_offset_from|get_pos_at_line_column|get_previous_composite_character_column|get_rect_at_line_column|get_saved_version|get_scroll_pos_for_line|get_selected_text|get_selection_at_line_column|get_selection_column|get_selection_from_column|get_selection_from_line|get_selection_line|get_selection_mode|get_selection_origin_column|get_selection_origin_line|get_selection_to_column|get_selection_to_line|get_sorted_carets|get_tab_size|get_total_gutter_width|get_total_visible_line_count|get_v_scroll_bar|get_version|get_visible_line_count|get_visible_line_count_in_range|get_word_at_pos|get_word_under_caret|has_ime_text|has_redo|has_selection|has_undo|insert_line_at|insert_text|insert_text_at_caret|is_caret_after_selection_origin|is_caret_visible|is_dragging_cursor|is_gutter_clickable|is_gutter_drawn|is_gutter_overwritable|is_in_mulitcaret_edit|is_line_gutter_clickable|is_line_in_viewport|is_line_wrapped|is_menu_visible|is_mouse_over_selection|is_overtype_mode_enabled|menu_option|merge_gutters|merge_overlapping_carets|multicaret_edit_ignore_caret|paste|paste_primary_clipboard|redo|remove_caret|remove_gutter|remove_line_at|remove_secondary_carets|remove_text|search|select|select_all|select_word_under_caret|set_caret_column|set_caret_line|set_gutter_clickable|set_gutter_custom_draw|set_gutter_draw|set_gutter_name|set_gutter_overwritable|set_gutter_type|set_gutter_width|set_line|set_line_as_center_visible|set_line_as_first_visible|set_line_as_last_visible|set_line_background_color|set_line_gutter_clickable|set_line_gutter_icon|set_line_gutter_item_color|set_line_gutter_metadata|set_line_gutter_text|set_overtype_mode_enabled|set_search_flags|set_search_text|set_selection_mode|set_selection_origin_column|set_selection_origin_line|set_tab_size|set_tooltip_request_func|skip_selection_for_next_occurrence|start_action|swap_lines|tag_saved_version|undo)
 │   │   │   │   └── CodeEdit (_confirm_code_completion|_filter_code_completion_candidates|_request_code_completion|add_auto_brace_completion_pair|add_code_completion_option|add_comment_delimiter|add_string_delimiter|can_fold_line|cancel_code_completion|clear_bookmarked_lines|clear_breakpointed_lines|clear_comment_delimiters|clear_executing_lines|clear_string_delimiters|confirm_code_completion|convert_indent|create_code_region|delete_lines|do_indent|duplicate_lines|duplicate_selection|fold_all_lines|fold_line|get_auto_brace_completion_close_key|get_bookmarked_lines|get_breakpointed_lines|get_code_completion_option|get_code_completion_options|get_code_completion_selected_index|get_code_region_end_tag|get_code_region_start_tag|get_delimiter_end_key|get_delimiter_end_position|get_delimiter_start_key|get_delimiter_start_position|get_executing_lines|get_folded_lines|get_text_for_code_completion|get_text_for_symbol_lookup|get_text_with_cursor_char|has_auto_brace_completion_close_key|has_auto_brace_completion_open_key|has_comment_delimiter|has_string_delimiter|indent_lines|is_in_comment|is_in_string|is_line_bookmarked|is_line_breakpointed|is_line_code_region_end|is_line_code_region_start|is_line_executing|is_line_folded|join_lines|move_lines_down|move_lines_up|remove_comment_delimiter|remove_string_delimiter|request_code_completion|set_code_completion_selected_index|set_code_hint|set_code_hint_draw_below|set_code_region_tags|set_line_as_bookmarked|set_line_as_breakpoint|set_line_as_executing|set_symbol_lookup_word_as_valid|toggle_foldable_line|toggle_foldable_lines_at_carets|unfold_all_lines|unfold_line|unindent_lines|update_code_completion_options)
-│   │   │   ├── TextureRect ()
+│   │   │   ├── TextureRect
 │   │   │   ├── Tree (clear|create_item|deselect_all|edit_selected|ensure_cursor_is_visible|get_button_id_at_position|get_column_at_position|get_column_expand_ratio|get_column_title|get_column_title_alignment|get_column_title_direction|get_column_title_language|get_column_title_tooltip_text|get_column_width|get_custom_drawing_canvas_item|get_custom_popup_rect|get_drop_section_at_position|get_edited|get_edited_column|get_item_area_rect|get_item_at_position|get_next_selected|get_pressed_button|get_root|get_scroll|get_selected|get_selected_column|is_column_clipping_content|is_column_expanding|scroll_to_item|set_column_clip_content|set_column_custom_minimum_width|set_column_expand|set_column_expand_ratio|set_column_title|set_column_title_alignment|set_column_title_direction|set_column_title_language|set_column_title_tooltip_text|set_selected)
 │   │   │   ├── VideoStreamPlayer (get_stream_length|get_stream_name|get_video_texture|is_playing|play|stop)
-│   │   │   └── VirtualJoystick ()
+│   │   │   └── VirtualJoystick
 │   │   └── Node2D (apply_scale|get_angle_to|get_relative_transform_to_parent|global_translate|look_at|move_local_x|move_local_y|rotate|to_global|to_local|translate)
 │   │       ├── AnimatedSprite2D (get_playing_speed|is_playing|pause|play|play_backwards|set_frame_and_progress|stop)
 │   │       ├── AudioListener2D (clear_current|is_current|make_current)
 │   │       ├── AudioStreamPlayer2D (get_playback_position|get_stream_playback|has_stream_playback|play|seek|stop)
-│   │       ├── BackBufferCopy ()
+│   │       ├── BackBufferCopy
 │   │       ├── Bone2D (apply_rest|get_autocalculate_length_and_angle|get_bone_angle|get_index_in_skeleton|get_length|get_skeleton_rest|set_autocalculate_length_and_angle|set_bone_angle|set_length)
 │   │       ├── CPUParticles2D (convert_from_particles|get_param_curve|get_param_max|get_param_min|get_particle_flag|request_particles_process|restart|set_param_curve|set_param_max|set_param_min|set_particle_flag)
 │   │       ├── Camera2D (align|force_update_scroll|get_drag_margin|get_limit|get_screen_center_position|get_screen_rotation|get_target_position|is_current|make_current|reset_smoothing|set_drag_margin|set_limit)
-│   │       ├── CanvasGroup ()
-│   │       ├── CanvasModulate ()
+│   │       ├── CanvasGroup
+│   │       ├── CanvasModulate
 │   │       ├── CollisionObject2D (_input_event|_mouse_enter|_mouse_exit|_mouse_shape_enter|_mouse_shape_exit|create_shape_owner|get_collision_layer_value|get_collision_mask_value|get_rid|get_shape_owner_one_way_collision_direction|get_shape_owner_one_way_collision_margin|get_shape_owners|is_shape_owner_disabled|is_shape_owner_one_way_collision_enabled|remove_shape_owner|set_collision_layer_value|set_collision_mask_value|shape_find_owner|shape_owner_add_shape|shape_owner_clear_shapes|shape_owner_get_owner|shape_owner_get_shape|shape_owner_get_shape_count|shape_owner_get_shape_index|shape_owner_get_transform|shape_owner_remove_shape|shape_owner_set_disabled|shape_owner_set_one_way_collision|shape_owner_set_one_way_collision_direction|shape_owner_set_one_way_collision_margin|shape_owner_set_transform)
 │   │       │   ├── Area2D (get_overlapping_areas|get_overlapping_bodies|has_overlapping_areas|has_overlapping_bodies|overlaps_area|overlaps_body)
 │   │       │   └── PhysicsBody2D (add_collision_exception_with|get_collision_exceptions|get_gravity|move_and_collide|remove_collision_exception_with|test_move)
 │   │       │       ├── CharacterBody2D (apply_floor_snap|get_floor_angle|get_floor_normal|get_last_motion|get_last_slide_collision|get_platform_velocity|get_position_delta|get_real_velocity|get_slide_collision|get_slide_collision_count|get_wall_normal|is_on_ceiling|is_on_ceiling_only|is_on_floor|is_on_floor_only|is_on_wall|is_on_wall_only|move_and_slide)
 │   │       │       ├── RigidBody2D (_integrate_forces|add_constant_central_force|add_constant_force|add_constant_torque|apply_central_force|apply_central_impulse|apply_force|apply_impulse|apply_torque|apply_torque_impulse|get_colliding_bodies|get_contact_count|set_axis_velocity)
 │   │       │       │   └── PhysicalBone2D (get_joint|is_simulating_physics)
-│   │       │       └── StaticBody2D ()
-│   │       │           └── AnimatableBody2D ()
-│   │       ├── CollisionPolygon2D ()
-│   │       ├── CollisionShape2D ()
+│   │       │       └── StaticBody2D
+│   │       │           └── AnimatableBody2D
+│   │       ├── CollisionPolygon2D
+│   │       ├── CollisionShape2D
 │   │       ├── GPUParticles2D (capture_rect|convert_from_particles|emit_particle|request_particles_process|restart)
 │   │       ├── Joint2D (get_rid)
-│   │       │   ├── DampedSpringJoint2D ()
-│   │       │   ├── GrooveJoint2D ()
-│   │       │   └── PinJoint2D ()
+│   │       │   ├── DampedSpringJoint2D
+│   │       │   ├── GrooveJoint2D
+│   │       │   └── PinJoint2D
 │   │       ├── Light2D (get_height|set_height)
-│   │       │   ├── DirectionalLight2D ()
-│   │       │   └── PointLight2D ()
-│   │       ├── LightOccluder2D ()
+│   │       │   ├── DirectionalLight2D
+│   │       │   └── PointLight2D
+│   │       ├── LightOccluder2D
 │   │       ├── Line2D (add_point|clear_points|get_point_count|get_point_position|remove_point|set_point_position)
-│   │       ├── Marker2D ()
-│   │       ├── MeshInstance2D ()
-│   │       ├── MultiMeshInstance2D ()
+│   │       ├── Marker2D
+│   │       ├── MeshInstance2D
+│   │       ├── MultiMeshInstance2D
 │   │       ├── NavigationLink2D (get_global_end_position|get_global_start_position|get_navigation_layer_value|get_navigation_map|get_rid|set_global_end_position|set_global_start_position|set_navigation_layer_value|set_navigation_map)
 │   │       ├── NavigationObstacle2D (get_avoidance_layer_value|get_navigation_map|get_rid|set_avoidance_layer_value|set_navigation_map)
 │   │       ├── NavigationRegion2D (bake_navigation_polygon|get_bounds|get_navigation_layer_value|get_navigation_map|get_region_rid|get_rid|is_baking|set_navigation_layer_value|set_navigation_map)
-│   │       ├── Parallax2D ()
-│   │       ├── ParallaxLayer ()
-│   │       ├── Path2D ()
-│   │       ├── PathFollow2D ()
+│   │       ├── Parallax2D
+│   │       ├── ParallaxLayer
+│   │       ├── Path2D
+│   │       ├── PathFollow2D
 │   │       ├── Polygon2D (add_bone|clear_bones|erase_bone|get_bone_count|get_bone_path|get_bone_weights|set_bone_path|set_bone_weights)
 │   │       ├── RayCast2D (add_exception|add_exception_rid|clear_exceptions|force_raycast_update|get_collider|get_collider_rid|get_collider_shape|get_collision_mask_value|get_collision_normal|get_collision_point|is_colliding|remove_exception|remove_exception_rid|set_collision_mask_value)
 │   │       ├── RemoteTransform2D (force_update_cache)
@@ -147,12 +147,12 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │       ├── TileMapLayer (_tile_data_runtime_update|_update_cells|_use_tile_data_runtime_update|clear|erase_cell|fix_invalid_tiles|get_cell_alternative_tile|get_cell_atlas_coords|get_cell_source_id|get_cell_tile_data|get_coords_for_body_rid|get_navigation_map|get_neighbor_cell|get_pattern|get_surrounding_cells|get_used_cells|get_used_cells_by_id|get_used_rect|has_body_rid|is_cell_flipped_h|is_cell_flipped_v|is_cell_transposed|local_to_map|map_pattern|map_to_local|notify_runtime_tile_data_update|set_cell|set_cells_terrain_connect|set_cells_terrain_path|set_navigation_map|set_pattern|update_internals)
 │   │       ├── TouchScreenButton (is_pressed)
 │   │       └── VisibleOnScreenNotifier2D (is_on_screen)
-│   │           └── VisibleOnScreenEnabler2D ()
+│   │           └── VisibleOnScreenEnabler2D
 │   ├── CanvasLayer (get_canvas|get_final_transform|hide|show)
-│   │   └── ParallaxBackground ()
+│   │   └── ParallaxBackground
 │   ├── HTTPRequest (cancel_request|get_body_size|get_downloaded_bytes|get_http_client_status|request|request_raw|set_http_proxy|set_https_proxy|set_tls_options)
 │   ├── InstancePlaceholder (create_instance|get_instance_path|get_stored_values)
-│   ├── MissingNode ()
+│   ├── MissingNode
 │   ├── MultiplayerSpawner (add_spawnable_scene|clear_spawnable_scenes|get_spawnable_scene|get_spawnable_scene_count|spawn)
 │   ├── MultiplayerSynchronizer (add_visibility_filter|get_visibility_for|remove_visibility_filter|set_visibility_for|update_visibility)
 │   ├── NavigationAgent2D (distance_to_target|get_avoidance_layer_value|get_avoidance_mask_value|get_current_navigation_path|get_current_navigation_path_index|get_current_navigation_result|get_final_position|get_navigation_layer_value|get_navigation_map|get_next_path_position|get_path_length|get_rid|is_navigation_finished|is_target_reachable|is_target_reached|set_avoidance_layer_value|set_avoidance_mask_value|set_navigation_layer_value|set_navigation_map|set_velocity_forced)
@@ -162,39 +162,39 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   ├── AudioStreamPlayer3D (get_playback_position|get_stream_playback|has_stream_playback|play|seek|stop)
 │   │   ├── BoneAttachment3D (get_skeleton|on_skeleton_update)
 │   │   ├── Camera3D (clear_current|get_camera_projection|get_camera_rid|get_camera_transform|get_cull_mask_value|get_frustum|get_pyramid_shape_rid|is_position_behind|is_position_in_frustum|make_current|project_local_ray_normal|project_position|project_ray_normal|project_ray_origin|set_cull_mask_value|set_frustum|set_orthogonal|set_perspective|unproject_position)
-│   │   │   └── XRCamera3D ()
+│   │   │   └── XRCamera3D
 │   │   ├── CollisionObject3D (_input_event|_mouse_enter|_mouse_exit|create_shape_owner|get_collision_layer_value|get_collision_mask_value|get_rid|get_shape_owners|is_shape_owner_disabled|remove_shape_owner|set_collision_layer_value|set_collision_mask_value|shape_find_owner|shape_owner_add_shape|shape_owner_clear_shapes|shape_owner_get_owner|shape_owner_get_shape|shape_owner_get_shape_count|shape_owner_get_shape_index|shape_owner_get_transform|shape_owner_remove_shape|shape_owner_set_disabled|shape_owner_set_transform)
 │   │   │   ├── Area3D (get_overlapping_areas|get_overlapping_bodies|has_overlapping_areas|has_overlapping_bodies|overlaps_area|overlaps_body)
 │   │   │   └── PhysicsBody3D (add_collision_exception_with|get_axis_lock|get_collision_exceptions|get_gravity|move_and_collide|remove_collision_exception_with|set_axis_lock|test_move)
 │   │   │       ├── CharacterBody3D (apply_floor_snap|get_floor_angle|get_floor_normal|get_last_motion|get_last_slide_collision|get_platform_angular_velocity|get_platform_velocity|get_position_delta|get_real_velocity|get_slide_collision|get_slide_collision_count|get_wall_normal|is_on_ceiling|is_on_ceiling_only|is_on_floor|is_on_floor_only|is_on_wall|is_on_wall_only|move_and_slide)
 │   │   │       ├── PhysicalBone3D (_integrate_forces|apply_central_impulse|apply_impulse|get_bone_id|get_simulate_physics|is_simulating_physics)
 │   │   │       ├── RigidBody3D (_integrate_forces|add_constant_central_force|add_constant_force|add_constant_torque|apply_central_force|apply_central_impulse|apply_force|apply_impulse|apply_torque|apply_torque_impulse|get_colliding_bodies|get_contact_count|get_inverse_inertia_tensor|set_axis_velocity)
-│   │   │       │   └── VehicleBody3D ()
-│   │   │       └── StaticBody3D ()
-│   │   │           └── AnimatableBody3D ()
-│   │   ├── CollisionPolygon3D ()
+│   │   │       │   └── VehicleBody3D
+│   │   │       └── StaticBody3D
+│   │   │           └── AnimatableBody3D
+│   │   ├── CollisionPolygon3D
 │   │   ├── CollisionShape3D (make_convex_from_siblings|resource_changed)
 │   │   ├── GridMap (clear|clear_baked_meshes|get_bake_mesh_instance|get_bake_meshes|get_basis_with_orthogonal_index|get_cell_item|get_cell_item_basis|get_cell_item_orientation|get_collision_layer_value|get_collision_mask_value|get_meshes|get_navigation_map|get_octant_coords_from_cell_coords|get_octants_in_bounds|get_orthogonal_index_from_basis|get_used_cells|get_used_cells_by_item|get_used_cells_in_octant|get_used_cells_in_octant_by_item|get_used_octants|get_used_octants_by_item|get_used_octants_in_bounds|local_to_map|make_baked_meshes|map_to_local|resource_changed|set_cell_item|set_collision_layer_value|set_collision_mask_value|set_navigation_map)
-│   │   ├── ImporterMeshInstance3D ()
+│   │   ├── ImporterMeshInstance3D
 │   │   ├── Joint3D (get_rid)
 │   │   │   ├── ConeTwistJoint3D (get_param|set_param)
 │   │   │   ├── Generic6DOFJoint3D (get_flag_x|get_flag_y|get_flag_z|get_param_x|get_param_y|get_param_z|set_flag_x|set_flag_y|set_flag_z|set_param_x|set_param_y|set_param_z)
 │   │   │   ├── HingeJoint3D (get_flag|get_param|set_flag|set_param)
 │   │   │   ├── PinJoint3D (get_param|set_param)
 │   │   │   └── SliderJoint3D (get_param|set_param)
-│   │   ├── LightmapProbe ()
-│   │   ├── Marker3D ()
+│   │   ├── LightmapProbe
+│   │   ├── Marker3D
 │   │   ├── NavigationLink3D (get_global_end_position|get_global_start_position|get_navigation_layer_value|get_navigation_map|get_rid|set_global_end_position|set_global_start_position|set_navigation_layer_value|set_navigation_map)
 │   │   ├── NavigationObstacle3D (get_avoidance_layer_value|get_navigation_map|get_rid|set_avoidance_layer_value|set_navigation_map)
 │   │   ├── NavigationRegion3D (bake_navigation_mesh|get_bounds|get_navigation_layer_value|get_navigation_map|get_region_rid|get_rid|is_baking|set_navigation_layer_value|set_navigation_map)
 │   │   ├── OpenXRCompositionLayer (get_android_surface|intersects_ray|is_natively_supported)
-│   │   │   ├── OpenXRCompositionLayerCylinder ()
-│   │   │   ├── OpenXRCompositionLayerEquirect ()
-│   │   │   └── OpenXRCompositionLayerQuad ()
-│   │   ├── OpenXRHand ()
+│   │   │   ├── OpenXRCompositionLayerCylinder
+│   │   │   ├── OpenXRCompositionLayerEquirect
+│   │   │   └── OpenXRCompositionLayerQuad
+│   │   ├── OpenXRHand
 │   │   ├── OpenXRRenderModel (get_top_level_path)
-│   │   ├── OpenXRRenderModelManager ()
-│   │   ├── Path3D ()
+│   │   ├── OpenXRRenderModelManager
+│   │   ├── Path3D
 │   │   ├── PathFollow3D (correct_posture)
 │   │   ├── RayCast3D (add_exception|add_exception_rid|clear_exceptions|force_raycast_update|get_collider|get_collider_rid|get_collider_shape|get_collision_face_index|get_collision_mask_value|get_collision_normal|get_collision_point|is_colliding|remove_exception|remove_exception_rid|set_collision_mask_value)
 │   │   ├── RemoteTransform3D (force_update_cache)
@@ -209,93 +209,93 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   │   ├── IKModifier3D (clear_settings|get_setting_count|reset|set_setting_count)
 │   │   │   │   ├── ChainIK3D (get_end_bone|get_end_bone_direction|get_end_bone_length|get_end_bone_name|get_joint_bone|get_joint_bone_name|get_joint_count|get_root_bone|get_root_bone_name|is_end_bone_extended|set_end_bone|set_end_bone_direction|set_end_bone_length|set_end_bone_name|set_extend_end_bone|set_root_bone|set_root_bone_name)
 │   │   │   │   │   ├── IterateIK3D (get_joint_limitation|get_joint_limitation_right_axis|get_joint_limitation_right_axis_vector|get_joint_limitation_rotation_offset|get_joint_rotation_axis|get_joint_rotation_axis_vector|get_target_node|set_joint_limitation|set_joint_limitation_right_axis|set_joint_limitation_right_axis_vector|set_joint_limitation_rotation_offset|set_joint_rotation_axis|set_joint_rotation_axis_vector|set_target_node)
-│   │   │   │   │   │   ├── CCDIK3D ()
-│   │   │   │   │   │   ├── FABRIK3D ()
-│   │   │   │   │   │   └── JacobianIK3D ()
+│   │   │   │   │   │   ├── CCDIK3D
+│   │   │   │   │   │   ├── FABRIK3D
+│   │   │   │   │   │   └── JacobianIK3D
 │   │   │   │   │   └── SplineIK3D (get_path_3d|get_tilt_fade_in|get_tilt_fade_out|is_tilt_enabled|set_path_3d|set_tilt_enabled|set_tilt_fade_in|set_tilt_fade_out)
 │   │   │   │   └── TwoBoneIK3D (get_end_bone|get_end_bone_direction|get_end_bone_length|get_end_bone_name|get_middle_bone|get_middle_bone_name|get_pole_direction|get_pole_direction_vector|get_pole_node|get_root_bone|get_root_bone_name|get_target_node|is_end_bone_extended|is_using_virtual_end|set_end_bone|set_end_bone_direction|set_end_bone_length|set_end_bone_name|set_extend_end_bone|set_middle_bone|set_middle_bone_name|set_pole_direction|set_pole_direction_vector|set_pole_node|set_root_bone|set_root_bone_name|set_target_node|set_use_virtual_end)
 │   │   │   ├── LimitAngularVelocityModifier3D (clear_chains|get_end_bone|get_end_bone_name|get_root_bone|get_root_bone_name|reset|set_end_bone|set_end_bone_name|set_root_bone|set_root_bone_name)
 │   │   │   ├── LookAtModifier3D (get_interpolation_remaining|is_interpolating|is_target_within_limitation)
-│   │   │   ├── ModifierBoneTarget3D ()
+│   │   │   ├── ModifierBoneTarget3D
 │   │   │   ├── PhysicalBoneSimulator3D (is_simulating_physics|physical_bones_add_collision_exception|physical_bones_remove_collision_exception|physical_bones_start_simulation|physical_bones_stop_simulation)
 │   │   │   ├── RetargetModifier3D (is_position_enabled|is_rotation_enabled|is_scale_enabled|set_position_enabled|set_rotation_enabled|set_scale_enabled)
 │   │   │   ├── SkeletonIK3D (get_parent_skeleton|is_running|start|stop)
 │   │   │   ├── SpringBoneSimulator3D (are_all_child_collisions_enabled|clear_collisions|clear_exclude_collisions|clear_settings|get_center_bone|get_center_bone_name|get_center_from|get_center_node|get_collision_count|get_collision_path|get_drag|get_drag_damping_curve|get_end_bone|get_end_bone_direction|get_end_bone_length|get_end_bone_name|get_exclude_collision_count|get_exclude_collision_path|get_gravity|get_gravity_damping_curve|get_gravity_direction|get_joint_bone|get_joint_bone_name|get_joint_count|get_joint_drag|get_joint_gravity|get_joint_gravity_direction|get_joint_radius|get_joint_rotation_axis|get_joint_rotation_axis_vector|get_joint_stiffness|get_radius|get_radius_damping_curve|get_root_bone|get_root_bone_name|get_rotation_axis|get_rotation_axis_vector|get_stiffness|get_stiffness_damping_curve|is_config_individual|is_end_bone_extended|reset|set_center_bone|set_center_bone_name|set_center_from|set_center_node|set_collision_count|set_collision_path|set_drag|set_drag_damping_curve|set_enable_all_child_collisions|set_end_bone|set_end_bone_direction|set_end_bone_length|set_end_bone_name|set_exclude_collision_count|set_exclude_collision_path|set_extend_end_bone|set_gravity|set_gravity_damping_curve|set_gravity_direction|set_individual_config|set_joint_drag|set_joint_gravity|set_joint_gravity_direction|set_joint_radius|set_joint_rotation_axis|set_joint_rotation_axis_vector|set_joint_stiffness|set_radius|set_radius_damping_curve|set_root_bone|set_root_bone_name|set_rotation_axis|set_rotation_axis_vector|set_stiffness|set_stiffness_damping_curve)
-│   │   │   ├── XRBodyModifier3D ()
-│   │   │   └── XRHandModifier3D ()
+│   │   │   ├── XRBodyModifier3D
+│   │   │   └── XRHandModifier3D
 │   │   ├── SpringArm3D (add_excluded_object|clear_excluded_objects|get_hit_length|remove_excluded_object)
 │   │   ├── SpringBoneCollision3D (get_skeleton)
-│   │   │   ├── SpringBoneCollisionCapsule3D ()
-│   │   │   ├── SpringBoneCollisionPlane3D ()
-│   │   │   └── SpringBoneCollisionSphere3D ()
+│   │   │   ├── SpringBoneCollisionCapsule3D
+│   │   │   ├── SpringBoneCollisionPlane3D
+│   │   │   └── SpringBoneCollisionSphere3D
 │   │   ├── VehicleWheel3D (get_contact_body|get_contact_normal|get_contact_point|get_rpm|get_skidinfo|is_in_contact)
 │   │   ├── VisualInstance3D (_get_aabb|get_aabb|get_base|get_instance|get_layer_mask_value|set_base|set_layer_mask_value)
 │   │   │   ├── Decal (get_texture|set_texture)
-│   │   │   ├── FogVolume ()
-│   │   │   ├── GPUParticlesAttractor3D ()
-│   │   │   │   ├── GPUParticlesAttractorBox3D ()
-│   │   │   │   ├── GPUParticlesAttractorSphere3D ()
-│   │   │   │   └── GPUParticlesAttractorVectorField3D ()
-│   │   │   ├── GPUParticlesCollision3D ()
-│   │   │   │   ├── GPUParticlesCollisionBox3D ()
+│   │   │   ├── FogVolume
+│   │   │   ├── GPUParticlesAttractor3D
+│   │   │   │   ├── GPUParticlesAttractorBox3D
+│   │   │   │   ├── GPUParticlesAttractorSphere3D
+│   │   │   │   └── GPUParticlesAttractorVectorField3D
+│   │   │   ├── GPUParticlesCollision3D
+│   │   │   │   ├── GPUParticlesCollisionBox3D
 │   │   │   │   ├── GPUParticlesCollisionHeightField3D (get_heightfield_mask_value|set_heightfield_mask_value)
 │   │   │   │   ├── GPUParticlesCollisionSDF3D (get_bake_mask_value|set_bake_mask_value)
-│   │   │   │   └── GPUParticlesCollisionSphere3D ()
+│   │   │   │   └── GPUParticlesCollisionSphere3D
 │   │   │   ├── GeometryInstance3D (get_instance_shader_parameter|set_instance_shader_parameter)
 │   │   │   │   ├── CPUParticles3D (capture_aabb|convert_from_particles|get_param_curve|get_param_max|get_param_min|get_particle_flag|request_particles_process|restart|set_param_curve|set_param_max|set_param_min|set_particle_flag)
 │   │   │   │   ├── CSGShape3D (bake_collision_shape|bake_static_mesh|get_collision_layer_value|get_collision_mask_value|get_meshes|is_root_shape|set_collision_layer_value|set_collision_mask_value)
-│   │   │   │   │   ├── CSGCombiner3D ()
-│   │   │   │   │   └── CSGPrimitive3D ()
-│   │   │   │   │       ├── CSGBox3D ()
-│   │   │   │   │       ├── CSGCylinder3D ()
-│   │   │   │   │       ├── CSGMesh3D ()
-│   │   │   │   │       ├── CSGPolygon3D ()
-│   │   │   │   │       ├── CSGSphere3D ()
-│   │   │   │   │       └── CSGTorus3D ()
+│   │   │   │   │   ├── CSGCombiner3D
+│   │   │   │   │   └── CSGPrimitive3D
+│   │   │   │   │       ├── CSGBox3D
+│   │   │   │   │       ├── CSGCylinder3D
+│   │   │   │   │       ├── CSGMesh3D
+│   │   │   │   │       ├── CSGPolygon3D
+│   │   │   │   │       ├── CSGSphere3D
+│   │   │   │   │       └── CSGTorus3D
 │   │   │   │   ├── GPUParticles3D (capture_aabb|convert_from_particles|emit_particle|get_draw_pass_mesh|request_particles_process|restart|set_draw_pass_mesh)
 │   │   │   │   ├── Label3D (generate_triangle_mesh|get_draw_flag|set_draw_flag)
 │   │   │   │   ├── MeshInstance3D (bake_mesh_from_current_blend_shape_mix|bake_mesh_from_current_skeleton_pose|create_convex_collision|create_debug_tangents|create_multiple_convex_collisions|create_trimesh_collision|find_blend_shape_by_name|get_active_material|get_blend_shape_count|get_blend_shape_value|get_skin_reference|get_surface_override_material|get_surface_override_material_count|set_blend_shape_value|set_surface_override_material)
 │   │   │   │   │   └── SoftBody3D (add_collision_exception_with|apply_central_force|apply_central_impulse|apply_force|apply_impulse|get_collision_exceptions|get_collision_layer_value|get_collision_mask_value|get_physics_rid|get_point_transform|is_point_pinned|remove_collision_exception_with|set_collision_layer_value|set_collision_mask_value|set_point_pinned)
-│   │   │   │   ├── MultiMeshInstance3D ()
+│   │   │   │   ├── MultiMeshInstance3D
 │   │   │   │   └── SpriteBase3D (generate_triangle_mesh|get_draw_flag|get_item_rect|set_draw_flag)
 │   │   │   │       ├── AnimatedSprite3D (get_playing_speed|is_playing|pause|play|play_backwards|set_frame_and_progress|stop)
-│   │   │   │       └── Sprite3D ()
+│   │   │   │       └── Sprite3D
 │   │   │   ├── Light3D (get_correlated_color|get_param|set_param)
-│   │   │   │   ├── AreaLight3D ()
-│   │   │   │   ├── DirectionalLight3D ()
-│   │   │   │   ├── OmniLight3D ()
-│   │   │   │   └── SpotLight3D ()
-│   │   │   ├── LightmapGI ()
+│   │   │   │   ├── AreaLight3D
+│   │   │   │   ├── DirectionalLight3D
+│   │   │   │   ├── OmniLight3D
+│   │   │   │   └── SpotLight3D
+│   │   │   ├── LightmapGI
 │   │   │   ├── OccluderInstance3D (get_bake_mask_value|set_bake_mask_value)
-│   │   │   ├── OpenXRVisibilityMask ()
-│   │   │   ├── ReflectionProbe ()
-│   │   │   ├── RootMotionView ()
+│   │   │   ├── OpenXRVisibilityMask
+│   │   │   ├── ReflectionProbe
+│   │   │   ├── RootMotionView
 │   │   │   ├── VisibleOnScreenNotifier3D (is_on_screen)
-│   │   │   │   └── VisibleOnScreenEnabler3D ()
+│   │   │   │   └── VisibleOnScreenEnabler3D
 │   │   │   └── VoxelGI (bake|debug_bake)
-│   │   ├── XRFaceModifier3D ()
+│   │   ├── XRFaceModifier3D
 │   │   ├── XRNode3D (get_has_tracking_data|get_is_active|get_pose|trigger_haptic_pulse)
 │   │   │   ├── XRAnchor3D (get_plane|get_size)
 │   │   │   └── XRController3D (get_float|get_input|get_tracker_hand|get_vector2|is_button_pressed)
-│   │   └── XROrigin3D ()
+│   │   └── XROrigin3D
 │   ├── ResourcePreloader (add_resource|get_resource|get_resource_list|has_resource|remove_resource|rename_resource)
-│   ├── ShaderGlobalsOverride ()
+│   ├── ShaderGlobalsOverride
 │   ├── StatusIndicator (get_rect)
 │   ├── Timer (is_stopped|start|stop)
 │   ├── Viewport (find_world_2d|find_world_3d|get_audio_listener_2d|get_audio_listener_3d|get_camera_2d|get_camera_3d|get_canvas_cull_mask_bit|get_embedded_subwindows|get_final_transform|get_mouse_position|get_oversampling|get_positional_shadow_atlas_quadrant_subdiv|get_render_info|get_screen_transform|get_stretch_transform|get_texture|get_viewport_rid|get_visible_rect|gui_cancel_drag|gui_get_drag_data|gui_get_drag_description|gui_get_focus_owner|gui_get_hovered_control|gui_is_drag_successful|gui_is_dragging|gui_release_focus|gui_set_drag_description|is_input_handled|notify_mouse_entered|notify_mouse_exited|push_input|push_text_input|push_unhandled_input|set_canvas_cull_mask_bit|set_input_as_handled|set_positional_shadow_atlas_quadrant_subdiv|update_mouse_cursor_state|warp_mouse)
-│   │   ├── SubViewport ()
+│   │   ├── SubViewport
 │   │   └── Window (_get_contents_minimum_size|add_theme_color_override|add_theme_constant_override|add_theme_font_override|add_theme_font_size_override|add_theme_icon_override|add_theme_stylebox_override|begin_bulk_theme_override|can_draw|child_controls_changed|end_bulk_theme_override|get_contents_minimum_size|get_flag|get_focused_window|get_layout_direction|get_output_max_linear_value|get_position_with_decorations|get_size_with_decorations|get_theme_color|get_theme_constant|get_theme_default_base_scale|get_theme_default_font|get_theme_default_font_size|get_theme_font|get_theme_font_size|get_theme_icon|get_theme_stylebox|get_window_id|grab_focus|has_focus|has_theme_color|has_theme_color_override|has_theme_constant|has_theme_constant_override|has_theme_font|has_theme_font_override|has_theme_font_size|has_theme_font_size_override|has_theme_icon|has_theme_icon_override|has_theme_stylebox|has_theme_stylebox_override|hide|is_embedded|is_layout_rtl|is_maximize_allowed|is_using_font_oversampling|move_to_center|move_to_foreground|popup|popup_centered|popup_centered_clamped|popup_centered_ratio|popup_exclusive|popup_exclusive_centered|popup_exclusive_centered_clamped|popup_exclusive_centered_ratio|popup_exclusive_on_parent|popup_on_parent|remove_theme_color_override|remove_theme_constant_override|remove_theme_font_override|remove_theme_font_size_override|remove_theme_icon_override|remove_theme_stylebox_override|request_attention|reset_size|set_flag|set_ime_active|set_ime_position|set_layout_direction|set_taskbar_progress_state|set_taskbar_progress_value|set_unparent_when_invisible|set_use_font_oversampling|show|start_drag|start_resize)
 │   │       ├── AcceptDialog (add_button|add_cancel_button|get_label|get_ok_button|register_text_enter|remove_button)
 │   │       │   └── ConfirmationDialog (get_cancel_button)
 │   │       │       └── FileDialog (add_filter|add_option|clear_filename_filter|clear_filters|deselect_all|get_favorite_list|get_line_edit|get_option_default|get_option_name|get_option_values|get_recent_list|get_selected_options|get_vbox|invalidate|is_customization_flag_enabled|popup_file_dialog|set_customization_flag_enabled|set_favorite_list|set_get_icon_callback|set_get_thumbnail_callback|set_option_default|set_option_name|set_option_values|set_recent_list)
-│   │       └── Popup ()
+│   │       └── Popup
 │   │           ├── PopupMenu (activate_item_by_event|add_check_item|add_check_shortcut|add_icon_check_item|add_icon_check_shortcut|add_icon_item|add_icon_radio_check_item|add_icon_radio_check_shortcut|add_icon_shortcut|add_item|add_multistate_item|add_radio_check_item|add_radio_check_shortcut|add_separator|add_shortcut|add_submenu_item|add_submenu_node_item|clear|get_focused_item|get_item_accelerator|get_item_auto_translate_mode|get_item_icon|get_item_icon_max_width|get_item_icon_modulate|get_item_id|get_item_indent|get_item_index|get_item_language|get_item_metadata|get_item_multistate|get_item_multistate_max|get_item_shortcut|get_item_submenu|get_item_submenu_node|get_item_text|get_item_text_direction|get_item_tooltip|is_item_checkable|is_item_checked|is_item_disabled|is_item_radio_checkable|is_item_separator|is_item_shortcut_disabled|is_native_menu|is_system_menu|remove_item|scroll_to_item|set_focused_item|set_item_accelerator|set_item_as_checkable|set_item_as_radio_checkable|set_item_as_separator|set_item_auto_translate_mode|set_item_checked|set_item_disabled|set_item_icon|set_item_icon_max_width|set_item_icon_modulate|set_item_id|set_item_indent|set_item_index|set_item_language|set_item_metadata|set_item_multistate|set_item_multistate_max|set_item_shortcut|set_item_shortcut_disabled|set_item_submenu|set_item_submenu_node|set_item_text|set_item_text_direction|set_item_tooltip|toggle_item_checked|toggle_item_multistate)
-│   │           └── PopupPanel ()
-│   └── WorldEnvironment ()
+│   │           └── PopupPanel
+│   └── WorldEnvironment
 ├── OS (add_logger|alert|close_midi_inputs|crash|create_instance|create_process|delay_msec|delay_usec|execute|execute_with_pipe|find_keycode_from_string|get_cache_dir|get_cmdline_args|get_cmdline_user_args|get_config_dir|get_connected_midi_inputs|get_data_dir|get_distribution_name|get_entropy|get_environment|get_executable_path|get_granted_permissions|get_keycode_string|get_locale|get_locale_language|get_main_thread_id|get_memory_info|get_model_name|get_name|get_process_exit_code|get_process_id|get_processor_count|get_processor_name|get_restart_on_exit_arguments|get_static_memory_peak_usage|get_static_memory_usage|get_stderr_type|get_stdin_type|get_stdout_type|get_system_ca_certificates|get_system_dir|get_system_font_path|get_system_font_path_for_text|get_system_fonts|get_temp_dir|get_thread_caller_id|get_unique_id|get_user_data_dir|get_version|get_version_alias|get_video_adapter_driver_info|has_environment|has_feature|is_debug_build|is_keycode_unicode|is_process_running|is_restart_on_exit_set|is_sandboxed|is_stdout_verbose|is_userfs_persistent|kill|move_to_trash|open_midi_inputs|open_with_program|read_buffer_from_stdin|read_string_from_stdin|remove_logger|request_permission|request_permissions|revoke_granted_permissions|set_environment|set_restart_on_exit|set_thread_name|set_use_file_access_save_and_swap|shell_open|shell_show_in_file_manager|unset_environment)
 ├── OpenXRExtensionWrapper (_get_composition_layer|_get_composition_layer_count|_get_composition_layer_order|_get_requested_extensions|_get_suggested_tracker_names|_get_viewport_composition_layer_extension_properties|_get_viewport_composition_layer_extension_property_defaults|_on_before_instance_created|_on_event_polled|_on_instance_created|_on_instance_destroyed|_on_main_swapchains_created|_on_post_draw_viewport|_on_pre_draw_viewport|_on_pre_render|_on_process|_on_register_metadata|_on_session_created|_on_session_destroyed|_on_state_exiting|_on_state_focused|_on_state_idle|_on_state_loss_pending|_on_state_ready|_on_state_stopping|_on_state_synchronized|_on_state_visible|_on_sync_actions|_on_viewport_composition_layer_destroyed|_prepare_view_configuration|_print_view_configuration_info|_set_android_surface_swapchain_create_info_and_get_next_pointer|_set_frame_end_info_and_get_next_pointer|_set_frame_wait_info_and_get_next_pointer|_set_hand_joint_locations_and_get_next_pointer|_set_instance_create_info_and_get_next_pointer|_set_projection_layer_and_get_next_pointer|_set_projection_views_and_get_next_pointer|_set_reference_space_create_info_and_get_next_pointer|_set_session_create_and_get_next_pointer|_set_swapchain_create_info_and_get_next_pointer|_set_system_properties_and_get_next_pointer|_set_view_configuration_and_get_next_pointer|_set_view_locate_info_and_get_next_pointer|_set_viewport_composition_layer_and_get_next_pointer|get_openxr_api|register_extension_wrapper)
 │   ├── OpenXRAndroidThreadSettingsExtension (set_application_thread_type)
-│   ├── OpenXRExtensionWrapperExtension ()
+│   ├── OpenXRExtensionWrapperExtension
 │   ├── OpenXRFrameSynthesisExtension (is_available|skip_next_frame)
 │   ├── OpenXRFutureExtension (cancel_future|is_active|register_future)
 │   ├── OpenXRRenderModelExtension (is_active|render_model_create|render_model_destroy|render_model_get_all|render_model_get_animatable_node_count|render_model_get_animatable_node_name|render_model_get_animatable_node_transform|render_model_get_confidence|render_model_get_root_transform|render_model_get_subaction_paths|render_model_get_top_level_path|render_model_is_animatable_node_visible|render_model_new_scene_instance)
@@ -328,24 +328,24 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   ├── AStarGrid2D (_compute_cost|_estimate_cost|clear|fill_solid_region|fill_weight_scale_region|get_id_path|get_point_data_in_region|get_point_path|get_point_position|get_point_weight_scale|is_dirty|is_in_bounds|is_in_boundsv|is_point_solid|set_point_solid|set_point_weight_scale|update)
 │   ├── AudioEffectInstance (_process|_process_silence)
 │   │   └── AudioEffectSpectrumAnalyzerInstance (get_magnitude_for_frequency_range)
-│   ├── AudioSample ()
-│   ├── AudioSamplePlayback ()
+│   ├── AudioSample
+│   ├── AudioSamplePlayback
 │   ├── AudioStreamPlayback (_get_loop_count|_get_parameter|_get_playback_position|_is_playing|_mix|_seek|_set_parameter|_start|_stop|_tag_used_streams|get_loop_count|get_playback_position|get_sample_playback|is_playing|mix_audio|seek|set_sample_playback|start|stop)
 │   │   ├── AudioStreamPlaybackInteractive (get_current_clip_index|switch_to_clip|switch_to_clip_by_name)
-│   │   ├── AudioStreamPlaybackPlaylist ()
+│   │   ├── AudioStreamPlaybackPlaylist
 │   │   ├── AudioStreamPlaybackPolyphonic (is_stream_playing|play_stream|set_stream_pitch_scale|set_stream_volume|stop_stream)
 │   │   ├── AudioStreamPlaybackResampled (_get_stream_sampling_rate|_mix_resampled|begin_resample)
 │   │   │   ├── AudioStreamGeneratorPlayback (can_push_buffer|clear_buffer|get_frames_available|get_skips|push_buffer|push_frame)
-│   │   │   └── AudioStreamPlaybackOggVorbis ()
-│   │   └── AudioStreamPlaybackSynchronized ()
+│   │   │   └── AudioStreamPlaybackOggVorbis
+│   │   └── AudioStreamPlaybackSynchronized
 │   ├── CameraFeed (_activate_feed|_deactivate_feed|_get_formats|_set_format|get_datatype|get_id|get_name|get_position|get_texture_tex_id|set_external|set_format|set_name|set_position|set_rgb_image|set_ycbcr_image|set_ycbcr_images)
-│   ├── CharFXTransform ()
+│   ├── CharFXTransform
 │   ├── ConfigFile (clear|encode_to_text|erase_section|erase_section_key|get_section_keys|get_sections|get_value|has_section|has_section_key|load|load_encrypted|load_encrypted_pass|parse|save|save_encrypted|save_encrypted_pass|set_value)
 │   ├── Crypto (constant_time_compare|decrypt|encrypt|generate_random_bytes|generate_rsa|generate_self_signed_certificate|hmac_digest|sign|verify)
 │   ├── DTLSServer (setup|take_connection)
 │   ├── DirAccess (change_dir|copy|copy_absolute|create_link|create_temp|current_is_dir|dir_exists|dir_exists_absolute|file_exists|get_current_dir|get_current_drive|get_directories|get_directories_at|get_drive_count|get_drive_label|get_drive_name|get_files|get_files_at|get_filesystem_type|get_next|get_open_error|get_space_left|is_bundle|is_case_sensitive|is_equivalent|is_link|list_dir_begin|list_dir_end|make_dir|make_dir_absolute|make_dir_recursive|make_dir_recursive_absolute|open|read_link|remove|remove_absolute|rename|rename_absolute)
 │   ├── ENetConnection (bandwidth_limit|broadcast|channel_limit|compress|connect_to_host|create_host|create_host_bound|destroy|dtls_client_setup|dtls_server_setup|flush|get_local_port|get_max_channels|get_peers|pop_statistic|refuse_new_connections|service|socket_send)
-│   ├── EncodedObjectAsID ()
+│   ├── EncodedObjectAsID
 │   ├── EngineProfiler (_add_frame|_tick|_toggle)
 │   ├── Expression (execute|get_error_text|has_execute_failed|parse)
 │   ├── FileAccess (close|create_temp|eof_reached|file_exists|flush|get_8|get_16|get_32|get_64|get_access_time|get_as_text|get_buffer|get_csv_line|get_double|get_error|get_extended_attribute|get_extended_attribute_string|get_extended_attributes_list|get_file_as_bytes|get_file_as_string|get_float|get_half|get_hidden_attribute|get_length|get_line|get_md5|get_modified_time|get_open_error|get_pascal_string|get_path|get_path_absolute|get_position|get_read_only_attribute|get_real|get_sha256|get_size|get_unix_permissions|get_var|is_open|open|open_compressed|open_encrypted|open_encrypted_with_pass|remove_extended_attribute|resize|seek|seek_end|set_extended_attribute|set_extended_attribute_string|set_hidden_attribute|set_read_only_attribute|set_unix_permissions|store_8|store_16|store_32|store_64|store_buffer|store_csv_line|store_double|store_float|store_half|store_line|store_pascal_string|store_real|store_string|store_var)
@@ -353,28 +353,28 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   ├── HMACContext (finish|start|update)
 │   ├── HTTPClient (close|connect_to_host|get_response_body_length|get_response_code|get_response_headers|get_response_headers_as_dictionary|get_status|has_response|is_response_chunked|poll|query_string_from_dict|read_response_body_chunk|request|request_raw|set_http_proxy|set_https_proxy)
 │   ├── HashingContext (finish|start|update)
-│   ├── ImageFormatLoader ()
+│   ├── ImageFormatLoader
 │   │   └── ImageFormatLoaderExtension (_get_recognized_extensions|_load_image|add_format_loader|remove_format_loader)
 │   ├── JavaClass (get_java_class_name|get_java_method_list|get_java_parent_class|has_java_method)
 │   ├── JavaObject (get_java_class|has_java_method)
-│   ├── JavaScriptObject ()
+│   ├── JavaScriptObject
 │   ├── KinematicCollision2D (get_angle|get_collider|get_collider_id|get_collider_rid|get_collider_shape|get_collider_shape_index|get_collider_velocity|get_depth|get_local_shape|get_normal|get_position|get_remainder|get_travel)
 │   ├── KinematicCollision3D (get_angle|get_collider|get_collider_id|get_collider_rid|get_collider_shape|get_collider_shape_index|get_collider_velocity|get_collision_count|get_depth|get_local_shape|get_normal|get_position|get_remainder|get_travel)
-│   ├── Lightmapper ()
-│   │   └── LightmapperRD ()
+│   ├── Lightmapper
+│   │   └── LightmapperRD
 │   ├── Logger (_log_error|_log_message)
-│   ├── MeshConvexDecompositionSettings ()
+│   ├── MeshConvexDecompositionSettings
 │   ├── MeshDataTool (clear|commit_to_surface|create_from_surface|get_edge_count|get_edge_faces|get_edge_meta|get_edge_vertex|get_face_count|get_face_edge|get_face_meta|get_face_normal|get_face_vertex|get_format|get_material|get_vertex|get_vertex_bones|get_vertex_color|get_vertex_count|get_vertex_edges|get_vertex_faces|get_vertex_meta|get_vertex_normal|get_vertex_tangent|get_vertex_uv|get_vertex_uv2|get_vertex_weights|set_edge_meta|set_face_meta|set_material|set_vertex|set_vertex_bones|set_vertex_color|set_vertex_meta|set_vertex_normal|set_vertex_tangent|set_vertex_uv|set_vertex_uv2|set_vertex_weights)
 │   ├── MultiplayerAPI (create_default_interface|get_default_interface|get_peers|get_remote_sender_id|get_unique_id|has_multiplayer_peer|is_server|object_configuration_add|object_configuration_remove|poll|rpc|set_default_interface)
 │   │   ├── MultiplayerAPIExtension (_get_multiplayer_peer|_get_peer_ids|_get_remote_sender_id|_get_unique_id|_object_configuration_add|_object_configuration_remove|_poll|_rpc|_set_multiplayer_peer)
 │   │   └── SceneMultiplayer (clear|complete_auth|disconnect_peer|get_authenticating_peers|send_auth|send_bytes)
 │   ├── Mutex (lock|try_lock|unlock)
-│   ├── NavigationPathQueryParameters2D ()
-│   ├── NavigationPathQueryParameters3D ()
+│   ├── NavigationPathQueryParameters2D
+│   ├── NavigationPathQueryParameters3D
 │   ├── NavigationPathQueryResult2D (reset)
 │   ├── NavigationPathQueryResult3D (reset)
-│   ├── Node3DGizmo ()
-│   ├── OggPacketSequencePlayback ()
+│   ├── Node3DGizmo
+│   ├── OggPacketSequencePlayback
 │   ├── OpenXRAPIExtension (action_get_handle|begin_debug_label_region|can_render|end_debug_label_region|find_action|get_error_string|get_hand_tracker|get_instance|get_instance_proc_addr|get_next_frame_time|get_openxr_version|get_play_space|get_predicted_display_time|get_projection_layer|get_render_state_z_far|get_render_state_z_near|get_session|get_supported_swapchain_formats|get_swapchain_format_name|get_system_id|get_view_configuration|get_view_count|insert_debug_label|is_environment_blend_mode_alpha_supported|is_initialized|is_running|openxr_is_enabled|openxr_swapchain_acquire|openxr_swapchain_create|openxr_swapchain_free|openxr_swapchain_get_image|openxr_swapchain_get_swapchain|openxr_swapchain_release|register_composition_layer_provider|register_frame_info_extension|register_projection_layer_extension|register_projection_views_extension|set_custom_play_space|set_emulate_environment_blend_mode_alpha_blend|set_object_name|set_render_region|set_velocity_depth_texture|set_velocity_target_size|set_velocity_texture|transform_from_pose|unregister_composition_layer_provider|unregister_frame_info_extension|unregister_projection_layer_extension|unregister_projection_views_extension|update_main_swapchain_size|xr_result)
 │   ├── OpenXRFutureResult (cancel_future|get_future|get_result_value|get_status|set_result_value)
 │   ├── OpenXRSpatialCapabilityConfigurationBaseHeader (_get_configuration|_has_valid_configuration|get_configuration|has_valid_configuration)
@@ -406,123 +406,123 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   ├── MultiplayerPeer (close|disconnect_peer|generate_unique_id|get_connection_status|get_packet_channel|get_packet_mode|get_packet_peer|get_unique_id|is_server_relay_supported|poll|set_target_peer)
 │   │   │   ├── ENetMultiplayerPeer (add_mesh_peer|create_client|create_mesh|create_server|get_peer|set_bind_ip)
 │   │   │   ├── MultiplayerPeerExtension (_close|_disconnect_peer|_get_available_packet_count|_get_connection_status|_get_max_packet_size|_get_packet|_get_packet_channel|_get_packet_mode|_get_packet_peer|_get_packet_script|_get_transfer_channel|_get_transfer_mode|_get_unique_id|_is_refusing_new_connections|_is_server|_is_server_relay_supported|_poll|_put_packet|_put_packet_script|_set_refuse_new_connections|_set_target_peer|_set_transfer_channel|_set_transfer_mode)
-│   │   │   ├── OfflineMultiplayerPeer ()
+│   │   │   ├── OfflineMultiplayerPeer
 │   │   │   ├── WebRTCMultiplayerPeer (add_peer|create_client|create_mesh|create_server|get_peer|get_peers|has_peer|remove_peer)
 │   │   │   └── WebSocketMultiplayerPeer (create_client|create_server|get_peer|get_peer_address|get_peer_port)
 │   │   ├── PacketPeerDTLS (connect_to_peer|disconnect_from_peer|get_status|poll)
 │   │   ├── PacketPeerExtension (_get_available_packet_count|_get_max_packet_size|_get_packet|_put_packet)
-│   │   ├── PacketPeerStream ()
+│   │   ├── PacketPeerStream
 │   │   ├── PacketPeerUDP (bind|close|connect_to_host|get_local_port|get_packet_ip|get_packet_port|is_bound|is_socket_connected|join_multicast_group|leave_multicast_group|set_broadcast_enabled|set_dest_address|wait)
 │   │   ├── WebRTCDataChannel (close|get_buffered_amount|get_id|get_label|get_max_packet_life_time|get_max_retransmits|get_protocol|get_ready_state|is_negotiated|is_ordered|poll|was_string_packet)
 │   │   │   └── WebRTCDataChannelExtension (_close|_get_available_packet_count|_get_buffered_amount|_get_id|_get_label|_get_max_packet_life_time|_get_max_packet_size|_get_max_retransmits|_get_packet|_get_protocol|_get_ready_state|_get_write_mode|_is_negotiated|_is_ordered|_poll|_put_packet|_set_write_mode|_was_string_packet)
 │   │   └── WebSocketPeer (accept_stream|close|connect_to_url|get_close_code|get_close_reason|get_connected_host|get_connected_port|get_current_outbound_buffered_amount|get_ready_state|get_requested_url|get_selected_protocol|poll|send|send_text|set_no_delay|was_string_packet)
-│   ├── PhysicsPointQueryParameters2D ()
-│   ├── PhysicsPointQueryParameters3D ()
+│   ├── PhysicsPointQueryParameters2D
+│   ├── PhysicsPointQueryParameters3D
 │   ├── PhysicsRayQueryParameters2D (create)
 │   ├── PhysicsRayQueryParameters3D (create)
-│   ├── PhysicsShapeQueryParameters2D ()
-│   ├── PhysicsShapeQueryParameters3D ()
-│   ├── PhysicsTestMotionParameters2D ()
-│   ├── PhysicsTestMotionParameters3D ()
+│   ├── PhysicsShapeQueryParameters2D
+│   ├── PhysicsShapeQueryParameters3D
+│   ├── PhysicsTestMotionParameters2D
+│   ├── PhysicsTestMotionParameters3D
 │   ├── PhysicsTestMotionResult2D (get_collider|get_collider_id|get_collider_rid|get_collider_shape|get_collider_velocity|get_collision_depth|get_collision_local_shape|get_collision_normal|get_collision_point|get_collision_safe_fraction|get_collision_unsafe_fraction|get_remainder|get_travel)
 │   ├── PhysicsTestMotionResult3D (get_collider|get_collider_id|get_collider_rid|get_collider_shape|get_collider_velocity|get_collision_count|get_collision_depth|get_collision_local_shape|get_collision_normal|get_collision_point|get_collision_safe_fraction|get_collision_unsafe_fraction|get_remainder|get_travel)
-│   ├── RDAccelerationStructureGeometry ()
-│   ├── RDAccelerationStructureInstance ()
-│   ├── RDAttachmentFormat ()
-│   ├── RDFramebufferPass ()
-│   ├── RDHitGroup ()
-│   ├── RDPipelineColorBlendState ()
+│   ├── RDAccelerationStructureGeometry
+│   ├── RDAccelerationStructureInstance
+│   ├── RDAttachmentFormat
+│   ├── RDFramebufferPass
+│   ├── RDHitGroup
+│   ├── RDPipelineColorBlendState
 │   ├── RDPipelineColorBlendStateAttachment (set_as_mix)
-│   ├── RDPipelineDepthStencilState ()
-│   ├── RDPipelineMultisampleState ()
-│   ├── RDPipelineRasterizationState ()
-│   ├── RDPipelineShader ()
-│   ├── RDPipelineSpecializationConstant ()
-│   ├── RDSamplerState ()
+│   ├── RDPipelineDepthStencilState
+│   ├── RDPipelineMultisampleState
+│   ├── RDPipelineRasterizationState
+│   ├── RDPipelineShader
+│   ├── RDPipelineSpecializationConstant
+│   ├── RDSamplerState
 │   ├── RDShaderSource (get_stage_source|set_stage_source)
 │   ├── RDTextureFormat (add_shareable_format|remove_shareable_format)
-│   ├── RDTextureView ()
+│   ├── RDTextureView
 │   ├── RDUniform (add_id|clear_ids|get_ids)
-│   ├── RDVertexAttribute ()
+│   ├── RDVertexAttribute
 │   ├── RandomNumberGenerator (rand_weighted|randf|randf_range|randfn|randi|randi_range|randomize)
 │   ├── RegEx (clear|compile|create_from_string|get_group_count|get_names|get_pattern|is_valid|search|search_all|sub)
 │   ├── RegExMatch (get_end|get_group_count|get_start|get_string)
 │   ├── RenderSceneBuffers (configure)
 │   │   ├── RenderSceneBuffersExtension (_configure|_set_anisotropic_filtering_level|_set_fsr_sharpness|_set_texture_mipmap_bias|_set_use_debanding)
 │   │   └── RenderSceneBuffersRD (clear_context|create_texture|create_texture_from_format|create_texture_view|get_color_layer|get_color_texture|get_depth_layer|get_depth_texture|get_fsr_sharpness|get_internal_size|get_msaa_3d|get_render_target|get_scaling_3d_mode|get_screen_space_aa|get_target_size|get_texture|get_texture_format|get_texture_samples|get_texture_slice|get_texture_slice_size|get_texture_slice_view|get_use_debanding|get_use_taa|get_velocity_layer|get_velocity_texture|get_view_count|has_texture)
-│   ├── RenderSceneBuffersConfiguration ()
+│   ├── RenderSceneBuffersConfiguration
 │   ├── Resource (_get_rid|_reset_state|_set_path_cache|_setup_local_to_scene|copy_from_resource|duplicate|duplicate_deep|emit_changed|generate_scene_unique_id|get_id_for_path|get_local_scene|get_rid|is_built_in|reset_state|set_id_for_path|set_path_cache|setup_local_to_scene|take_over_path)
 │   │   ├── Animation (add_marker|add_track|animation_track_get_key_animation|animation_track_insert_key|animation_track_set_key_animation|audio_track_get_key_end_offset|audio_track_get_key_start_offset|audio_track_get_key_stream|audio_track_insert_key|audio_track_is_use_blend|audio_track_set_key_end_offset|audio_track_set_key_start_offset|audio_track_set_key_stream|audio_track_set_use_blend|bezier_track_get_key_in_handle|bezier_track_get_key_out_handle|bezier_track_get_key_value|bezier_track_insert_key|bezier_track_interpolate|bezier_track_set_key_in_handle|bezier_track_set_key_out_handle|bezier_track_set_key_value|blend_shape_track_insert_key|blend_shape_track_interpolate|clear|compress|copy_track|find_track|get_marker_at_time|get_marker_color|get_marker_names|get_marker_time|get_next_marker|get_prev_marker|get_track_count|has_marker|method_track_get_name|method_track_get_params|optimize|position_track_insert_key|position_track_interpolate|remove_marker|remove_track|rotation_track_insert_key|rotation_track_interpolate|scale_track_insert_key|scale_track_interpolate|set_marker_color|track_find_key|track_get_interpolation_loop_wrap|track_get_interpolation_type|track_get_key_count|track_get_key_time|track_get_key_transition|track_get_key_value|track_get_path|track_get_type|track_insert_key|track_is_compressed|track_is_enabled|track_is_imported|track_move_down|track_move_to|track_move_up|track_remove_key|track_remove_key_at_time|track_set_enabled|track_set_imported|track_set_interpolation_loop_wrap|track_set_interpolation_type|track_set_key_time|track_set_key_transition|track_set_key_value|track_set_path|track_swap|value_track_get_update_mode|value_track_interpolate|value_track_set_update_mode)
 │   │   ├── AnimationLibrary (add_animation|get_animation|get_animation_list|get_animation_list_size|has_animation|remove_animation|rename_animation)
 │   │   ├── AnimationNode (_get_caption|_get_child_by_name|_get_child_nodes|_get_parameter_default_value|_get_parameter_list|_has_filter|_is_parameter_read_only|_process|add_input|blend_animation|blend_input|blend_node|find_input|get_input_count|get_input_name|get_parameter|get_processing_animation_tree_instance_id|is_path_filtered|is_process_testing|remove_input|set_filter_path|set_input_name|set_parameter)
 │   │   │   ├── AnimationNodeExtension (_process_animation_node|get_remaining_time|is_looping)
-│   │   │   ├── AnimationNodeOutput ()
-│   │   │   ├── AnimationNodeSync ()
-│   │   │   │   ├── AnimationNodeAdd2 ()
-│   │   │   │   ├── AnimationNodeAdd3 ()
-│   │   │   │   ├── AnimationNodeBlend2 ()
-│   │   │   │   ├── AnimationNodeBlend3 ()
-│   │   │   │   ├── AnimationNodeOneShot ()
-│   │   │   │   ├── AnimationNodeSub2 ()
+│   │   │   ├── AnimationNodeOutput
+│   │   │   ├── AnimationNodeSync
+│   │   │   │   ├── AnimationNodeAdd2
+│   │   │   │   ├── AnimationNodeAdd3
+│   │   │   │   ├── AnimationNodeBlend2
+│   │   │   │   ├── AnimationNodeBlend3
+│   │   │   │   ├── AnimationNodeOneShot
+│   │   │   │   ├── AnimationNodeSub2
 │   │   │   │   └── AnimationNodeTransition (is_input_loop_broken_at_end|is_input_reset|is_input_set_as_auto_advance|set_input_as_auto_advance|set_input_break_loop_at_end|set_input_reset)
-│   │   │   ├── AnimationNodeTimeScale ()
-│   │   │   ├── AnimationNodeTimeSeek ()
-│   │   │   └── AnimationRootNode ()
-│   │   │       ├── AnimationNodeAnimation ()
+│   │   │   ├── AnimationNodeTimeScale
+│   │   │   ├── AnimationNodeTimeSeek
+│   │   │   └── AnimationRootNode
+│   │   │       ├── AnimationNodeAnimation
 │   │   │       ├── AnimationNodeBlendSpace1D (add_blend_point|find_blend_point_by_name|get_blend_point_count|get_blend_point_name|get_blend_point_node|get_blend_point_position|remove_blend_point|reorder_blend_point|set_blend_point_name|set_blend_point_node|set_blend_point_position)
 │   │   │       ├── AnimationNodeBlendSpace2D (add_blend_point|add_triangle|find_blend_point_by_name|get_blend_point_count|get_blend_point_name|get_blend_point_node|get_blend_point_position|get_triangle_count|get_triangle_point|remove_blend_point|remove_triangle|reorder_blend_point|set_blend_point_name|set_blend_point_node|set_blend_point_position)
 │   │   │       ├── AnimationNodeBlendTree (add_node|connect_node|disconnect_node|get_node|get_node_list|get_node_position|has_node|remove_node|rename_node|set_node_position)
 │   │   │       └── AnimationNodeStateMachine (add_node|add_transition|get_graph_offset|get_node|get_node_list|get_node_name|get_node_position|get_transition|get_transition_count|get_transition_from|get_transition_to|has_node|has_transition|remove_node|remove_transition|remove_transition_by_index|rename_node|replace_node|set_graph_offset|set_node_position)
 │   │   ├── AnimationNodeStateMachinePlayback (get_current_length|get_current_node|get_current_play_position|get_fading_from_length|get_fading_from_node|get_fading_from_play_position|get_fading_length|get_fading_position|get_travel_path|is_playing|next|start|stop|travel)
-│   │   ├── AnimationNodeStateMachineTransition ()
-│   │   ├── AudioBusLayout ()
+│   │   ├── AnimationNodeStateMachineTransition
+│   │   ├── AudioBusLayout
 │   │   ├── AudioEffect (_instantiate)
-│   │   │   ├── AudioEffectAmplify ()
+│   │   │   ├── AudioEffectAmplify
 │   │   │   ├── AudioEffectCapture (can_get_buffer|clear_buffer|get_buffer|get_buffer_length_frames|get_discarded_frames|get_frames_available|get_pushed_frames)
 │   │   │   ├── AudioEffectChorus (get_voice_cutoff_hz|get_voice_delay_ms|get_voice_depth_ms|get_voice_level_db|get_voice_pan|get_voice_rate_hz|set_voice_cutoff_hz|set_voice_delay_ms|set_voice_depth_ms|set_voice_level_db|set_voice_pan|set_voice_rate_hz)
-│   │   │   ├── AudioEffectCompressor ()
-│   │   │   ├── AudioEffectDelay ()
-│   │   │   ├── AudioEffectDistortion ()
+│   │   │   ├── AudioEffectCompressor
+│   │   │   ├── AudioEffectDelay
+│   │   │   ├── AudioEffectDistortion
 │   │   │   ├── AudioEffectEQ (get_band_count|get_band_gain_db|set_band_gain_db)
-│   │   │   │   ├── AudioEffectEQ10 ()
-│   │   │   │   ├── AudioEffectEQ21 ()
-│   │   │   │   └── AudioEffectEQ6 ()
-│   │   │   ├── AudioEffectFilter ()
-│   │   │   │   ├── AudioEffectBandLimitFilter ()
-│   │   │   │   ├── AudioEffectBandPassFilter ()
-│   │   │   │   ├── AudioEffectHighPassFilter ()
-│   │   │   │   ├── AudioEffectHighShelfFilter ()
-│   │   │   │   ├── AudioEffectLowPassFilter ()
-│   │   │   │   ├── AudioEffectLowShelfFilter ()
-│   │   │   │   └── AudioEffectNotchFilter ()
-│   │   │   ├── AudioEffectHardLimiter ()
-│   │   │   ├── AudioEffectLimiter ()
-│   │   │   ├── AudioEffectPanner ()
-│   │   │   ├── AudioEffectPhaser ()
-│   │   │   ├── AudioEffectPitchShift ()
+│   │   │   │   ├── AudioEffectEQ10
+│   │   │   │   ├── AudioEffectEQ21
+│   │   │   │   └── AudioEffectEQ6
+│   │   │   ├── AudioEffectFilter
+│   │   │   │   ├── AudioEffectBandLimitFilter
+│   │   │   │   ├── AudioEffectBandPassFilter
+│   │   │   │   ├── AudioEffectHighPassFilter
+│   │   │   │   ├── AudioEffectHighShelfFilter
+│   │   │   │   ├── AudioEffectLowPassFilter
+│   │   │   │   ├── AudioEffectLowShelfFilter
+│   │   │   │   └── AudioEffectNotchFilter
+│   │   │   ├── AudioEffectHardLimiter
+│   │   │   ├── AudioEffectLimiter
+│   │   │   ├── AudioEffectPanner
+│   │   │   ├── AudioEffectPhaser
+│   │   │   ├── AudioEffectPitchShift
 │   │   │   ├── AudioEffectRecord (get_recording|is_recording_active|set_recording_active)
-│   │   │   ├── AudioEffectReverb ()
-│   │   │   ├── AudioEffectSpectrumAnalyzer ()
-│   │   │   └── AudioEffectStereoEnhance ()
+│   │   │   ├── AudioEffectReverb
+│   │   │   ├── AudioEffectSpectrumAnalyzer
+│   │   │   └── AudioEffectStereoEnhance
 │   │   ├── AudioStream (_get_bar_beats|_get_beat_count|_get_bpm|_get_length|_get_parameter_list|_get_stream_name|_get_tags|_has_loop|_instantiate_playback|_is_monophonic|can_be_sampled|generate_sample|get_length|instantiate_playback|is_meta_stream|is_monophonic)
-│   │   │   ├── AudioStreamGenerator ()
+│   │   │   ├── AudioStreamGenerator
 │   │   │   ├── AudioStreamInteractive (add_transition|erase_transition|get_clip_auto_advance|get_clip_auto_advance_next_clip|get_clip_name|get_clip_stream|get_transition_fade_beats|get_transition_fade_mode|get_transition_filler_clip|get_transition_from_time|get_transition_list|get_transition_to_time|has_transition|is_transition_holding_previous|is_transition_using_filler_clip|set_clip_auto_advance|set_clip_auto_advance_next_clip|set_clip_name|set_clip_stream)
 │   │   │   ├── AudioStreamMP3 (load_from_buffer|load_from_file)
-│   │   │   ├── AudioStreamMicrophone ()
+│   │   │   ├── AudioStreamMicrophone
 │   │   │   ├── AudioStreamOggVorbis (load_from_buffer|load_from_file)
 │   │   │   ├── AudioStreamPlaylist (get_bpm|get_list_stream|set_list_stream)
-│   │   │   ├── AudioStreamPolyphonic ()
+│   │   │   ├── AudioStreamPolyphonic
 │   │   │   ├── AudioStreamRandomizer (add_stream|get_stream|get_stream_probability_weight|move_stream|remove_stream|set_stream|set_stream_probability_weight)
 │   │   │   ├── AudioStreamSynchronized (get_sync_stream|get_sync_stream_volume|set_sync_stream|set_sync_stream_volume)
 │   │   │   └── AudioStreamWAV (load_from_buffer|load_from_file|save_to_wav)
 │   │   ├── BitMap (convert_to_image|create|create_from_image_alpha|get_bit|get_bitv|get_size|get_true_bit_count|grow_mask|opaque_to_polygons|resize|set_bit|set_bit_rect|set_bitv)
 │   │   ├── BoneMap (find_profile_bone_name|get_skeleton_bone_name|set_skeleton_bone_name)
 │   │   ├── ButtonGroup (get_buttons|get_pressed_button)
-│   │   ├── CameraAttributes ()
+│   │   ├── CameraAttributes
 │   │   │   ├── CameraAttributesPhysical (get_fov)
-│   │   │   └── CameraAttributesPractical ()
-│   │   ├── ColorPalette ()
-│   │   ├── Compositor ()
+│   │   │   └── CameraAttributesPractical
+│   │   ├── ColorPalette
+│   │   ├── Compositor
 │   │   ├── CompositorEffect (_render_callback)
 │   │   ├── CryptoKey (is_public_only|load|load_from_string|save|save_to_string)
 │   │   ├── Curve (add_point|bake|clean_dupes|clear_points|get_domain_range|get_point_left_mode|get_point_left_tangent|get_point_position|get_point_right_mode|get_point_right_tangent|get_value_range|remove_point|sample|sample_baked|set_point_left_mode|set_point_left_tangent|set_point_offset|set_point_right_mode|set_point_right_tangent|set_point_value)
@@ -533,16 +533,16 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   ├── Font (draw_char|draw_char_outline|draw_multiline_string|draw_multiline_string_outline|draw_string|draw_string_outline|find_variation|get_ascent|get_char_size|get_descent|get_face_count|get_font_name|get_font_stretch|get_font_style|get_font_style_name|get_font_weight|get_height|get_multiline_string_size|get_opentype_features|get_ot_name_strings|get_palette_colors|get_palette_count|get_palette_name|get_rids|get_spacing|get_string_size|get_supported_chars|get_supported_feature_list|get_supported_variation_list|get_underline_position|get_underline_thickness|has_char|is_language_supported|is_script_supported|set_cache_capacity)
 │   │   │   ├── FontFile (clear_cache|clear_glyphs|clear_kerning_map|clear_size_cache|clear_textures|get_cache_ascent|get_cache_count|get_cache_descent|get_cache_scale|get_cache_underline_position|get_cache_underline_thickness|get_char_from_glyph_index|get_embolden|get_extra_baseline_offset|get_extra_spacing|get_face_index|get_glyph_advance|get_glyph_index|get_glyph_list|get_glyph_offset|get_glyph_size|get_glyph_texture_idx|get_glyph_uv_rect|get_kerning|get_kerning_list|get_language_support_override|get_language_support_overrides|get_script_support_override|get_script_support_overrides|get_size_cache_list|get_texture_count|get_texture_image|get_texture_offsets|get_transform|get_variation_coordinates|load_bitmap_font|load_dynamic_font|remove_cache|remove_glyph|remove_kerning|remove_language_support_override|remove_script_support_override|remove_size_cache|remove_texture|render_glyph|render_range|set_cache_ascent|set_cache_descent|set_cache_scale|set_cache_underline_position|set_cache_underline_thickness|set_embolden|set_extra_baseline_offset|set_extra_spacing|set_face_index|set_glyph_advance|set_glyph_offset|set_glyph_size|set_glyph_texture_idx|set_glyph_uv_rect|set_kerning|set_language_support_override|set_script_support_override|set_texture_image|set_texture_offsets|set_transform|set_variation_coordinates)
 │   │   │   ├── FontVariation (set_spacing)
-│   │   │   └── SystemFont ()
+│   │   │   └── SystemFont
 │   │   ├── GDExtension (get_minimum_library_initialization_level|is_library_open)
 │   │   ├── GLTFAccessor (from_dictionary|to_dictionary)
 │   │   ├── GLTFAnimation (get_additional_data|set_additional_data)
 │   │   ├── GLTFBufferView (from_dictionary|load_buffer_view_data|to_dictionary)
 │   │   ├── GLTFCamera (from_dictionary|from_node|to_dictionary|to_node)
 │   │   ├── GLTFDocument (append_from_buffer|append_from_file|append_from_scene|export_object_model_property|generate_buffer|generate_scene|get_supported_gltf_extensions|import_object_model_property|register_gltf_document_extension|unregister_gltf_document_extension|write_to_filesystem)
-│   │   │   └── FBXDocument ()
+│   │   │   └── FBXDocument
 │   │   ├── GLTFDocumentExtension (_convert_scene_node|_export_get_property_list|_export_node|_export_object_model_property|_export_post|_export_post_convert|_export_preflight|_export_preserialize|_generate_scene_node|_get_image_file_extension|_get_saveable_image_formats|_get_supported_extensions|_import_node|_import_object_model_property|_import_post|_import_post_parse|_import_pre_generate|_import_preflight|_parse_image_data|_parse_node_extensions|_parse_texture_json|_save_image_at_path|_serialize_image_to_bytes|_serialize_texture_json)
-│   │   │   └── GLTFDocumentExtensionConvertImporterMesh ()
+│   │   │   └── GLTFDocumentExtensionConvertImporterMesh
 │   │   ├── GLTFLight (from_dictionary|from_node|get_additional_data|set_additional_data|to_dictionary|to_node)
 │   │   ├── GLTFMesh (get_additional_data|set_additional_data)
 │   │   ├── GLTFNode (append_child_index|get_additional_data|get_scene_node_path|set_additional_data)
@@ -550,98 +550,98 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   ├── GLTFPhysicsShape (from_dictionary|from_node|from_resource|to_dictionary|to_node|to_resource)
 │   │   ├── GLTFSkeleton (get_bone_attachment|get_bone_attachment_count|get_godot_bone_node|get_godot_skeleton|get_unique_names|set_godot_bone_node|set_unique_names)
 │   │   ├── GLTFSkin (get_inverse_binds|get_joint_i_to_bone_i|get_joint_i_to_name|set_inverse_binds|set_joint_i_to_bone_i|set_joint_i_to_name)
-│   │   ├── GLTFSpecGloss ()
+│   │   ├── GLTFSpecGloss
 │   │   ├── GLTFState (add_used_extension|append_data_to_buffers|append_gltf_node|get_accessors|get_additional_data|get_animation_player|get_animation_players_count|get_animations|get_buffer_views|get_cameras|get_handle_binary_image|get_images|get_lights|get_materials|get_meshes|get_node_index|get_nodes|get_scene_node|get_skeletons|get_skins|get_texture_samplers|get_textures|get_unique_animation_names|get_unique_names|set_accessors|set_additional_data|set_animations|set_buffer_views|set_cameras|set_handle_binary_image|set_images|set_lights|set_materials|set_meshes|set_nodes|set_skeletons|set_skins|set_texture_samplers|set_textures|set_unique_animation_names|set_unique_names)
-│   │   │   └── FBXState ()
-│   │   ├── GLTFTexture ()
-│   │   ├── GLTFTextureSampler ()
+│   │   │   └── FBXState
+│   │   ├── GLTFTexture
+│   │   ├── GLTFTextureSampler
 │   │   ├── Gradient (add_point|get_color|get_offset|get_point_count|remove_point|reverse|sample|set_color|set_offset)
 │   │   ├── Image (adjust_bcs|blend_rect|blend_rect_mask|blit_rect|blit_rect_mask|bump_map_to_normal_map|clear_mipmaps|compress|compress_from_channels|compute_image_metrics|convert|copy_from|create|create_empty|create_from_data|crop|decompress|detect_alpha|detect_used_channels|fill|fill_rect|fix_alpha_edges|flip_x|flip_y|generate_mipmaps|get_data|get_data_size|get_format|get_height|get_mipmap_count|get_mipmap_offset|get_pixel|get_pixelv|get_region|get_size|get_used_rect|get_width|has_mipmaps|is_compressed|is_empty|is_invisible|linear_to_srgb|load|load_bmp_from_buffer|load_dds_from_buffer|load_exr_from_buffer|load_from_file|load_jpg_from_buffer|load_ktx_from_buffer|load_png_from_buffer|load_svg_from_buffer|load_svg_from_string|load_tga_from_buffer|load_webp_from_buffer|normal_map_to_xy|premultiply_alpha|resize|resize_to_po2|rgbe_to_srgb|rotate_90|rotate_180|save_dds|save_dds_to_buffer|save_exr|save_exr_to_buffer|save_jpg|save_jpg_to_buffer|save_png|save_png_to_buffer|save_webp|save_webp_to_buffer|set_data|set_pixel|set_pixelv|shrink_x2|srgb_to_linear)
 │   │   ├── ImporterMesh (add_blend_shape|add_surface|clear|from_mesh|generate_lods|get_blend_shape_count|get_blend_shape_mode|get_blend_shape_name|get_lightmap_size_hint|get_mesh|get_surface_arrays|get_surface_blend_shape_arrays|get_surface_count|get_surface_format|get_surface_lod_count|get_surface_lod_indices|get_surface_lod_size|get_surface_material|get_surface_name|get_surface_primitive_type|merge_importer_meshes|set_blend_shape_mode|set_lightmap_size_hint|set_surface_material|set_surface_name)
 │   │   ├── InputEvent (accumulate|as_text|get_action_strength|is_action|is_action_pressed|is_action_released|is_action_type|is_canceled|is_echo|is_match|is_pressed|is_released|xformed_by)
-│   │   │   ├── InputEventAction ()
-│   │   │   ├── InputEventFromWindow ()
-│   │   │   │   ├── InputEventScreenDrag ()
-│   │   │   │   ├── InputEventScreenTouch ()
+│   │   │   ├── InputEventAction
+│   │   │   ├── InputEventFromWindow
+│   │   │   │   ├── InputEventScreenDrag
+│   │   │   │   ├── InputEventScreenTouch
 │   │   │   │   └── InputEventWithModifiers (get_modifiers_mask|is_command_or_control_pressed)
-│   │   │   │       ├── InputEventGesture ()
-│   │   │   │       │   ├── InputEventMagnifyGesture ()
-│   │   │   │       │   └── InputEventPanGesture ()
+│   │   │   │       ├── InputEventGesture
+│   │   │   │       │   ├── InputEventMagnifyGesture
+│   │   │   │       │   └── InputEventPanGesture
 │   │   │   │       ├── InputEventKey (as_text_key_label|as_text_keycode|as_text_location|as_text_physical_keycode|get_key_label_with_modifiers|get_keycode_with_modifiers|get_physical_keycode_with_modifiers)
-│   │   │   │       └── InputEventMouse ()
-│   │   │   │           ├── InputEventMouseButton ()
-│   │   │   │           └── InputEventMouseMotion ()
-│   │   │   ├── InputEventJoypadButton ()
-│   │   │   ├── InputEventJoypadMotion ()
-│   │   │   ├── InputEventMIDI ()
-│   │   │   └── InputEventShortcut ()
+│   │   │   │       └── InputEventMouse
+│   │   │   │           ├── InputEventMouseButton
+│   │   │   │           └── InputEventMouseMotion
+│   │   │   ├── InputEventJoypadButton
+│   │   │   ├── InputEventJoypadMotion
+│   │   │   ├── InputEventMIDI
+│   │   │   └── InputEventShortcut
 │   │   ├── JSON (from_native|get_error_line|get_error_message|get_parsed_text|parse|parse_string|stringify|to_native)
-│   │   ├── JointLimitation3D ()
-│   │   │   └── JointLimitationCone3D ()
+│   │   ├── JointLimitation3D
+│   │   │   └── JointLimitationCone3D
 │   │   ├── LabelSettings (add_stacked_outline|add_stacked_shadow|get_stacked_outline_color|get_stacked_outline_size|get_stacked_shadow_color|get_stacked_shadow_offset|get_stacked_shadow_outline_size|move_stacked_outline|move_stacked_shadow|remove_stacked_outline|remove_stacked_shadow|set_stacked_outline_color|set_stacked_outline_size|set_stacked_shadow_color|set_stacked_shadow_offset|set_stacked_shadow_outline_size)
 │   │   ├── LightmapGIData (add_user|clear_users|get_user_count|get_user_path|is_using_spherical_harmonics|set_uses_spherical_harmonics)
 │   │   ├── Material (_can_do_next_pass|_can_use_render_priority|_get_shader_mode|_get_shader_rid|create_placeholder|inspect_native_shader_code)
 │   │   │   ├── BaseMaterial3D (get_feature|get_flag|get_texture|set_feature|set_flag|set_texture)
-│   │   │   │   ├── ORMMaterial3D ()
-│   │   │   │   └── StandardMaterial3D ()
-│   │   │   ├── BlitMaterial ()
-│   │   │   ├── CanvasItemMaterial ()
-│   │   │   ├── FogMaterial ()
-│   │   │   ├── PanoramaSkyMaterial ()
+│   │   │   │   ├── ORMMaterial3D
+│   │   │   │   └── StandardMaterial3D
+│   │   │   ├── BlitMaterial
+│   │   │   ├── CanvasItemMaterial
+│   │   │   ├── FogMaterial
+│   │   │   ├── PanoramaSkyMaterial
 │   │   │   ├── ParticleProcessMaterial (get_param|get_param_max|get_param_min|get_param_texture|get_particle_flag|set_param|set_param_max|set_param_min|set_param_texture|set_particle_flag)
-│   │   │   ├── PhysicalSkyMaterial ()
-│   │   │   ├── PlaceholderMaterial ()
-│   │   │   ├── ProceduralSkyMaterial ()
+│   │   │   ├── PhysicalSkyMaterial
+│   │   │   ├── PlaceholderMaterial
+│   │   │   ├── ProceduralSkyMaterial
 │   │   │   └── ShaderMaterial (get_shader_parameter|set_shader_parameter)
 │   │   ├── Mesh (_get_aabb|_get_blend_shape_count|_get_blend_shape_name|_get_surface_count|_set_blend_shape_name|_surface_get_array_index_len|_surface_get_array_len|_surface_get_arrays|_surface_get_blend_shape_arrays|_surface_get_format|_surface_get_lods|_surface_get_material|_surface_get_primitive_type|_surface_set_material|create_convex_shape|create_outline|create_placeholder|create_trimesh_shape|generate_triangle_mesh|get_aabb|get_faces|get_surface_count|surface_get_arrays|surface_get_blend_shape_arrays|surface_get_material|surface_set_material)
 │   │   │   ├── ArrayMesh (add_blend_shape|add_surface_from_arrays|clear_blend_shapes|clear_surfaces|get_blend_shape_count|get_blend_shape_name|lightmap_unwrap|regen_normal_maps|set_blend_shape_name|surface_find_by_name|surface_get_array_index_len|surface_get_array_len|surface_get_format|surface_get_name|surface_get_primitive_type|surface_remove|surface_set_name|surface_update_attribute_region|surface_update_skin_region|surface_update_vertex_region)
 │   │   │   ├── ImmediateMesh (clear_surfaces|surface_add_vertex|surface_add_vertex_2d|surface_begin|surface_end|surface_set_color|surface_set_normal|surface_set_tangent|surface_set_uv|surface_set_uv2)
-│   │   │   ├── PlaceholderMesh ()
+│   │   │   ├── PlaceholderMesh
 │   │   │   └── PrimitiveMesh (_create_mesh_array|get_mesh_arrays|request_update)
-│   │   │       ├── BoxMesh ()
-│   │   │       ├── CapsuleMesh ()
-│   │   │       ├── CylinderMesh ()
-│   │   │       ├── PlaneMesh ()
-│   │   │       │   └── QuadMesh ()
-│   │   │       ├── PointMesh ()
-│   │   │       ├── PrismMesh ()
-│   │   │       ├── RibbonTrailMesh ()
-│   │   │       ├── SphereMesh ()
-│   │   │       ├── TextMesh ()
-│   │   │       ├── TorusMesh ()
-│   │   │       └── TubeTrailMesh ()
+│   │   │       ├── BoxMesh
+│   │   │       ├── CapsuleMesh
+│   │   │       ├── CylinderMesh
+│   │   │       ├── PlaneMesh
+│   │   │       │   └── QuadMesh
+│   │   │       ├── PointMesh
+│   │   │       ├── PrismMesh
+│   │   │       ├── RibbonTrailMesh
+│   │   │       ├── SphereMesh
+│   │   │       ├── TextMesh
+│   │   │       ├── TorusMesh
+│   │   │       └── TubeTrailMesh
 │   │   ├── MeshLibrary (clear|create_item|find_item_by_name|get_item_count|get_item_list|get_item_mesh|get_item_mesh_cast_shadow|get_item_mesh_transform|get_item_name|get_item_navigation_layers|get_item_navigation_mesh|get_item_navigation_mesh_transform|get_item_preview|get_item_shapes|get_last_unused_item_id|remove_item|set_item_mesh|set_item_mesh_cast_shadow|set_item_mesh_transform|set_item_name|set_item_navigation_layers|set_item_navigation_mesh|set_item_navigation_mesh_transform|set_item_preview|set_item_shapes)
-│   │   ├── MissingResource ()
+│   │   ├── MissingResource
 │   │   ├── MultiMesh (get_aabb|get_instance_color|get_instance_custom_data|get_instance_transform|get_instance_transform_2d|reset_instance_physics_interpolation|reset_instances_physics_interpolation|set_buffer_interpolated|set_instance_color|set_instance_custom_data|set_instance_transform|set_instance_transform_2d)
 │   │   ├── NavigationMesh (add_polygon|clear|clear_polygons|create_from_mesh|get_collision_mask_value|get_polygon|get_polygon_count|get_vertices|set_collision_mask_value|set_vertices)
 │   │   ├── NavigationMeshSourceGeometryData2D (add_obstruction_outline|add_projected_obstruction|add_traversable_outline|append_obstruction_outlines|append_traversable_outlines|clear|clear_projected_obstructions|get_bounds|get_obstruction_outlines|get_projected_obstructions|get_traversable_outlines|has_data|merge|set_obstruction_outlines|set_projected_obstructions|set_traversable_outlines)
 │   │   ├── NavigationMeshSourceGeometryData3D (add_faces|add_mesh|add_mesh_array|add_projected_obstruction|append_arrays|clear|clear_projected_obstructions|get_bounds|get_indices|get_projected_obstructions|get_vertices|has_data|merge|set_indices|set_projected_obstructions|set_vertices)
 │   │   ├── NavigationPolygon (add_outline|add_outline_at_index|add_polygon|clear|clear_outlines|clear_polygons|get_navigation_mesh|get_outline|get_outline_count|get_parsed_collision_mask_value|get_polygon|get_polygon_count|get_vertices|make_polygons_from_outlines|remove_outline|set_outline|set_parsed_collision_mask_value|set_vertices)
 │   │   ├── Noise (get_image|get_image_3d|get_noise_1d|get_noise_2d|get_noise_2dv|get_noise_3d|get_noise_3dv|get_seamless_image|get_seamless_image_3d)
-│   │   │   └── FastNoiseLite ()
+│   │   │   └── FastNoiseLite
 │   │   ├── Occluder3D (get_indices|get_vertices)
 │   │   │   ├── ArrayOccluder3D (set_arrays)
-│   │   │   ├── BoxOccluder3D ()
-│   │   │   ├── PolygonOccluder3D ()
-│   │   │   ├── QuadOccluder3D ()
-│   │   │   └── SphereOccluder3D ()
-│   │   ├── OccluderPolygon2D ()
+│   │   │   ├── BoxOccluder3D
+│   │   │   ├── PolygonOccluder3D
+│   │   │   ├── QuadOccluder3D
+│   │   │   └── SphereOccluder3D
+│   │   ├── OccluderPolygon2D
 │   │   ├── OggPacketSequence (get_length)
-│   │   ├── OpenXRAction ()
+│   │   ├── OpenXRAction
 │   │   ├── OpenXRActionMap (add_action_set|add_interaction_profile|create_default_action_sets|find_action_set|find_interaction_profile|get_action_set|get_action_set_count|get_interaction_profile|get_interaction_profile_count|remove_action_set|remove_interaction_profile)
 │   │   ├── OpenXRActionSet (add_action|get_action_count|remove_action)
 │   │   ├── OpenXRBindingModifier (_get_description|_get_ip_modification)
-│   │   │   ├── OpenXRActionBindingModifier ()
-│   │   │   │   └── OpenXRAnalogThresholdModifier ()
-│   │   │   └── OpenXRIPBindingModifier ()
-│   │   │       └── OpenXRDpadBindingModifier ()
-│   │   ├── OpenXRHapticBase ()
-│   │   │   └── OpenXRHapticVibration ()
+│   │   │   ├── OpenXRActionBindingModifier
+│   │   │   │   └── OpenXRAnalogThresholdModifier
+│   │   │   └── OpenXRIPBindingModifier
+│   │   │       └── OpenXRDpadBindingModifier
+│   │   ├── OpenXRHapticBase
+│   │   │   └── OpenXRHapticVibration
 │   │   ├── OpenXRIPBinding (add_path|get_binding_modifier|get_binding_modifier_count|get_path_count|has_path|remove_path)
 │   │   ├── OpenXRInteractionProfile (get_binding|get_binding_count|get_binding_modifier|get_binding_modifier_count)
 │   │   ├── PackedDataContainer (pack|size)
 │   │   ├── PackedScene (can_instantiate|get_state|instantiate|pack)
-│   │   ├── PhysicsMaterial ()
+│   │   ├── PhysicsMaterial
 │   │   ├── PolygonPathFinder (find_path|get_bounds|get_closest_point|get_intersections|get_point_penalty|is_point_inside|set_point_penalty|setup)
 │   │   ├── RDShaderFile (get_spirv|get_version_list|set_bytecode)
 │   │   ├── RDShaderSPIRV (get_stage_bytecode|get_stage_compile_error|set_stage_bytecode|set_stage_compile_error)
@@ -653,26 +653,26 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   │   └── ScriptExtension (_can_instantiate|_editor_can_reload_from_file|_get_base_script|_get_class_icon_path|_get_constants|_get_doc_class_name|_get_documentation|_get_global_name|_get_instance_base_type|_get_language|_get_member_line|_get_members|_get_method_info|_get_property_default_value|_get_rpc_config|_get_script_method_argument_count|_get_script_method_list|_get_script_property_list|_get_script_signal_list|_get_source_code|_has_method|_has_property_default_value|_has_script_signal|_has_source_code|_has_static_method|_inherits_script|_instance_create|_instance_has|_is_abstract|_is_placeholder_fallback_enabled|_is_tool|_is_valid|_placeholder_erased|_placeholder_instance_create|_reload|_set_source_code|_update_exports)
 │   │   ├── Shader (get_default_texture_parameter|get_mode|get_shader_uniform_list|inspect_native_shader_code|set_default_texture_parameter)
 │   │   │   └── VisualShader (add_node|add_varying|attach_node_to_frame|can_connect_nodes|connect_nodes|connect_nodes_forced|detach_node_from_frame|disconnect_nodes|get_node|get_node_connections|get_node_list|get_node_position|get_valid_node_id|has_varying|is_node_connection|remove_node|remove_varying|replace_node|set_mode|set_node_position)
-│   │   ├── ShaderInclude ()
+│   │   ├── ShaderInclude
 │   │   ├── Shape2D (collide|collide_and_get_contacts|collide_with_motion|collide_with_motion_and_get_contacts|draw|get_rect)
-│   │   │   ├── CapsuleShape2D ()
-│   │   │   ├── CircleShape2D ()
-│   │   │   ├── ConcavePolygonShape2D ()
+│   │   │   ├── CapsuleShape2D
+│   │   │   ├── CircleShape2D
+│   │   │   ├── ConcavePolygonShape2D
 │   │   │   ├── ConvexPolygonShape2D (set_point_cloud)
-│   │   │   ├── RectangleShape2D ()
-│   │   │   ├── SegmentShape2D ()
-│   │   │   ├── SeparationRayShape2D ()
-│   │   │   └── WorldBoundaryShape2D ()
+│   │   │   ├── RectangleShape2D
+│   │   │   ├── SegmentShape2D
+│   │   │   ├── SeparationRayShape2D
+│   │   │   └── WorldBoundaryShape2D
 │   │   ├── Shape3D (get_debug_mesh)
-│   │   │   ├── BoxShape3D ()
-│   │   │   ├── CapsuleShape3D ()
+│   │   │   ├── BoxShape3D
+│   │   │   ├── CapsuleShape3D
 │   │   │   ├── ConcavePolygonShape3D (get_faces|set_faces)
-│   │   │   ├── ConvexPolygonShape3D ()
-│   │   │   ├── CylinderShape3D ()
+│   │   │   ├── ConvexPolygonShape3D
+│   │   │   ├── CylinderShape3D
 │   │   │   ├── HeightMapShape3D (get_max_height|get_min_height|update_map_data_from_image)
-│   │   │   ├── SeparationRayShape3D ()
-│   │   │   ├── SphereShape3D ()
-│   │   │   └── WorldBoundaryShape3D ()
+│   │   │   ├── SeparationRayShape3D
+│   │   │   ├── SphereShape3D
+│   │   │   └── WorldBoundaryShape3D
 │   │   ├── Shortcut (get_as_text|has_valid_event|matches_event)
 │   │   ├── SkeletonModification2D (_draw_editor_gizmo|_execute|_setup_modification|clamp_angle|get_editor_draw_gizmo|get_is_setup|get_modification_stack|set_editor_draw_gizmo|set_is_setup)
 │   │   │   ├── SkeletonModification2DCCDIK (get_ccdik_joint_bone2d_node|get_ccdik_joint_bone_index|get_ccdik_joint_constraint_angle_invert|get_ccdik_joint_constraint_angle_max|get_ccdik_joint_constraint_angle_min|get_ccdik_joint_enable_constraint|get_ccdik_joint_rotate_from_joint|set_ccdik_joint_bone2d_node|set_ccdik_joint_bone_index|set_ccdik_joint_constraint_angle_invert|set_ccdik_joint_constraint_angle_max|set_ccdik_joint_constraint_angle_min|set_ccdik_joint_enable_constraint|set_ccdik_joint_rotate_from_joint)
@@ -684,61 +684,61 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   │   └── SkeletonModification2DTwoBoneIK (get_joint_one_bone2d_node|get_joint_one_bone_idx|get_joint_two_bone2d_node|get_joint_two_bone_idx|set_joint_one_bone2d_node|set_joint_one_bone_idx|set_joint_two_bone2d_node|set_joint_two_bone_idx)
 │   │   ├── SkeletonModificationStack2D (add_modification|delete_modification|enable_all_modifications|execute|get_is_setup|get_modification|get_skeleton|set_modification|setup)
 │   │   ├── SkeletonProfile (find_bone|get_bone_name|get_bone_parent|get_bone_tail|get_group|get_group_name|get_handle_offset|get_reference_pose|get_tail_direction|get_texture|is_required|set_bone_name|set_bone_parent|set_bone_tail|set_group|set_group_name|set_handle_offset|set_reference_pose|set_required|set_tail_direction|set_texture)
-│   │   │   └── SkeletonProfileHumanoid ()
+│   │   │   └── SkeletonProfileHumanoid
 │   │   ├── Skin (add_bind|add_named_bind|clear_binds|get_bind_bone|get_bind_count|get_bind_name|get_bind_pose|set_bind_bone|set_bind_count|set_bind_name|set_bind_pose)
-│   │   ├── Sky ()
+│   │   ├── Sky
 │   │   ├── SpriteFrames (add_animation|add_frame|clear|clear_all|duplicate_animation|get_animation_loop|get_animation_loop_mode|get_animation_names|get_animation_speed|get_frame_count|get_frame_duration|get_frame_texture|has_animation|remove_animation|remove_frame|rename_animation|set_animation_loop|set_animation_loop_mode|set_animation_speed|set_frame)
 │   │   ├── StyleBox (_draw|_get_draw_rect|_get_minimum_size|_test_mask|draw|get_content_margin|get_current_item_drawn|get_margin|get_minimum_size|get_offset|set_content_margin|set_content_margin_all|test_mask)
-│   │   │   ├── StyleBoxEmpty ()
+│   │   │   ├── StyleBoxEmpty
 │   │   │   ├── StyleBoxFlat (get_border_width|get_border_width_min|get_corner_radius|get_expand_margin|set_border_width|set_border_width_all|set_corner_radius|set_corner_radius_all|set_expand_margin|set_expand_margin_all)
-│   │   │   ├── StyleBoxLine ()
+│   │   │   ├── StyleBoxLine
 │   │   │   └── StyleBoxTexture (get_expand_margin|get_texture_margin|set_expand_margin|set_expand_margin_all|set_texture_margin|set_texture_margin_all)
 │   │   ├── SyntaxHighlighter (_clear_highlighting_cache|_get_line_syntax_highlighting|_update_cache|clear_highlighting_cache|get_line_syntax_highlighting|get_text_edit|update_cache)
 │   │   │   └── CodeHighlighter (add_color_region|add_keyword_color|add_member_keyword_color|clear_color_regions|clear_keyword_colors|clear_member_keyword_colors|get_keyword_color|get_member_keyword_color|has_color_region|has_keyword_color|has_member_keyword_color|remove_color_region|remove_keyword_color|remove_member_keyword_color)
-│   │   ├── Texture ()
+│   │   ├── Texture
 │   │   │   ├── Texture2D (_draw|_draw_rect|_draw_rect_region|_get_format|_get_height|_get_image|_get_mipmap_count|_get_width|_has_alpha|_has_mipmaps|_is_pixel_opaque|create_placeholder|draw|draw_rect|draw_rect_region|get_format|get_height|get_image|get_mipmap_count|get_size|get_width|has_alpha|has_mipmaps)
 │   │   │   │   ├── AnimatedTexture (get_frame_duration|get_frame_texture|set_frame_duration|set_frame_texture)
-│   │   │   │   ├── AtlasTexture ()
-│   │   │   │   ├── CameraTexture ()
-│   │   │   │   ├── CanvasTexture ()
+│   │   │   │   ├── AtlasTexture
+│   │   │   │   ├── CameraTexture
+│   │   │   │   ├── CanvasTexture
 │   │   │   │   ├── CompressedTexture2D (load)
-│   │   │   │   ├── CurveTexture ()
-│   │   │   │   ├── CurveXYZTexture ()
+│   │   │   │   ├── CurveTexture
+│   │   │   │   ├── CurveXYZTexture
 │   │   │   │   ├── DPITexture (create_from_string|get_scaled_rid|get_source|set_size_override|set_source)
 │   │   │   │   ├── DrawableTexture2D (blit_rect|blit_rect_multi|generate_mipmaps|get_use_mipmaps|set_format|set_use_mipmaps|setup)
 │   │   │   │   ├── ExternalTexture (get_external_texture_id|set_external_buffer_id)
-│   │   │   │   ├── GradientTexture1D ()
-│   │   │   │   ├── GradientTexture2D ()
+│   │   │   │   ├── GradientTexture1D
+│   │   │   │   ├── GradientTexture2D
 │   │   │   │   ├── ImageTexture (create_from_image|set_image|set_size_override|update)
-│   │   │   │   ├── MeshTexture ()
-│   │   │   │   ├── NoiseTexture2D ()
-│   │   │   │   ├── PlaceholderTexture2D ()
+│   │   │   │   ├── MeshTexture
+│   │   │   │   ├── NoiseTexture2D
+│   │   │   │   ├── PlaceholderTexture2D
 │   │   │   │   ├── PortableCompressedTexture2D (create_from_image|get_compression_mode|is_keeping_all_compressed_buffers|set_basisu_compressor_params|set_keep_all_compressed_buffers)
-│   │   │   │   ├── Texture2DRD ()
-│   │   │   │   └── ViewportTexture ()
+│   │   │   │   ├── Texture2DRD
+│   │   │   │   └── ViewportTexture
 │   │   │   ├── Texture3D (_get_data|_get_depth|_get_format|_get_height|_get_width|_has_mipmaps|create_placeholder|get_data|get_depth|get_format|get_height|get_width|has_mipmaps)
 │   │   │   │   ├── CompressedTexture3D (load)
 │   │   │   │   ├── ImageTexture3D (create|update)
-│   │   │   │   ├── NoiseTexture3D ()
-│   │   │   │   ├── PlaceholderTexture3D ()
-│   │   │   │   └── Texture3DRD ()
+│   │   │   │   ├── NoiseTexture3D
+│   │   │   │   ├── PlaceholderTexture3D
+│   │   │   │   └── Texture3DRD
 │   │   │   └── TextureLayered (_get_format|_get_height|_get_layer_data|_get_layered_type|_get_layers|_get_width|_has_mipmaps|get_format|get_height|get_layer_data|get_layered_type|get_layers|get_width|has_mipmaps)
 │   │   │       ├── CompressedTextureLayered (load)
-│   │   │       │   ├── CompressedCubemap ()
-│   │   │       │   ├── CompressedCubemapArray ()
-│   │   │       │   └── CompressedTexture2DArray ()
+│   │   │       │   ├── CompressedCubemap
+│   │   │       │   ├── CompressedCubemapArray
+│   │   │       │   └── CompressedTexture2DArray
 │   │   │       ├── ImageTextureLayered (create_from_images|update_layer)
 │   │   │       │   ├── Cubemap (create_placeholder)
 │   │   │       │   ├── CubemapArray (create_placeholder)
 │   │   │       │   └── Texture2DArray (create_placeholder)
-│   │   │       ├── PlaceholderTextureLayered ()
-│   │   │       │   ├── PlaceholderCubemap ()
-│   │   │       │   ├── PlaceholderCubemapArray ()
-│   │   │       │   └── PlaceholderTexture2DArray ()
-│   │   │       └── TextureLayeredRD ()
-│   │   │           ├── Texture2DArrayRD ()
-│   │   │           ├── TextureCubemapArrayRD ()
-│   │   │           └── TextureCubemapRD ()
+│   │   │       ├── PlaceholderTextureLayered
+│   │   │       │   ├── PlaceholderCubemap
+│   │   │       │   ├── PlaceholderCubemapArray
+│   │   │       │   └── PlaceholderTexture2DArray
+│   │   │       └── TextureLayeredRD
+│   │   │           ├── Texture2DArrayRD
+│   │   │           ├── TextureCubemapArrayRD
+│   │   │           └── TextureCubemapRD
 │   │   ├── Theme (add_type|clear|clear_color|clear_constant|clear_font|clear_font_size|clear_icon|clear_stylebox|clear_theme_item|clear_type_variation|get_color|get_color_list|get_color_type_list|get_constant|get_constant_list|get_constant_type_list|get_font|get_font_list|get_font_size|get_font_size_list|get_font_size_type_list|get_font_type_list|get_icon|get_icon_list|get_icon_type_list|get_stylebox|get_stylebox_list|get_stylebox_type_list|get_theme_item|get_theme_item_list|get_theme_item_type_list|get_type_list|get_type_variation_base|get_type_variation_list|has_color|has_constant|has_default_base_scale|has_default_font|has_default_font_size|has_font|has_font_size|has_icon|has_stylebox|has_theme_item|is_type_variation|merge_with|remove_type|rename_color|rename_constant|rename_font|rename_font_size|rename_icon|rename_stylebox|rename_theme_item|rename_type|set_color|set_constant|set_font|set_font_size|set_icon|set_stylebox|set_theme_item|set_type_variation)
 │   │   ├── TileMapPattern (get_cell_alternative_tile|get_cell_atlas_coords|get_cell_source_id|get_size|get_used_cells|has_cell|is_empty|remove_cell|set_cell|set_size)
 │   │   ├── TileSet (add_custom_data_layer|add_navigation_layer|add_occlusion_layer|add_pattern|add_physics_layer|add_source|add_terrain|add_terrain_set|cleanup_invalid_tile_proxies|clear_terrains|clear_tile_proxies|get_alternative_level_tile_proxy|get_coords_level_tile_proxy|get_custom_data_layer_by_name|get_custom_data_layer_name|get_custom_data_layer_type|get_custom_data_layers_count|get_navigation_layer_layer_value|get_navigation_layer_layers|get_navigation_layers_count|get_next_source_id|get_occlusion_layer_light_mask|get_occlusion_layer_sdf_collision|get_occlusion_layers_count|get_pattern|get_patterns_count|get_physics_layer_collision_layer|get_physics_layer_collision_mask|get_physics_layer_collision_priority|get_physics_layer_physics_material|get_physics_layers_count|get_source|get_source_count|get_source_id|get_source_level_tile_proxy|get_terrain_color|get_terrain_name|get_terrain_set_mode|get_terrain_sets_count|get_terrains_count|has_alternative_level_tile_proxy|has_coords_level_tile_proxy|has_custom_data_layer_by_name|has_source|has_source_level_tile_proxy|map_tile_proxy|move_custom_data_layer|move_navigation_layer|move_occlusion_layer|move_physics_layer|move_terrain|move_terrain_set|remove_alternative_level_tile_proxy|remove_coords_level_tile_proxy|remove_custom_data_layer|remove_navigation_layer|remove_occlusion_layer|remove_pattern|remove_physics_layer|remove_source|remove_source_level_tile_proxy|remove_terrain|remove_terrain_set|set_alternative_level_tile_proxy|set_coords_level_tile_proxy|set_custom_data_layer_name|set_custom_data_layer_type|set_navigation_layer_layer_value|set_navigation_layer_layers|set_occlusion_layer_light_mask|set_occlusion_layer_sdf_collision|set_physics_layer_collision_layer|set_physics_layer_collision_mask|set_physics_layer_collision_priority|set_physics_layer_physics_material|set_source_id|set_source_level_tile_proxy|set_terrain_color|set_terrain_name|set_terrain_set_mode)
@@ -748,128 +748,128 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   ├── Translation (_get_message|_get_plural_message|add_message|add_plural_message|erase_message|get_message|get_message_count|get_message_list|get_plural_message|get_translated_message_list)
 │   │   │   └── OptimizedTranslation (generate)
 │   │   ├── VideoStream (_instantiate_playback)
-│   │   │   └── VideoStreamTheora ()
+│   │   │   └── VideoStreamTheora
 │   │   ├── VideoStreamPlayback (_get_channels|_get_length|_get_mix_rate|_get_playback_position|_get_texture|_is_paused|_is_playing|_play|_seek|_set_audio_track|_set_paused|_stop|_update|mix_audio)
 │   │   ├── VisualShaderNode (clear_default_input_values|get_default_input_port|get_default_input_values|get_input_port_default_value|remove_input_port_default_value|set_default_input_values|set_input_port_default_value)
-│   │   │   ├── VisualShaderNodeBillboard ()
-│   │   │   ├── VisualShaderNodeClamp ()
-│   │   │   ├── VisualShaderNodeColorFunc ()
-│   │   │   ├── VisualShaderNodeColorOp ()
-│   │   │   ├── VisualShaderNodeCompare ()
-│   │   │   ├── VisualShaderNodeConstant ()
-│   │   │   │   ├── VisualShaderNodeBooleanConstant ()
-│   │   │   │   ├── VisualShaderNodeColorConstant ()
-│   │   │   │   ├── VisualShaderNodeFloatConstant ()
-│   │   │   │   ├── VisualShaderNodeIntConstant ()
-│   │   │   │   ├── VisualShaderNodeTransformConstant ()
-│   │   │   │   ├── VisualShaderNodeUIntConstant ()
-│   │   │   │   ├── VisualShaderNodeVec2Constant ()
-│   │   │   │   ├── VisualShaderNodeVec3Constant ()
-│   │   │   │   └── VisualShaderNodeVec4Constant ()
-│   │   │   ├── VisualShaderNodeCubemap ()
+│   │   │   ├── VisualShaderNodeBillboard
+│   │   │   ├── VisualShaderNodeClamp
+│   │   │   ├── VisualShaderNodeColorFunc
+│   │   │   ├── VisualShaderNodeColorOp
+│   │   │   ├── VisualShaderNodeCompare
+│   │   │   ├── VisualShaderNodeConstant
+│   │   │   │   ├── VisualShaderNodeBooleanConstant
+│   │   │   │   ├── VisualShaderNodeColorConstant
+│   │   │   │   ├── VisualShaderNodeFloatConstant
+│   │   │   │   ├── VisualShaderNodeIntConstant
+│   │   │   │   ├── VisualShaderNodeTransformConstant
+│   │   │   │   ├── VisualShaderNodeUIntConstant
+│   │   │   │   ├── VisualShaderNodeVec2Constant
+│   │   │   │   ├── VisualShaderNodeVec3Constant
+│   │   │   │   └── VisualShaderNodeVec4Constant
+│   │   │   ├── VisualShaderNodeCubemap
 │   │   │   ├── VisualShaderNodeCustom (_get_category|_get_code|_get_default_input_port|_get_description|_get_func_code|_get_global_code|_get_input_port_count|_get_input_port_default_value|_get_input_port_name|_get_input_port_type|_get_name|_get_output_port_count|_get_output_port_name|_get_output_port_type|_get_property_count|_get_property_default_index|_get_property_name|_get_property_options|_get_return_icon_type|_is_available|_is_highend|get_option_index)
-│   │   │   ├── VisualShaderNodeDerivativeFunc ()
-│   │   │   ├── VisualShaderNodeDeterminant ()
-│   │   │   ├── VisualShaderNodeDistanceFade ()
-│   │   │   ├── VisualShaderNodeDotProduct ()
-│   │   │   ├── VisualShaderNodeFloatFunc ()
-│   │   │   ├── VisualShaderNodeFloatOp ()
-│   │   │   ├── VisualShaderNodeFresnel ()
-│   │   │   ├── VisualShaderNodeIf ()
+│   │   │   ├── VisualShaderNodeDerivativeFunc
+│   │   │   ├── VisualShaderNodeDeterminant
+│   │   │   ├── VisualShaderNodeDistanceFade
+│   │   │   ├── VisualShaderNodeDotProduct
+│   │   │   ├── VisualShaderNodeFloatFunc
+│   │   │   ├── VisualShaderNodeFloatOp
+│   │   │   ├── VisualShaderNodeFresnel
+│   │   │   ├── VisualShaderNodeIf
 │   │   │   ├── VisualShaderNodeInput (get_input_real_name)
-│   │   │   ├── VisualShaderNodeIntFunc ()
-│   │   │   ├── VisualShaderNodeIntOp ()
-│   │   │   ├── VisualShaderNodeIs ()
-│   │   │   ├── VisualShaderNodeLinearSceneDepth ()
-│   │   │   ├── VisualShaderNodeMix ()
-│   │   │   ├── VisualShaderNodeMultiplyAdd ()
-│   │   │   ├── VisualShaderNodeOuterProduct ()
-│   │   │   ├── VisualShaderNodeOutput ()
-│   │   │   │   └── VisualShaderNodeParticleOutput ()
-│   │   │   ├── VisualShaderNodeParameter ()
-│   │   │   │   ├── VisualShaderNodeBooleanParameter ()
-│   │   │   │   ├── VisualShaderNodeColorParameter ()
-│   │   │   │   ├── VisualShaderNodeFloatParameter ()
-│   │   │   │   ├── VisualShaderNodeIntParameter ()
-│   │   │   │   ├── VisualShaderNodeTextureParameter ()
-│   │   │   │   │   ├── VisualShaderNodeCubemapParameter ()
-│   │   │   │   │   ├── VisualShaderNodeTexture2DArrayParameter ()
-│   │   │   │   │   ├── VisualShaderNodeTexture2DParameter ()
-│   │   │   │   │   ├── VisualShaderNodeTexture3DParameter ()
-│   │   │   │   │   └── VisualShaderNodeTextureParameterTriplanar ()
-│   │   │   │   ├── VisualShaderNodeTransformParameter ()
-│   │   │   │   ├── VisualShaderNodeUIntParameter ()
-│   │   │   │   ├── VisualShaderNodeVec2Parameter ()
-│   │   │   │   ├── VisualShaderNodeVec3Parameter ()
-│   │   │   │   └── VisualShaderNodeVec4Parameter ()
-│   │   │   ├── VisualShaderNodeParameterRef ()
-│   │   │   ├── VisualShaderNodeParticleAccelerator ()
-│   │   │   ├── VisualShaderNodeParticleConeVelocity ()
-│   │   │   ├── VisualShaderNodeParticleEmit ()
-│   │   │   ├── VisualShaderNodeParticleEmitter ()
-│   │   │   │   ├── VisualShaderNodeParticleBoxEmitter ()
-│   │   │   │   ├── VisualShaderNodeParticleMeshEmitter ()
-│   │   │   │   ├── VisualShaderNodeParticleRingEmitter ()
-│   │   │   │   └── VisualShaderNodeParticleSphereEmitter ()
-│   │   │   ├── VisualShaderNodeParticleMultiplyByAxisAngle ()
-│   │   │   ├── VisualShaderNodeParticleRandomness ()
-│   │   │   ├── VisualShaderNodeProximityFade ()
-│   │   │   ├── VisualShaderNodeRandomRange ()
-│   │   │   ├── VisualShaderNodeRemap ()
+│   │   │   ├── VisualShaderNodeIntFunc
+│   │   │   ├── VisualShaderNodeIntOp
+│   │   │   ├── VisualShaderNodeIs
+│   │   │   ├── VisualShaderNodeLinearSceneDepth
+│   │   │   ├── VisualShaderNodeMix
+│   │   │   ├── VisualShaderNodeMultiplyAdd
+│   │   │   ├── VisualShaderNodeOuterProduct
+│   │   │   ├── VisualShaderNodeOutput
+│   │   │   │   └── VisualShaderNodeParticleOutput
+│   │   │   ├── VisualShaderNodeParameter
+│   │   │   │   ├── VisualShaderNodeBooleanParameter
+│   │   │   │   ├── VisualShaderNodeColorParameter
+│   │   │   │   ├── VisualShaderNodeFloatParameter
+│   │   │   │   ├── VisualShaderNodeIntParameter
+│   │   │   │   ├── VisualShaderNodeTextureParameter
+│   │   │   │   │   ├── VisualShaderNodeCubemapParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DArrayParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture3DParameter
+│   │   │   │   │   └── VisualShaderNodeTextureParameterTriplanar
+│   │   │   │   ├── VisualShaderNodeTransformParameter
+│   │   │   │   ├── VisualShaderNodeUIntParameter
+│   │   │   │   ├── VisualShaderNodeVec2Parameter
+│   │   │   │   ├── VisualShaderNodeVec3Parameter
+│   │   │   │   └── VisualShaderNodeVec4Parameter
+│   │   │   ├── VisualShaderNodeParameterRef
+│   │   │   ├── VisualShaderNodeParticleAccelerator
+│   │   │   ├── VisualShaderNodeParticleConeVelocity
+│   │   │   ├── VisualShaderNodeParticleEmit
+│   │   │   ├── VisualShaderNodeParticleEmitter
+│   │   │   │   ├── VisualShaderNodeParticleBoxEmitter
+│   │   │   │   ├── VisualShaderNodeParticleMeshEmitter
+│   │   │   │   ├── VisualShaderNodeParticleRingEmitter
+│   │   │   │   └── VisualShaderNodeParticleSphereEmitter
+│   │   │   ├── VisualShaderNodeParticleMultiplyByAxisAngle
+│   │   │   ├── VisualShaderNodeParticleRandomness
+│   │   │   ├── VisualShaderNodeProximityFade
+│   │   │   ├── VisualShaderNodeRandomRange
+│   │   │   ├── VisualShaderNodeRemap
 │   │   │   ├── VisualShaderNodeReroute (get_port_type)
-│   │   │   ├── VisualShaderNodeResizableBase ()
-│   │   │   │   ├── VisualShaderNodeCurveTexture ()
-│   │   │   │   ├── VisualShaderNodeCurveXYZTexture ()
+│   │   │   ├── VisualShaderNodeResizableBase
+│   │   │   │   ├── VisualShaderNodeCurveTexture
+│   │   │   │   ├── VisualShaderNodeCurveXYZTexture
 │   │   │   │   ├── VisualShaderNodeFrame (add_attached_node|remove_attached_node)
-│   │   │   │   │   └── VisualShaderNodeComment ()
+│   │   │   │   │   └── VisualShaderNodeComment
 │   │   │   │   └── VisualShaderNodeGroupBase (add_input_port|add_output_port|clear_input_ports|clear_output_ports|get_free_input_port_id|get_free_output_port_id|get_input_port_count|get_inputs|get_output_port_count|get_outputs|has_input_port|has_output_port|is_valid_port_name|remove_input_port|remove_output_port|set_input_port_name|set_input_port_type|set_inputs|set_output_port_name|set_output_port_type|set_outputs)
-│   │   │   │       └── VisualShaderNodeExpression ()
-│   │   │   │           └── VisualShaderNodeGlobalExpression ()
-│   │   │   ├── VisualShaderNodeRotationByAxis ()
-│   │   │   ├── VisualShaderNodeSDFRaymarch ()
-│   │   │   ├── VisualShaderNodeSDFToScreenUV ()
-│   │   │   ├── VisualShaderNodeSample3D ()
-│   │   │   │   ├── VisualShaderNodeTexture2DArray ()
-│   │   │   │   └── VisualShaderNodeTexture3D ()
-│   │   │   ├── VisualShaderNodeScreenNormalWorldSpace ()
-│   │   │   ├── VisualShaderNodeScreenUVToSDF ()
-│   │   │   ├── VisualShaderNodeSmoothStep ()
-│   │   │   ├── VisualShaderNodeStep ()
-│   │   │   ├── VisualShaderNodeSwitch ()
-│   │   │   ├── VisualShaderNodeTexture ()
-│   │   │   ├── VisualShaderNodeTextureSDF ()
-│   │   │   ├── VisualShaderNodeTextureSDFNormal ()
-│   │   │   ├── VisualShaderNodeTransformCompose ()
-│   │   │   ├── VisualShaderNodeTransformDecompose ()
-│   │   │   ├── VisualShaderNodeTransformFunc ()
-│   │   │   ├── VisualShaderNodeTransformOp ()
-│   │   │   ├── VisualShaderNodeTransformVecMult ()
-│   │   │   ├── VisualShaderNodeUIntFunc ()
-│   │   │   ├── VisualShaderNodeUIntOp ()
-│   │   │   ├── VisualShaderNodeUVFunc ()
-│   │   │   ├── VisualShaderNodeUVPolarCoord ()
-│   │   │   ├── VisualShaderNodeVarying ()
-│   │   │   │   ├── VisualShaderNodeVaryingGetter ()
-│   │   │   │   └── VisualShaderNodeVaryingSetter ()
-│   │   │   ├── VisualShaderNodeVectorBase ()
-│   │   │   │   ├── VisualShaderNodeFaceForward ()
-│   │   │   │   ├── VisualShaderNodeVectorCompose ()
-│   │   │   │   ├── VisualShaderNodeVectorDecompose ()
-│   │   │   │   ├── VisualShaderNodeVectorDistance ()
-│   │   │   │   ├── VisualShaderNodeVectorFunc ()
-│   │   │   │   ├── VisualShaderNodeVectorLen ()
-│   │   │   │   ├── VisualShaderNodeVectorOp ()
-│   │   │   │   └── VisualShaderNodeVectorRefract ()
-│   │   │   └── VisualShaderNodeWorldPositionFromDepth ()
+│   │   │   │       └── VisualShaderNodeExpression
+│   │   │   │           └── VisualShaderNodeGlobalExpression
+│   │   │   ├── VisualShaderNodeRotationByAxis
+│   │   │   ├── VisualShaderNodeSDFRaymarch
+│   │   │   ├── VisualShaderNodeSDFToScreenUV
+│   │   │   ├── VisualShaderNodeSample3D
+│   │   │   │   ├── VisualShaderNodeTexture2DArray
+│   │   │   │   └── VisualShaderNodeTexture3D
+│   │   │   ├── VisualShaderNodeScreenNormalWorldSpace
+│   │   │   ├── VisualShaderNodeScreenUVToSDF
+│   │   │   ├── VisualShaderNodeSmoothStep
+│   │   │   ├── VisualShaderNodeStep
+│   │   │   ├── VisualShaderNodeSwitch
+│   │   │   ├── VisualShaderNodeTexture
+│   │   │   ├── VisualShaderNodeTextureSDF
+│   │   │   ├── VisualShaderNodeTextureSDFNormal
+│   │   │   ├── VisualShaderNodeTransformCompose
+│   │   │   ├── VisualShaderNodeTransformDecompose
+│   │   │   ├── VisualShaderNodeTransformFunc
+│   │   │   ├── VisualShaderNodeTransformOp
+│   │   │   ├── VisualShaderNodeTransformVecMult
+│   │   │   ├── VisualShaderNodeUIntFunc
+│   │   │   ├── VisualShaderNodeUIntOp
+│   │   │   ├── VisualShaderNodeUVFunc
+│   │   │   ├── VisualShaderNodeUVPolarCoord
+│   │   │   ├── VisualShaderNodeVarying
+│   │   │   │   ├── VisualShaderNodeVaryingGetter
+│   │   │   │   └── VisualShaderNodeVaryingSetter
+│   │   │   ├── VisualShaderNodeVectorBase
+│   │   │   │   ├── VisualShaderNodeFaceForward
+│   │   │   │   ├── VisualShaderNodeVectorCompose
+│   │   │   │   ├── VisualShaderNodeVectorDecompose
+│   │   │   │   ├── VisualShaderNodeVectorDistance
+│   │   │   │   ├── VisualShaderNodeVectorFunc
+│   │   │   │   ├── VisualShaderNodeVectorLen
+│   │   │   │   ├── VisualShaderNodeVectorOp
+│   │   │   │   └── VisualShaderNodeVectorRefract
+│   │   │   └── VisualShaderNodeWorldPositionFromDepth
 │   │   ├── VoxelGIData (allocate|get_bounds|get_data_cells|get_level_counts|get_octree_cells|get_octree_size|get_to_cell_xform)
-│   │   ├── World2D ()
-│   │   ├── World3D ()
+│   │   ├── World2D
+│   │   ├── World3D
 │   │   └── X509Certificate (load|load_from_string|save|save_to_string)
 │   ├── ResourceFormatLoader (_exists|_get_classes_used|_get_dependencies|_get_recognized_extensions|_get_resource_script_class|_get_resource_type|_get_resource_uid|_handles_type|_load|_recognize_path|_rename_dependencies)
 │   ├── ResourceFormatSaver (_get_recognized_extensions|_recognize|_recognize_path|_save|_set_uid)
 │   ├── ResourceImporter (_get_build_dependencies)
 │   ├── SceneState (get_base_scene_state|get_connection_binds|get_connection_count|get_connection_flags|get_connection_method|get_connection_signal|get_connection_source|get_connection_target|get_connection_unbinds|get_node_count|get_node_groups|get_node_index|get_node_instance|get_node_instance_placeholder|get_node_name|get_node_owner_path|get_node_path|get_node_property_count|get_node_property_name|get_node_property_value|get_node_type|get_path|is_node_instance_placeholder)
-│   ├── SceneTreeTimer ()
+│   ├── SceneTreeTimer
 │   ├── ScriptBacktrace (format|get_frame_count|get_frame_file|get_frame_function|get_frame_line|get_global_variable_count|get_global_variable_name|get_global_variable_value|get_language_name|get_local_variable_count|get_local_variable_name|get_local_variable_value|get_member_variable_count|get_member_variable_name|get_member_variable_value|is_empty)
 │   ├── Semaphore (post|try_wait|wait)
 │   ├── SkinReference (get_skeleton|get_skin)
@@ -890,17 +890,17 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   ├── TextParagraph (add_object|add_string|clear|clear_dropcap|draw|draw_dropcap|draw_dropcap_outline|draw_line|draw_line_outline|draw_outline|duplicate|get_dropcap_lines|get_dropcap_rid|get_dropcap_size|get_inferred_direction|get_line_ascent|get_line_count|get_line_descent|get_line_object_rect|get_line_objects|get_line_range|get_line_rid|get_line_size|get_line_underline_position|get_line_underline_thickness|get_line_width|get_non_wrapped_size|get_range|get_rid|get_size|has_object|hit_test|resize_object|set_bidi_override|set_dropcap|tab_align)
 │   ├── TextServer (create_font|create_font_linked_variation|create_shaped_text|draw_hex_code_box|font_clear_glyphs|font_clear_kerning_map|font_clear_size_cache|font_clear_system_fallback_cache|font_clear_textures|font_draw_glyph|font_draw_glyph_outline|font_get_antialiasing|font_get_ascent|font_get_baseline_offset|font_get_char_from_glyph_index|font_get_descent|font_get_disable_embedded_bitmaps|font_get_embolden|font_get_face_count|font_get_face_index|font_get_fixed_size|font_get_fixed_size_scale_mode|font_get_generate_mipmaps|font_get_global_oversampling|font_get_glyph_advance|font_get_glyph_contours|font_get_glyph_index|font_get_glyph_list|font_get_glyph_offset|font_get_glyph_size|font_get_glyph_texture_idx|font_get_glyph_texture_rid|font_get_glyph_texture_size|font_get_glyph_uv_rect|font_get_hinting|font_get_keep_rounding_remainders|font_get_kerning|font_get_kerning_list|font_get_language_support_override|font_get_language_support_overrides|font_get_msdf_pixel_range|font_get_msdf_size|font_get_name|font_get_opentype_feature_overrides|font_get_ot_name_strings|font_get_oversampling|font_get_palette_colors|font_get_palette_count|font_get_palette_custom_colors|font_get_palette_name|font_get_scale|font_get_script_support_override|font_get_script_support_overrides|font_get_size_cache_info|font_get_size_cache_list|font_get_spacing|font_get_stretch|font_get_style|font_get_style_name|font_get_subpixel_positioning|font_get_supported_chars|font_get_supported_glyphs|font_get_texture_count|font_get_texture_image|font_get_texture_offsets|font_get_transform|font_get_underline_position|font_get_underline_thickness|font_get_used_palette|font_get_variation_coordinates|font_get_weight|font_has_char|font_is_allow_system_fallback|font_is_force_autohinter|font_is_language_supported|font_is_modulate_color_glyphs|font_is_multichannel_signed_distance_field|font_is_script_supported|font_remove_glyph|font_remove_kerning|font_remove_language_support_override|font_remove_script_support_override|font_remove_size_cache|font_remove_texture|font_render_glyph|font_render_range|font_set_allow_system_fallback|font_set_antialiasing|font_set_ascent|font_set_baseline_offset|font_set_data|font_set_descent|font_set_disable_embedded_bitmaps|font_set_embolden|font_set_face_index|font_set_fixed_size|font_set_fixed_size_scale_mode|font_set_force_autohinter|font_set_generate_mipmaps|font_set_global_oversampling|font_set_glyph_advance|font_set_glyph_offset|font_set_glyph_size|font_set_glyph_texture_idx|font_set_glyph_uv_rect|font_set_hinting|font_set_keep_rounding_remainders|font_set_kerning|font_set_language_support_override|font_set_modulate_color_glyphs|font_set_msdf_pixel_range|font_set_msdf_size|font_set_multichannel_signed_distance_field|font_set_name|font_set_opentype_feature_overrides|font_set_oversampling|font_set_palette_custom_colors|font_set_scale|font_set_script_support_override|font_set_spacing|font_set_stretch|font_set_style|font_set_style_name|font_set_subpixel_positioning|font_set_texture_image|font_set_texture_offsets|font_set_transform|font_set_underline_position|font_set_underline_thickness|font_set_used_palette|font_set_variation_coordinates|font_set_weight|font_supported_feature_list|font_supported_variation_list|format_number|free_rid|get_features|get_hex_code_box_size|get_name|get_support_data|get_support_data_filename|get_support_data_info|has|has_feature|is_confusable|is_locale_right_to_left|is_locale_using_support_data|is_valid_identifier|is_valid_letter|load_support_data|name_to_tag|parse_number|parse_structured_text|percent_sign|save_support_data|shaped_get_run_count|shaped_get_run_direction|shaped_get_run_font_rid|shaped_get_run_font_size|shaped_get_run_glyph_range|shaped_get_run_language|shaped_get_run_object|shaped_get_run_range|shaped_get_run_text|shaped_get_span_count|shaped_get_span_embedded_object|shaped_get_span_meta|shaped_get_span_object|shaped_get_span_text|shaped_get_text|shaped_set_span_update_font|shaped_text_add_object|shaped_text_add_string|shaped_text_clear|shaped_text_closest_character_pos|shaped_text_draw|shaped_text_draw_outline|shaped_text_duplicate|shaped_text_fit_to_width|shaped_text_get_ascent|shaped_text_get_carets|shaped_text_get_character_breaks|shaped_text_get_custom_ellipsis|shaped_text_get_custom_punctuation|shaped_text_get_descent|shaped_text_get_direction|shaped_text_get_dominant_direction_in_range|shaped_text_get_ellipsis_glyph_count|shaped_text_get_ellipsis_glyphs|shaped_text_get_ellipsis_pos|shaped_text_get_glyph_count|shaped_text_get_glyphs|shaped_text_get_grapheme_bounds|shaped_text_get_inferred_direction|shaped_text_get_line_breaks|shaped_text_get_line_breaks_adv|shaped_text_get_object_glyph|shaped_text_get_object_range|shaped_text_get_object_rect|shaped_text_get_objects|shaped_text_get_orientation|shaped_text_get_parent|shaped_text_get_preserve_control|shaped_text_get_preserve_invalid|shaped_text_get_range|shaped_text_get_selection|shaped_text_get_size|shaped_text_get_spacing|shaped_text_get_trim_pos|shaped_text_get_underline_position|shaped_text_get_underline_thickness|shaped_text_get_width|shaped_text_get_word_breaks|shaped_text_has_object|shaped_text_has_visible_chars|shaped_text_hit_test_grapheme|shaped_text_hit_test_position|shaped_text_is_ready|shaped_text_next_character_pos|shaped_text_next_grapheme_pos|shaped_text_overrun_trim_to_width|shaped_text_prev_character_pos|shaped_text_prev_grapheme_pos|shaped_text_resize_object|shaped_text_set_bidi_override|shaped_text_set_custom_ellipsis|shaped_text_set_custom_punctuation|shaped_text_set_direction|shaped_text_set_orientation|shaped_text_set_preserve_control|shaped_text_set_preserve_invalid|shaped_text_set_spacing|shaped_text_shape|shaped_text_sort_logical|shaped_text_substr|shaped_text_tab_align|spoof_check|string_get_character_breaks|string_get_word_breaks|string_to_lower|string_to_title|string_to_upper|strip_diacritics|tag_to_name)
 │   │   └── TextServerExtension (_cleanup|_create_font|_create_font_linked_variation|_create_shaped_text|_draw_hex_code_box|_font_clear_glyphs|_font_clear_kerning_map|_font_clear_size_cache|_font_clear_system_fallback_cache|_font_clear_textures|_font_draw_glyph|_font_draw_glyph_outline|_font_get_antialiasing|_font_get_ascent|_font_get_baseline_offset|_font_get_char_from_glyph_index|_font_get_descent|_font_get_disable_embedded_bitmaps|_font_get_embolden|_font_get_face_count|_font_get_face_index|_font_get_fixed_size|_font_get_fixed_size_scale_mode|_font_get_generate_mipmaps|_font_get_global_oversampling|_font_get_glyph_advance|_font_get_glyph_contours|_font_get_glyph_index|_font_get_glyph_list|_font_get_glyph_offset|_font_get_glyph_size|_font_get_glyph_texture_idx|_font_get_glyph_texture_rid|_font_get_glyph_texture_size|_font_get_glyph_uv_rect|_font_get_hinting|_font_get_keep_rounding_remainders|_font_get_kerning|_font_get_kerning_list|_font_get_language_support_override|_font_get_language_support_overrides|_font_get_msdf_pixel_range|_font_get_msdf_size|_font_get_name|_font_get_opentype_feature_overrides|_font_get_ot_name_strings|_font_get_oversampling|_font_get_palette_colors|_font_get_palette_count|_font_get_palette_custom_colors|_font_get_palette_name|_font_get_scale|_font_get_script_support_override|_font_get_script_support_overrides|_font_get_size_cache_info|_font_get_size_cache_list|_font_get_spacing|_font_get_stretch|_font_get_style|_font_get_style_name|_font_get_subpixel_positioning|_font_get_supported_chars|_font_get_supported_glyphs|_font_get_texture_count|_font_get_texture_image|_font_get_texture_offsets|_font_get_transform|_font_get_underline_position|_font_get_underline_thickness|_font_get_used_palette|_font_get_variation_coordinates|_font_get_weight|_font_has_char|_font_is_allow_system_fallback|_font_is_force_autohinter|_font_is_language_supported|_font_is_modulate_color_glyphs|_font_is_multichannel_signed_distance_field|_font_is_script_supported|_font_remove_glyph|_font_remove_kerning|_font_remove_language_support_override|_font_remove_script_support_override|_font_remove_size_cache|_font_remove_texture|_font_render_glyph|_font_render_range|_font_set_allow_system_fallback|_font_set_antialiasing|_font_set_ascent|_font_set_baseline_offset|_font_set_data|_font_set_data_ptr|_font_set_descent|_font_set_disable_embedded_bitmaps|_font_set_embolden|_font_set_face_index|_font_set_fixed_size|_font_set_fixed_size_scale_mode|_font_set_force_autohinter|_font_set_generate_mipmaps|_font_set_global_oversampling|_font_set_glyph_advance|_font_set_glyph_offset|_font_set_glyph_size|_font_set_glyph_texture_idx|_font_set_glyph_uv_rect|_font_set_hinting|_font_set_keep_rounding_remainders|_font_set_kerning|_font_set_language_support_override|_font_set_modulate_color_glyphs|_font_set_msdf_pixel_range|_font_set_msdf_size|_font_set_multichannel_signed_distance_field|_font_set_name|_font_set_opentype_feature_overrides|_font_set_oversampling|_font_set_palette_custom_colors|_font_set_scale|_font_set_script_support_override|_font_set_spacing|_font_set_stretch|_font_set_style|_font_set_style_name|_font_set_subpixel_positioning|_font_set_texture_image|_font_set_texture_offsets|_font_set_transform|_font_set_underline_position|_font_set_underline_thickness|_font_set_used_palette|_font_set_variation_coordinates|_font_set_weight|_font_supported_feature_list|_font_supported_variation_list|_format_number|_free_rid|_get_features|_get_hex_code_box_size|_get_name|_get_support_data|_get_support_data_filename|_get_support_data_info|_has|_has_feature|_is_confusable|_is_locale_right_to_left|_is_locale_using_support_data|_is_valid_identifier|_is_valid_letter|_load_support_data|_name_to_tag|_parse_number|_parse_structured_text|_percent_sign|_reference_oversampling_level|_save_support_data|_shaped_get_run_count|_shaped_get_run_direction|_shaped_get_run_font_rid|_shaped_get_run_font_size|_shaped_get_run_glyph_range|_shaped_get_run_language|_shaped_get_run_object|_shaped_get_run_range|_shaped_get_run_text|_shaped_get_span_count|_shaped_get_span_embedded_object|_shaped_get_span_meta|_shaped_get_span_object|_shaped_get_span_text|_shaped_get_text|_shaped_set_span_update_font|_shaped_text_add_object|_shaped_text_add_string|_shaped_text_clear|_shaped_text_closest_character_pos|_shaped_text_draw|_shaped_text_draw_outline|_shaped_text_duplicate|_shaped_text_fit_to_width|_shaped_text_get_ascent|_shaped_text_get_carets|_shaped_text_get_character_breaks|_shaped_text_get_custom_ellipsis|_shaped_text_get_custom_punctuation|_shaped_text_get_descent|_shaped_text_get_direction|_shaped_text_get_dominant_direction_in_range|_shaped_text_get_ellipsis_glyph_count|_shaped_text_get_ellipsis_glyphs|_shaped_text_get_ellipsis_pos|_shaped_text_get_glyph_count|_shaped_text_get_glyphs|_shaped_text_get_grapheme_bounds|_shaped_text_get_inferred_direction|_shaped_text_get_line_breaks|_shaped_text_get_line_breaks_adv|_shaped_text_get_object_glyph|_shaped_text_get_object_range|_shaped_text_get_object_rect|_shaped_text_get_objects|_shaped_text_get_orientation|_shaped_text_get_parent|_shaped_text_get_preserve_control|_shaped_text_get_preserve_invalid|_shaped_text_get_range|_shaped_text_get_selection|_shaped_text_get_size|_shaped_text_get_spacing|_shaped_text_get_trim_pos|_shaped_text_get_underline_position|_shaped_text_get_underline_thickness|_shaped_text_get_width|_shaped_text_get_word_breaks|_shaped_text_has_object|_shaped_text_hit_test_grapheme|_shaped_text_hit_test_position|_shaped_text_is_ready|_shaped_text_next_character_pos|_shaped_text_next_grapheme_pos|_shaped_text_overrun_trim_to_width|_shaped_text_prev_character_pos|_shaped_text_prev_grapheme_pos|_shaped_text_resize_object|_shaped_text_set_bidi_override|_shaped_text_set_custom_ellipsis|_shaped_text_set_custom_punctuation|_shaped_text_set_direction|_shaped_text_set_orientation|_shaped_text_set_preserve_control|_shaped_text_set_preserve_invalid|_shaped_text_set_spacing|_shaped_text_shape|_shaped_text_sort_logical|_shaped_text_substr|_shaped_text_tab_align|_shaped_text_update_breaks|_shaped_text_update_justification_ops|_spoof_check|_string_get_character_breaks|_string_get_word_breaks|_string_to_lower|_string_to_title|_string_to_upper|_strip_diacritics|_tag_to_name|_unreference_oversampling_level)
-│   │       ├── TextServerAdvanced ()
-│   │       ├── TextServerDummy ()
-│   │       └── TextServerFallback ()
+│   │       ├── TextServerAdvanced
+│   │       ├── TextServerDummy
+│   │       └── TextServerFallback
 │   ├── Thread (get_id|is_alive|is_main_thread|is_started|set_thread_safety_checks_enabled|start|wait_to_finish)
 │   ├── TranslationDomain (add_translation|clear|find_translations|get_locale_override|get_translation_object|get_translations|has_translation|has_translation_for_locale|pseudolocalize|remove_translation|set_locale_override|translate|translate_plural)
 │   ├── TriangleMesh (create_from_faces|get_faces|intersect_ray|intersect_segment)
 │   ├── Tween (bind_node|chain|custom_step|get_loops_left|get_total_elapsed_time|has_tweeners|interpolate_value|is_running|is_valid|kill|parallel|pause|play|set_ease|set_ignore_time_scale|set_loops|set_parallel|set_pause_mode|set_process_mode|set_speed_scale|set_trans|stop|tween_await|tween_callback|tween_interval|tween_method|tween_property|tween_subtween)
-│   ├── Tweener ()
+│   ├── Tweener
 │   │   ├── AwaitTweener (set_timeout)
 │   │   ├── CallbackTweener (set_delay)
-│   │   ├── IntervalTweener ()
+│   │   ├── IntervalTweener
 │   │   ├── MethodTweener (set_delay|set_ease|set_trans)
 │   │   ├── PropertyTweener (as_relative|from|from_current|set_custom_interpolator|set_delay|set_ease|set_trans)
 │   │   └── SubtweenTweener (set_delay)
@@ -912,12 +912,12 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │   └── WebRTCPeerConnectionExtension (_add_ice_candidate|_close|_create_data_channel|_create_offer|_get_connection_state|_get_gathering_state|_get_signaling_state|_initialize|_poll|_set_local_description|_set_remote_description)
 │   ├── XMLParser (get_attribute_count|get_attribute_name|get_attribute_value|get_current_line|get_named_attribute_value|get_named_attribute_value_safe|get_node_data|get_node_name|get_node_offset|get_node_type|has_attribute|is_empty|open|open_buffer|read|seek|skip_section)
 │   ├── XRInterface (get_camera_feed_id|get_capabilities|get_name|get_play_area|get_projection_for_view|get_render_target_size|get_supported_environment_blend_modes|get_system_info|get_tracking_status|get_transform_for_view|get_view_count|initialize|is_initialized|is_passthrough_enabled|is_passthrough_supported|set_environment_blend_mode|set_play_area_mode|start_passthrough|stop_passthrough|supports_play_area_mode|trigger_haptic_pulse|uninitialize)
-│   │   ├── MobileVRInterface ()
+│   │   ├── MobileVRInterface
 │   │   ├── OpenXRInterface (get_action_sets|get_available_display_refresh_rates|get_hand_joint_angular_velocity|get_hand_joint_flags|get_hand_joint_linear_velocity|get_hand_joint_position|get_hand_joint_radius|get_hand_joint_rotation|get_hand_tracking_source|get_motion_range|get_session_state|is_action_set_active|is_eye_gaze_interaction_supported|is_foveation_supported|is_hand_interaction_supported|is_hand_tracking_supported|is_user_presence_supported|is_user_present|set_action_set_active|set_cpu_level|set_gpu_level|set_motion_range)
 │   │   ├── WebXRInterface (get_available_display_refresh_rates|get_display_refresh_rate|get_input_source_target_ray_mode|get_input_source_tracker|is_input_source_active|is_session_supported|set_display_refresh_rate)
 │   │   └── XRInterfaceExtension (_end_frame|_get_anchor_detection_is_enabled|_get_camera_feed_id|_get_camera_transform|_get_capabilities|_get_color_texture|_get_depth_texture|_get_name|_get_play_area|_get_play_area_mode|_get_projection_for_view|_get_render_target_size|_get_suggested_pose_names|_get_suggested_tracker_names|_get_system_info|_get_tracking_status|_get_transform_for_view|_get_velocity_texture|_get_view_count|_get_vrs_texture|_get_vrs_texture_format|_initialize|_is_initialized|_post_draw_viewport|_pre_draw_viewport|_pre_render|_process|_set_anchor_detection_is_enabled|_set_play_area_mode|_supports_play_area_mode|_trigger_haptic_pulse|_uninitialize|add_blit|get_color_texture|get_depth_texture|get_render_target_texture|get_velocity_texture)
 │   ├── XRPose (get_adjusted_transform)
-│   ├── XRTracker ()
+│   ├── XRTracker
 │   │   ├── XRFaceTracker (get_blend_shape|set_blend_shape)
 │   │   └── XRPositionalTracker (get_input|get_pose|has_pose|invalidate_pose|set_input|set_pose)
 │   │       ├── OpenXRSpatialEntityTracker (add_next|get_next|get_spatial_context|remove_next|set_spatial_context)
@@ -925,22 +925,22 @@ Object (_get|_get_property_list|_init|_iter_get|_iter_init|_iter_next|_notificat
 │   │       │   ├── OpenXRMarkerTracker (get_marker_data|set_marker_data)
 │   │       │   └── OpenXRPlaneTracker (clear_mesh_data|get_mesh|get_mesh_offset|get_shape|set_mesh_data)
 │   │       ├── XRBodyTracker (get_joint_flags|get_joint_transform|set_joint_flags|set_joint_transform)
-│   │       ├── XRControllerTracker ()
+│   │       ├── XRControllerTracker
 │   │       └── XRHandTracker (get_hand_joint_angular_velocity|get_hand_joint_flags|get_hand_joint_linear_velocity|get_hand_joint_radius|get_hand_joint_transform|set_hand_joint_angular_velocity|set_hand_joint_flags|set_hand_joint_linear_velocity|set_hand_joint_radius|set_hand_joint_transform)
 │   ├── ZIPPacker (add_directory|close|close_file|open|start_file|write_file)
 │   └── ZIPReader (close|file_exists|get_compression_level|get_files|open|read_file)
 ├── RenderData (get_camera_attributes|get_environment|get_render_scene_buffers|get_render_scene_data)
 │   ├── RenderDataExtension (_get_camera_attributes|_get_environment|_get_render_scene_buffers|_get_render_scene_data)
-│   └── RenderDataRD ()
+│   └── RenderDataRD
 ├── RenderSceneData (get_cam_projection|get_cam_transform|get_uniform_buffer|get_view_count|get_view_eye_offset|get_view_projection)
 │   ├── RenderSceneDataExtension (_get_cam_projection|_get_cam_transform|_get_uniform_buffer|_get_view_count|_get_view_eye_offset|_get_view_projection)
-│   └── RenderSceneDataRD ()
+│   └── RenderSceneDataRD
 ├── RenderingDevice (barrier|blas_build|blas_create|buffer_clear|buffer_copy|buffer_get_data|buffer_get_data_async|buffer_get_device_address|buffer_update|capture_timestamp|compute_list_add_barrier|compute_list_begin|compute_list_bind_compute_pipeline|compute_list_bind_uniform_set|compute_list_dispatch|compute_list_dispatch_indirect|compute_list_end|compute_list_set_push_constant|compute_pipeline_create|compute_pipeline_is_valid|create_local_device|draw_command_begin_label|draw_command_end_label|draw_command_insert_label|draw_list_begin|draw_list_begin_for_screen|draw_list_begin_split|draw_list_bind_index_array|draw_list_bind_render_pipeline|draw_list_bind_uniform_set|draw_list_bind_vertex_array|draw_list_bind_vertex_buffers_format|draw_list_disable_scissor|draw_list_draw|draw_list_draw_indirect|draw_list_enable_scissor|draw_list_end|draw_list_set_blend_constants|draw_list_set_push_constant|draw_list_switch_to_next_pass|draw_list_switch_to_next_pass_split|framebuffer_create|framebuffer_create_empty|framebuffer_create_multipass|framebuffer_format_create|framebuffer_format_create_empty|framebuffer_format_create_multipass|framebuffer_format_get_texture_samples|framebuffer_get_format|framebuffer_is_valid|free_rid|full_barrier|get_captured_timestamp_cpu_time|get_captured_timestamp_gpu_time|get_captured_timestamp_name|get_captured_timestamps_count|get_captured_timestamps_frame|get_device_allocation_count|get_device_allocs_by_object_type|get_device_memory_by_object_type|get_device_name|get_device_pipeline_cache_uuid|get_device_total_memory|get_device_vendor_name|get_driver_allocation_count|get_driver_allocs_by_object_type|get_driver_and_device_memory_report|get_driver_memory_by_object_type|get_driver_resource|get_driver_total_memory|get_frame_delay|get_memory_usage|get_perf_report|get_tracked_object_name|get_tracked_object_type_count|has_feature|hit_sbt_create|hit_sbt_range_alloc|hit_sbt_range_free|hit_sbt_range_update|hit_sbt_set_pipeline|index_array_create|index_buffer_create|limit_get|raytracing_list_begin|raytracing_list_bind_raytracing_pipeline|raytracing_list_bind_uniform_set|raytracing_list_end|raytracing_list_set_push_constant|raytracing_list_trace_rays|raytracing_pipeline_create|raytracing_pipeline_is_valid|render_pipeline_create|render_pipeline_is_valid|sampler_create|sampler_is_format_supported_for_filter|screen_get_framebuffer_format|screen_get_height|screen_get_width|set_resource_name|shader_compile_binary_from_spirv|shader_compile_spirv_from_source|shader_create_from_bytecode|shader_create_from_spirv|shader_create_placeholder|shader_get_vertex_input_attribute_mask|storage_buffer_create|submit|sync|texture_buffer_create|texture_clear|texture_copy|texture_create|texture_create_from_extension|texture_create_shared|texture_create_shared_from_slice|texture_get_data|texture_get_data_async|texture_get_format|texture_get_native_handle|texture_is_discardable|texture_is_format_supported_for_usage|texture_is_shared|texture_is_valid|texture_resolve_multisample|texture_set_discardable|texture_update|tlas_build|tlas_create|uniform_buffer_create|uniform_set_create|uniform_set_is_valid|vertex_array_create|vertex_buffer_create|vertex_format_create)
 ├── RenderingServer (area_light_create|bake_render_uv2|call_on_render_thread|camera_attributes_create|camera_attributes_set_auto_exposure|camera_attributes_set_dof_blur|camera_attributes_set_dof_blur_bokeh_shape|camera_attributes_set_dof_blur_quality|camera_attributes_set_exposure|camera_create|camera_set_camera_attributes|camera_set_compositor|camera_set_cull_mask|camera_set_environment|camera_set_frustum|camera_set_orthogonal|camera_set_perspective|camera_set_transform|camera_set_use_vertical_aspect|canvas_create|canvas_item_add_animation_slice|canvas_item_add_circle|canvas_item_add_clip_ignore|canvas_item_add_ellipse|canvas_item_add_lcd_texture_rect_region|canvas_item_add_line|canvas_item_add_mesh|canvas_item_add_msdf_texture_rect_region|canvas_item_add_multiline|canvas_item_add_multimesh|canvas_item_add_nine_patch|canvas_item_add_particles|canvas_item_add_polygon|canvas_item_add_polyline|canvas_item_add_primitive|canvas_item_add_rect|canvas_item_add_set_transform|canvas_item_add_texture_rect|canvas_item_add_texture_rect_region|canvas_item_add_triangle_array|canvas_item_attach_skeleton|canvas_item_clear|canvas_item_create|canvas_item_get_instance_shader_parameter|canvas_item_get_instance_shader_parameter_default_value|canvas_item_get_instance_shader_parameter_list|canvas_item_reset_physics_interpolation|canvas_item_set_canvas_group_mode|canvas_item_set_clip|canvas_item_set_copy_to_backbuffer|canvas_item_set_custom_rect|canvas_item_set_default_texture_filter|canvas_item_set_default_texture_repeat|canvas_item_set_distance_field_mode|canvas_item_set_draw_behind_parent|canvas_item_set_draw_index|canvas_item_set_instance_shader_parameter|canvas_item_set_interpolated|canvas_item_set_light_mask|canvas_item_set_material|canvas_item_set_modulate|canvas_item_set_parent|canvas_item_set_self_modulate|canvas_item_set_sort_children_by_y|canvas_item_set_transform|canvas_item_set_use_parent_material|canvas_item_set_visibility_layer|canvas_item_set_visibility_notifier|canvas_item_set_visible|canvas_item_set_z_as_relative_to_parent|canvas_item_set_z_index|canvas_item_transform_physics_interpolation|canvas_light_attach_to_canvas|canvas_light_create|canvas_light_occluder_attach_to_canvas|canvas_light_occluder_create|canvas_light_occluder_reset_physics_interpolation|canvas_light_occluder_set_as_sdf_collision|canvas_light_occluder_set_enabled|canvas_light_occluder_set_interpolated|canvas_light_occluder_set_light_mask|canvas_light_occluder_set_polygon|canvas_light_occluder_set_transform|canvas_light_occluder_transform_physics_interpolation|canvas_light_reset_physics_interpolation|canvas_light_set_blend_mode|canvas_light_set_color|canvas_light_set_enabled|canvas_light_set_energy|canvas_light_set_height|canvas_light_set_interpolated|canvas_light_set_item_cull_mask|canvas_light_set_item_shadow_cull_mask|canvas_light_set_layer_range|canvas_light_set_mode|canvas_light_set_shadow_color|canvas_light_set_shadow_enabled|canvas_light_set_shadow_filter|canvas_light_set_shadow_smooth|canvas_light_set_texture|canvas_light_set_texture_offset|canvas_light_set_texture_scale|canvas_light_set_transform|canvas_light_set_z_range|canvas_light_transform_physics_interpolation|canvas_occluder_polygon_create|canvas_occluder_polygon_set_cull_mode|canvas_occluder_polygon_set_shape|canvas_set_disable_scale|canvas_set_item_mirroring|canvas_set_item_repeat|canvas_set_modulate|canvas_set_shadow_texture_size|canvas_texture_create|canvas_texture_set_channel|canvas_texture_set_shading_parameters|canvas_texture_set_texture_filter|canvas_texture_set_texture_repeat|compositor_create|compositor_effect_create|compositor_effect_set_callback|compositor_effect_set_enabled|compositor_effect_set_flag|compositor_set_compositor_effects|create_local_rendering_device|debug_canvas_item_get_rect|decal_create|decal_set_albedo_mix|decal_set_cull_mask|decal_set_distance_fade|decal_set_emission_energy|decal_set_fade|decal_set_modulate|decal_set_normal_fade|decal_set_size|decal_set_texture|decals_set_filter|directional_light_create|directional_shadow_atlas_set_size|directional_soft_shadow_filter_set_quality|environment_bake_panorama|environment_create|environment_glow_set_use_bicubic_upscale|environment_set_adjustment|environment_set_ambient_light|environment_set_background|environment_set_bg_color|environment_set_bg_energy|environment_set_camera_id|environment_set_canvas_max_layer|environment_set_fog|environment_set_fog_depth|environment_set_glow|environment_set_sdfgi|environment_set_sdfgi_frames_to_converge|environment_set_sdfgi_frames_to_update_light|environment_set_sdfgi_ray_count|environment_set_sky|environment_set_sky_custom_fov|environment_set_sky_orientation|environment_set_ssao|environment_set_ssao_quality|environment_set_ssil_quality|environment_set_ssr|environment_set_ssr_half_size|environment_set_ssr_roughness_quality|environment_set_tonemap|environment_set_tonemap_agx_contrast|environment_set_volumetric_fog|environment_set_volumetric_fog_filter_active|environment_set_volumetric_fog_volume_size|fog_volume_create|fog_volume_set_material|fog_volume_set_shape|fog_volume_set_size|force_draw|force_sync|free_rid|get_current_rendering_driver_name|get_current_rendering_method|get_default_clear_color|get_frame_setup_time_cpu|get_rendering_device|get_rendering_info|get_shader_parameter_list|get_test_cube|get_test_texture|get_video_adapter_api_version|get_video_adapter_name|get_video_adapter_type|get_video_adapter_vendor|get_white_texture|gi_set_use_half_resolution|global_shader_parameter_add|global_shader_parameter_get|global_shader_parameter_get_list|global_shader_parameter_get_type|global_shader_parameter_remove|global_shader_parameter_set|global_shader_parameter_set_override|has_changed|has_feature|has_os_feature|instance_attach_object_instance_id|instance_attach_skeleton|instance_create|instance_create2|instance_geometry_get_shader_parameter|instance_geometry_get_shader_parameter_default_value|instance_geometry_get_shader_parameter_list|instance_geometry_set_cast_shadows_setting|instance_geometry_set_flag|instance_geometry_set_lightmap|instance_geometry_set_lod_bias|instance_geometry_set_material_overlay|instance_geometry_set_material_override|instance_geometry_set_shader_parameter|instance_geometry_set_transparency|instance_geometry_set_visibility_range|instance_set_base|instance_set_blend_shape_weight|instance_set_custom_aabb|instance_set_extra_visibility_margin|instance_set_ignore_culling|instance_set_layer_mask|instance_set_pivot_data|instance_set_scenario|instance_set_surface_override_material|instance_set_transform|instance_set_visibility_parent|instance_set_visible|instance_teleport|instances_cull_aabb|instances_cull_convex|instances_cull_ray|is_on_render_thread|light_area_set_normalize_energy|light_area_set_size|light_directional_set_blend_splits|light_directional_set_shadow_mode|light_directional_set_sky_mode|light_omni_set_shadow_mode|light_projectors_set_filter|light_set_bake_mode|light_set_color|light_set_cull_mask|light_set_distance_fade|light_set_max_sdfgi_cascade|light_set_negative|light_set_param|light_set_projector|light_set_reverse_cull_face_mode|light_set_shadow|light_set_shadow_caster_mask|lightmap_create|lightmap_get_probe_capture_bsp_tree|lightmap_get_probe_capture_points|lightmap_get_probe_capture_sh|lightmap_get_probe_capture_tetrahedra|lightmap_set_baked_exposure_normalization|lightmap_set_probe_bounds|lightmap_set_probe_capture_data|lightmap_set_probe_capture_update_speed|lightmap_set_probe_interior|lightmap_set_textures|lightmaps_set_bicubic_filter|make_sphere_mesh|material_create|material_get_param|material_set_next_pass|material_set_param|material_set_render_priority|material_set_shader|material_set_use_debanding|mesh_add_surface|mesh_add_surface_from_arrays|mesh_clear|mesh_create|mesh_create_from_surfaces|mesh_get_blend_shape_count|mesh_get_blend_shape_mode|mesh_get_custom_aabb|mesh_get_surface|mesh_get_surface_count|mesh_set_blend_shape_mode|mesh_set_custom_aabb|mesh_set_shadow_mesh|mesh_surface_get_arrays|mesh_surface_get_blend_shape_arrays|mesh_surface_get_format_attribute_stride|mesh_surface_get_format_index_stride|mesh_surface_get_format_normal_tangent_stride|mesh_surface_get_format_offset|mesh_surface_get_format_skin_stride|mesh_surface_get_format_vertex_stride|mesh_surface_get_material|mesh_surface_remove|mesh_surface_set_material|mesh_surface_update_attribute_region|mesh_surface_update_index_region|mesh_surface_update_skin_region|mesh_surface_update_vertex_region|multimesh_allocate_data|multimesh_create|multimesh_get_aabb|multimesh_get_buffer|multimesh_get_buffer_rd_rid|multimesh_get_command_buffer_rd_rid|multimesh_get_custom_aabb|multimesh_get_instance_count|multimesh_get_mesh|multimesh_get_visible_instances|multimesh_instance_get_color|multimesh_instance_get_custom_data|multimesh_instance_get_transform|multimesh_instance_get_transform_2d|multimesh_instance_reset_physics_interpolation|multimesh_instance_set_color|multimesh_instance_set_custom_data|multimesh_instance_set_transform|multimesh_instance_set_transform_2d|multimesh_instances_reset_physics_interpolation|multimesh_set_buffer|multimesh_set_buffer_interpolated|multimesh_set_custom_aabb|multimesh_set_mesh|multimesh_set_physics_interpolated|multimesh_set_physics_interpolation_quality|multimesh_set_visible_instances|occluder_create|occluder_set_mesh|omni_light_create|particles_collision_create|particles_collision_height_field_update|particles_collision_set_attractor_attenuation|particles_collision_set_attractor_directionality|particles_collision_set_attractor_strength|particles_collision_set_box_extents|particles_collision_set_collision_type|particles_collision_set_cull_mask|particles_collision_set_field_texture|particles_collision_set_height_field_mask|particles_collision_set_height_field_resolution|particles_collision_set_sphere_radius|particles_create|particles_emit|particles_get_current_aabb|particles_get_emitting|particles_is_inactive|particles_request_process|particles_request_process_time|particles_restart|particles_set_amount|particles_set_amount_ratio|particles_set_collision_base_size|particles_set_custom_aabb|particles_set_draw_order|particles_set_draw_pass_mesh|particles_set_draw_passes|particles_set_emission_transform|particles_set_emitter_velocity|particles_set_emitting|particles_set_explosiveness_ratio|particles_set_fixed_fps|particles_set_fractional_delta|particles_set_interp_to_end|particles_set_interpolate|particles_set_lifetime|particles_set_mode|particles_set_one_shot|particles_set_pre_process_time|particles_set_process_material|particles_set_randomness_ratio|particles_set_speed_scale|particles_set_subemitter|particles_set_trail_bind_poses|particles_set_trails|particles_set_transform_align|particles_set_transform_align_axis|particles_set_transform_align_channel_filter|particles_set_use_local_coordinates|positional_soft_shadow_filter_set_quality|reflection_probe_create|reflection_probe_set_ambient_color|reflection_probe_set_ambient_energy|reflection_probe_set_ambient_mode|reflection_probe_set_as_interior|reflection_probe_set_blend_distance|reflection_probe_set_cull_mask|reflection_probe_set_enable_box_projection|reflection_probe_set_enable_shadows|reflection_probe_set_intensity|reflection_probe_set_max_distance|reflection_probe_set_mesh_lod_threshold|reflection_probe_set_origin_offset|reflection_probe_set_reflection_mask|reflection_probe_set_resolution|reflection_probe_set_size|reflection_probe_set_update_mode|request_frame_drawn_callback|scenario_create|scenario_set_camera_attributes|scenario_set_compositor|scenario_set_environment|scenario_set_fallback_environment|screen_space_roughness_limiter_set_active|set_boot_image|set_boot_image_with_stretch|set_debug_generate_wireframes|set_default_clear_color|shader_create|shader_get_code|shader_get_default_texture_parameter|shader_get_parameter_default|shader_set_code|shader_set_default_texture_parameter|shader_set_path_hint|skeleton_allocate_data|skeleton_bone_get_transform|skeleton_bone_get_transform_2d|skeleton_bone_set_transform|skeleton_bone_set_transform_2d|skeleton_create|skeleton_get_bone_count|skeleton_set_base_transform_2d|sky_bake_panorama|sky_create|sky_set_material|sky_set_mode|sky_set_radiance_size|spot_light_create|sub_surface_scattering_set_quality|sub_surface_scattering_set_scale|texture_2d_create|texture_2d_get|texture_2d_layer_get|texture_2d_layered_create|texture_2d_layered_placeholder_create|texture_2d_placeholder_create|texture_2d_update|texture_3d_create|texture_3d_get|texture_3d_placeholder_create|texture_3d_update|texture_create_from_native_handle|texture_drawable_blit_rect|texture_drawable_create|texture_drawable_generate_mipmaps|texture_drawable_get_default_material|texture_get_format|texture_get_native_handle|texture_get_path|texture_get_rd_texture|texture_proxy_create|texture_proxy_update|texture_rd_create|texture_replace|texture_set_force_redraw_if_visible|texture_set_path|texture_set_size_override|viewport_attach_camera|viewport_attach_canvas|viewport_attach_to_screen|viewport_create|viewport_get_measured_render_time_cpu|viewport_get_measured_render_time_gpu|viewport_get_render_info|viewport_get_render_target|viewport_get_texture|viewport_get_update_mode|viewport_remove_canvas|viewport_set_active|viewport_set_anisotropic_filtering_level|viewport_set_canvas_cull_mask|viewport_set_canvas_stacking|viewport_set_canvas_transform|viewport_set_clear_mode|viewport_set_debug_draw|viewport_set_default_canvas_item_texture_filter|viewport_set_default_canvas_item_texture_repeat|viewport_set_disable_2d|viewport_set_disable_3d|viewport_set_environment_mode|viewport_set_fsr_sharpness|viewport_set_global_canvas_transform|viewport_set_measure_render_time|viewport_set_msaa_2d|viewport_set_msaa_3d|viewport_set_occlusion_culling_build_quality|viewport_set_occlusion_rays_per_thread|viewport_set_parent_viewport|viewport_set_positional_shadow_atlas_quadrant_subdivision|viewport_set_positional_shadow_atlas_size|viewport_set_render_direct_to_screen|viewport_set_scaling_3d_mode|viewport_set_scaling_3d_scale|viewport_set_scenario|viewport_set_screen_space_aa|viewport_set_sdf_oversize_and_scale|viewport_set_size|viewport_set_snap_2d_transforms_to_pixel|viewport_set_snap_2d_vertices_to_pixel|viewport_set_texture_mipmap_bias|viewport_set_transparent_background|viewport_set_update_mode|viewport_set_use_debanding|viewport_set_use_hdr_2d|viewport_set_use_occlusion_culling|viewport_set_use_taa|viewport_set_use_xr|viewport_set_vrs_mode|viewport_set_vrs_texture|viewport_set_vrs_update_mode|visibility_notifier_create|visibility_notifier_set_aabb|visibility_notifier_set_callbacks|voxel_gi_allocate_data|voxel_gi_create|voxel_gi_get_data_cells|voxel_gi_get_distance_field|voxel_gi_get_level_counts|voxel_gi_get_octree_cells|voxel_gi_get_octree_size|voxel_gi_get_to_cell_xform|voxel_gi_set_baked_exposure_normalization|voxel_gi_set_bias|voxel_gi_set_dynamic_range|voxel_gi_set_energy|voxel_gi_set_interior|voxel_gi_set_normal_bias|voxel_gi_set_propagation|voxel_gi_set_quality|voxel_gi_set_use_two_bounces)
 ├── ResourceLoader (add_resource_format_loader|exists|get_cached_ref|get_dependencies|get_recognized_extensions_for_type|get_resource_uid|has_cached|list_directory|load|load_threaded_get|load_threaded_get_status|load_threaded_request|remove_resource_format_loader|set_abort_on_missing_resources)
 ├── ResourceSaver (add_resource_format_saver|get_recognized_extensions|get_resource_id_for_path|remove_resource_format_saver|save|set_uid)
 ├── ResourceUID (add_id|create_id|create_id_for_path|ensure_path|get_id_path|has_id|id_to_text|path_to_uid|remove_id|set_id|text_to_id|uid_to_path)
-├── ScriptLanguage ()
+├── ScriptLanguage
 │   └── ScriptLanguageExtension (_add_global_constant|_add_named_global_constant|_auto_indent_code|_can_inherit_from_file|_can_make_function|_complete_code|_create_script|_debug_get_current_stack_info|_debug_get_error|_debug_get_globals|_debug_get_stack_level_count|_debug_get_stack_level_function|_debug_get_stack_level_instance|_debug_get_stack_level_line|_debug_get_stack_level_locals|_debug_get_stack_level_members|_debug_get_stack_level_source|_debug_parse_stack_level_expression|_find_function|_finish|_frame|_get_built_in_templates|_get_comment_delimiters|_get_doc_comment_delimiters|_get_extension|_get_global_class_name|_get_name|_get_public_annotations|_get_public_constants|_get_public_functions|_get_recognized_extensions|_get_reserved_words|_get_string_delimiters|_get_type|_handles_global_class_type|_has_named_classes|_init|_is_control_flow_keyword|_is_using_templates|_lookup_code|_make_function|_make_template|_open_in_external_editor|_overrides_external_editor|_preferred_file_name_casing|_profiling_get_accumulated_data|_profiling_get_frame_data|_profiling_set_save_native_calls|_profiling_start|_profiling_stop|_reload_all_scripts|_reload_scripts|_reload_tool_script|_remove_named_global_constant|_supports_builtin_mode|_supports_documentation|_thread_enter|_thread_exit|_validate|_validate_path)
 ├── ShaderIncludeDB (get_built_in_include_file|has_built_in_include_file|list_built_in_include_files)
 ├── TextServerManager (add_interface|find_interface|get_interface|get_interface_count|get_interfaces|get_primary_interface|remove_interface|set_primary_interface)
