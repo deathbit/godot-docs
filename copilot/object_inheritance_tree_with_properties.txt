@@ -1,0 +1,956 @@
+Object
+├── AccessibilityServer
+├── AudioServer (bus_count|input_device|output_device|playback_speed_scale)
+├── CameraServer (monitoring_feeds)
+├── ClassDB
+├── DisplayServer
+├── Engine (max_fps|max_physics_steps_per_frame|physics_jitter_fix|physics_ticks_per_second|print_error_messages|print_to_stdout|time_scale)
+├── EngineDebugger
+├── FramebufferCacheRD
+├── GDExtensionManager
+├── Geometry2D
+├── Geometry3D
+├── GodotInstance
+├── IP
+├── Input (emulate_mouse_from_touch|emulate_touch_from_mouse|ignore_joypad_on_unfocused_application|mouse_mode|use_accumulated_input)
+├── InputMap
+├── JNISingleton
+├── JSONRPC
+├── JavaClassWrapper
+├── JavaScriptBridge
+├── MainLoop
+│   └── SceneTree (auto_accept_quit|current_scene|debug_collisions_hint|debug_navigation_hint|debug_paths_hint|edited_scene_root|multiplayer_poll|paused|physics_interpolation|quit_on_go_back|root)
+├── Marshalls
+├── MovieWriter
+├── NativeMenu
+├── NavigationMeshGenerator
+├── NavigationServer2D
+├── NavigationServer2DManager
+├── NavigationServer3D
+├── NavigationServer3DManager
+├── Node (auto_translate_mode|editor_description|multiplayer|name|owner|physics_interpolation_mode|process_mode|process_physics_priority|process_priority|process_thread_group|process_thread_group_order|process_thread_messages|scene_file_path|unique_name_in_owner)
+│   ├── AnimationMixer (active|audio_max_polyphony|callback_mode_discrete|callback_mode_method|callback_mode_process|deterministic|reset_on_save|root_motion_local|root_motion_track|root_node)
+│   │   ├── AnimationPlayer (assigned_animation|autoplay|current_animation|current_animation_length|current_animation_position|movie_quit_on_finish|playback_auto_capture|playback_auto_capture_duration|playback_auto_capture_ease_type|playback_auto_capture_transition_type|playback_default_blend_time|speed_scale)
+│   │   └── AnimationTree (advance_expression_base_node|anim_player|callback_mode_discrete|deterministic|tree_root)
+│   ├── AudioStreamPlayer (autoplay|bus|max_polyphony|mix_target|pitch_scale|playback_type|playing|stream|stream_paused|volume_db|volume_linear)
+│   ├── CanvasItem (clip_children|light_mask|material|modulate|oversampling_with_scale|self_modulate|show_behind_parent|texture_filter|texture_repeat|top_level|use_parent_material|visibility_layer|visible|y_sort_enabled|z_as_relative|z_index)
+│   │   ├── Control (accessibility_controls_nodes|accessibility_described_by_nodes|accessibility_description|accessibility_flow_to_nodes|accessibility_labeled_by_nodes|accessibility_live|accessibility_name|anchor_bottom|anchor_left|anchor_right|anchor_top|auto_translate|clip_contents|custom_maximum_size|custom_minimum_size|focus_behavior_recursive|focus_mode|focus_neighbor_bottom|focus_neighbor_left|focus_neighbor_right|focus_neighbor_top|focus_next|focus_previous|global_position|grow_horizontal|grow_vertical|layout_direction|localize_numeral_system|mouse_behavior_recursive|mouse_default_cursor_shape|mouse_filter|mouse_force_pass_scroll_events|offset_bottom|offset_left|offset_right|offset_top|offset_transform_enabled|offset_transform_pivot|offset_transform_pivot_ratio|offset_transform_position|offset_transform_position_ratio|offset_transform_rotation|offset_transform_scale|offset_transform_visual_only|physics_interpolation_mode|pivot_offset|pivot_offset_ratio|position|propagate_maximum_size|rotation|rotation_degrees|scale|shortcut_context|size|size_flags_horizontal|size_flags_stretch_ratio|size_flags_vertical|theme|theme_type_variation|tooltip_auto_translate_mode|tooltip_text|translation_context)
+│   │   │   ├── BaseButton (action_mode|button_group|button_mask|button_pressed|disabled|focus_mode|keep_pressed_outside|shortcut|shortcut_feedback|shortcut_in_tooltip|toggle_mode)
+│   │   │   │   ├── Button (alignment|autowrap_mode|autowrap_trim_flags|clip_text|expand_icon|flat|icon|icon_alignment|language|text|text_direction|text_overrun_behavior|vertical_icon_alignment)
+│   │   │   │   │   ├── CheckBox (alignment|toggle_mode)
+│   │   │   │   │   ├── CheckButton (alignment|toggle_mode)
+│   │   │   │   │   ├── ColorPickerButton (color|edit_alpha|edit_intensity|toggle_mode)
+│   │   │   │   │   ├── MenuButton (action_mode|flat|focus_mode|item_count|switch_on_hover|toggle_mode)
+│   │   │   │   │   └── OptionButton (action_mode|alignment|allow_reselect|fit_to_longest_item|item_count|search_bar_enabled|search_bar_fuzzy_search_enabled|search_bar_fuzzy_search_max_misses|search_bar_min_item_count|selected|toggle_mode)
+│   │   │   │   ├── LinkButton (ellipsis_char|focus_mode|language|mouse_default_cursor_shape|structured_text_bidi_override|structured_text_bidi_override_options|text|text_direction|text_overrun_behavior|underline|uri)
+│   │   │   │   └── TextureButton (flip_h|flip_v|ignore_texture_size|stretch_mode|texture_click_mask|texture_disabled|texture_focused|texture_hover|texture_normal|texture_pressed)
+│   │   │   ├── ColorRect (color)
+│   │   │   ├── Container (accessibility_region|mouse_filter|propagate_maximum_size)
+│   │   │   │   ├── AspectRatioContainer (alignment_horizontal|alignment_vertical|ratio|stretch_mode)
+│   │   │   │   ├── BoxContainer (alignment|vertical)
+│   │   │   │   │   ├── HBoxContainer
+│   │   │   │   │   └── VBoxContainer
+│   │   │   │   │       └── ColorPicker (can_add_swatches|color|color_mode|color_modes_visible|deferred_mode|edit_alpha|edit_intensity|hex_visible|picker_shape|presets_visible|sampler_visible|sliders_visible)
+│   │   │   │   ├── CenterContainer (use_top_left)
+│   │   │   │   ├── FlowContainer (alignment|last_wrap_alignment|reverse_fill|vertical)
+│   │   │   │   │   ├── HFlowContainer
+│   │   │   │   │   └── VFlowContainer
+│   │   │   │   ├── FoldableContainer (focus_mode|foldable_group|folded|language|mouse_filter|title|title_alignment|title_position|title_text_direction|title_text_overrun_behavior)
+│   │   │   │   ├── GraphElement (draggable|position_offset|resizable|scaling_menus|selectable|selected)
+│   │   │   │   │   ├── GraphFrame (autoshrink_enabled|autoshrink_margin|drag_margin|mouse_filter|tint_color|tint_color_enabled|title)
+│   │   │   │   │   └── GraphNode (focus_mode|ignore_invalid_connection_type|mouse_filter|slots_focus_mode|title)
+│   │   │   │   ├── GridContainer (columns)
+│   │   │   │   ├── MarginContainer
+│   │   │   │   ├── PanelContainer (mouse_filter)
+│   │   │   │   ├── ScrollContainer (clip_contents|draw_focus_border|follow_focus|horizontal_scroll_mode|propagate_maximum_size|scroll_deadzone|scroll_hint_mode|scroll_horizontal|scroll_horizontal_by_default|scroll_horizontal_custom_step|scroll_vertical|scroll_vertical_custom_step|tile_scroll_hint|vertical_scroll_mode)
+│   │   │   │   ├── SplitContainer (collapsed|drag_area_highlight_in_editor|drag_area_margin_begin|drag_area_margin_end|drag_area_offset|drag_nested_intersections|dragger_visibility|dragging_enabled|split_offset|split_offsets|touch_dragger_enabled|vertical)
+│   │   │   │   │   ├── HSplitContainer
+│   │   │   │   │   └── VSplitContainer
+│   │   │   │   ├── SubViewportContainer (focus_mode|mouse_target|stretch|stretch_shrink)
+│   │   │   │   └── TabContainer (all_tabs_in_front|clip_tabs|current_tab|deselect_enabled|drag_to_rearrange_enabled|switch_on_drag_hover|tab_alignment|tab_focus_mode|tabs_position|tabs_rearrange_group|tabs_visible|use_hidden_tabs_for_min_size)
+│   │   │   ├── GraphEdit (clip_contents|connection_lines_antialiased|connection_lines_curvature|connection_lines_thickness|connections|focus_mode|grid_pattern|minimap_enabled|minimap_opacity|minimap_size|panning_scheme|right_disconnects|scroll_offset|show_arrange_button|show_grid|show_grid_buttons|show_menu|show_minimap_button|show_zoom_buttons|show_zoom_label|snapping_distance|snapping_enabled|type_names|zoom|zoom_max|zoom_min|zoom_step)
+│   │   │   ├── ItemList (allow_reselect|allow_rmb_select|allow_search|auto_height|auto_width|clip_contents|fixed_column_width|fixed_icon_size|focus_mode|icon_mode|icon_scale|item_count|max_columns|max_text_lines|same_column_width|scroll_hint_mode|select_mode|text_overrun_behavior|tile_scroll_hint|wraparound_items)
+│   │   │   ├── Label (autowrap_mode|autowrap_trim_flags|clip_text|ellipsis_char|horizontal_alignment|justification_flags|label_settings|language|lines_skipped|max_lines_visible|mouse_filter|paragraph_separator|size_flags_vertical|structured_text_bidi_override|structured_text_bidi_override_options|tab_stops|text|text_direction|text_overrun_behavior|uppercase|vertical_alignment|visible_characters|visible_characters_behavior|visible_ratio)
+│   │   │   ├── LineEdit (alignment|backspace_deletes_composite_character_enabled|caret_blink|caret_blink_interval|caret_column|caret_force_displayed|caret_mid_grapheme|clear_button_enabled|context_menu_enabled|deselect_on_focus_loss_enabled|drag_and_drop_selection_enabled|draw_control_chars|editable|emoji_menu_enabled|expand_to_text_length|flat|focus_mode|icon_expand_mode|keep_editing_on_text_submit|language|max_length|middle_mouse_paste_enabled|mouse_default_cursor_shape|placeholder_text|right_icon|right_icon_scale|secret|secret_character|select_all_on_focus|selecting_enabled|shortcut_keys_enabled|structured_text_bidi_override|structured_text_bidi_override_options|text|text_direction|virtual_keyboard_enabled|virtual_keyboard_show_on_focus|virtual_keyboard_type)
+│   │   │   ├── MenuBar (flat|focus_mode|language|prefer_global_menu|start_index|switch_on_hover|text_direction)
+│   │   │   ├── NinePatchRect (axis_stretch_horizontal|axis_stretch_vertical|draw_center|mouse_filter|patch_margin_bottom|patch_margin_left|patch_margin_right|patch_margin_top|region_rect|texture)
+│   │   │   ├── Panel
+│   │   │   ├── Range (allow_greater|allow_lesser|exp_edit|max_value|min_value|page|ratio|rounded|size_flags_vertical|step|value)
+│   │   │   │   ├── ProgressBar (editor_preview_indeterminate|fill_mode|indeterminate|show_percentage)
+│   │   │   │   ├── ScrollBar (custom_step|focus_mode|step)
+│   │   │   │   │   ├── HScrollBar
+│   │   │   │   │   └── VScrollBar (size_flags_horizontal|size_flags_vertical)
+│   │   │   │   ├── Slider (editable|focus_mode|scrollable|step|tick_count|ticks_on_borders|ticks_position)
+│   │   │   │   │   ├── HSlider
+│   │   │   │   │   └── VSlider (size_flags_horizontal|size_flags_vertical)
+│   │   │   │   ├── SpinBox (alignment|custom_arrow_round|custom_arrow_step|editable|prefix|select_all_on_focus|size_flags_vertical|step|suffix|update_on_text_changed)
+│   │   │   │   └── TextureProgressBar (fill_mode|mouse_filter|nine_patch_stretch|radial_center_offset|radial_fill_degrees|radial_initial_angle|size_flags_vertical|step|stretch_margin_bottom|stretch_margin_left|stretch_margin_right|stretch_margin_top|texture_over|texture_progress|texture_progress_offset|texture_under|tint_over|tint_progress|tint_under)
+│   │   │   ├── ReferenceRect (border_color|border_width|editor_only)
+│   │   │   ├── RichTextLabel (autowrap_mode|autowrap_trim_flags|bbcode_enabled|clip_contents|context_menu_enabled|custom_effects|deselect_on_focus_loss_enabled|drag_and_drop_selection_enabled|fit_content|focus_mode|hint_underlined|horizontal_alignment|justification_flags|language|meta_underlined|progress_bar_delay|scroll_active|scroll_following|scroll_following_visible_characters|selection_enabled|shortcut_keys_enabled|structured_text_bidi_override|structured_text_bidi_override_options|tab_size|tab_stops|text|text_direction|threaded|vertical_alignment|visible_characters|visible_characters_behavior|visible_ratio)
+│   │   │   ├── Separator
+│   │   │   │   ├── HSeparator
+│   │   │   │   └── VSeparator
+│   │   │   ├── TabBar (clip_tabs|close_with_middle_mouse|current_tab|deselect_enabled|drag_to_rearrange_enabled|focus_mode|max_tab_width|scroll_to_selected|scrolling_enabled|select_with_rmb|switch_on_drag_hover|tab_alignment|tab_close_display_policy|tab_count|tabs_rearrange_group)
+│   │   │   ├── TextEdit (autowrap_mode|backspace_deletes_composite_character_enabled|caret_blink|caret_blink_interval|caret_draw_when_editable_disabled|caret_mid_grapheme|caret_move_on_right_click|caret_multiple|caret_type|context_menu_enabled|custom_word_separators|deselect_on_focus_loss_enabled|drag_and_drop_selection_enabled|draw_control_chars|draw_spaces|draw_tabs|editable|emoji_menu_enabled|empty_selection_clipboard_enabled|focus_mode|highlight_all_occurrences|highlight_current_line|indent_wrapped_lines|language|middle_mouse_paste_enabled|minimap_draw|minimap_width|mouse_default_cursor_shape|placeholder_text|scroll_fit_content_height|scroll_fit_content_width|scroll_horizontal|scroll_past_end_of_file|scroll_smooth|scroll_v_scroll_speed|scroll_vertical|selecting_enabled|shortcut_keys_enabled|structured_text_bidi_override|structured_text_bidi_override_options|syntax_highlighter|tab_input_mode|text|text_direction|use_custom_word_separators|use_default_word_separators|virtual_keyboard_enabled|virtual_keyboard_show_on_focus|wrap_mode)
+│   │   │   │   └── CodeEdit (auto_brace_completion_enabled|auto_brace_completion_highlight_matching|auto_brace_completion_pairs|code_completion_enabled|code_completion_prefixes|delimiter_comments|delimiter_strings|gutters_draw_bookmarks|gutters_draw_breakpoints_gutter|gutters_draw_executing_lines|gutters_draw_fold_gutter|gutters_draw_line_numbers|gutters_line_numbers_min_digits|gutters_zero_pad_line_numbers|indent_automatic|indent_automatic_prefixes|indent_size|indent_use_spaces|layout_direction|line_folding|line_length_guidelines|symbol_lookup_on_click|symbol_tooltip_on_hover|text_direction)
+│   │   │   ├── TextureRect (expand_mode|flip_h|flip_v|mouse_filter|stretch_mode|texture)
+│   │   │   ├── Tree (allow_reselect|allow_rmb_select|allow_search|auto_tooltip|clip_contents|column_titles_visible|columns|drop_mode_flags|enable_drag_unfolding|enable_recursive_folding|focus_mode|hide_folding|hide_root|scroll_hint_mode|scroll_horizontal_enabled|scroll_vertical_enabled|select_mode|tile_scroll_hint)
+│   │   │   ├── VideoStreamPlayer (audio_track|autoplay|buffering_msec|bus|expand|loop|paused|speed_scale|stream|stream_position|volume|volume_db)
+│   │   │   └── VirtualJoystick (action_down|action_left|action_right|action_up|clampzone_ratio|deadzone_ratio|initial_offset_ratio|joystick_mode|joystick_size|tip_size|visibility_mode)
+│   │   └── Node2D (global_position|global_rotation|global_rotation_degrees|global_scale|global_skew|global_transform|position|rotation|rotation_degrees|scale|skew|transform)
+│   │       ├── AnimatedSprite2D (animation|autoplay|centered|flip_h|flip_v|frame|frame_progress|offset|speed_scale|sprite_frames)
+│   │       ├── AudioListener2D
+│   │       ├── AudioStreamPlayer2D (area_mask|attenuation|autoplay|bus|max_distance|max_polyphony|panning_strength|pitch_scale|playback_type|playing|stream|stream_paused|volume_db|volume_linear)
+│   │       ├── BackBufferCopy (copy_mode|rect)
+│   │       ├── Bone2D (rest)
+│   │       ├── CPUParticles2D (amount|angle_curve|angle_max|angle_min|angular_velocity_curve|angular_velocity_max|angular_velocity_min|anim_offset_curve|anim_offset_max|anim_offset_min|anim_speed_curve|anim_speed_max|anim_speed_min|color|color_initial_ramp|color_ramp|damping_curve|damping_max|damping_min|direction|draw_order|emission_colors|emission_normals|emission_points|emission_rect_extents|emission_ring_inner_radius|emission_ring_radius|emission_shape|emission_sphere_radius|emitting|explosiveness|fixed_fps|fract_delta|gravity|hue_variation_curve|hue_variation_max|hue_variation_min|initial_velocity_max|initial_velocity_min|lifetime|lifetime_randomness|linear_accel_curve|linear_accel_max|linear_accel_min|local_coords|one_shot|orbit_velocity_curve|orbit_velocity_max|orbit_velocity_min|particle_flag_align_y|physics_interpolation_mode|preprocess|radial_accel_curve|radial_accel_max|radial_accel_min|randomness|scale_amount_curve|scale_amount_max|scale_amount_min|scale_curve_x|scale_curve_y|seed|speed_scale|split_scale|spread|tangential_accel_curve|tangential_accel_max|tangential_accel_min|texture|use_fixed_seed)
+│   │       ├── Camera2D (anchor_mode|custom_viewport|drag_bottom_margin|drag_horizontal_enabled|drag_horizontal_offset|drag_left_margin|drag_right_margin|drag_top_margin|drag_vertical_enabled|drag_vertical_offset|editor_draw_drag_margin|editor_draw_limits|editor_draw_screen|enabled|ignore_rotation|limit_bottom|limit_enabled|limit_left|limit_right|limit_smoothed|limit_top|offset|position_smoothing_enabled|position_smoothing_speed|process_callback|rotation_smoothing_enabled|rotation_smoothing_speed|zoom)
+│   │       ├── CanvasGroup (clear_margin|fit_margin|use_mipmaps)
+│   │       ├── CanvasModulate (color)
+│   │       ├── CollisionObject2D (collision_layer|collision_mask|collision_priority|disable_mode|input_pickable)
+│   │       │   ├── Area2D (angular_damp|angular_damp_space_override|audio_bus_name|audio_bus_override|gravity|gravity_direction|gravity_point|gravity_point_center|gravity_point_unit_distance|gravity_space_override|linear_damp|linear_damp_space_override|monitorable|monitoring|priority)
+│   │       │   └── PhysicsBody2D (input_pickable)
+│   │       │       ├── CharacterBody2D (floor_block_on_wall|floor_constant_speed|floor_max_angle|floor_snap_length|floor_stop_on_slope|max_slides|motion_mode|platform_floor_layers|platform_on_leave|platform_wall_layers|safe_margin|slide_on_ceiling|up_direction|velocity|wall_min_slide_angle)
+│   │       │       ├── RigidBody2D (angular_damp|angular_damp_mode|angular_velocity|can_sleep|center_of_mass|center_of_mass_mode|constant_force|constant_torque|contact_monitor|continuous_cd|custom_integrator|freeze|freeze_mode|gravity_scale|inertia|linear_damp|linear_damp_mode|linear_velocity|lock_rotation|mass|max_contacts_reported|physics_material_override|sleeping)
+│   │       │       │   └── PhysicalBone2D (auto_configure_joint|bone2d_index|bone2d_nodepath|follow_bone_when_simulating|simulate_physics)
+│   │       │       └── StaticBody2D (constant_angular_velocity|constant_linear_velocity|physics_material_override)
+│   │       │           └── AnimatableBody2D (sync_to_physics)
+│   │       ├── CollisionPolygon2D (build_mode|disabled|one_way_collision|one_way_collision_direction|one_way_collision_margin|polygon)
+│   │       ├── CollisionShape2D (debug_color|disabled|one_way_collision|one_way_collision_direction|one_way_collision_margin|shape)
+│   │       ├── GPUParticles2D (amount|amount_ratio|collision_base_size|draw_order|emitting|explosiveness|fixed_fps|fract_delta|interp_to_end|interpolate|lifetime|local_coords|one_shot|preprocess|process_material|randomness|seed|speed_scale|sub_emitter|texture|trail_enabled|trail_lifetime|trail_section_subdivisions|trail_sections|use_fixed_seed|visibility_rect)
+│   │       ├── Joint2D (bias|disable_collision|node_a|node_b)
+│   │       │   ├── DampedSpringJoint2D (damping|length|rest_length|stiffness)
+│   │       │   ├── GrooveJoint2D (initial_offset|length)
+│   │       │   └── PinJoint2D (angular_limit_enabled|angular_limit_lower|angular_limit_upper|motor_enabled|motor_target_velocity|softness)
+│   │       ├── Light2D (blend_mode|color|editor_only|enabled|energy|range_item_cull_mask|range_layer_max|range_layer_min|range_z_max|range_z_min|shadow_color|shadow_enabled|shadow_filter|shadow_filter_smooth|shadow_item_cull_mask)
+│   │       │   ├── DirectionalLight2D (height|max_distance)
+│   │       │   └── PointLight2D (height|offset|texture|texture_scale)
+│   │       ├── LightOccluder2D (occluder|occluder_light_mask|sdf_collision)
+│   │       ├── Line2D (antialiased|begin_cap_mode|closed|default_color|end_cap_mode|gradient|joint_mode|points|round_precision|sharp_limit|texture|texture_mode|width|width_curve)
+│   │       ├── Marker2D (gizmo_extents)
+│   │       ├── MeshInstance2D (mesh|texture)
+│   │       ├── MultiMeshInstance2D (multimesh|texture)
+│   │       ├── NavigationLink2D (bidirectional|enabled|end_position|enter_cost|navigation_layers|start_position|travel_cost)
+│   │       ├── NavigationObstacle2D (affect_navigation_mesh|avoidance_enabled|avoidance_layers|carve_navigation_mesh|radius|velocity|vertices)
+│   │       ├── NavigationRegion2D (enabled|enter_cost|navigation_layers|navigation_polygon|travel_cost|use_edge_connections)
+│   │       ├── Parallax2D (autoscroll|follow_viewport|ignore_camera_scroll|limit_begin|limit_end|physics_interpolation_mode|repeat_size|repeat_times|screen_offset|scroll_offset|scroll_scale)
+│   │       ├── ParallaxLayer (motion_mirroring|motion_offset|motion_scale|physics_interpolation_mode)
+│   │       ├── Path2D (curve)
+│   │       ├── PathFollow2D (cubic_interp|h_offset|loop|progress|progress_ratio|rotates|v_offset)
+│   │       ├── Polygon2D (antialiased|color|internal_vertex_count|invert_border|invert_enabled|offset|polygon|polygons|skeleton|texture|texture_offset|texture_rotation|texture_scale|uv|vertex_colors)
+│   │       ├── RayCast2D (collide_with_areas|collide_with_bodies|collision_mask|enabled|exclude_parent|hit_from_inside|target_position)
+│   │       ├── RemoteTransform2D (remote_path|update_position|update_rotation|update_scale|use_global_coordinates)
+│   │       ├── ShapeCast2D (collide_with_areas|collide_with_bodies|collision_mask|collision_result|enabled|exclude_parent|margin|max_results|shape|target_position)
+│   │       ├── Skeleton2D
+│   │       ├── Sprite2D (centered|flip_h|flip_v|frame|frame_coords|hframes|offset|region_enabled|region_filter_clip_enabled|region_rect|texture|vframes)
+│   │       ├── TileMap (collision_animatable|collision_visibility_mode|navigation_visibility_mode|rendering_quadrant_size|tile_set)
+│   │       ├── TileMapLayer (collision_enabled|collision_visibility_mode|enabled|navigation_enabled|navigation_visibility_mode|occlusion_enabled|physics_quadrant_size|rendering_quadrant_size|tile_map_data|tile_set|use_kinematic_bodies|x_draw_order_reversed|y_sort_origin)
+│   │       ├── TouchScreenButton (action|bitmask|passby_press|shape|shape_centered|shape_visible|texture_normal|texture_pressed|visibility_mode)
+│   │       └── VisibleOnScreenNotifier2D (rect|show_rect)
+│   │           └── VisibleOnScreenEnabler2D (enable_mode|enable_node_path)
+│   ├── CanvasLayer (custom_viewport|follow_viewport_enabled|follow_viewport_scale|layer|offset|rotation|scale|transform|visible)
+│   │   └── ParallaxBackground (layer|scroll_base_offset|scroll_base_scale|scroll_ignore_camera_zoom|scroll_limit_begin|scroll_limit_end|scroll_offset)
+│   ├── HTTPRequest (accept_gzip|body_size_limit|download_chunk_size|download_file|max_redirects|timeout|use_threads)
+│   ├── InstancePlaceholder
+│   ├── MissingNode (original_class|original_scene|recording_properties|recording_signals)
+│   ├── MultiplayerSpawner (spawn_function|spawn_limit|spawn_path)
+│   ├── MultiplayerSynchronizer (delta_interval|public_visibility|replication_config|replication_interval|root_path|visibility_update_mode)
+│   ├── NavigationAgent2D (avoidance_enabled|avoidance_layers|avoidance_mask|avoidance_priority|debug_enabled|debug_path_custom_color|debug_path_custom_line_width|debug_path_custom_point_size|debug_use_custom|max_neighbors|max_speed|navigation_layers|neighbor_distance|path_desired_distance|path_max_distance|path_metadata_flags|path_postprocessing|path_return_max_length|path_return_max_radius|path_search_max_distance|path_search_max_polygons|pathfinding_algorithm|radius|simplify_epsilon|simplify_path|target_desired_distance|target_position|time_horizon_agents|time_horizon_obstacles|velocity)
+│   ├── NavigationAgent3D (avoidance_enabled|avoidance_layers|avoidance_mask|avoidance_priority|debug_enabled|debug_path_custom_color|debug_path_custom_point_size|debug_use_custom|height|keep_y_velocity|max_neighbors|max_speed|navigation_layers|neighbor_distance|path_desired_distance|path_height_offset|path_max_distance|path_metadata_flags|path_postprocessing|path_return_max_length|path_return_max_radius|path_search_max_distance|path_search_max_polygons|pathfinding_algorithm|radius|simplify_epsilon|simplify_path|target_desired_distance|target_position|time_horizon_agents|time_horizon_obstacles|use_3d_avoidance|velocity)
+│   ├── Node3D (basis|global_basis|global_position|global_rotation|global_rotation_degrees|global_transform|position|quaternion|rotation|rotation_degrees|rotation_edit_mode|rotation_order|scale|top_level|transform|visibility_parent|visible)
+│   │   ├── AudioListener3D (doppler_tracking)
+│   │   ├── AudioStreamPlayer3D (area_mask|attenuation_filter_cutoff_hz|attenuation_filter_db|attenuation_model|autoplay|bus|doppler_tracking|emission_angle_degrees|emission_angle_enabled|emission_angle_filter_attenuation_db|max_db|max_distance|max_polyphony|panning_strength|pitch_scale|playback_type|playing|stream|stream_paused|unit_size|volume_db|volume_linear)
+│   │   ├── BoneAttachment3D (bone_idx|bone_name|external_skeleton|override_pose|physics_interpolation_mode|use_external_skeleton)
+│   │   ├── Camera3D (attributes|compositor|cull_mask|current|doppler_tracking|environment|far|fov|frustum_offset|h_offset|keep_aspect|near|projection|size|v_offset)
+│   │   │   └── XRCamera3D (physics_interpolation_mode)
+│   │   ├── CollisionObject3D (collision_layer|collision_mask|collision_priority|disable_mode|input_capture_on_drag|input_ray_pickable)
+│   │   │   ├── Area3D (angular_damp|angular_damp_space_override|audio_bus_name|audio_bus_override|gravity|gravity_direction|gravity_point|gravity_point_center|gravity_point_unit_distance|gravity_space_override|linear_damp|linear_damp_space_override|monitorable|monitoring|priority|reverb_bus_amount|reverb_bus_enabled|reverb_bus_name|reverb_bus_uniformity|wind_attenuation_factor|wind_force_magnitude|wind_source_path)
+│   │   │   └── PhysicsBody3D (axis_lock_angular_x|axis_lock_angular_y|axis_lock_angular_z|axis_lock_linear_x|axis_lock_linear_y|axis_lock_linear_z)
+│   │   │       ├── CharacterBody3D (floor_block_on_wall|floor_constant_speed|floor_max_angle|floor_snap_length|floor_stop_on_slope|max_slides|motion_mode|platform_floor_layers|platform_on_leave|platform_wall_layers|safe_margin|slide_on_ceiling|up_direction|velocity|wall_min_slide_angle)
+│   │   │       ├── PhysicalBone3D (angular_damp|angular_damp_mode|angular_velocity|body_offset|bounce|can_sleep|custom_integrator|friction|gravity_scale|joint_offset|joint_rotation|joint_type|linear_damp|linear_damp_mode|linear_velocity|mass)
+│   │   │       ├── RigidBody3D (angular_damp|angular_damp_mode|angular_velocity|can_sleep|center_of_mass|center_of_mass_mode|constant_force|constant_torque|contact_monitor|continuous_cd|custom_integrator|freeze|freeze_mode|gravity_scale|inertia|linear_damp|linear_damp_mode|linear_velocity|lock_rotation|mass|max_contacts_reported|physics_material_override|sleeping)
+│   │   │       │   └── VehicleBody3D (brake|engine_force|mass|steering)
+│   │   │       └── StaticBody3D (constant_angular_velocity|constant_linear_velocity|physics_material_override)
+│   │   │           └── AnimatableBody3D (sync_to_physics)
+│   │   ├── CollisionPolygon3D (debug_color|debug_fill|depth|disabled|margin|polygon)
+│   │   ├── CollisionShape3D (debug_color|debug_fill|disabled|shape)
+│   │   ├── GridMap (bake_navigation|cell_center_x|cell_center_y|cell_center_z|cell_octant_size|cell_scale|cell_size|collision_layer|collision_mask|collision_priority|collision_visibility_mode|mesh_library|physics_material)
+│   │   ├── ImporterMeshInstance3D (cast_shadow|layer_mask|mesh|skeleton_path|skin|visibility_range_begin|visibility_range_begin_margin|visibility_range_end|visibility_range_end_margin|visibility_range_fade_mode)
+│   │   ├── Joint3D (exclude_nodes_from_collision|node_a|node_b|solver_priority)
+│   │   │   ├── ConeTwistJoint3D (bias|relaxation|softness|swing_span|twist_span)
+│   │   │   ├── Generic6DOFJoint3D
+│   │   │   ├── HingeJoint3D
+│   │   │   ├── PinJoint3D
+│   │   │   └── SliderJoint3D
+│   │   ├── LightmapProbe
+│   │   ├── Marker3D (gizmo_extents)
+│   │   ├── NavigationLink3D (bidirectional|enabled|end_position|enter_cost|navigation_layers|start_position|travel_cost)
+│   │   ├── NavigationObstacle3D (affect_navigation_mesh|avoidance_enabled|avoidance_layers|carve_navigation_mesh|height|radius|use_3d_avoidance|velocity|vertices)
+│   │   ├── NavigationRegion3D (enabled|enter_cost|navigation_layers|navigation_mesh|travel_cost|use_edge_connections)
+│   │   ├── OpenXRCompositionLayer (alpha_blend|android_surface_size|enable_hole_punch|eye_visibility|layer_viewport|protected_content|sort_order|swapchain_state_alpha_swizzle|swapchain_state_blue_swizzle|swapchain_state_border_color|swapchain_state_green_swizzle|swapchain_state_horizontal_wrap|swapchain_state_mag_filter|swapchain_state_max_anisotropy|swapchain_state_min_filter|swapchain_state_mipmap_mode|swapchain_state_red_swizzle|swapchain_state_vertical_wrap|use_android_surface)
+│   │   │   ├── OpenXRCompositionLayerCylinder (aspect_ratio|central_angle|fallback_segments|radius)
+│   │   │   ├── OpenXRCompositionLayerEquirect (central_horizontal_angle|fallback_segments|lower_vertical_angle|radius|upper_vertical_angle)
+│   │   │   └── OpenXRCompositionLayerQuad (quad_size)
+│   │   ├── OpenXRHand (bone_update|hand|hand_skeleton|motion_range|skeleton_rig)
+│   │   ├── OpenXRRenderModel (render_model)
+│   │   ├── OpenXRRenderModelManager (make_local_to_pose|tracker)
+│   │   ├── Path3D (curve|debug_custom_color)
+│   │   ├── PathFollow3D (cubic_interp|h_offset|loop|progress|progress_ratio|rotation_mode|tilt_enabled|use_model_front|v_offset)
+│   │   ├── RayCast3D (collide_with_areas|collide_with_bodies|collision_mask|debug_shape_custom_color|debug_shape_thickness|enabled|exclude_parent|hit_back_faces|hit_from_inside|target_position)
+│   │   ├── RemoteTransform3D (remote_path|update_position|update_rotation|update_scale|use_global_coordinates)
+│   │   ├── ShapeCast3D (collide_with_areas|collide_with_bodies|collision_mask|collision_result|debug_shape_custom_color|enabled|exclude_parent|margin|max_results|shape|target_position)
+│   │   ├── Skeleton3D (animate_physical_bones|modifier_callback_mode_process|motion_scale|show_rest_only)
+│   │   ├── SkeletonModifier3D (active|influence)
+│   │   │   ├── BoneConstraint3D
+│   │   │   │   ├── AimModifier3D (setting_count)
+│   │   │   │   ├── ConvertTransformModifier3D (setting_count)
+│   │   │   │   └── CopyTransformModifier3D (setting_count)
+│   │   │   ├── BoneTwistDisperser3D (mutable_bone_axes|setting_count)
+│   │   │   ├── IKModifier3D (mutable_bone_axes)
+│   │   │   │   ├── ChainIK3D
+│   │   │   │   │   ├── IterateIK3D (angular_delta_limit|deterministic|max_iterations|min_distance|setting_count)
+│   │   │   │   │   │   ├── CCDIK3D
+│   │   │   │   │   │   ├── FABRIK3D
+│   │   │   │   │   │   └── JacobianIK3D
+│   │   │   │   │   └── SplineIK3D (setting_count)
+│   │   │   │   └── TwoBoneIK3D (setting_count)
+│   │   │   ├── LimitAngularVelocityModifier3D (chain_count|exclude|joint_count|max_angular_velocity)
+│   │   │   ├── LookAtModifier3D (bone|bone_name|duration|ease_type|forward_axis|origin_bone|origin_bone_name|origin_external_node|origin_from|origin_offset|origin_safe_margin|primary_damp_threshold|primary_limit_angle|primary_negative_damp_threshold|primary_negative_limit_angle|primary_positive_damp_threshold|primary_positive_limit_angle|primary_rotation_axis|relative|secondary_damp_threshold|secondary_limit_angle|secondary_negative_damp_threshold|secondary_negative_limit_angle|secondary_positive_damp_threshold|secondary_positive_limit_angle|symmetry_limitation|target_node|transition_type|use_angle_limitation|use_secondary_rotation)
+│   │   │   ├── ModifierBoneTarget3D (bone|bone_name)
+│   │   │   ├── PhysicalBoneSimulator3D
+│   │   │   ├── RetargetModifier3D (enable|profile|use_global_pose)
+│   │   │   ├── SkeletonIK3D (interpolation|magnet|max_iterations|min_distance|override_tip_basis|root_bone|target|target_node|tip_bone|use_magnet)
+│   │   │   ├── SpringBoneSimulator3D (external_force|mutable_bone_axes|setting_count)
+│   │   │   ├── XRBodyModifier3D (body_tracker|body_update|bone_update)
+│   │   │   └── XRHandModifier3D (bone_update|hand_tracker)
+│   │   ├── SpringArm3D (collision_mask|margin|shape|spring_length)
+│   │   ├── SpringBoneCollision3D (bone|bone_name|position_offset|rotation_offset)
+│   │   │   ├── SpringBoneCollisionCapsule3D (height|inside|mid_height|radius)
+│   │   │   ├── SpringBoneCollisionPlane3D
+│   │   │   └── SpringBoneCollisionSphere3D (inside|radius)
+│   │   ├── VehicleWheel3D (brake|damping_compression|damping_relaxation|engine_force|physics_interpolation_mode|steering|suspension_max_force|suspension_stiffness|suspension_travel|use_as_steering|use_as_traction|wheel_friction_slip|wheel_radius|wheel_rest_length|wheel_roll_influence)
+│   │   ├── VisualInstance3D (layers|sorting_offset|sorting_use_aabb_center)
+│   │   │   ├── Decal (albedo_mix|cull_mask|distance_fade_begin|distance_fade_enabled|distance_fade_length|emission_energy|lower_fade|modulate|normal_fade|size|texture_albedo|texture_emission|texture_normal|texture_orm|upper_fade)
+│   │   │   ├── FogVolume (material|shape|size)
+│   │   │   ├── GPUParticlesAttractor3D (attenuation|cull_mask|directionality|strength)
+│   │   │   │   ├── GPUParticlesAttractorBox3D (size)
+│   │   │   │   ├── GPUParticlesAttractorSphere3D (radius)
+│   │   │   │   └── GPUParticlesAttractorVectorField3D (size|texture)
+│   │   │   ├── GPUParticlesCollision3D (cull_mask)
+│   │   │   │   ├── GPUParticlesCollisionBox3D (size)
+│   │   │   │   ├── GPUParticlesCollisionHeightField3D (follow_camera_enabled|heightfield_mask|resolution|size|update_mode)
+│   │   │   │   ├── GPUParticlesCollisionSDF3D (bake_mask|resolution|size|texture|thickness)
+│   │   │   │   └── GPUParticlesCollisionSphere3D (radius)
+│   │   │   ├── GeometryInstance3D (cast_shadow|custom_aabb|extra_cull_margin|gi_lightmap_scale|gi_lightmap_texel_scale|gi_mode|ignore_occlusion_culling|lod_bias|material_overlay|material_override|transparency|visibility_range_begin|visibility_range_begin_margin|visibility_range_end|visibility_range_end_margin|visibility_range_fade_mode)
+│   │   │   │   ├── CPUParticles3D (amount|angle_curve|angle_max|angle_min|angular_velocity_curve|angular_velocity_max|angular_velocity_min|anim_offset_curve|anim_offset_max|anim_offset_min|anim_speed_curve|anim_speed_max|anim_speed_min|color|color_initial_ramp|color_ramp|damping_curve|damping_max|damping_min|direction|draw_order|emission_box_extents|emission_colors|emission_normals|emission_points|emission_ring_axis|emission_ring_cone_angle|emission_ring_height|emission_ring_inner_radius|emission_ring_radius|emission_shape|emission_sphere_radius|emitting|explosiveness|fixed_fps|flatness|fract_delta|gravity|hue_variation_curve|hue_variation_max|hue_variation_min|initial_velocity_max|initial_velocity_min|lifetime|lifetime_randomness|linear_accel_curve|linear_accel_max|linear_accel_min|local_coords|mesh|one_shot|orbit_velocity_curve|orbit_velocity_max|orbit_velocity_min|particle_flag_align_y|particle_flag_disable_z|particle_flag_rotate_y|preprocess|radial_accel_curve|radial_accel_max|radial_accel_min|randomness|scale_amount_curve|scale_amount_max|scale_amount_min|scale_curve_x|scale_curve_y|scale_curve_z|seed|speed_scale|split_scale|spread|tangential_accel_curve|tangential_accel_max|tangential_accel_min|use_fixed_seed|visibility_aabb)
+│   │   │   │   ├── CSGShape3D (autosmooth|calculate_tangents|collision_layer|collision_mask|collision_priority|operation|smoothing_angle|snap|use_collision)
+│   │   │   │   │   ├── CSGCombiner3D
+│   │   │   │   │   └── CSGPrimitive3D (flip_faces)
+│   │   │   │   │       ├── CSGBox3D (material|size)
+│   │   │   │   │       ├── CSGCylinder3D (cone|height|material|radius|sides|smooth_faces)
+│   │   │   │   │       ├── CSGMesh3D (material|mesh)
+│   │   │   │   │       ├── CSGPolygon3D (depth|material|mode|path_continuous_u|path_interval|path_interval_type|path_joined|path_local|path_node|path_rotation|path_rotation_accurate|path_simplify_angle|path_u_distance|polygon|smooth_faces|spin_degrees|spin_sides)
+│   │   │   │   │       ├── CSGSphere3D (material|radial_segments|radius|rings|smooth_faces)
+│   │   │   │   │       └── CSGTorus3D (inner_radius|material|outer_radius|ring_sides|sides|smooth_faces)
+│   │   │   │   ├── GPUParticles3D (amount|amount_ratio|collision_base_size|draw_order|draw_pass_1|draw_pass_2|draw_pass_3|draw_pass_4|draw_passes|draw_skin|emitting|explosiveness|fixed_fps|fract_delta|interp_to_end|interpolate|lifetime|local_coords|one_shot|preprocess|process_material|randomness|seed|speed_scale|sub_emitter|trail_enabled|trail_lifetime|transform_align|transform_align_axis|transform_align_channel_filter|use_fixed_seed|visibility_aabb)
+│   │   │   │   ├── Label3D (alpha_antialiasing_edge|alpha_antialiasing_mode|alpha_cut|alpha_hash_scale|alpha_scissor_threshold|autowrap_mode|autowrap_trim_flags|billboard|cast_shadow|double_sided|fixed_size|font|font_size|gi_mode|horizontal_alignment|justification_flags|language|line_spacing|modulate|no_depth_test|offset|outline_modulate|outline_render_priority|outline_size|pixel_size|render_priority|shaded|structured_text_bidi_override|structured_text_bidi_override_options|text|text_direction|texture_filter|uppercase|vertical_alignment|width)
+│   │   │   │   ├── MeshInstance3D (mesh|skeleton|skin)
+│   │   │   │   │   └── SoftBody3D (collision_layer|collision_mask|damping_coefficient|disable_mode|drag_coefficient|linear_stiffness|parent_collision_ignore|pressure_coefficient|ray_pickable|shrinking_factor|simulation_precision|total_mass)
+│   │   │   │   ├── MultiMeshInstance3D (multimesh)
+│   │   │   │   └── SpriteBase3D (alpha_antialiasing_edge|alpha_antialiasing_mode|alpha_cut|alpha_hash_scale|alpha_scissor_threshold|axis|billboard|centered|double_sided|fixed_size|flip_h|flip_v|modulate|no_depth_test|offset|pixel_size|render_priority|shaded|texture_filter|transparent)
+│   │   │   │       ├── AnimatedSprite3D (animation|autoplay|frame|frame_progress|speed_scale|sprite_frames)
+│   │   │   │       └── Sprite3D (frame|frame_coords|hframes|region_enabled|region_rect|texture|vframes)
+│   │   │   ├── Light3D (distance_fade_begin|distance_fade_enabled|distance_fade_length|distance_fade_shadow|editor_only|light_angular_distance|light_bake_mode|light_color|light_cull_mask|light_energy|light_indirect_energy|light_intensity_lumens|light_intensity_lux|light_negative|light_projector|light_size|light_specular|light_temperature|light_volumetric_fog_energy|shadow_bias|shadow_blur|shadow_caster_mask|shadow_enabled|shadow_normal_bias|shadow_opacity|shadow_reverse_cull_face|shadow_transmittance_bias)
+│   │   │   │   ├── AreaLight3D (area_attenuation|area_normalize_energy|area_range|area_size|area_texture|light_size|shadow_normal_bias)
+│   │   │   │   ├── DirectionalLight3D (directional_shadow_blend_splits|directional_shadow_fade_start|directional_shadow_max_distance|directional_shadow_mode|directional_shadow_pancake_size|directional_shadow_split_1|directional_shadow_split_2|directional_shadow_split_3|sky_mode)
+│   │   │   │   ├── OmniLight3D (light_specular|omni_attenuation|omni_range|omni_shadow_mode|shadow_normal_bias)
+│   │   │   │   └── SpotLight3D (light_specular|shadow_bias|shadow_normal_bias|spot_angle|spot_angle_attenuation|spot_attenuation|spot_range)
+│   │   │   ├── LightmapGI (bias|bounce_indirect_energy|bounces|camera_attributes|denoiser_range|denoiser_strength|directional|environment_custom_color|environment_custom_energy|environment_custom_sky|environment_mode|generate_probes_subdiv|interior|light_data|max_texture_size|quality|shadowmask_mode|supersampling|supersampling_factor|texel_scale|use_denoiser|use_texture_for_bounces)
+│   │   │   ├── OccluderInstance3D (bake_mask|bake_simplification_distance|occluder)
+│   │   │   ├── OpenXRVisibilityMask
+│   │   │   ├── ReflectionProbe (ambient_color|ambient_color_energy|ambient_mode|blend_distance|box_projection|cull_mask|enable_shadows|intensity|interior|max_distance|mesh_lod_threshold|origin_offset|reflection_mask|size|update_mode)
+│   │   │   ├── RootMotionView (animation_path|cell_size|color|radius|zero_y)
+│   │   │   ├── VisibleOnScreenNotifier3D (aabb)
+│   │   │   │   └── VisibleOnScreenEnabler3D (enable_mode|enable_node_path)
+│   │   │   └── VoxelGI (camera_attributes|data|size|subdiv)
+│   │   ├── XRFaceModifier3D (face_tracker|target)
+│   │   ├── XRNode3D (physics_interpolation_mode|pose|show_when_tracked|tracker)
+│   │   │   ├── XRAnchor3D
+│   │   │   └── XRController3D
+│   │   └── XROrigin3D (current|world_scale)
+│   ├── ResourcePreloader
+│   ├── ShaderGlobalsOverride
+│   ├── StatusIndicator (icon|menu|tooltip|visible)
+│   ├── Timer (autostart|ignore_time_scale|one_shot|paused|process_callback|time_left|wait_time)
+│   ├── Viewport (anisotropic_filtering_level|audio_listener_enable_2d|audio_listener_enable_3d|canvas_cull_mask|canvas_item_default_texture_filter|canvas_item_default_texture_repeat|canvas_transform|debug_draw|disable_3d|fsr_sharpness|global_canvas_transform|gui_disable_input|gui_drag_threshold|gui_embed_subwindows|gui_snap_controls_to_pixels|handle_input_locally|mesh_lod_threshold|msaa_2d|msaa_3d|oversampling|oversampling_override|own_world_3d|physics_interpolation_mode|physics_object_picking|physics_object_picking_first_only|physics_object_picking_sort|positional_shadow_atlas_16_bits|positional_shadow_atlas_quad_0|positional_shadow_atlas_quad_1|positional_shadow_atlas_quad_2|positional_shadow_atlas_quad_3|positional_shadow_atlas_size|scaling_3d_mode|scaling_3d_scale|screen_space_aa|sdf_oversize|sdf_scale|snap_2d_transforms_to_pixel|snap_2d_vertices_to_pixel|texture_mipmap_bias|transparent_bg|use_debanding|use_hdr_2d|use_occlusion_culling|use_taa|use_xr|vrs_mode|vrs_texture|vrs_update_mode|world_2d|world_3d)
+│   │   ├── SubViewport (render_target_clear_mode|render_target_update_mode|size|size_2d_override|size_2d_override_stretch|view_count)
+│   │   └── Window (accessibility_description|accessibility_name|always_on_top|auto_translate|borderless|content_scale_aspect|content_scale_factor|content_scale_mode|content_scale_size|content_scale_stretch|current_screen|exclude_from_capture|exclusive|extend_to_title|force_native|hdr_output_requested|initial_position|keep_title_visible|max_size|maximize_disabled|min_size|minimize_disabled|mode|mouse_passthrough|mouse_passthrough_polygon|nonclient_area|popup_window|popup_wm_hint|position|sharp_corners|size|theme|theme_type_variation|title|transient|transient_to_focused|transparent|unfocusable|unresizable|visible|wrap_controls)
+│   │       ├── AcceptDialog (dialog_autowrap|dialog_close_on_escape|dialog_hide_on_ok|dialog_text|exclusive|keep_title_visible|maximize_disabled|minimize_disabled|ok_button_text|title|transient|visible|wrap_controls)
+│   │       │   └── ConfirmationDialog (cancel_button_text|min_size|size|title)
+│   │       │       └── FileDialog (access|current_dir|current_file|current_path|deleting_enabled|dialog_hide_on_ok|display_mode|favorites_enabled|file_filter_toggle_enabled|file_mode|file_sort_options_enabled|filename_filter|filters|folder_creation_enabled|hidden_files_toggle_enabled|layout_toggle_enabled|mode_overrides_title|option_count|overwrite_warning_enabled|recent_list_enabled|root_subfolder|show_hidden_files|size|title|use_native_dialog)
+│   │       └── Popup (borderless|maximize_disabled|minimize_disabled|popup_window|popup_wm_hint|transient|unresizable|visible|wrap_controls)
+│   │           ├── PopupMenu (allow_search|canvas_item_default_texture_filter|canvas_item_default_texture_repeat|hide_on_checkable_item_selection|hide_on_item_selection|hide_on_state_item_selection|item_count|prefer_native_menu|search_bar_enabled|search_bar_fuzzy_search_enabled|search_bar_fuzzy_search_max_misses|search_bar_min_item_count|shrink_height|shrink_width|submenu_popup_delay|system_menu_id|transparent|transparent_bg)
+│   │           └── PopupPanel (canvas_item_default_texture_filter|canvas_item_default_texture_repeat|transparent|transparent_bg)
+│   └── WorldEnvironment (camera_attributes|compositor|environment)
+├── OS (delta_smoothing|low_processor_usage_mode|low_processor_usage_mode_sleep_usec)
+├── OpenXRExtensionWrapper
+│   ├── OpenXRAndroidThreadSettingsExtension
+│   ├── OpenXRExtensionWrapperExtension
+│   ├── OpenXRFrameSynthesisExtension (enabled|relax_frame_interval)
+│   ├── OpenXRFutureExtension
+│   ├── OpenXRRenderModelExtension
+│   ├── OpenXRSpatialAnchorCapability
+│   ├── OpenXRSpatialEntityExtension
+│   ├── OpenXRSpatialMarkerTrackingCapability
+│   └── OpenXRSpatialPlaneTrackingCapability
+├── OpenXRInteractionProfileMetadata
+├── Performance
+├── PhysicsDirectBodyState2D (angular_velocity|center_of_mass|center_of_mass_local|collision_layer|collision_mask|inverse_inertia|inverse_mass|linear_velocity|sleeping|step|total_angular_damp|total_gravity|total_linear_damp|transform)
+│   └── PhysicsDirectBodyState2DExtension
+├── PhysicsDirectBodyState3D (angular_velocity|center_of_mass|center_of_mass_local|collision_layer|collision_mask|inverse_inertia|inverse_inertia_tensor|inverse_mass|linear_velocity|principal_inertia_axes|sleeping|step|total_angular_damp|total_gravity|total_linear_damp|transform)
+│   └── PhysicsDirectBodyState3DExtension
+├── PhysicsDirectSpaceState2D
+│   └── PhysicsDirectSpaceState2DExtension
+├── PhysicsDirectSpaceState3D
+│   └── PhysicsDirectSpaceState3DExtension
+├── PhysicsServer2D
+│   └── PhysicsServer2DExtension
+├── PhysicsServer2DManager
+├── PhysicsServer3D
+│   └── PhysicsServer3DExtension
+├── PhysicsServer3DManager
+├── PhysicsServer3DRenderingServerHandler
+├── ProjectSettings (access)
+├── RefCounted
+│   ├── AESContext
+│   ├── AStar2D (neighbor_filter_enabled)
+│   ├── AStar3D (neighbor_filter_enabled)
+│   ├── AStarGrid2D (cell_shape|cell_size|default_compute_heuristic|default_estimate_heuristic|diagonal_mode|jumping_enabled|offset|region|size)
+│   ├── AudioEffectInstance
+│   │   └── AudioEffectSpectrumAnalyzerInstance
+│   ├── AudioSample
+│   ├── AudioSamplePlayback
+│   ├── AudioStreamPlayback
+│   │   ├── AudioStreamPlaybackInteractive
+│   │   ├── AudioStreamPlaybackPlaylist
+│   │   ├── AudioStreamPlaybackPolyphonic
+│   │   ├── AudioStreamPlaybackResampled
+│   │   │   ├── AudioStreamGeneratorPlayback
+│   │   │   └── AudioStreamPlaybackOggVorbis
+│   │   └── AudioStreamPlaybackSynchronized
+│   ├── CameraFeed (feed_is_active|feed_transform|formats)
+│   ├── CharFXTransform (color|elapsed_time|env|font|glyph_count|glyph_flags|glyph_index|offset|outline|range|relative_index|transform|visible)
+│   ├── ConfigFile
+│   ├── Crypto
+│   ├── DTLSServer
+│   ├── DirAccess (include_hidden|include_navigational)
+│   ├── ENetConnection
+│   ├── EncodedObjectAsID (object_id)
+│   ├── EngineProfiler
+│   ├── Expression
+│   ├── FileAccess (big_endian)
+│   ├── GLTFObjectModelProperty (gltf_to_godot_expression|godot_to_gltf_expression|json_pointers|node_paths|object_model_type|variant_type)
+│   ├── HMACContext
+│   ├── HTTPClient (blocking_mode_enabled|connection|read_chunk_size)
+│   ├── HashingContext
+│   ├── ImageFormatLoader
+│   │   └── ImageFormatLoaderExtension
+│   ├── JavaClass
+│   ├── JavaObject
+│   ├── JavaScriptObject
+│   ├── KinematicCollision2D
+│   ├── KinematicCollision3D
+│   ├── Lightmapper
+│   │   └── LightmapperRD
+│   ├── Logger
+│   ├── MeshConvexDecompositionSettings (convex_hull_approximation|convex_hull_downsampling|max_concavity|max_convex_hulls|max_num_vertices_per_convex_hull|min_volume_per_convex_hull|mode|normalize_mesh|plane_downsampling|project_hull_vertices|resolution|revolution_axes_clipping_bias|symmetry_planes_clipping_bias)
+│   ├── MeshDataTool
+│   ├── MultiplayerAPI (multiplayer_peer)
+│   │   ├── MultiplayerAPIExtension
+│   │   └── SceneMultiplayer (allow_object_decoding|auth_callback|auth_timeout|max_delta_packet_size|max_sync_packet_size|refuse_new_connections|root_path|server_relay)
+│   ├── Mutex
+│   ├── NavigationPathQueryParameters2D (excluded_regions|included_regions|map|metadata_flags|navigation_layers|path_postprocessing|path_return_max_length|path_return_max_radius|path_search_max_distance|path_search_max_polygons|pathfinding_algorithm|simplify_epsilon|simplify_path|start_position|target_position)
+│   ├── NavigationPathQueryParameters3D (excluded_regions|included_regions|map|metadata_flags|navigation_layers|path_postprocessing|path_return_max_length|path_return_max_radius|path_search_max_distance|path_search_max_polygons|pathfinding_algorithm|simplify_epsilon|simplify_path|start_position|target_position)
+│   ├── NavigationPathQueryResult2D (path|path_length|path_owner_ids|path_rids|path_types)
+│   ├── NavigationPathQueryResult3D (path|path_length|path_owner_ids|path_rids|path_types)
+│   ├── Node3DGizmo
+│   ├── OggPacketSequencePlayback
+│   ├── OpenXRAPIExtension
+│   ├── OpenXRFutureResult
+│   ├── OpenXRSpatialCapabilityConfigurationBaseHeader
+│   │   ├── OpenXRSpatialCapabilityConfigurationAnchor
+│   │   ├── OpenXRSpatialCapabilityConfigurationAprilTag (april_dict)
+│   │   ├── OpenXRSpatialCapabilityConfigurationAruco (aruco_dict)
+│   │   ├── OpenXRSpatialCapabilityConfigurationMicroQrCode
+│   │   ├── OpenXRSpatialCapabilityConfigurationPlaneTracking
+│   │   └── OpenXRSpatialCapabilityConfigurationQrCode
+│   ├── OpenXRSpatialComponentData
+│   │   ├── OpenXRSpatialComponentAnchorList
+│   │   ├── OpenXRSpatialComponentBounded2DList
+│   │   ├── OpenXRSpatialComponentBounded3DList
+│   │   ├── OpenXRSpatialComponentMarkerList
+│   │   ├── OpenXRSpatialComponentMesh2DList
+│   │   ├── OpenXRSpatialComponentMesh3DList
+│   │   ├── OpenXRSpatialComponentParentList
+│   │   ├── OpenXRSpatialComponentPersistenceList
+│   │   ├── OpenXRSpatialComponentPlaneAlignmentList
+│   │   ├── OpenXRSpatialComponentPlaneSemanticLabelList
+│   │   ├── OpenXRSpatialComponentPolygon2DList
+│   │   └── OpenXRSpatialQueryResultData
+│   ├── OpenXRStructureBase (next)
+│   │   └── OpenXRSpatialContextPersistenceConfig
+│   ├── PCKPacker
+│   ├── PackedDataContainerRef
+│   ├── PacketPeer (encode_buffer_max_size)
+│   │   ├── ENetPacketPeer
+│   │   ├── MultiplayerPeer (refuse_new_connections|transfer_channel|transfer_mode)
+│   │   │   ├── ENetMultiplayerPeer (host)
+│   │   │   ├── MultiplayerPeerExtension
+│   │   │   ├── OfflineMultiplayerPeer
+│   │   │   ├── WebRTCMultiplayerPeer
+│   │   │   └── WebSocketMultiplayerPeer (handshake_headers|handshake_timeout|inbound_buffer_size|max_queued_packets|outbound_buffer_size|supported_protocols)
+│   │   ├── PacketPeerDTLS
+│   │   ├── PacketPeerExtension
+│   │   ├── PacketPeerStream (input_buffer_max_size|output_buffer_max_size|stream_peer)
+│   │   ├── PacketPeerUDP
+│   │   ├── WebRTCDataChannel (write_mode)
+│   │   │   └── WebRTCDataChannelExtension
+│   │   └── WebSocketPeer (handshake_headers|heartbeat_interval|inbound_buffer_size|max_queued_packets|outbound_buffer_size|supported_protocols)
+│   ├── PhysicsPointQueryParameters2D (canvas_instance_id|collide_with_areas|collide_with_bodies|collision_mask|exclude|position)
+│   ├── PhysicsPointQueryParameters3D (collide_with_areas|collide_with_bodies|collision_mask|exclude|position)
+│   ├── PhysicsRayQueryParameters2D (collide_with_areas|collide_with_bodies|collision_mask|exclude|from|hit_from_inside|to)
+│   ├── PhysicsRayQueryParameters3D (collide_with_areas|collide_with_bodies|collision_mask|exclude|from|hit_back_faces|hit_from_inside|to)
+│   ├── PhysicsShapeQueryParameters2D (collide_with_areas|collide_with_bodies|collision_mask|exclude|margin|motion|shape|shape_rid|transform)
+│   ├── PhysicsShapeQueryParameters3D (collide_with_areas|collide_with_bodies|collision_mask|exclude|margin|motion|shape|shape_rid|transform)
+│   ├── PhysicsTestMotionParameters2D (collide_separation_ray|exclude_bodies|exclude_objects|from|margin|motion|recovery_as_collision)
+│   ├── PhysicsTestMotionParameters3D (collide_separation_ray|exclude_bodies|exclude_objects|from|margin|max_collisions|motion|recovery_as_collision)
+│   ├── PhysicsTestMotionResult2D
+│   ├── PhysicsTestMotionResult3D
+│   ├── RDAccelerationStructureGeometry (flags|index_buffer|index_count|index_offset|vertex_buffer|vertex_count|vertex_format|vertex_offset|vertex_stride)
+│   ├── RDAccelerationStructureInstance (blas|flags|hit_sbt_range|id|mask|transform)
+│   ├── RDAttachmentFormat (format|samples|usage_flags)
+│   ├── RDFramebufferPass (color_attachments|depth_attachment|input_attachments|preserve_attachments|resolve_attachments)
+│   ├── RDHitGroup (any_hit_shader|closest_hit_shader|intersection_shader)
+│   ├── RDPipelineColorBlendState (attachments|blend_constant|enable_logic_op|logic_op)
+│   ├── RDPipelineColorBlendStateAttachment (alpha_blend_op|color_blend_op|dst_alpha_blend_factor|dst_color_blend_factor|enable_blend|src_alpha_blend_factor|src_color_blend_factor|write_a|write_b|write_g|write_r)
+│   ├── RDPipelineDepthStencilState (back_op_compare|back_op_compare_mask|back_op_depth_fail|back_op_fail|back_op_pass|back_op_reference|back_op_write_mask|depth_compare_operator|depth_range_max|depth_range_min|enable_depth_range|enable_depth_test|enable_depth_write|enable_stencil|front_op_compare|front_op_compare_mask|front_op_depth_fail|front_op_fail|front_op_pass|front_op_reference|front_op_write_mask)
+│   ├── RDPipelineMultisampleState (enable_alpha_to_coverage|enable_alpha_to_one|enable_sample_shading|min_sample_shading|sample_count|sample_masks)
+│   ├── RDPipelineRasterizationState (cull_mode|depth_bias_clamp|depth_bias_constant_factor|depth_bias_enabled|depth_bias_slope_factor|discard_primitives|enable_depth_clamp|front_face|line_width|patch_control_points|wireframe)
+│   ├── RDPipelineShader (shader|specialization_constants)
+│   ├── RDPipelineSpecializationConstant (constant_id|value)
+│   ├── RDSamplerState (anisotropy_max|border_color|compare_op|enable_compare|lod_bias|mag_filter|max_lod|min_filter|min_lod|mip_filter|repeat_u|repeat_v|repeat_w|unnormalized_uvw|use_anisotropy)
+│   ├── RDShaderSource (language|source_any_hit|source_closest_hit|source_compute|source_fragment|source_intersection|source_miss|source_raygen|source_tesselation_control|source_tesselation_evaluation|source_vertex)
+│   ├── RDTextureFormat (array_layers|depth|format|height|is_discardable|is_resolve_buffer|mipmaps|samples|texture_type|usage_bits|width)
+│   ├── RDTextureView (format_override|swizzle_a|swizzle_b|swizzle_g|swizzle_r)
+│   ├── RDUniform (binding|uniform_type)
+│   ├── RDVertexAttribute (binding|format|frequency|location|offset|stride)
+│   ├── RandomNumberGenerator (seed|state)
+│   ├── RegEx
+│   ├── RegExMatch (names|strings|subject)
+│   ├── RenderSceneBuffers
+│   │   ├── RenderSceneBuffersExtension
+│   │   └── RenderSceneBuffersRD
+│   ├── RenderSceneBuffersConfiguration (anisotropic_filtering_level|fsr_sharpness|internal_size|msaa_3d|render_target|scaling_3d_mode|screen_space_aa|target_size|texture_mipmap_bias|view_count)
+│   ├── Resource (resource_local_to_scene|resource_name|resource_path|resource_scene_unique_id)
+│   │   ├── Animation (capture_included|length|loop_mode|step)
+│   │   ├── AnimationLibrary
+│   │   ├── AnimationNode (filter_enabled)
+│   │   │   ├── AnimationNodeExtension
+│   │   │   ├── AnimationNodeOutput
+│   │   │   ├── AnimationNodeSync (sync)
+│   │   │   │   ├── AnimationNodeAdd2
+│   │   │   │   ├── AnimationNodeAdd3
+│   │   │   │   ├── AnimationNodeBlend2
+│   │   │   │   ├── AnimationNodeBlend3
+│   │   │   │   ├── AnimationNodeOneShot (abort_on_reset|autorestart|autorestart_delay|autorestart_random_delay|break_loop_at_end|fadein_curve|fadein_time|fadeout_curve|fadeout_time|mix_mode)
+│   │   │   │   ├── AnimationNodeSub2
+│   │   │   │   └── AnimationNodeTransition (allow_transition_to_self|input_count|xfade_curve|xfade_time)
+│   │   │   ├── AnimationNodeTimeScale
+│   │   │   ├── AnimationNodeTimeSeek (explicit_elapse)
+│   │   │   └── AnimationRootNode
+│   │   │       ├── AnimationNodeAnimation (advance_on_start|animation|loop_mode|play_mode|start_offset|stretch_time_scale|timeline_length|use_custom_timeline)
+│   │   │       ├── AnimationNodeBlendSpace1D (blend_mode|cyclic_length|max_space|min_space|snap|sync|sync_mode|value_label)
+│   │   │       ├── AnimationNodeBlendSpace2D (auto_triangles|blend_mode|cyclic_length|max_space|min_space|snap|sync|sync_mode|x_label|y_label)
+│   │   │       ├── AnimationNodeBlendTree (graph_offset)
+│   │   │       └── AnimationNodeStateMachine (allow_transition_to_self|reset_ends|state_machine_type)
+│   │   ├── AnimationNodeStateMachinePlayback (resource_local_to_scene)
+│   │   ├── AnimationNodeStateMachineTransition (advance_condition|advance_expression|advance_mode|break_loop_at_end|priority|reset|switch_mode|xfade_curve|xfade_time)
+│   │   ├── AudioBusLayout
+│   │   ├── AudioEffect
+│   │   │   ├── AudioEffectAmplify (volume_db|volume_linear)
+│   │   │   ├── AudioEffectCapture (buffer_length)
+│   │   │   ├── AudioEffectChorus (dry|voice_count|wet)
+│   │   │   ├── AudioEffectCompressor (attack_us|gain|mix|ratio|release_ms|sidechain|threshold)
+│   │   │   ├── AudioEffectDelay (dry|feedback_active|feedback_delay_ms|feedback_level_db|feedback_lowpass|tap1_active|tap1_delay_ms|tap1_level_db|tap1_pan|tap2_active|tap2_delay_ms|tap2_level_db|tap2_pan)
+│   │   │   ├── AudioEffectDistortion (drive|keep_hf_hz|mode|post_gain|pre_gain)
+│   │   │   ├── AudioEffectEQ
+│   │   │   │   ├── AudioEffectEQ10
+│   │   │   │   ├── AudioEffectEQ21
+│   │   │   │   └── AudioEffectEQ6
+│   │   │   ├── AudioEffectFilter (cutoff_hz|db|gain|resonance)
+│   │   │   │   ├── AudioEffectBandLimitFilter
+│   │   │   │   ├── AudioEffectBandPassFilter
+│   │   │   │   ├── AudioEffectHighPassFilter
+│   │   │   │   ├── AudioEffectHighShelfFilter
+│   │   │   │   ├── AudioEffectLowPassFilter
+│   │   │   │   ├── AudioEffectLowShelfFilter
+│   │   │   │   └── AudioEffectNotchFilter
+│   │   │   ├── AudioEffectHardLimiter (ceiling_db|pre_gain_db|release)
+│   │   │   ├── AudioEffectLimiter (ceiling_db|soft_clip_db|soft_clip_ratio|threshold_db)
+│   │   │   ├── AudioEffectPanner (pan)
+│   │   │   ├── AudioEffectPhaser (depth|feedback|range_max_hz|range_min_hz|rate_hz)
+│   │   │   ├── AudioEffectPitchShift (fft_size|oversampling|pitch_scale)
+│   │   │   ├── AudioEffectRecord (format)
+│   │   │   ├── AudioEffectReverb (damping|dry|hipass|predelay_feedback|predelay_msec|room_size|spread|wet)
+│   │   │   ├── AudioEffectSpectrumAnalyzer (buffer_length|fft_size)
+│   │   │   └── AudioEffectStereoEnhance (pan_pullout|surround|time_pullout_ms)
+│   │   ├── AudioStream
+│   │   │   ├── AudioStreamGenerator (buffer_length|mix_rate|mix_rate_mode)
+│   │   │   ├── AudioStreamInteractive (clip_count|initial_clip)
+│   │   │   ├── AudioStreamMP3 (bar_beats|beat_count|bpm|data|loop|loop_offset)
+│   │   │   ├── AudioStreamMicrophone
+│   │   │   ├── AudioStreamOggVorbis (bar_beats|beat_count|bpm|loop|loop_offset|packet_sequence|tags)
+│   │   │   ├── AudioStreamPlaylist (fade_time|loop|shuffle|stream_count)
+│   │   │   ├── AudioStreamPolyphonic (polyphony)
+│   │   │   ├── AudioStreamRandomizer (playback_mode|random_pitch|random_pitch_semitones|random_volume_offset_db|streams_count)
+│   │   │   ├── AudioStreamSynchronized (stream_count)
+│   │   │   └── AudioStreamWAV (data|format|loop_begin|loop_end|loop_mode|mix_rate|stereo|tags)
+│   │   ├── BitMap
+│   │   ├── BoneMap (profile)
+│   │   ├── ButtonGroup (allow_unpress|resource_local_to_scene)
+│   │   ├── CameraAttributes (auto_exposure_enabled|auto_exposure_scale|auto_exposure_speed|exposure_multiplier|exposure_sensitivity)
+│   │   │   ├── CameraAttributesPhysical (auto_exposure_max_exposure_value|auto_exposure_min_exposure_value|exposure_aperture|exposure_shutter_speed|frustum_far|frustum_focal_length|frustum_focus_distance|frustum_near)
+│   │   │   └── CameraAttributesPractical (auto_exposure_max_sensitivity|auto_exposure_min_sensitivity|dof_blur_amount|dof_blur_far_distance|dof_blur_far_enabled|dof_blur_far_transition|dof_blur_near_distance|dof_blur_near_enabled|dof_blur_near_transition)
+│   │   ├── ColorPalette (colors)
+│   │   ├── Compositor (compositor_effects)
+│   │   ├── CompositorEffect (access_resolved_color|access_resolved_depth|effect_callback_type|enabled|needs_motion_vectors|needs_normal_roughness|needs_separate_specular)
+│   │   ├── CryptoKey
+│   │   ├── Curve (bake_resolution|max_domain|max_value|min_domain|min_value|point_count)
+│   │   ├── Curve2D (bake_interval|point_count)
+│   │   ├── Curve3D (bake_interval|closed|point_count|up_vector_enabled)
+│   │   ├── Environment (adjustment_brightness|adjustment_color_correction|adjustment_contrast|adjustment_enabled|adjustment_saturation|ambient_light_color|ambient_light_energy|ambient_light_sky_contribution|ambient_light_source|background_camera_feed_id|background_canvas_max_layer|background_color|background_energy_multiplier|background_intensity|background_mode|fog_aerial_perspective|fog_density|fog_depth_begin|fog_depth_curve|fog_depth_end|fog_enabled|fog_height|fog_height_density|fog_light_color|fog_light_energy|fog_mode|fog_sky_affect|fog_sun_scatter|glow_blend_mode|glow_bloom|glow_enabled|glow_hdr_luminance_cap|glow_hdr_scale|glow_hdr_threshold|glow_intensity|glow_map|glow_map_strength|glow_mix|glow_normalized|glow_strength|reflected_light_source|sdfgi_bounce_feedback|sdfgi_cascade0_distance|sdfgi_cascades|sdfgi_enabled|sdfgi_energy|sdfgi_max_distance|sdfgi_min_cell_size|sdfgi_normal_bias|sdfgi_probe_bias|sdfgi_read_sky_light|sdfgi_use_occlusion|sdfgi_y_scale|sky|sky_custom_fov|sky_rotation|ssao_ao_channel_affect|ssao_detail|ssao_enabled|ssao_horizon|ssao_intensity|ssao_light_affect|ssao_power|ssao_radius|ssao_sharpness|ssil_enabled|ssil_intensity|ssil_normal_rejection|ssil_radius|ssil_sharpness|ssr_depth_tolerance|ssr_enabled|ssr_fade_in|ssr_fade_out|ssr_max_steps|tonemap_agx_contrast|tonemap_agx_white|tonemap_exposure|tonemap_mode|tonemap_white|volumetric_fog_albedo|volumetric_fog_ambient_inject|volumetric_fog_anisotropy|volumetric_fog_density|volumetric_fog_detail_spread|volumetric_fog_emission|volumetric_fog_emission_energy|volumetric_fog_enabled|volumetric_fog_gi_inject|volumetric_fog_length|volumetric_fog_sky_affect|volumetric_fog_temporal_reprojection_amount|volumetric_fog_temporal_reprojection_enabled)
+│   │   ├── FoldableGroup (allow_folding_all|resource_local_to_scene)
+│   │   ├── Font (fallbacks)
+│   │   │   ├── FontFile (allow_system_fallback|antialiasing|data|disable_embedded_bitmaps|fixed_size|fixed_size_scale_mode|font_name|font_stretch|font_style|font_weight|force_autohinter|generate_mipmaps|hinting|keep_rounding_remainders|modulate_color_glyphs|msdf_pixel_range|msdf_size|multichannel_signed_distance_field|opentype_feature_overrides|oversampling|style_name|subpixel_positioning)
+│   │   │   ├── FontVariation (base_font|baseline_offset|opentype_features|palette_custom_colors|palette_index|spacing_bottom|spacing_glyph|spacing_space|spacing_top|variation_embolden|variation_face_index|variation_opentype|variation_transform)
+│   │   │   └── SystemFont (allow_system_fallback|antialiasing|disable_embedded_bitmaps|font_italic|font_names|font_stretch|font_weight|force_autohinter|generate_mipmaps|hinting|keep_rounding_remainders|modulate_color_glyphs|msdf_pixel_range|msdf_size|multichannel_signed_distance_field|oversampling|subpixel_positioning)
+│   │   ├── GDExtension
+│   │   ├── GLTFAccessor (accessor_type|buffer_view|byte_offset|component_type|count|max|min|normalized|sparse_count|sparse_indices_buffer_view|sparse_indices_byte_offset|sparse_indices_component_type|sparse_values_buffer_view|sparse_values_byte_offset|type)
+│   │   ├── GLTFAnimation (loop|original_name)
+│   │   ├── GLTFBufferView (buffer|byte_length|byte_offset|byte_stride|indices|vertex_attributes)
+│   │   ├── GLTFCamera (depth_far|depth_near|fov|perspective|size_mag)
+│   │   ├── GLTFDocument (fallback_image_format|fallback_image_quality|image_format|lossy_quality|root_node_mode|texture_map_mode|visibility_mode)
+│   │   │   └── FBXDocument
+│   │   ├── GLTFDocumentExtension
+│   │   │   └── GLTFDocumentExtensionConvertImporterMesh
+│   │   ├── GLTFLight (color|inner_cone_angle|intensity|light_type|outer_cone_angle|range)
+│   │   ├── GLTFMesh (blend_weights|instance_materials|mesh|original_name)
+│   │   ├── GLTFNode (camera|children|height|light|mesh|original_name|parent|position|rotation|scale|skeleton|skin|visible|xform)
+│   │   ├── GLTFPhysicsBody (angular_velocity|body_type|center_of_mass|inertia_diagonal|inertia_orientation|inertia_tensor|linear_velocity|mass)
+│   │   ├── GLTFPhysicsShape (height|importer_mesh|is_trigger|mesh_index|radius|shape_type|size)
+│   │   ├── GLTFSkeleton (joints|roots)
+│   │   ├── GLTFSkin (godot_skin|joints|joints_original|non_joints|roots|skeleton|skin_root)
+│   │   ├── GLTFSpecGloss (diffuse_factor|diffuse_img|gloss_factor|spec_gloss_img|specular_factor)
+│   │   ├── GLTFState (bake_fps|base_path|buffers|copyright|create_animations|filename|glb_data|handle_binary_image_mode|import_as_skeleton_bones|json|major_version|minor_version|root_nodes|scene_name|use_named_skin_binds)
+│   │   │   └── FBXState (allow_geometry_helper_nodes)
+│   │   ├── GLTFTexture (sampler|src_image)
+│   │   ├── GLTFTextureSampler (mag_filter|min_filter|wrap_s|wrap_t)
+│   │   ├── Gradient (colors|interpolation_color_space|interpolation_mode|offsets)
+│   │   ├── Image (data)
+│   │   ├── ImporterMesh
+│   │   ├── InputEvent (device)
+│   │   │   ├── InputEventAction (action|event_index|pressed|strength)
+│   │   │   ├── InputEventFromWindow (window_id)
+│   │   │   │   ├── InputEventScreenDrag (index|pen_inverted|position|pressure|relative|screen_relative|screen_velocity|tilt|velocity)
+│   │   │   │   ├── InputEventScreenTouch (canceled|double_tap|index|position|pressed)
+│   │   │   │   └── InputEventWithModifiers (alt_pressed|command_or_control_autoremap|ctrl_pressed|device|meta_pressed|shift_pressed)
+│   │   │   │       ├── InputEventGesture (device|position)
+│   │   │   │       │   ├── InputEventMagnifyGesture (factor)
+│   │   │   │       │   └── InputEventPanGesture (delta)
+│   │   │   │       ├── InputEventKey (echo|key_label|keycode|location|physical_keycode|pressed|unicode)
+│   │   │   │       └── InputEventMouse (button_mask|device|global_position|position)
+│   │   │   │           ├── InputEventMouseButton (button_index|canceled|double_click|factor|pressed)
+│   │   │   │           └── InputEventMouseMotion (pen_inverted|pressure|relative|screen_relative|screen_velocity|tilt|velocity)
+│   │   │   ├── InputEventJoypadButton (button_index|pressed|pressure)
+│   │   │   ├── InputEventJoypadMotion (axis|axis_value)
+│   │   │   ├── InputEventMIDI (channel|controller_number|controller_value|instrument|message|pitch|pressure|velocity)
+│   │   │   └── InputEventShortcut (shortcut)
+│   │   ├── JSON (data)
+│   │   ├── JointLimitation3D
+│   │   │   └── JointLimitationCone3D (angle)
+│   │   ├── LabelSettings (font|font_color|font_size|line_spacing|outline_color|outline_size|paragraph_spacing|shadow_color|shadow_offset|shadow_size|stacked_outline_count|stacked_shadow_count)
+│   │   ├── LightmapGIData (light_texture|lightmap_textures|shadowmask_textures)
+│   │   ├── Material (next_pass|render_priority)
+│   │   │   ├── BaseMaterial3D (albedo_color|albedo_texture|albedo_texture_force_srgb|albedo_texture_msdf|alpha_antialiasing_edge|alpha_antialiasing_mode|alpha_hash_scale|alpha_scissor_threshold|anisotropy|anisotropy_enabled|anisotropy_flowmap|ao_enabled|ao_light_affect|ao_on_uv2|ao_texture|ao_texture_channel|backlight|backlight_enabled|backlight_texture|bent_normal_enabled|bent_normal_texture|billboard_keep_scale|billboard_mode|blend_mode|clearcoat|clearcoat_enabled|clearcoat_roughness|clearcoat_texture|cull_mode|depth_draw_mode|depth_test|detail_albedo|detail_blend_mode|detail_enabled|detail_mask|detail_normal|detail_uv_layer|diffuse_mode|disable_ambient_light|disable_fog|disable_receive_shadows|disable_specular_occlusion|distance_fade_max_distance|distance_fade_min_distance|distance_fade_mode|emission|emission_enabled|emission_energy_multiplier|emission_intensity|emission_on_uv2|emission_operator|emission_texture|fixed_size|fov_override|grow|grow_amount|heightmap_deep_parallax|heightmap_enabled|heightmap_flip_binormal|heightmap_flip_tangent|heightmap_flip_texture|heightmap_max_layers|heightmap_min_layers|heightmap_scale|heightmap_texture|metallic|metallic_specular|metallic_texture|metallic_texture_channel|msdf_outline_size|msdf_pixel_range|no_depth_test|normal_enabled|normal_scale|normal_texture|orm_texture|particles_anim_h_frames|particles_anim_loop|particles_anim_v_frames|point_size|proximity_fade_distance|proximity_fade_enabled|refraction_enabled|refraction_scale|refraction_texture|refraction_texture_channel|rim|rim_enabled|rim_texture|rim_tint|roughness|roughness_texture|roughness_texture_channel|shading_mode|shadow_to_opacity|specular_mode|stencil_color|stencil_compare|stencil_flags|stencil_mode|stencil_outline_thickness|stencil_reference|subsurf_scatter_enabled|subsurf_scatter_skin_mode|subsurf_scatter_strength|subsurf_scatter_texture|subsurf_scatter_transmittance_boost|subsurf_scatter_transmittance_color|subsurf_scatter_transmittance_depth|subsurf_scatter_transmittance_enabled|subsurf_scatter_transmittance_texture|texture_filter|texture_repeat|transparency|use_fov_override|use_particle_trails|use_point_size|use_z_clip_scale|uv1_offset|uv1_scale|uv1_triplanar|uv1_triplanar_sharpness|uv1_world_triplanar|uv2_offset|uv2_scale|uv2_triplanar|uv2_triplanar_sharpness|uv2_world_triplanar|vertex_color_is_srgb|vertex_color_use_as_albedo|z_clip_scale)
+│   │   │   │   ├── ORMMaterial3D
+│   │   │   │   └── StandardMaterial3D
+│   │   │   ├── BlitMaterial (blend_mode)
+│   │   │   ├── CanvasItemMaterial (blend_mode|light_mode|particles_anim_h_frames|particles_anim_loop|particles_anim_v_frames|particles_animation)
+│   │   │   ├── FogMaterial (albedo|density|density_texture|edge_fade|emission|height_falloff)
+│   │   │   ├── PanoramaSkyMaterial (energy_multiplier|filter|panorama)
+│   │   │   ├── ParticleProcessMaterial (alpha_curve|angle_curve|angle_max|angle_min|angular_velocity_curve|angular_velocity_max|angular_velocity_min|anim_offset_curve|anim_offset_max|anim_offset_min|anim_speed_curve|anim_speed_max|anim_speed_min|attractor_interaction_enabled|collision_bounce|collision_friction|collision_mode|collision_use_scale|color|color_initial_ramp|color_ramp|damping_curve|damping_max|damping_min|direction|directional_velocity_curve|directional_velocity_max|directional_velocity_min|emission_box_extents|emission_color_texture|emission_curve|emission_normal_texture|emission_point_count|emission_point_texture|emission_ring_axis|emission_ring_cone_angle|emission_ring_height|emission_ring_inner_radius|emission_ring_radius|emission_shape|emission_shape_offset|emission_shape_scale|emission_sphere_radius|flatness|gravity|hue_variation_curve|hue_variation_max|hue_variation_min|inherit_velocity_ratio|initial_velocity_max|initial_velocity_min|lifetime_randomness|linear_accel_curve|linear_accel_max|linear_accel_min|orbit_velocity_curve|orbit_velocity_max|orbit_velocity_min|particle_flag_align_y|particle_flag_damping_as_friction|particle_flag_disable_z|particle_flag_inherit_emitter_scale|particle_flag_rotate_y|radial_accel_curve|radial_accel_max|radial_accel_min|radial_velocity_curve|radial_velocity_max|radial_velocity_min|rotation_3d_max|rotation_3d_min|rotation_velocity_3d_curve|rotation_velocity_3d_max|rotation_velocity_3d_min|scale_3d_max|scale_3d_min|scale_curve|scale_max|scale_min|scale_over_velocity_curve|scale_over_velocity_max|scale_over_velocity_min|spread|sub_emitter_amount_at_collision|sub_emitter_amount_at_end|sub_emitter_amount_at_start|sub_emitter_frequency|sub_emitter_keep_velocity|sub_emitter_mode|tangential_accel_curve|tangential_accel_max|tangential_accel_min|turbulence_enabled|turbulence_influence_max|turbulence_influence_min|turbulence_influence_over_life|turbulence_initial_displacement_max|turbulence_initial_displacement_min|turbulence_noise_scale|turbulence_noise_speed|turbulence_noise_speed_random|turbulence_noise_strength|use_rotation_3d|use_rotation_velocity_3d|use_scale_3d|velocity_limit_curve|velocity_pivot)
+│   │   │   ├── PhysicalSkyMaterial (energy_multiplier|ground_color|mie_coefficient|mie_color|mie_eccentricity|night_sky|rayleigh_coefficient|rayleigh_color|sun_disk_scale|turbidity|use_debanding)
+│   │   │   ├── PlaceholderMaterial
+│   │   │   ├── ProceduralSkyMaterial (energy_multiplier|ground_bottom_color|ground_curve|ground_energy_multiplier|ground_horizon_color|sky_cover|sky_cover_modulate|sky_curve|sky_energy_multiplier|sky_horizon_color|sky_top_color|sun_angle_max|sun_curve|use_debanding)
+│   │   │   └── ShaderMaterial (shader)
+│   │   ├── Mesh (lightmap_size_hint)
+│   │   │   ├── ArrayMesh (blend_shape_mode|custom_aabb|shadow_mesh)
+│   │   │   ├── ImmediateMesh
+│   │   │   ├── PlaceholderMesh (aabb)
+│   │   │   └── PrimitiveMesh (add_uv2|custom_aabb|flip_faces|material|uv2_padding)
+│   │   │       ├── BoxMesh (size|subdivide_depth|subdivide_height|subdivide_width)
+│   │   │       ├── CapsuleMesh (height|radial_segments|radius|rings)
+│   │   │       ├── CylinderMesh (bottom_radius|cap_bottom|cap_top|height|radial_segments|rings|top_radius)
+│   │   │       ├── PlaneMesh (center_offset|orientation|size|subdivide_depth|subdivide_width)
+│   │   │       │   └── QuadMesh (orientation|size)
+│   │   │       ├── PointMesh
+│   │   │       ├── PrismMesh (left_to_right|size|subdivide_depth|subdivide_height|subdivide_width)
+│   │   │       ├── RibbonTrailMesh (curve|section_length|section_segments|sections|shape|size)
+│   │   │       ├── SphereMesh (height|is_hemisphere|radial_segments|radius|rings)
+│   │   │       ├── TextMesh (autowrap_mode|curve_step|depth|font|font_size|horizontal_alignment|justification_flags|language|line_spacing|offset|pixel_size|structured_text_bidi_override|structured_text_bidi_override_options|text|text_direction|uppercase|vertical_alignment|width)
+│   │   │       ├── TorusMesh (inner_radius|outer_radius|ring_segments|rings)
+│   │   │       └── TubeTrailMesh (cap_bottom|cap_top|curve|radial_steps|radius|section_length|section_rings|sections)
+│   │   ├── MeshLibrary
+│   │   ├── MissingResource (original_class|recording_properties)
+│   │   ├── MultiMesh (buffer|color_array|custom_aabb|custom_data_array|instance_count|mesh|physics_interpolation_quality|transform_2d_array|transform_array|transform_format|use_colors|use_custom_data|visible_instance_count)
+│   │   ├── NavigationMesh (agent_height|agent_max_climb|agent_max_slope|agent_radius|border_size|cell_height|cell_size|detail_sample_distance|detail_sample_max_error|edge_max_error|edge_max_length|filter_baking_aabb|filter_baking_aabb_offset|filter_ledge_spans|filter_low_hanging_obstacles|filter_walkable_low_height_spans|geometry_collision_mask|geometry_parsed_geometry_type|geometry_source_geometry_mode|geometry_source_group_name|region_merge_size|region_min_size|sample_partition_type|vertices_per_polygon)
+│   │   ├── NavigationMeshSourceGeometryData2D
+│   │   ├── NavigationMeshSourceGeometryData3D
+│   │   ├── NavigationPolygon (agent_radius|baking_rect|baking_rect_offset|border_size|cell_size|parsed_collision_mask|parsed_geometry_type|sample_partition_type|source_geometry_group_name|source_geometry_mode)
+│   │   ├── Noise
+│   │   │   └── FastNoiseLite (cellular_distance_function|cellular_jitter|cellular_return_type|domain_warp_amplitude|domain_warp_enabled|domain_warp_fractal_gain|domain_warp_fractal_lacunarity|domain_warp_fractal_octaves|domain_warp_fractal_type|domain_warp_frequency|domain_warp_type|fractal_gain|fractal_lacunarity|fractal_octaves|fractal_ping_pong_strength|fractal_type|fractal_weighted_strength|frequency|noise_type|offset|seed)
+│   │   ├── Occluder3D
+│   │   │   ├── ArrayOccluder3D (indices|vertices)
+│   │   │   ├── BoxOccluder3D (size)
+│   │   │   ├── PolygonOccluder3D (polygon)
+│   │   │   ├── QuadOccluder3D (size)
+│   │   │   └── SphereOccluder3D (radius)
+│   │   ├── OccluderPolygon2D (closed|cull_mode|polygon)
+│   │   ├── OggPacketSequence (granule_positions|packet_data|sampling_rate)
+│   │   ├── OpenXRAction (action_type|localized_name|toplevel_paths)
+│   │   ├── OpenXRActionMap (action_sets|interaction_profiles)
+│   │   ├── OpenXRActionSet (actions|localized_name|priority)
+│   │   ├── OpenXRBindingModifier
+│   │   │   ├── OpenXRActionBindingModifier
+│   │   │   │   └── OpenXRAnalogThresholdModifier (off_haptic|off_threshold|on_haptic|on_threshold)
+│   │   │   └── OpenXRIPBindingModifier
+│   │   │       └── OpenXRDpadBindingModifier (action_set|center_region|input_path|is_sticky|off_haptic|on_haptic|threshold|threshold_released|wedge_angle)
+│   │   ├── OpenXRHapticBase
+│   │   │   └── OpenXRHapticVibration (amplitude|duration|frequency)
+│   │   ├── OpenXRIPBinding (action|binding_modifiers|binding_path|paths)
+│   │   ├── OpenXRInteractionProfile (binding_modifiers|bindings|interaction_profile_path)
+│   │   ├── PackedDataContainer
+│   │   ├── PackedScene
+│   │   ├── PhysicsMaterial (absorbent|bounce|friction|rough)
+│   │   ├── PolygonPathFinder
+│   │   ├── RDShaderFile (base_error)
+│   │   ├── RDShaderSPIRV (bytecode_any_hit|bytecode_closest_hit|bytecode_compute|bytecode_fragment|bytecode_intersection|bytecode_miss|bytecode_raygen|bytecode_tesselation_control|bytecode_tesselation_evaluation|bytecode_vertex|compile_error_any_hit|compile_error_closest_hit|compile_error_compute|compile_error_fragment|compile_error_intersection|compile_error_miss|compile_error_raygen|compile_error_tesselation_control|compile_error_tesselation_evaluation|compile_error_vertex)
+│   │   ├── RichTextEffect
+│   │   ├── SceneReplicationConfig
+│   │   ├── Script (source_code)
+│   │   │   ├── CSharpScript
+│   │   │   ├── GDScript
+│   │   │   └── ScriptExtension
+│   │   ├── Shader (code)
+│   │   │   └── VisualShader (graph_offset)
+│   │   ├── ShaderInclude (code)
+│   │   ├── Shape2D (custom_solver_bias)
+│   │   │   ├── CapsuleShape2D (height|mid_height|radius)
+│   │   │   ├── CircleShape2D (radius)
+│   │   │   ├── ConcavePolygonShape2D (segments)
+│   │   │   ├── ConvexPolygonShape2D (points)
+│   │   │   ├── RectangleShape2D (size)
+│   │   │   ├── SegmentShape2D (a|b)
+│   │   │   ├── SeparationRayShape2D (length|slide_on_slope)
+│   │   │   └── WorldBoundaryShape2D (distance|normal)
+│   │   ├── Shape3D (custom_solver_bias|margin)
+│   │   │   ├── BoxShape3D (size)
+│   │   │   ├── CapsuleShape3D (height|mid_height|radius)
+│   │   │   ├── ConcavePolygonShape3D (backface_collision)
+│   │   │   ├── ConvexPolygonShape3D (points)
+│   │   │   ├── CylinderShape3D (height|radius)
+│   │   │   ├── HeightMapShape3D (map_data|map_depth|map_width)
+│   │   │   ├── SeparationRayShape3D (length|slide_on_slope)
+│   │   │   ├── SphereShape3D (radius)
+│   │   │   └── WorldBoundaryShape3D (plane)
+│   │   ├── Shortcut (events)
+│   │   ├── SkeletonModification2D (enabled|execution_mode)
+│   │   │   ├── SkeletonModification2DCCDIK (ccdik_data_chain_length|target_nodepath|tip_nodepath)
+│   │   │   ├── SkeletonModification2DFABRIK (fabrik_data_chain_length|target_nodepath)
+│   │   │   ├── SkeletonModification2DJiggle (damping|gravity|jiggle_data_chain_length|mass|stiffness|target_nodepath|use_gravity)
+│   │   │   ├── SkeletonModification2DLookAt (bone2d_node|bone_index|target_nodepath)
+│   │   │   ├── SkeletonModification2DPhysicalBones (physical_bone_chain_length)
+│   │   │   ├── SkeletonModification2DStackHolder
+│   │   │   └── SkeletonModification2DTwoBoneIK (flip_bend_direction|target_maximum_distance|target_minimum_distance|target_nodepath)
+│   │   ├── SkeletonModificationStack2D (enabled|modification_count|strength)
+│   │   ├── SkeletonProfile (bone_size|group_size|root_bone|scale_base_bone)
+│   │   │   └── SkeletonProfileHumanoid (bone_size|group_size|root_bone|scale_base_bone)
+│   │   ├── Skin
+│   │   ├── Sky (process_mode|radiance_size|sky_material)
+│   │   ├── SpriteFrames
+│   │   ├── StyleBox (content_margin_bottom|content_margin_left|content_margin_right|content_margin_top)
+│   │   │   ├── StyleBoxEmpty
+│   │   │   ├── StyleBoxFlat (anti_aliasing|anti_aliasing_size|bg_color|border_blend|border_color|border_width_bottom|border_width_left|border_width_right|border_width_top|corner_detail|corner_radius_bottom_left|corner_radius_bottom_right|corner_radius_top_left|corner_radius_top_right|draw_center|expand_margin_bottom|expand_margin_left|expand_margin_right|expand_margin_top|shadow_color|shadow_offset|shadow_size|skew)
+│   │   │   ├── StyleBoxLine (color|grow_begin|grow_end|thickness|vertical)
+│   │   │   └── StyleBoxTexture (axis_stretch_horizontal|axis_stretch_vertical|draw_center|expand_margin_bottom|expand_margin_left|expand_margin_right|expand_margin_top|modulate_color|region_rect|texture|texture_margin_bottom|texture_margin_left|texture_margin_right|texture_margin_top)
+│   │   ├── SyntaxHighlighter
+│   │   │   └── CodeHighlighter (color_regions|function_color|keyword_colors|member_keyword_colors|member_variable_color|number_color|symbol_color)
+│   │   ├── Texture
+│   │   │   ├── Texture2D
+│   │   │   │   ├── AnimatedTexture (current_frame|frames|one_shot|pause|resource_local_to_scene|speed_scale)
+│   │   │   │   ├── AtlasTexture (atlas|filter_clip|margin|region|resource_local_to_scene)
+│   │   │   │   ├── CameraTexture (camera_feed_id|camera_is_active|resource_local_to_scene|which_feed)
+│   │   │   │   ├── CanvasTexture (diffuse_texture|normal_texture|resource_local_to_scene|specular_color|specular_shininess|specular_texture|texture_filter|texture_repeat)
+│   │   │   │   ├── CompressedTexture2D (load_path|resource_local_to_scene)
+│   │   │   │   ├── CurveTexture (curve|resource_local_to_scene|texture_mode|width)
+│   │   │   │   ├── CurveXYZTexture (curve_x|curve_y|curve_z|resource_local_to_scene|width)
+│   │   │   │   ├── DPITexture (base_scale|color_map|fix_alpha_border|premult_alpha|resource_local_to_scene|saturation)
+│   │   │   │   ├── DrawableTexture2D (resource_local_to_scene)
+│   │   │   │   ├── ExternalTexture (resource_local_to_scene|size)
+│   │   │   │   ├── GradientTexture1D (gradient|resource_local_to_scene|use_hdr|width)
+│   │   │   │   ├── GradientTexture2D (fill|fill_from|fill_to|gradient|height|repeat|resource_local_to_scene|use_hdr|width)
+│   │   │   │   ├── ImageTexture (resource_local_to_scene)
+│   │   │   │   ├── MeshTexture (base_texture|image_size|mesh|resource_local_to_scene)
+│   │   │   │   ├── NoiseTexture2D (as_normal_map|bump_strength|color_ramp|generate_mipmaps|height|in_3d_space|invert|noise|normalize|resource_local_to_scene|seamless|seamless_blend_skirt|width)
+│   │   │   │   ├── PlaceholderTexture2D (resource_local_to_scene|size)
+│   │   │   │   ├── PortableCompressedTexture2D (keep_compressed_buffer|resource_local_to_scene|size_override)
+│   │   │   │   ├── Texture2DRD (resource_local_to_scene|texture_rd_rid)
+│   │   │   │   └── ViewportTexture (viewport_path)
+│   │   │   ├── Texture3D
+│   │   │   │   ├── CompressedTexture3D (load_path)
+│   │   │   │   ├── ImageTexture3D
+│   │   │   │   ├── NoiseTexture3D (color_ramp|depth|height|invert|noise|normalize|seamless|seamless_blend_skirt|width)
+│   │   │   │   ├── PlaceholderTexture3D (size)
+│   │   │   │   └── Texture3DRD (texture_rd_rid)
+│   │   │   └── TextureLayered
+│   │   │       ├── CompressedTextureLayered (load_path)
+│   │   │       │   ├── CompressedCubemap
+│   │   │       │   ├── CompressedCubemapArray
+│   │   │       │   └── CompressedTexture2DArray
+│   │   │       ├── ImageTextureLayered
+│   │   │       │   ├── Cubemap
+│   │   │       │   ├── CubemapArray
+│   │   │       │   └── Texture2DArray
+│   │   │       ├── PlaceholderTextureLayered (layers|size)
+│   │   │       │   ├── PlaceholderCubemap
+│   │   │       │   ├── PlaceholderCubemapArray
+│   │   │       │   └── PlaceholderTexture2DArray
+│   │   │       └── TextureLayeredRD (texture_rd_rid)
+│   │   │           ├── Texture2DArrayRD
+│   │   │           ├── TextureCubemapArrayRD
+│   │   │           └── TextureCubemapRD
+│   │   ├── Theme (default_base_scale|default_font|default_font_size)
+│   │   ├── TileMapPattern
+│   │   ├── TileSet (tile_layout|tile_offset_axis|tile_shape|tile_size|uv_clipping)
+│   │   ├── TileSetSource
+│   │   │   ├── TileSetAtlasSource (margins|separation|texture|texture_region_size|use_texture_padding)
+│   │   │   └── TileSetScenesCollectionSource
+│   │   ├── Translation (locale|plural_rules_override)
+│   │   │   └── OptimizedTranslation
+│   │   ├── VideoStream (file)
+│   │   │   └── VideoStreamTheora
+│   │   ├── VideoStreamPlayback
+│   │   ├── VisualShaderNode (linked_parent_graph_frame|output_port_for_preview)
+│   │   │   ├── VisualShaderNodeBillboard (billboard_type|keep_scale)
+│   │   │   ├── VisualShaderNodeClamp (op_type)
+│   │   │   ├── VisualShaderNodeColorFunc (function)
+│   │   │   ├── VisualShaderNodeColorOp (operator)
+│   │   │   ├── VisualShaderNodeCompare (condition|function|type)
+│   │   │   ├── VisualShaderNodeConstant
+│   │   │   │   ├── VisualShaderNodeBooleanConstant (constant)
+│   │   │   │   ├── VisualShaderNodeColorConstant (constant)
+│   │   │   │   ├── VisualShaderNodeFloatConstant (constant)
+│   │   │   │   ├── VisualShaderNodeIntConstant (constant)
+│   │   │   │   ├── VisualShaderNodeTransformConstant (constant)
+│   │   │   │   ├── VisualShaderNodeUIntConstant (constant)
+│   │   │   │   ├── VisualShaderNodeVec2Constant (constant)
+│   │   │   │   ├── VisualShaderNodeVec3Constant (constant)
+│   │   │   │   └── VisualShaderNodeVec4Constant (constant)
+│   │   │   ├── VisualShaderNodeCubemap (cube_map|source|texture_type)
+│   │   │   ├── VisualShaderNodeCustom
+│   │   │   ├── VisualShaderNodeDerivativeFunc (function|op_type|precision)
+│   │   │   ├── VisualShaderNodeDeterminant
+│   │   │   ├── VisualShaderNodeDistanceFade
+│   │   │   ├── VisualShaderNodeDotProduct
+│   │   │   ├── VisualShaderNodeFloatFunc (function)
+│   │   │   ├── VisualShaderNodeFloatOp (operator)
+│   │   │   ├── VisualShaderNodeFresnel
+│   │   │   ├── VisualShaderNodeIf
+│   │   │   ├── VisualShaderNodeInput (input_name)
+│   │   │   ├── VisualShaderNodeIntFunc (function)
+│   │   │   ├── VisualShaderNodeIntOp (operator)
+│   │   │   ├── VisualShaderNodeIs (function)
+│   │   │   ├── VisualShaderNodeLinearSceneDepth
+│   │   │   ├── VisualShaderNodeMix (op_type)
+│   │   │   ├── VisualShaderNodeMultiplyAdd (op_type)
+│   │   │   ├── VisualShaderNodeOuterProduct
+│   │   │   ├── VisualShaderNodeOutput
+│   │   │   │   └── VisualShaderNodeParticleOutput
+│   │   │   ├── VisualShaderNodeParameter (instance_index|parameter_name|qualifier)
+│   │   │   │   ├── VisualShaderNodeBooleanParameter (default_value|default_value_enabled)
+│   │   │   │   ├── VisualShaderNodeColorParameter (default_value|default_value_enabled)
+│   │   │   │   ├── VisualShaderNodeFloatParameter (default_value|default_value_enabled|hint|max|min|step)
+│   │   │   │   ├── VisualShaderNodeIntParameter (default_value|default_value_enabled|enum_names|hint|max|min|step)
+│   │   │   │   ├── VisualShaderNodeTextureParameter (color_default|texture_filter|texture_repeat|texture_source|texture_type)
+│   │   │   │   │   ├── VisualShaderNodeCubemapParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DArrayParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture2DParameter
+│   │   │   │   │   ├── VisualShaderNodeTexture3DParameter
+│   │   │   │   │   └── VisualShaderNodeTextureParameterTriplanar
+│   │   │   │   ├── VisualShaderNodeTransformParameter (default_value|default_value_enabled)
+│   │   │   │   ├── VisualShaderNodeUIntParameter (default_value|default_value_enabled)
+│   │   │   │   ├── VisualShaderNodeVec2Parameter (default_value|default_value_enabled)
+│   │   │   │   ├── VisualShaderNodeVec3Parameter (default_value|default_value_enabled)
+│   │   │   │   └── VisualShaderNodeVec4Parameter (default_value|default_value_enabled)
+│   │   │   ├── VisualShaderNodeParameterRef (parameter_name)
+│   │   │   ├── VisualShaderNodeParticleAccelerator (mode)
+│   │   │   ├── VisualShaderNodeParticleConeVelocity
+│   │   │   ├── VisualShaderNodeParticleEmit (flags)
+│   │   │   ├── VisualShaderNodeParticleEmitter (mode_2d)
+│   │   │   │   ├── VisualShaderNodeParticleBoxEmitter
+│   │   │   │   ├── VisualShaderNodeParticleMeshEmitter (mesh|surface_index|use_all_surfaces)
+│   │   │   │   ├── VisualShaderNodeParticleRingEmitter
+│   │   │   │   └── VisualShaderNodeParticleSphereEmitter
+│   │   │   ├── VisualShaderNodeParticleMultiplyByAxisAngle (degrees_mode)
+│   │   │   ├── VisualShaderNodeParticleRandomness (op_type)
+│   │   │   ├── VisualShaderNodeProximityFade
+│   │   │   ├── VisualShaderNodeRandomRange
+│   │   │   ├── VisualShaderNodeRemap (op_type)
+│   │   │   ├── VisualShaderNodeReroute
+│   │   │   ├── VisualShaderNodeResizableBase (size)
+│   │   │   │   ├── VisualShaderNodeCurveTexture (texture)
+│   │   │   │   ├── VisualShaderNodeCurveXYZTexture (texture)
+│   │   │   │   ├── VisualShaderNodeFrame (attached_nodes|autoshrink|tint_color|tint_color_enabled|title)
+│   │   │   │   │   └── VisualShaderNodeComment (description)
+│   │   │   │   └── VisualShaderNodeGroupBase
+│   │   │   │       └── VisualShaderNodeExpression (expression)
+│   │   │   │           └── VisualShaderNodeGlobalExpression
+│   │   │   ├── VisualShaderNodeRotationByAxis
+│   │   │   ├── VisualShaderNodeSDFRaymarch
+│   │   │   ├── VisualShaderNodeSDFToScreenUV
+│   │   │   ├── VisualShaderNodeSample3D (source)
+│   │   │   │   ├── VisualShaderNodeTexture2DArray (texture_array)
+│   │   │   │   └── VisualShaderNodeTexture3D (texture)
+│   │   │   ├── VisualShaderNodeScreenNormalWorldSpace
+│   │   │   ├── VisualShaderNodeScreenUVToSDF
+│   │   │   ├── VisualShaderNodeSmoothStep (op_type)
+│   │   │   ├── VisualShaderNodeStep (op_type)
+│   │   │   ├── VisualShaderNodeSwitch (op_type)
+│   │   │   ├── VisualShaderNodeTexture (source|texture|texture_type)
+│   │   │   ├── VisualShaderNodeTextureSDF
+│   │   │   ├── VisualShaderNodeTextureSDFNormal
+│   │   │   ├── VisualShaderNodeTransformCompose
+│   │   │   ├── VisualShaderNodeTransformDecompose
+│   │   │   ├── VisualShaderNodeTransformFunc (function)
+│   │   │   ├── VisualShaderNodeTransformOp (operator)
+│   │   │   ├── VisualShaderNodeTransformVecMult (operator)
+│   │   │   ├── VisualShaderNodeUIntFunc (function)
+│   │   │   ├── VisualShaderNodeUIntOp (operator)
+│   │   │   ├── VisualShaderNodeUVFunc (function)
+│   │   │   ├── VisualShaderNodeUVPolarCoord
+│   │   │   ├── VisualShaderNodeVarying (varying_name|varying_type)
+│   │   │   │   ├── VisualShaderNodeVaryingGetter
+│   │   │   │   └── VisualShaderNodeVaryingSetter
+│   │   │   ├── VisualShaderNodeVectorBase (op_type)
+│   │   │   │   ├── VisualShaderNodeFaceForward
+│   │   │   │   ├── VisualShaderNodeVectorCompose
+│   │   │   │   ├── VisualShaderNodeVectorDecompose
+│   │   │   │   ├── VisualShaderNodeVectorDistance
+│   │   │   │   ├── VisualShaderNodeVectorFunc (function)
+│   │   │   │   ├── VisualShaderNodeVectorLen
+│   │   │   │   ├── VisualShaderNodeVectorOp (operator)
+│   │   │   │   └── VisualShaderNodeVectorRefract
+│   │   │   └── VisualShaderNodeWorldPositionFromDepth
+│   │   ├── VoxelGIData (bias|dynamic_range|energy|interior|normal_bias|propagation|use_two_bounces)
+│   │   ├── World2D (canvas|direct_space_state|navigation_map|space)
+│   │   ├── World3D (camera_attributes|direct_space_state|environment|fallback_environment|navigation_map|scenario|space)
+│   │   └── X509Certificate
+│   ├── ResourceFormatLoader
+│   ├── ResourceFormatSaver
+│   ├── ResourceImporter
+│   ├── SceneState
+│   ├── SceneTreeTimer (time_left)
+│   ├── ScriptBacktrace
+│   ├── Semaphore
+│   ├── SkinReference
+│   ├── SocketServer
+│   │   ├── TCPServer
+│   │   └── UDSServer
+│   ├── StreamPeer (big_endian)
+│   │   ├── StreamPeerBuffer (data_array)
+│   │   ├── StreamPeerExtension
+│   │   ├── StreamPeerGZIP
+│   │   ├── StreamPeerSocket
+│   │   │   ├── StreamPeerTCP
+│   │   │   └── StreamPeerUDS
+│   │   └── StreamPeerTLS
+│   ├── SurfaceTool
+│   ├── TLSOptions
+│   ├── TextLine (alignment|direction|ellipsis_char|flags|orientation|preserve_control|preserve_invalid|text_overrun_behavior|width)
+│   ├── TextParagraph (alignment|break_flags|custom_punctuation|direction|ellipsis_char|justification_flags|line_spacing|max_lines_visible|orientation|preserve_control|preserve_invalid|text_overrun_behavior|width)
+│   ├── TextServer
+│   │   └── TextServerExtension
+│   │       ├── TextServerAdvanced
+│   │       ├── TextServerDummy
+│   │       └── TextServerFallback
+│   ├── Thread
+│   ├── TranslationDomain (enabled|pseudolocalization_accents_enabled|pseudolocalization_double_vowels_enabled|pseudolocalization_enabled|pseudolocalization_expansion_ratio|pseudolocalization_fake_bidi_enabled|pseudolocalization_override_enabled|pseudolocalization_prefix|pseudolocalization_skip_placeholders_enabled|pseudolocalization_suffix)
+│   ├── TriangleMesh
+│   ├── Tween
+│   ├── Tweener
+│   │   ├── AwaitTweener
+│   │   ├── CallbackTweener
+│   │   ├── IntervalTweener
+│   │   ├── MethodTweener
+│   │   ├── PropertyTweener
+│   │   └── SubtweenTweener
+│   ├── UDPServer (max_pending_connections)
+│   ├── UPNP (discover_ipv6|discover_local_port|discover_multicast_if)
+│   ├── UPNPDevice (description_url|igd_control_url|igd_our_addr|igd_service_type|igd_status|service_type)
+│   ├── WeakRef
+│   ├── WebRTCPeerConnection
+│   │   └── WebRTCPeerConnectionExtension
+│   ├── XMLParser
+│   ├── XRInterface (ar_is_anchor_detection_enabled|environment_blend_mode|interface_is_primary|xr_play_area_mode)
+│   │   ├── MobileVRInterface (display_to_lens|display_width|eye_height|iod|k1|k2|offset_rect|oversample|vrs_min_radius|vrs_strength|xr_play_area_mode)
+│   │   ├── OpenXRInterface (display_refresh_rate|foveation_dynamic|foveation_level|foveation_with_subsampled_images|render_target_size_multiplier|vrs_min_radius|vrs_strength)
+│   │   ├── WebXRInterface (enabled_features|optional_features|reference_space_type|requested_reference_space_types|required_features|session_mode|visibility_state)
+│   │   └── XRInterfaceExtension
+│   ├── XRPose (angular_velocity|has_tracking_data|linear_velocity|name|tracking_confidence|transform)
+│   ├── XRTracker (description|name|type)
+│   │   ├── XRFaceTracker (blend_shapes|type)
+│   │   └── XRPositionalTracker (hand|profile)
+│   │       ├── OpenXRSpatialEntityTracker (entity|spatial_tracking_state|type)
+│   │       │   ├── OpenXRAnchorTracker (uuid)
+│   │       │   ├── OpenXRMarkerTracker (bounds_size|marker_id|marker_type)
+│   │       │   └── OpenXRPlaneTracker (bounds_size|plane_alignment|plane_label)
+│   │       ├── XRBodyTracker (body_flags|has_tracking_data|type)
+│   │       ├── XRControllerTracker (type)
+│   │       └── XRHandTracker (hand|hand_tracking_source|has_tracking_data|type)
+│   ├── ZIPPacker (compression_level)
+│   └── ZIPReader
+├── RenderData
+│   ├── RenderDataExtension
+│   └── RenderDataRD
+├── RenderSceneData
+│   ├── RenderSceneDataExtension
+│   └── RenderSceneDataRD
+├── RenderingDevice
+├── RenderingServer (render_loop_enabled)
+├── ResourceLoader
+├── ResourceSaver
+├── ResourceUID
+├── ScriptLanguage
+│   └── ScriptLanguageExtension
+├── ShaderIncludeDB
+├── TextServerManager
+├── ThemeDB (fallback_base_scale|fallback_font|fallback_font_size|fallback_icon|fallback_stylebox)
+├── TileData (flip_h|flip_v|material|modulate|probability|terrain|terrain_set|texture_origin|transpose|y_sort_origin|z_index)
+├── Time
+├── TranslationServer (pseudolocalization_enabled)
+├── TreeItem (collapsed|custom_minimum_height|disable_folding|visible)
+├── UndoRedo (max_steps)
+├── UniformSetCacheRD
+├── WorkerThreadPool
+├── XRServer (camera_locked_to_origin|primary_interface|world_origin|world_scale)
+└── XRVRS (vrs_min_radius|vrs_render_region|vrs_strength)
